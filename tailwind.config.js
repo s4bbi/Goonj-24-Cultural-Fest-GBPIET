@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cM: "Chillax-Medium",
+        cR: "Chillax-Regular",
+        cSB: "Chillax-SemiBold",
+        cuda: "CUDA",
+        samarkan: "Samarkan",
+      },
+    },
   },
   plugins: [],
 }
