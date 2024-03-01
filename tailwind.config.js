@@ -13,6 +13,9 @@ export default {
         cuda: "CUDA",
         samarkan: "Samarkan",
       },
+      backgroundImage: {
+        EventBG: "url('/src/assets/Images/Events_BG.webp')",
+      },
     },
   },
   plugins: [],
