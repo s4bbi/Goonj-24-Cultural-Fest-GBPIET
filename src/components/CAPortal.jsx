@@ -28,10 +28,10 @@ const CAPortal = () => {
                 <div className="w-7/12">
                     <div className="flex flex-col gap-14 font-cM ">
                         <p className="text-4xl">What is <span className="text-[#5F43B2]">CA Portal?</span></p>
-                        <p>The  <span className="text-[#5F43B2]">Goonj Campus Ambassador Program</span> is your chance to be a key player in our college’s cultural fest! 
-                            As an ambassador, you'll spread the word, boost participation, and create a buzz about Goonj. 
+                        <p>The  <span className="text-[#5F43B2]">Goonj Campus Ambassador Program</span> is your chance to be a key player in our college cultural fest! 
+                            As an ambassador, you will spread the word, boost participation, and create a buzz about Goonj. 
                             Gain exclusive perks, network with fellow students, and be at the forefront of the most anticipated event on campus! 
-                            It's a short and sweet opportunity to showcase your leadership and creativity. Join the excitement of Goonj as a Campus Ambassador!
+                            It is a short and sweet opportunity to showcase your leadership and creativity. Join the excitement of Goonj as a Campus Ambassador!
                         </p>
                     </div>
                 </div>
@@ -42,8 +42,8 @@ const CAPortal = () => {
                     <div className="flex flex-col gap-14 font-cM ">
                         <p className="text-4xl">Why become a <span className="text-[#5F43B2]">Campus Ambassador?</span></p>
                         <p>Elevate your college experience by becoming a <span className="text-[#5F43B2]">Campus Ambassador</span> for our cultural fest! 
-                            As an ambassador, you'll be the catalyst for the fest's success, leading promotional efforts and shaping the event's narrative. 
-                            This role is not just about leadership and creativity—it's a chance to forge lasting connections within the college community. 
+                            As an ambassador, you will be the catalyst for the fest s success, leading promotional efforts and shaping the events narrative. 
+                            This role is not just about leadership and creativity, it is a chance to forge lasting connections within the college community. 
                             Enjoy exclusive perks, gain recognition, and contribute to the vibrant cultural tapestry of our college. 
                             Be part of something extraordinary—join us in creating an unforgettable cultural fest!
                         </p>

@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import Header from './components/Header.jsx'
+import Footer from './components/footer.jsx'
 import HomePage from '../src/components/HomePage.jsx'
 import LoginPage from '../src/components/LoginPage.jsx'
 import Events from '../src/components/Events.jsx'
@@ -13,7 +15,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 const AppComponent = () => {
   return (
     <div>
+      <Header />
       <Outlet />
+      <Footer />
     </div>
   )
 }
