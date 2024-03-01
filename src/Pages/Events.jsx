@@ -3,7 +3,7 @@ import {data} from "../data/dummydata.js"
 const Events = () => {
   return (
     <div className="">
-      <div class="relative flex items-center justify-center h-screen">
+      <div className="relative flex items-center justify-center h-screen">
         <div className="relative z-30  text-5xl md:text-[150px] text-white   font-cuda">
           Events
         </div>
@@ -19,7 +19,7 @@ const Events = () => {
       </div>
       <div>
         {data.map((item)=>{
-          return <h2>{item.data.DRAMAFLICT.DRAMA.name}</h2>
+          return <h2 key={item.id}>{item.data.DRAMAFLICT.DRAMA.name}</h2>
         }
           
         )}
