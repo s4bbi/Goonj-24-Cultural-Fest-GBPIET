@@ -1,8 +1,8 @@
-import CAPortalVid from "../assets/videos/CAPortalVid.webm"
-import BG from "../assets/images/BG.png"
-import CAPortal_Astro1 from "../assets/images/CAPortal_Astro1.webp"
-import CAPortal_Astro2 from "../assets/images/CAPortal_Astro2.webp"
-import CAPortal_Astro3 from "../assets/images/CAPortal_Astro3.webp"
+import CAPortalVid from "../assets/Videos/CAPortalVid.webm"
+import BG from "../assets/Images/BG.png"
+import CAPortal_Astro1 from "../assets/Images/CAPortal_Astro1.webp"
+import CAPortal_Astro2 from "../assets/Images/CAPortal_Astro2.webp"
+import CAPortal_Astro3 from "../assets/Images/CAPortal_Astro3.webp"
 
 const CAPortal = () => {
     return (
