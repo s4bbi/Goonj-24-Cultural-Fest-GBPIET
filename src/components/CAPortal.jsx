@@ -23,7 +23,7 @@ const CAPortal = () => {
       <div>
         <div className="flex justify-between px-10 py-10 items-center gap-16">
           <div className="w-3/12">
-            <img src={CAPortal_Astro1} alt="Astronaut 1 img" />
+            <img src={CAPortal_Astro1} alt="Astronaut 1 img" /> 
           </div>
           <div className="w-7/12">
             <div className="flex flex-col gap-14 font-cM ">
