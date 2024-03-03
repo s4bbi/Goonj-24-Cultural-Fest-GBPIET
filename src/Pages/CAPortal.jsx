@@ -7,7 +7,7 @@ import '../index.css'
 const CAPortal = () => {
     return (
         <div className="bg-black text-white">
-            <div className="flex flex-col gap-10 items-center justify-center w-screen h-screen absolute z-10">
+            <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
                 <h1 className="font-cuda text-white text-5xl xl:text-8xl md:text-7xl sm:text-6xl lg:text-8xl 2xl:text-9xl">
                     CA Portal
                 </h1>
