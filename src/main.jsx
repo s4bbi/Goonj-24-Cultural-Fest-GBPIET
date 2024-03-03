@@ -14,7 +14,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 const AppComponent = () => {
   return (
-    <div>
+    <div className='selection:bg-[#5F43B2]'>
       <Header />
       <Outlet />
       <Footer />

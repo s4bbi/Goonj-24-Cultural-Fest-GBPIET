@@ -4,7 +4,7 @@ const Events = () => {
   return (
     <div className="">
       <div className="relative flex items-center justify-center h-screen">
-        <div className="relative z-30  text-5xl md:text-[150px] text-white   font-cuda">
+        <div className="relative z-30 text-5xl md:text-[150px] text-white font-cuda">
           Events
         </div>
         <video
