@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
+import EventDetail from "./Pages/EventDetail.jsx"
+import Footer from "./components/Footer.jsx"
 import HomePage from './Pages/HomePage.jsx'
 import LoginPage from './Pages/LoginPage.jsx'
 import Events from './Pages/Events.jsx'
@@ -54,7 +55,11 @@ const appRouter = createBrowserRouter([
       {
         path: '/login',
         element: <LoginPage />
-      }
+      },
+      {
+        path: '/eventsDetail',
+        element: <EventDetail />
+      },
     ]
   }
 ])
