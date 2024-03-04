@@ -1,6 +1,17 @@
 const CARegisterPage = () => {
     return(
-        <div>CA Register Page</div>
+        <div>
+            CA Register Page
+            <div>
+                <h1>Register </h1>
+            </div>
+
+
+
+
+
+
+        </div>
     )
 }
 
