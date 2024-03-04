@@ -6,7 +6,7 @@ const Events = () => {
   return (
     <div className="bg-EventBG">
       <div className="relative flex items-center justify-center h-screen">
-        <div className="relative z-30  text-5xl md:text-[150px] text-white font-bold  font-cuda">
+        <div className="relative z-30 text-5xl md:text-[150px] text-white font-cuda">
           Events
         </div>
         <video

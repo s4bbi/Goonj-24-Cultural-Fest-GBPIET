@@ -1,21 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Header from './components/Header.jsx'
-import EventDetail from "./Pages/EventDetail.jsx"
+import Header from '../src/components/Header.jsx'
+import EventDetail from "../src/Pages/EventDetail.jsx"
 import Footer from "./components/Footer.jsx"
-import HomePage from './Pages/HomePage.jsx'
-import LoginPage from './Pages/LoginPage.jsx'
-import Events from './Pages/Events.jsx'
-import Gallery from './Pages/Gallery.jsx'
-import Sponsors from './Pages/Sponsors.jsx'
-import CAPortal from './Pages/CAPortal.jsx'
-import Teams from './Pages/Teams.jsx'
+import HomePage from '../src/Pages/HomePage.jsx'
+import LoginPage from '../src/Pages/LoginPage.jsx'
+import Events from '../src/Pages/Events.jsx'
+import Gallery from '../src/Pages/Gallery.jsx'
+import Sponsors from '../src/Pages/Sponsors.jsx'
+import CAPortal from '../src/Pages/CAPortal.jsx'
+import Teams from '../src/Pages/Teams.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 const AppComponent = () => {
   return (
-    <div>
+    <div className='selection:bg-[#5F43B2]'>
       <Header />
       <Outlet />
       <Footer />
