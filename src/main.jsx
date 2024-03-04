@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Header from '../src/components/Header.jsx'
-import Footer from './components/Footer.jsx'
+import EventDetail from "../src/Pages/EventDetail.jsx"
+import Footer from "../src/components/Footer.jsx"
 import HomePage from '../src/Pages/HomePage.jsx'
 import LoginPage from '../src/Pages/LoginPage.jsx'
 import Events from '../src/Pages/Events.jsx'
@@ -14,7 +15,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 const AppComponent = () => {
   return (
-    <div>
+    <div className='selection:bg-[#5F43B2]'>
       <Header />
       <Outlet />
       <Footer />
@@ -54,7 +55,11 @@ const appRouter = createBrowserRouter([
       {
         path: '/login',
         element: <LoginPage />
-      }
+      },
+      {
+        path: '/eventsDetail',
+        element: <EventDetail />
+      },
     ]
   }
 ])

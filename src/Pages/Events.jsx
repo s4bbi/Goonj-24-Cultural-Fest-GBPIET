@@ -1,10 +1,12 @@
 import EventVid from "../assets/Videos/EventsVid.webm";
+import EventShowCase from "../components/EventsShowCase.jsx";
 import {data} from "../data/dummydata.js"
 const Events = () => {
+  console.log(data)
   return (
-    <div className="">
+    <div className="bg-EventBG">
       <div className="relative flex items-center justify-center h-screen">
-        <div className="relative z-30  text-5xl md:text-[150px] text-white   font-cuda">
+        <div className="relative z-30 text-5xl md:text-[150px] text-white font-cuda">
           Events
         </div>
         <video
@@ -17,12 +19,12 @@ const Events = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div>
-        {data.map((item)=>{
-          return <h2 key={item.id}>{item.data.DRAMAFLICT.DRAMA.name}</h2>
-        }
-          
-        )}
+      <div className="py-5 md:px-20 ">
+        {data.map((item)=>(
+          <div key={item.id} className="px-10 md:py-4">
+            <EventShowCase item={item} />
+           </div>
+        ))}
       </div>
     </div>
   );

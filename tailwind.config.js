@@ -15,7 +15,10 @@ export default {
       },
       backgroundImage: {
         EventBG: "url('/src/assets/Images/Events_BG.webp')",
+        bg_image: "url('/src/assets/Images/Event_detail_bg.png')",
       },
+      
+
     },
   },
   plugins: [],
