@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Footer = () => {
   return (
     <div className="px-6 bg-EventBG font-cM text-lg">
@@ -10,16 +12,16 @@ const Footer = () => {
               </div>
               <div className="flex gap-10 font-cM text-wider">
                 <div>
-                    <h1>Events</h1>
-                    <h1>About</h1>
+                    <h1><Link to="/events">Events</Link></h1>
+                    <h1><Link to="/about">About</Link></h1>
                 </div>
                 <div>
-                    <h1>Gallery</h1>
-                    <h1>Sponsors</h1>
+                    <h1><Link to="/gallery">Gallery</Link></h1>
+                    <h1><Link to="/sponsors">Sponsors</Link></h1>
                 </div>
                 <div>
-                    <h1>Teams</h1>
-                    <h1>CA Portal</h1>
+                    <h1><Link to="/teams">Teams</Link></h1>
+                    <h1><Link to="/caportal">CA Portal</Link></h1>
                 </div>
               </div>
           </div>

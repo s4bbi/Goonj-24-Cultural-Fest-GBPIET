@@ -3,6 +3,7 @@ import CAPortal_Astro1 from "../assets/Images/CAPortal_Astro1.webp"
 import CAPortal_Astro2 from "../assets/Images/CAPortal_Astro2.webp"
 import CAPortal_Astro3 from "../assets/Images/CAPortal_Astro3.webp"
 import '../index.css'
+import { Link } from "react-router-dom"
 
 const CAPortal = () => {
     return (
@@ -12,7 +13,8 @@ const CAPortal = () => {
                     CA Portal
                 </h1>
                 <button className="btn" type="button">
-                    <strong>REGISTER NOW</strong>
+                    <Link to="/caregister">
+                        <strong>REGISTER NOW</strong>
                         <div id="container-stars">
                             <div id="stars"></div>
                         </div>
@@ -20,7 +22,8 @@ const CAPortal = () => {
                             <div className="circle"></div>
                             <div className="circle"></div>
                         </div>
-                    </button>            
+                    </Link>    
+                </button>            
             </div>
 
             <div className="w-full h-screen">
