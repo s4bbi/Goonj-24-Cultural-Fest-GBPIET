@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className="flex justify-between items-center py-10 px-10 font-cM w-full bg-transparent absolute z-20">    
                 <div className="font-cM text-xl">
-                    <h1 className="text-white">GOONJ<span className='text-[#5f43b2]'>'24</span></h1>
+                    <Link to="/"><h1 className="text-white">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
                 </div>
                 <div className="flex">
                     <ul className="flex justify-between text-center gap-6 text-white text-xl">
