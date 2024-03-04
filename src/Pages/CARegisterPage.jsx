@@ -3,7 +3,7 @@ const CARegisterPage = () => {
         <div>
             CA Register Page
             <div>
-                <h1>Register </h1>
+                <h1 className="">Register </h1>
             </div>
 
 
