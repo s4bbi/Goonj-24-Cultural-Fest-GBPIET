@@ -11,6 +11,7 @@ import Gallery from '../src/Pages/Gallery.jsx'
 import Sponsors from '../src/Pages/Sponsors.jsx'
 import CAPortal from '../src/Pages/CAPortal.jsx'
 import Teams from '../src/Pages/Teams.jsx'
+import CARegisterPage from './Pages/CARegisterPage.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 const AppComponent = () => {
@@ -59,6 +60,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/eventsDetail',
         element: <EventDetail />
+      },
+      {
+        path: '/caregister',
+        element: <CARegisterPage />
       },
     ]
   }
