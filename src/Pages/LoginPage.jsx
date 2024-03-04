@@ -4,9 +4,7 @@ const LoginPage = () => {
   return (
     <div className="bg-EventBG h-screen flex">
       <div className="flex flex-col justify-end w-5/12">
-        <div className="flex flex-col">
-          <img src={LoginAstro} alt="Astronaut" className="w-9/12" />
-        </div>
+          <img src={LoginAstro} alt="Astronaut" className="w-9/12"/>
       </div>
       <div className="w-6/12 my-24 mr-20 rounded-3xl bg-cover bg-center bg-no-repeat text-white " style={{ backgroundImage: "url('/src/assets/Images/LoginBG.png')" }}>
         <h1 className="font-cuda text-3xl flex justify-center py-8">USER SIGNUP</h1>
