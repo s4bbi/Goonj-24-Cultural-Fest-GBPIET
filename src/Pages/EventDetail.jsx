@@ -1,8 +1,8 @@
 import bg_image from "../assets/Images/Event_detail_bg.png"
 const EventDetail = () => {
     return (
-        <div className="w-full  bg-cover h-screen">
-            <div className="bg-bg_image bg-cover px-5 md:px-20 md:py-6 h-full">
+        <div className="w-full  bg-cover ">
+            <div className="bg-bg_image bg-cover px-5 md:px-20 md:py-6 ">
                 <div className="text-white">
                 <div className="flex justify-between py-4 items-center md:justify-start md:gap-[500px]   ">
                     <div className="font-cuda md:text-4xl">
