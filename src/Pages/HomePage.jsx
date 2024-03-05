@@ -1,9 +1,12 @@
 import vidHome from "../assets/Videos/HeroBG.webm"
-import imgHome from "../assets/Images/Events_BG.webp"
-import orbitHome from "../assets/Images/Orbits_Img.webp" 
+import orbitHome from "../assets/Images/Orbits.png" 
 import AboutHome from "../assets/Images/AboutMoon_Img.webp"
 import EventsGlobe from "../assets/Images/Events_Globe.webp"
-
+import GalleryGlobe from "../assets/Images/Gallery_Globe.webp"
+import SponsorsGlobe from "../assets/Images/Sponsors_Globe.webp"
+import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
+import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
+import { Link } from "react-router-dom"
 
 const HomePage = () => {
     return (
@@ -24,8 +27,64 @@ const HomePage = () => {
                     <video src={vidHome} autoPlay muted loop className="w-screen h-full object-cover"></video>
                 </div>
             </div>
-            <div className="bg-[url('src/assets/Images/Events_BG.webp')] w-full h-full">
-
+            <div className="bg-EventBG py-4 w-full h-full">
+                <div>
+                    <div className="absolute w-full font-cSB">
+                        <div className="flex text-white mx-44 pt-4">
+                                <Link to="/events">
+                                    <div className="flex flex-col items-center text-2xl">
+                                        <p>
+                                            EVENTS
+                                        </p>
+                                        <img src={EventsGlobe} className="w-72"/>
+                                    </div>
+                                </Link>
+                        </div>
+                        <div className="flex justify-end text-white mx-72 pt-10">
+                            <Link to="/gallery">
+                                <div className="flex flex-col items-center text-2xl">
+                                    <p>
+                                        GALLERY
+                                    </p>
+                                    <img src={GalleryGlobe} className="w-56"/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="flex text-white mx-64 pt-44">
+                            <Link to="/sponsors">
+                                <div className="flex flex-col items-center text-2xl">
+                                    <p>
+                                        SPONSORS
+                                    </p>
+                                    <img src={SponsorsGlobe} className="w-48"/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="flex justify-end text-white mx-40 pt-60">
+                            <Link to="/teams">
+                                <div className="flex flex-col items-center text-2xl">
+                                    <p>
+                                        TEAMS
+                                    </p>
+                                    <img src={TeamsGlobe} className="w-80"/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="flex justify-center text-white pt-44">
+                            <Link to="/caportal">
+                                <div className="flex flex-col items-center text-2xl">
+                                    <p>
+                                        CA PORTAL
+                                    </p>
+                                    <img src={CAPortal_Globe} className="w-64"/>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="py-10">
+                        <img src={orbitHome} className="w-full"/>
+                    </div>
+                </div>
                 <div>
                     <div className="text-white h-full pt-10  mx-4">
                     <div  className="text-center font-cuda text-7xl p-6">
