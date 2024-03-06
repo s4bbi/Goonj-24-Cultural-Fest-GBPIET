@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import '../index.css'
 
 const Header = () => {
     return (
-        <div className="flex justify-between items-center py-10 px-10 font-cM w-full bg-transparent absolute z-20">    
+        <div className="flex justify-between items-center py-10 px-10 font-cR w-full bg-transparent absolute z-20">    
                 <div className="font-cM text-xl">
                     <Link to="/"><h1 className="text-white">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
                 </div>
@@ -27,7 +28,7 @@ const Header = () => {
                             <Link to="/caportal">CA PORTAL</Link>
                         </li>
                         <div className="">
-                            <button type="button" className="bg-[#7a59df] rounded-3xl w-24 px-1 hover:bg-[#5c2ee3] ">
+                            <button type="button" className="bg-[#7a59df] rounded-3xl w-24 px-1 hover:bg-[#5c2ee3] font-cM">
                                 <Link to="/login">LOGIN</Link>
                             </button>
                         </div>

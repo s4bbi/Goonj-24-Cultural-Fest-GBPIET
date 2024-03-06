@@ -6,6 +6,7 @@ import GalleryGlobe from "../assets/Images/Gallery_Globe.webp"
 import SponsorsGlobe from "../assets/Images/Sponsors_Globe.webp"
 import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
+import orbitSun from "../assets/Videos/orbitSun.webm"
 import { Link } from "react-router-dom"
 
 const HomePage = () => {
@@ -36,7 +37,7 @@ const HomePage = () => {
                                         <p>
                                             EVENTS
                                         </p>
-                                        <img src={EventsGlobe} className="w-72"/>
+                                        <img src={EventsGlobe} className="w-72 hover:scale-110 ease-in-out duration-200"/>
                                     </div>
                                 </Link>
                         </div>
@@ -46,7 +47,7 @@ const HomePage = () => {
                                     <p>
                                         GALLERY
                                     </p>
-                                    <img src={GalleryGlobe} className="w-56"/>
+                                    <img src={GalleryGlobe} className="w-56 hover:scale-110 ease-in-out duration-200"/>
                                 </div>
                             </Link>
                         </div>
@@ -56,17 +57,22 @@ const HomePage = () => {
                                     <p>
                                         SPONSORS
                                     </p>
-                                    <img src={SponsorsGlobe} className="w-48"/>
+                                    <img src={SponsorsGlobe} className="w-48 hover:scale-110 ease-in-out duration-200"/>
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-end text-white mx-40 pt-60">
+                        <div className="flex justify-center text-white ">
+                                <div className="flex flex-col items-center text-2xl">
+                                    <video src={orbitSun} autoPlay muted loop className="w-24" ></video>
+                                </div>
+                        </div>
+                        <div className="flex justify-end text-white mx-40 pt-36">
                             <Link to="/teams">
                                 <div className="flex flex-col items-center text-2xl">
                                     <p>
                                         TEAMS
                                     </p>
-                                    <img src={TeamsGlobe} className="w-80"/>
+                                    <img src={TeamsGlobe} className="w-80 hover:scale-110 ease-in-out duration-200"/>
                                 </div>
                             </Link>
                         </div>
@@ -76,7 +82,7 @@ const HomePage = () => {
                                     <p>
                                         CA PORTAL
                                     </p>
-                                    <img src={CAPortal_Globe} className="w-64"/>
+                                    <img src={CAPortal_Globe} className="w-64 hover:scale-110 ease-in-out duration-200"/>
                                 </div>
                             </Link>
                         </div>
