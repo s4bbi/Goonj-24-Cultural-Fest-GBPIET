@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
           </div>
           <div>
-            <h1 className="text-white w-4/12 pb-8">A dynamic cultural fest uniting traditions and modern expressions. Join us for a fusion of dance, music, art, and global flavours. Celebrate diversity, forge connections, and make lasting memories at Goonj!</h1>
+            <h1 className="text-white w-4/12 pb-8 font-cR">A dynamic cultural fest uniting traditions and modern expressions. Join us for a fusion of dance, music, art, and global flavours. Celebrate diversity, forge connections, and make lasting memories at Goonj!</h1>
           </div>
           <div className="border-b border-white border-[3px] "></div>
           <div className="py-6 flex justify-between">

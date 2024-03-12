@@ -1,14 +1,14 @@
 const EventDetail = () => {
     return (
-        <div className="w-full  bg-cover h-screen">
+        <div className="w-full bg-cover">
             <div className="bg-bg_image bg-cover px-5 md:px-20 md:py-6 h-full">
                 <div className="text-white">
-                <div className="flex justify-between py-4 items-center md:justify-start md:gap-[500px]   ">
+                <div className="flex justify-between py-4 pt-24 items-center md:pt-36 md:justify-start md:gap-[500px]">
                     <div className="font-cuda md:text-4xl">
                         DRAMA/SKIT
                     </div>
                     <div>
-                        <button className="bg-[#5F43B2] font-cR font-medium md:text-2xl  px-6 py-1 rounded-full shadow-md shadow-[#5F43B2]">
+                        <button className="bg-[#5F43B2] font-cM font-medium md:text-2xl  px-6 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
                             REGISTER
                         </button>
                     </div>
