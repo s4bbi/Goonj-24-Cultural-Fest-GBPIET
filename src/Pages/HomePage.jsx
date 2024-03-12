@@ -103,13 +103,13 @@ const HomePage = () => {
                             <img src="src/assets/Images/AboutMoon_Img.webp" className="w-20 absolute mt-8 "></img>
                         </div>
                         <div className="border-l  border-[#5f43b2] pl-5 border-solid ">
-                            <h1 className="w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>",where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
+                            <h1 className="w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>", where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
                         </div>
                         <div className="flex justify-center items-center p-4">
                             <img src="src/assets/Images/Home_Saturn_Img.webp" className="w-[450px] absolute mt-8"></img>
                         </div>
                         <div className="border-r  border-[#5f43b2] pr-5 border-solid flex justify-end ">
-                            <h1 className="w-[38%] text-end">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>," where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
+                            <h1 className="w-[38%] text-end"><span className="text-[#5f43b2] ">Goonj's</span> events are a high-spirited mix of dance, music, discussions, and global flavours. From thrilling competitions to artistic exhibitions, each moment is a burst of creativity and cultural celebration. Join us for a dynamic experience that transcends boundaries!</h1>
                         </div>
                         <div className="flex justify-start items-center p-24">
                             <img src="src/assets/Images/AboutMoon_Img.webp" className="w-56 absolute "></img>
