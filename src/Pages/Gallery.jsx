@@ -1,6 +1,7 @@
 import GalleryVid from "../assets/Videos/GalleryVid.webm"
-import Img1 from "../assets/Images/Gallery_Images/1.png"
-import Img2 from "../assets/Images/Gallery_Images/2.png"
+import Img1 from "../assets/Images/Gallery_Images/1.webp"
+import Img2 from "../assets/Images/Gallery_Images/2.webp"
+import Img3 from "../assets/Images/Gallery_Images/3.webp"
 
 const Gallery = () => {
     return (
@@ -16,9 +17,11 @@ const Gallery = () => {
                     <source src={GalleryVid} type="video/webm" />
                 </video>
             </div>
-            <div className="bg-cover bg-center bg-no-repeat h-full bg-EventBG px-20 py-20">
-                <div className="flex gap-32 flex-wrap">
-                        
+            <div className="bg-cover bg-center bg-no-repeat bg-EventBG px-20 py-20">
+                <div className="w-full flex flex-wrap mx-auto">
+                        <img src={Img1} className="object-cover" alt="" />
+                        <img src={Img2} className="object-cover" alt="" />
+                        <img src={Img3} className="object-cover" alt="" />
                 </div>
             </div>
         </div>
