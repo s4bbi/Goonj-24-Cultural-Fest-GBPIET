@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import "../index.css"
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
               <div className="flex gap-10 font-cM text-wider">
                 <div>
                     <h1><Link to="/events">Events</Link></h1>
-                    <h1><Link to="/about">About</Link></h1>
+                    <h1><Link to="/">About</Link></h1>
                 </div>
                 <div>
                     <h1><Link to="/gallery">Gallery</Link></h1>

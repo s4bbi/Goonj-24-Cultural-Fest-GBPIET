@@ -25,16 +25,12 @@ const CAPortal = () => {
                     </Link>    
                 </button>            
             </div>
-
             <div className="w-full h-screen">
                 <video className="w-full h-full object-cover brightness-90" autoPlay loop muted>
-                    <source src={CAPortalVid} type="video/webm" />
+                    <source src={CAPortalVid} type="video/webm"/>
                 </video>
             </div>
-
-            
-
-            <div className="bg-cover bg-center bg-no-repeat h-full bg-EventBG ">
+            <div className="bg-cover bg-center bg-no-repeat h-full bg-EventBG">
 
                 <div className="mx-20">
                     <div className="flex justify-between pt-20 pb-10 items-center gap-24">
@@ -42,7 +38,7 @@ const CAPortal = () => {
                             <img src={CAPortal_Astro1} alt="Astronaut 1 img"/>
                         </div>
                         <div className="sm:w-9/12">
-                            <div className="flex flex-col gap-14 font-cM ">
+                            <div className="flex flex-col gap-14 font-cM">
                                 <p className="text-4xl">What is <span className="text-[#5F43B2]">CA Portal?</span></p>
                                 <p className="font-cR">The  <span className="text-[#5F43B2] font-cM">Goonj Campus Ambassador Program</span> is your chance to be a key player in our college cultural fest! 
                                     As an ambassador, you will spread the word, boost participation, and create a buzz about Goonj. 
