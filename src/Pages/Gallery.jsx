@@ -1,7 +1,4 @@
 import GalleryVid from "../assets/Videos/GalleryVid.webm"
-import Img1 from "../assets/Images/Gallery_Images/1.png"
-import Img2 from "../assets/Images/Gallery_Images/2.png"
-
 
 const Gallery = () => {
     return (

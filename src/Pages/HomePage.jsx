@@ -18,8 +18,8 @@ const HomePage = () => {
                             <h1 className="">GBPIET'S</h1>
                         </div>
                         <div className="">
-                            <h1 className="font-samarkan text-white text-9xl lg:text-[320px] text-center shadow-sm">GOONJ 24</h1>
-                        </div>
+                            <h1 className="font-samarkan text-white text-[320px] text-center">GOONJ 24</h1>
+                        </div>    
                         <div className="flex justify-end pr-[186px] text-2xl">
                             <h1 className="font-cM text-white  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
                         </div>
@@ -120,6 +120,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 </div>
+                
             </div>
         </div>
 

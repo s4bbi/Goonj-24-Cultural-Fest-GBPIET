@@ -14,7 +14,7 @@ const CAPortal = () => {
                 </h1>
                 <button className="btn" type="button">
                     <Link to="/caregister">
-                        <strong>REGISTER NOW</strong>
+                        <strong className="font-cM">REGISTER NOW</strong>
                         <div id="container-stars">
                             <div id="stars"></div>
                         </div>
