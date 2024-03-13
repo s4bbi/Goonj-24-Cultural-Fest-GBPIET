@@ -11,6 +11,7 @@ import Gallery from '../src/Pages/Gallery.jsx'
 import Sponsors from '../src/Pages/Sponsors.jsx'
 import CAPortal from '../src/Pages/CAPortal.jsx'
 import Teams from '../src/Pages/Teams.jsx'
+import Profile from '../src/Pages/Profile.jsx'
 import CARegisterPage from './Pages/CARegisterPage.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
@@ -64,6 +65,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/caregister',
         element: <CARegisterPage />
+      },
+      {
+        path: '/profile',
+        element: <Profile />
       },
     ]
   }

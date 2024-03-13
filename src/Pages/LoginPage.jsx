@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LoginAstro from "../assets/Images/LoginAstronaut.png";
 
 const LoginPage = () => {
@@ -39,7 +40,6 @@ const LoginPage = () => {
                 <div className="flex justify-between">
                     <div className="flex flex-col w-5/12">
                         <label className="font-cR mb-2 font-light text-sm">College City </label>
-                        
                         <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
                             <option value="xx">xx</option>
                             <option value="xx">xx</option>
@@ -65,7 +65,11 @@ const LoginPage = () => {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className="btn" type="submit">Submit</button>
+                    <button className="btn" type="submit">
+                        <Link to="/profile">
+                            Submit
+                            </Link>    
+                        </button>
                 </div>
             </form>
         </div>
