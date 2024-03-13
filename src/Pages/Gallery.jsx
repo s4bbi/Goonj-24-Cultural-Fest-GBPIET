@@ -22,9 +22,6 @@ import Img20 from "../assets/Images/Gallery_Images/20.webp"
 import Img21 from "../assets/Images/Gallery_Images/21.webp"
 import Img22 from "../assets/Images/Gallery_Images/22.webp"
 
-
-
-
 const Gallery = () => {
     return (
         <div className="bg-black text-white">
@@ -45,8 +42,8 @@ const Gallery = () => {
                         <img src={Img2} className="object-cover  w-[550px] h-[650px] rounded-lg bg-center" alt="" />
                         <img src={Img3} className="object-cover  w-[550px] h-[650px] rounded-lg bg-center" alt=""  />
                 </div>
-                <div className="px-52 py-16">
-                    <img src={Img4} className="object-cover w-[1000px] " alt=""/>
+                <div className="w-[1000px] mx-auto py-16">
+                    <img src={Img4} className="object-cover" alt=""/>
                 </div>
                 <div className="flex p-16 gap-14">
                     <div>
@@ -120,8 +117,8 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className="p-16">
-                    <h1 className="font-cSB text-center">ALL THE PHOTOS ABOVE ARE TAKEN BY</h1> 
-                    <h1 className="text-violet-700 font-cM text-center">GBPIET’s DRISHTIKON PHOTOGRAPHY CLUB</h1>
+                    <h1 className="font-cM text-center">ALL THE PHOTOS ABOVE ARE TAKEN BY</h1> 
+                    <h1 className="text-violet-700 font-cSB text-center">GBPIET’s DRISHTIKON PHOTOGRAPHY CLUB</h1>
                 </div>
 
 
