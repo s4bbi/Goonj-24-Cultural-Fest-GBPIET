@@ -1,4 +1,3 @@
-import React from 'react';
 import GalleryVid from "../assets/Videos/GalleryVid.webm";
 import Img1 from "../assets/Images/Gallery_Images/1.webp";
 import Img2 from "../assets/Images/Gallery_Images/2.webp";
