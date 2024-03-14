@@ -23,10 +23,8 @@ const Profile = () => {
                         <div className="text-white font-cM p-2">GOONJ ID: <span className="text-[#5f43b2]">GNJ6969</span></div>
                         <div className="p-2">s4bbi4596@gmail.com</div>
                     </div>
-                    
-
-
                     </div>
+<<<<<<< HEAD
 
 
                     </div>
@@ -34,6 +32,8 @@ const Profile = () => {
 
 
 
+=======
+>>>>>>> 5a47c8224b364c65c14a1d95ba2cbf2ac6efd4e8
                 </div>
                 <div className="px-60 font-cM">
                         <span className="font-medium text-lg border-b-2 border-[#5f43b2]">REGISTERED EVENTS</span>
