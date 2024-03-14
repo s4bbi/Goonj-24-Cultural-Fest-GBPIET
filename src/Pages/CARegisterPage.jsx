@@ -10,7 +10,7 @@ const CARegisterPage = () => {
         <img src={planet} className=' blur absolute top-36 left-5 -mt-16 -ml-24 lg:-ml-32 xl:ml-56 object-center max-w-none w-52 '/>
       </div>
       <div>
-        <div class="">
+        <div className="">
           <div className='p-2'>
             <div className='flex w-[40%]  pt-24 mx-28'>
               <h1 className='font-cuda text-white text-center text-4xl md:text-center md:w-50%'>

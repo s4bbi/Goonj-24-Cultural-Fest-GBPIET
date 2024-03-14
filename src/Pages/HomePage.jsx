@@ -8,24 +8,25 @@ import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
 import { Link } from "react-router-dom"
+import goonjLogo from "../assets/goonjLogo.png"
 
 const HomePage = () => {
     return (
         <div>
             <div>
                 <div className="flex flex-col justify-center absolute w-full h-screen z-10">
-                    <div className="font-cM text-white text-left text-2xl pl-[186px] absolute pb-96">
+                    <div className="font-cM text-white text-left text-2xl pl-[186px] pb-[296px] absolute">
                         <h1 className="">GBPIET'S</h1>
                     </div>
-                    <div className="">
-                        <h1 className="font-samarkan text-white text-[320px] text-center">GOONJ 24</h1>
-                    </div>    
-                    <div className="flex justify-end pr-[186px] text-2xl">
-                        <h1 className="font-cM text-white  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
+                    <div>
+                        <img src={goonjLogo} className="flex mx-auto w-[580px]" alt="" />
+                    </div>
+                    <div className="flex justify-end pr-[186px] text-2xl pb-24">
+                        <h1 className="font-cM text-white absolute">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
                     </div>
                 </div>    
                 <div>
-                    <video src={vidHome} autoPlay muted loop className="w-screen h-full object-cover"></video>
+                    <video src={vidHome} autoPlay muted loop className="w-screen h-screen object-cover"></video>
                 </div>
             </div>
             <div className="bg-EventBG py-4 w-full h-full">

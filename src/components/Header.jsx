@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../index.css';
+import goonjLogo from "../assets/goonjLogo.png"
 
 const Header = () => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -11,7 +12,8 @@ const Header = () => {
 
     return (
         <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-20 md:px-10 md:py-10">
-            <div className="font-cM text-xl">
+            <div className="flex items-center font-cM text-xl">
+                <img src={goonjLogo} className="flex mx-auto w-16" alt="Goonj Logo" />
                 <Link to="/"><h1 className="text-white">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
             </div>
             <div className="flex items-center md:hidden">
