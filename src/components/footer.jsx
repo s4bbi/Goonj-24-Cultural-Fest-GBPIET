@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import "../index.css";
+import ytIcon from "../assets/Images/youtubeIcon.png"
+import igIcon from "../assets/Images/instagramIcon.png"
+import liIcon from "../assets/Images/linkedIcon.png"
+import fbIcon from "../assets/Images/facebookIcon.png"
 
 const Footer = () => {
   return (
@@ -52,22 +56,22 @@ const Footer = () => {
           <div className="flex gap-6 text-white">
             <h1>Connect with us on:</h1>
             <img
-              src="src/assets/Images/youtubeIcon.png"
+              src={ytIcon}
               alt="YouTube"
               className="h-6"
             />
             <img
-              src="src/assets/Images/linkedinIcon.png"
+              src={liIcon}
               alt="LinkedIn"
               className="h-6"
             />
             <img
-              src="src/assets/Images/instagramIcon.png"
+              src={igIcon}
               alt="Instagram"
               className="h-6"
             />
             <img
-              src="src/assets/Images/facebookIcon.png"
+              src={fbIcon}
               alt="Facebook"
               className="h-6"
             />
