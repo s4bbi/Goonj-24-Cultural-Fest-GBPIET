@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="px-4 bg-EventBG font-cM text-lg md:px-6">
       <div className="w-full bg-[url('src/assets/Images/Moon_Img.webp')] bg-right p-4 md:p-6 bg-cover object-contain">
-        <div className="text-white flex flex-col md:flex-row justify-center items-start">
+        <div className="text-white flex flex-col md:flex-row justify-between items-start">
           <div className="mb-4 md:mb-0">
             GOONJ 20<span className="text-violet-700">24</span>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => {
           </h1>
         </div>
         <div className="border-b border-white border-[3px]"></div>
-        <div className="py-6 flex flex-col md:flex-row justify-center items-center">
+        <div className="py-6 flex flex-col md:flex-row justify-between items-center">
           <h1 className="text-white mb-4 md:mb-0">
             @Goonj 2024. All rights reserved
           </h1>
