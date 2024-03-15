@@ -21,8 +21,8 @@ const HomePage = () => {
                     <div className="">
                         <h1 className="font-samarkan text-white text-[70px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
                     </div>    
-                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 ">
-                        <h1 className="font-cM text-white  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
+                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56">
+                        <h1 className="font-cM text-white w-fit  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
                     </div>
                 </div>    
                 <div>
