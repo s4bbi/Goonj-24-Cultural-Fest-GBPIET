@@ -25,15 +25,15 @@ import Img22 from "../assets/Images/Gallery_Images/22.webp";
 const Gallery = () => {
     return (
         <div className="bg-black text-white ">
-            <div className="flex items-center justify-center h-screen absolute w-full mx-auto ">
+            <div className="flex items-center justify-center h-screen w-full mx-auto absolute">
                 <h1 className="z-30 text-5xl md:text-[150px] text-white font-cuda drop-shadow-2xl">
                     Gallery
                 </h1>            
             </div>
 
             <div className="w-full h-screen">
-                <video className="brightness-90" autoPlay loop muted>
-                    <source src={GalleryVid} type="video/webm" />
+                <video className="w-full h-full object-cover brightness-90" autoPlay loop muted>
+                    <source src={GalleryVid} type="video/webm"/>
                 </video>
             </div>
             <div className="flex flex-col gap-12 bg-cover bg-center bg-no-repeat bg-EventBG pt-16 px-10">

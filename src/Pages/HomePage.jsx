@@ -107,7 +107,7 @@ const HomePage = () => {
                                 <h1 className="sm:w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>", where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
                             </div>
                             </div>
-                            <div className="flex justify-center items-center pt-12 ">
+                            <div className="flex justify-center items-center pt-10 ">
                                 <img src={saturnImage} className="sm:w-[450px] w-56 absolute mt-8 hidden sm:block"></img>
                             </div>
                            <div className="flex flex-col pt-10 sm:pt-0">
