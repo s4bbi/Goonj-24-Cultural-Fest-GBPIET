@@ -16,13 +16,13 @@ const HomePage = () => {
             <div>
                 <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-96 px-12 mx-auto">
                     <div className="font-cM text-white text-left text-xs sm:text-3xl ">
-                        <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
+                        <h1 className="sm:mx-48 absolute sm:mt-16">GBPIET'S</h1>
                     </div>
                     <div className="">
-                        <h1 className="font-samarkan text-white text-[70px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
+                        <h1 className="font-samarkan text-white text-[70px] sm:text-[150px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
                     </div>    
-                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 ">
-                        <h1 className="font-cM text-white  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
+                    <div className="flex text-xs sm:text-2xl sm:absolute sm:mt-96">
+                        <h1 className="font-cM text-white">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
                     </div>
                 </div>    
                 <div>
