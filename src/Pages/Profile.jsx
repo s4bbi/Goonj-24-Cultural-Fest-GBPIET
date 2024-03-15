@@ -2,7 +2,8 @@ import astro from "../assets/Images/CAPortal_Astro3.webp"
 
 const Profile = () => {
     return(
-        <div >
+        <div>
+
             <div className="text-white bg-EventBG w-screen h-screen text-wider">
                 <div>
                     <h1 className="text-5xl text-center pt-36 font-cuda ">PROFILE</h1>
@@ -24,16 +25,6 @@ const Profile = () => {
                         <div className="p-2">s4bbi4596@gmail.com</div>
                     </div>
                     </div>
-<<<<<<< HEAD
-
-
-                    </div>
-                    
-
-
-
-=======
->>>>>>> 5a47c8224b364c65c14a1d95ba2cbf2ac6efd4e8
                 </div>
                 <div className="px-60 font-cM">
                         <span className="font-medium text-lg border-b-2 border-[#5f43b2]">REGISTERED EVENTS</span>
@@ -48,7 +39,8 @@ const Profile = () => {
             </div>
            
         </div>
-    )
-}
+        </div>
+    );
+};
 
 export default Profile
