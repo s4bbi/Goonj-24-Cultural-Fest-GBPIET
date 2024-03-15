@@ -2,7 +2,8 @@ import astro from "../assets/Images/CAPortal_Astro3.webp"
 
 const Profile = () => {
     return(
-        <div >
+        <div>
+
             <div className="text-white bg-EventBG w-screen h-screen text-wider">
                 <div>
                     <h1 className="text-5xl text-center pt-36 font-cuda ">PROFILE</h1>
@@ -11,6 +12,8 @@ const Profile = () => {
                     <div>
                         <img src={astro} className="w-72 border-2 border-[#5f43b2] rounded-2xl"/>
                     </div>
+                    <div className="flex justify-center md:flex
+                    ">
                     <div className="flex justify-between gap-28 pt-4 text-lg px-24">
                         <div className=" gap-20">
                         <h1 className="p-2 text-[#5f43b2] text-lg">s4bbi</h1>
@@ -36,7 +39,8 @@ const Profile = () => {
             </div>
            
         </div>
-    )
-}
+        </div>
+    );
+};
 
 export default Profile
