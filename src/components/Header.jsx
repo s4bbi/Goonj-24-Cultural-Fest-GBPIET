@@ -16,8 +16,13 @@ const Header = () => {
                 <Link to="/"><img src={goonjLogo} className="flex mx-auto w-16" alt="Goonj Logo" /></Link>
                 <Link to="/"><h1 className="text-white hidden md:flex">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
             </div>
-            <div className="flex items-center md:hidden">
-                <button onClick={toggleSidebar} className="text-white focus:outline-none mr-4">
+            <div className="flex items-center gap-3 md:hidden">
+                <div className="">
+                    <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 py-1 px-1 hover:bg-[#5c2ee3] font-cM">
+                        <Link to="/login">LOGIN</Link>
+                    </button>
+                </div>
+                <button onClick={toggleSidebar} className="text-white focus:outline-none">
                     <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                         {showSidebar ? (
                             <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
@@ -26,11 +31,6 @@ const Header = () => {
                         )}
                     </svg>
                 </button>
-                <div className="">
-                    <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 py-1 px-1 hover:bg-[#5c2ee3] font-cM">
-                        <Link to="/login">LOGIN</Link>
-                    </button>
-                </div>
             </div>
             <div className="hidden md:flex">
                 <ul className="flex justify-between text-center gap-6 text-white text-xl">
