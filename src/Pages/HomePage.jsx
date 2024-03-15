@@ -29,7 +29,7 @@ const HomePage = () => {
                     <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>
                 </div>
             </div>
-            <div className="bg-EventBG py-4 w-full h-full">
+            <div className="bg-EventBG py-12 w-full h-full">
                 <div>
                     <div className="absolute w-full font-cSB">
                         <div className="flex text-white sm:mx-44 ml-5 pt-1  sm:pt-4">
@@ -62,12 +62,12 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white  sm:mt-0">
+                        <div className="flex justify-center text-white mt-20 sm:mt-0">
                             <div className="flex flex-col items-center text-2xl ">
                                 <video src={orbitSun} autoPlay muted loop className="sm:w-28 w-16" ></video>
                             </div>
                         </div>
-                        <div className="flex justify-end text-white sm:mx-40 sm:pt-36  sm:mt-0">
+                        <div className="flex justify-end text-white sm:mx-40 sm:pt-36 sm:mt-0">
                             <Link to="/teams">
                                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                                     <p>
