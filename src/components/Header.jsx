@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden">
                     <div className="absolute top-0 right-0 h-screen w-64 bg-EventBG shadow-lg">
                         <div className="flex justify-end p-4">
-                            <button onClick={toggleSidebar} className="text-gray-600 hover:text-gray-800 focus:outline-none">
+                            <button onClick={toggleSidebar} className="text-white hover:text-gray-800 focus:outline-none">
                                 <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                                     <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
                                 </svg>
