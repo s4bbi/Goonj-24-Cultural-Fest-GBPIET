@@ -100,7 +100,7 @@ const HomePage = () => {
                         <div className="font-cM text-sm sm:mx-16 sm:text-lg">
                             <div className="flex flex-col">
                             <div className="">
-                                <img src="src/assets/Images/AboutMoon_Img.webp" className="w-20 sm:w-56"></img>
+                                <img src={AboutHome} className="w-20 sm:w-56"></img>
                             </div>
                             <div className="border-l  border-[#5f43b2] pl-5 border-solid z-20">
                                 <h1 className="sm:w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>", where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
@@ -111,7 +111,7 @@ const HomePage = () => {
                             </div>
                            <div className="flex flex-col pt-10 sm:pt-0">
                              <div className="flex flex-row-reverse w-full">
-                                <img src="src/assets/Images/AboutMoon_Img.webp" className="w-20 sm:w-56"/>
+                                <img src={AboutHome} className="w-20 sm:w-56"/>
                                 </div>
                             <div className="border-r  border-[#5f43b2] pr-5 border-solid flex justify-end ">
                                 <h1 className="sm:w-[38%] text-end"><span className="text-[#5f43b2] z-20">Goonj's</span> events are a high-spirited mix of dance, music, discussions, and global flavours. From thrilling competitions to artistic exhibitions, each moment is a burst of creativity and cultural celebration. Join us for a dynamic experience that transcends boundaries!</h1>
@@ -119,7 +119,7 @@ const HomePage = () => {
                             </div>
                             <div>
                             <div className="flex justify-start items-center pt-10 sm:pt-0">
-                                <img src="src/assets/Images/AboutMoon_Img.webp" className="w-20 sm:w-56  "></img>
+                                <img src={AboutHome} className="w-20 sm:w-56  "></img>
                             </div>
                             <div className="border-l  border-[#5f43b2] pl-5 border-solid pt-2 flex ">
                                 <h1 className="sm:w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>," where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
