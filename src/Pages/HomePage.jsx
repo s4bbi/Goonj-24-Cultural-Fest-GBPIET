@@ -19,7 +19,7 @@ const HomePage = () => {
                         <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
                     </div>
                     <div className="">
-                        <h1 className="font-samarkan text-white text-[80px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
+                        <h1 className="font-samarkan text-white text-[70px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
                     </div>    
                     <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 ">
                         <h1 className="font-cM text-white  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
@@ -62,7 +62,7 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white mt-16 sm:mt-0">
+                        <div className="flex justify-center text-white  sm:mt-0">
                             <div className="flex flex-col items-center text-2xl ">
                                 <video src={orbitSun} autoPlay muted loop className="sm:w-28 w-16" ></video>
                             </div>
