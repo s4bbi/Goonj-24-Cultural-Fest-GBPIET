@@ -11,7 +11,7 @@ const Header = () => {
     };
 
     return (
-        <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-20 md:px-10 md:py-10">
+        <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-10 md:py-10">
             <div className="flex items-center font-cM text-xl">
                 <Link to="/"><img src={goonjLogo} className="flex mx-auto w-16" alt="Goonj Logo" /></Link>
                 <Link to="/"><h1 className="text-white hidden md:flex">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
