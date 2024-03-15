@@ -9,7 +9,7 @@ const LoginPage = () => {
       </div>
       <div className="w-6/12 my-24 mr-20 rounded-3xl bg-cover bg-center bg-no-repeat text-white " style={{ backgroundImage: "url('/src/assets/Images/LoginBG.png')" }}>
         <h1 className="font-cuda text-3xl flex justify-center py-8">USER SIGNUP</h1>
-        <div className=" mx-16">
+        <div className=" sm:mx-16">
             <form action="">
                 <div className="flex justify-between">
                     <div className="flex flex-col mb-6 w-5/12">
