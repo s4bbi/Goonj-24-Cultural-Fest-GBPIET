@@ -37,8 +37,8 @@ const CAPortal = () => {
                         <div className="w-3/12 hidden sm:flex">
                             <img src={CAPortal_Astro1} alt="Astronaut 1 img"/>
                         </div>
-                        <div className="sm:w-9/12">
-                            <div className="flex flex-col gap-14 font-cM">
+                        <div className="sm:w-9/12 mx-auto">
+                            <div className="flex flex-col gap-14 font-cM text-center sm:text-left">
                                 <p className="text-4xl">What is <span className="text-[#5F43B2]">CA Portal?</span></p>
                                 <p className="font-cR">The  <span className="text-[#5F43B2] font-cM">Goonj Campus Ambassador Program</span> is your chance to be a key player in our college cultural fest! 
                                     As an ambassador, you will spread the word, boost participation, and create a buzz about Goonj. 
@@ -61,11 +61,11 @@ const CAPortal = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-3/12">
+                        <div className="w-3/12 hidden sm:flex">
                             <img src={CAPortal_Astro2} alt="Astronaut 2 img" />
                         </div>
                     </div>
-                    <div className="font-cM w-10/12 flex flex-col justify-center items-center mx-auto">
+                    <div className="font-cM w-full flex flex-col justify-center items-center mx-auto ">
                         
                     <p className="text-4xl my-10">Perks</p>
                         
@@ -75,7 +75,7 @@ const CAPortal = () => {
                                 <p>  <span className="text-[#5F43B2]">Free</span> Goonj  <span className="text-[#5F43B2]">T-shirt</span></p>
                             </div>
 
-                            <div className="w-1/4">
+                            <div className="w-1/4 hidden md:flex">
                                 <img src={CAPortal_Astro3} alt="Astronaut 3 img"  />
                             </div>
 
