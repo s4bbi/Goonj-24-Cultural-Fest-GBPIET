@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Header from '../src/components/Header.jsx'
 import EventDetail from "../src/Pages/EventDetail.jsx"
-import Footer from "./components/Footer.jsx"
+import Footer from "../src/components/Footer.jsx"
 import HomePage from '../src/Pages/HomePage.jsx'
 import LoginPage from '../src/Pages/LoginPage.jsx'
 import Events from '../src/Pages/Events.jsx'

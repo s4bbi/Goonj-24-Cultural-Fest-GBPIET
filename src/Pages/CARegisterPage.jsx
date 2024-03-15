@@ -13,14 +13,14 @@ const CARegisterPage = () => {
         </div>
         <div className='flex justify-between px-12 py-10'>
           <div className='w-[500px] md:w-[770px] h-[800px] md:h-[500px] rounded-3xl bg-cover bg-center bg-no-repeat text-white b-1 -my-6 md:mx-10' style={{backgroundImage: "url('/src/assets/Images/LoginBG.png')"}}>
-            <div className='p-10 absolute'>
+            <div className='p-12 absolute'>
               <div className='flex flex-col justify-between md:flex-row md:gap-12'>
                 <div>
                   <div className='text-white pb-3'>
                     <h1>Your name</h1>
                   </div>
                   <div>
-                    <input type='text' placeholder='Your Name' className='text-white border-white rounded-md py-4 px-4 text-start bg-[#5f43b2] w-80'></input>
+                    <input type='text' placeholder='Your Name' className='text-white border-white rounded-md py-4 px-4 text-start bg-[#5f43b2] w-72 md:w-[320px]'></input>
                   </div>
                 </div>
                 <div>
@@ -28,7 +28,7 @@ const CARegisterPage = () => {
                     <h1>Email Id</h1>
                   </div>
                   <div>
-                    <input type='text' placeholder='Email Id' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-80'></input>
+                    <input type='text' placeholder='Email Id' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-72 md:w-[320px]'></input>
                   </div>
                 </div>
               </div>
@@ -38,14 +38,14 @@ const CARegisterPage = () => {
                     <h1>Your Phone Number</h1>
                   </div>
                   <div>
-                    <input type='text' placeholder='xxxxxxxxxx' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-80'></input>
+                    <input type='text' placeholder='xxxxxxxxxx' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-72 md:w-[320px]'></input>
                   </div>
                 </div>
                 <div>
                   <div className='text-white py-3'>
                     <h1>Choose State</h1>
                   </div>
-                  <select name='College City' className='bg-[#5f43b2]  rounded-lg  w-80 py-4 p-4 px-2 text-start'>
+                  <select name='College City' className='bg-[#5f43b2]  rounded-lg  w-72 md:w-[320px] py-4 p-4 px-2 text-start'>
                     <option value='xx'>Uttarakhand</option>
                     <option value='xx'>xx</option>
                     <option value='xx'>xx</option>
@@ -58,7 +58,7 @@ const CARegisterPage = () => {
                   <div className='text-white pb-3'>
                     <h1>College City</h1>
                   </div>
-                  <select name='College City' className='bg-[#5f43b2] px-3 rounded-lg  w-80 py-4 text-start'>
+                  <select name='College City' className='bg-[#5f43b2] px-3 rounded-lg  w-72 md:w-[320px] py-4 text-start'>
                     <option value='xx'> Choose City</option>
                     <option value='xx'>xx</option>
                     <option value='xx'>xx</option>
@@ -69,7 +69,7 @@ const CARegisterPage = () => {
                   <div className='text-white text-start pb-3'>
                     <h1>College Name</h1>
                   </div>
-                  <select placeholder='Choose State' name='' id='' className='bg-[#5f43b2] bg-opacity-[0.8] border text-white  w-80  p-4  rounded-xl text-start'>
+                  <select placeholder='Choose State' name='' id='' className='bg-[#5f43b2] bg-opacity-[0.8] border text-white w-72 md:w-[320px]  p-4  rounded-xl text-start'>
                     <option value='' className='bg-[#5f43b2] text-white '>
                       Choose Name
                     </option>
@@ -86,10 +86,12 @@ const CARegisterPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className='sm:h-96 hidden lg:block lg:-my-32'>
+       
+      
+      <div className='sm:h-96 hidden lg:block lg:-my-32 lg:-mx-10'>
         <img src={aerocraft} className=''></img>
+      </div>
+      </div>
       </div>
     </div>
   );
