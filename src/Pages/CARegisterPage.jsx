@@ -1,6 +1,4 @@
-import imgHome from '../assets/Images/Events_BG.webp';
 import aerocraft from '../assets/Images/Registration_Rocket.webp';
-import planet from '../assets/Images/CAPortal_Globe.webp';
 
 const CARegisterPage = () => {
   return (
