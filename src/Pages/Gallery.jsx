@@ -25,7 +25,7 @@ import Img22 from "../assets/Images/Gallery_Images/22.webp";
 const Gallery = () => {
     return (
         <div className="bg-black text-white">
-            <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
+            <div className="flex flex-col gap-10 items-center justify-center w-[100%] h-screen sm:w-full absolute z-10">
                 <h1 className="font-cuda text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 3xl:text-9xl">
                     Gallery
                 </h1>            
@@ -51,75 +51,75 @@ const Gallery = () => {
                 <div className="sm:w-[90%] w-[95%] mx-auto mt-10 sm:py-16">
                     <img src={Img4} className="object-cover" alt=""/>
                 </div>
-                <div className="flex p-16 gap-14">
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 sm:px-10 py-10">
                     <div>
-                        <img src={Img5} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img5} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px] h-[220px] rounded-xl"/>
                     </div>
                     <div>
-                        <img src={Img6} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img6} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px]"/>
                     </div>
                     <div>
-                        <img src={Img7} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
-                    </div>
-
-                </div>
-                <div className="flex gap-14 p-16">
-                    <div>
-                        <img src={Img8} className="object-cover -my-20 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
-                    </div>
-                    <div>
-                        <img src={Img9} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
-                    </div>
-                    <div>
-                        <img src={Img10} className="object-cover -my-20 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img7} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px]"/>
                     </div>
 
                 </div>
-                <div className="flex gap-14 p-16 ">
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 sm:px-10 py-10 ">
                     <div>
-                        <img src={Img11} className="object-cover  ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img8} className="object-cover -my-20 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px] sm:py-10 py-10"/>
                     </div>
                     <div>
-                        <img src={Img12} className="object-cover  ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img9} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px]"/>
+                    </div>
+                    <div>
+                        <img src={Img10} className="object-cover -my-20 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px] sm:py-10 py-10"/>
+                    </div>
+
+                </div>
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 sm:px-10 py-3">
+                    <div>
+                        <img src={Img11} className="object-cover  ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[430px] sm:h-[650px] sm:py-10 h-[250px] rounded-lg sm:w-[680px]"/>
+                    </div>
+                    <div>
+                        <img src={Img12} className="object-cover  ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl w-[550px] sm:h-[650px] sm:py-10 py-10 rounded-lg sm:w-"/>
                     </div>
                 </div>
-                <div className="flex gap-14 p-16 ">
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 sm:px-10 py-12">
                     <div>
-                        <img src={Img13} className="object-cover -mt-10 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img13} className="object-cover -mt-10 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl pb-32 w-[400px] sm:h-[650px] sm:py-10  rounded-lg py-8"/>
                     </div>
                     <div>
-                        <img src={Img14} className="object-cover -mt-60 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/> 
+                        <img src={Img14} className="object-cover -mt-10 ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl w-[320px] sm:h-[650px] sm:py-10 h-[250px] rounded-lg "/> 
                     </div>
                 </div>
                 <div>
-                    <div className="px-52 p-16">
-                        <img src={Img15} className="onject-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                    <div className="sm:w-[90%] w-[95%] mx-auto mt-2 sm:py-16">
+                        <img src={Img15} className="onject-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-2xl "/>
                     </div>
                 </div>
-                <div className="flex gap-14 p-16">
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 sm:px-10 py-10 ">
                     <div>
-                        <img src={Img16} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img16} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl w-[550px] sm:h-[650px] h-[220px] rounded-xl"/>
                     </div>
                     <div>
-                        <img src={Img17} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img17} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl w-[550px] sm:h-[650px] h-[220px] rounded-xl"/>
                     </div>
                     <div>
-                        <img src={Img18} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img18} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl w-[550px] sm:h-[650px] h-[220px] rounded-xl"/>
                     </div>
 
                 </div>
-                <div className="px-52 p-16">
+                <div className="sm:w-[90%] w-[95%] mx-auto mt-10 sm:py-16">
                     <img src={Img19} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
                 </div>
-                <div className="px-52 py-16">
+                <div className="sm:w-[90%] w-[95%] mx-auto mt-10 sm:py-16">
                     <img src={Img20} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
                 </div>
-                <div className="flex gap-14 p-16">
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 sm:px-10 py-3">
                     <div>
-                        <img src={Img21} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img21} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl w-[430px] sm:h-[650px] sm:py-10  rounded-lg sm:w-[680px]"/>
                     </div>
                     <div>
-                        <img src={Img22} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl"/>
+                        <img src={Img22} className="object-cover ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl w-[650px] sm:h-[650px] sm:py-10 py-10 rounded-lg "/>
                     </div>
                 </div>
                 <div className="p-16">
