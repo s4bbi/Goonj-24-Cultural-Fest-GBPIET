@@ -8,7 +8,7 @@ import fbIcon from "../assets/Images/facebookIcon.png"
 const Footer = () => {
   return (
     <div className="px-4 bg-EventBG font-cM text-lg md:px-6">
-      <div className="w-full bg-[url('src/assets/Images/Moon_Img.webp')] bg-right p-4 md:p-6 bg-cover object-contain">
+      <div className="w-full p-4 md:p-6 bg-moonImg bg-cover object-contain">
         <div className="text-white flex flex-col md:flex-row justify-between items-start">
           <div className="mb-4 md:mb-0 text-center">
             <p>

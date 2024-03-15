@@ -21,12 +21,12 @@ const HomePage = () => {
                     <div className="">
                         <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
                     </div>    
-                    <div className="flex justify-end text-sm sm:text-2xl sm:absolute sm:mt-[450px] sm:ml-[780px] ">
-                        <h1 className="font-cM text-white  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
+                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56">
+                        <h1 className="font-cM text-white w-fit  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
                     </div>
                 </div>    
                 <div>
-                    <video src={vidHome} autoPlay muted loop className="w-screen h-screen object-cover"></video>
+                    <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>
                 </div>
             </div>
             <div className="bg-EventBG py-4 w-full h-full">
@@ -42,7 +42,7 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-end text-white mx-72  sm:pt-10">
+                        <div className="flex justify-end text-white mx-72 sm:pt-10">
                             <Link to="/gallery">
                                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                                     <p>
@@ -89,7 +89,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="py-10">
-                        <img src={orbitHome} className="w-full"/>
+                        <img src={orbitHome} clacssName="w-full"/>
                     </div>
                 </div>
                 <div>
