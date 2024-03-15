@@ -8,21 +8,21 @@ import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
 import { Link } from "react-router-dom"
-import saturnimage from  "../assets/Images/Home_Saturn_Img.webp"
+import saturnImage from  "../assets/Images/Home_Saturn_Img.webp"
 
 const HomePage = () => {
     return (
         <div>
             <div >
-                <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-[100%] px-8 mx-auto">
-                    <div className="font-cM text-white text-left text-sm  sm:text-3xl mx-12">
-                        <h1 className=" sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
+                <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
+                    <div className="font-cM text-white text-left text-sm sm:text-3xl sm:pb-16 ml-16 sm:ml-0">
+                        <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
                     </div>
                     <div className="">
-                        <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
+                        <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center">GOONJ 24</h1>
                     </div>    
-                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56">
-                        <h1 className="font-cM text-white w-fit  ">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
+                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56 sm:pt-28 mr-16 sm:mr-0">
+                        <h1 className="font-cM text-white w-fit">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
                     </div>
                 </div>    
                 <div>
@@ -89,7 +89,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="py-10">
-                        <img src={orbitHome} clacssName="w-full"/>
+                        <img src={orbitHome} className="w-full"/>
                     </div>
                 </div>
                 <div>
@@ -108,7 +108,7 @@ const HomePage = () => {
                             </div>
                             </div>
                             <div className="flex justify-center items-center pt-12 ">
-                                <img src={saturnimage} className="sm:w-[450px] w-56 absolute mt-8 hidden sm:block"></img>
+                                <img src={saturnImage} className="sm:w-[450px] w-56 absolute mt-8 hidden sm:block"></img>
                             </div>
                            <div className="flex flex-col pt-10 sm:pt-0">
                              <div className="flex flex-row-reverse w-full">

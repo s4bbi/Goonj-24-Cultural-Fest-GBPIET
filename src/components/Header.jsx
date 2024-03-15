@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../index.css';
 import goonjLogo from "../assets/goonjLogo.png"
+import { RiHome2Line } from "react-icons/ri";
 
 const Header = () => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -14,7 +15,6 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-10 md:py-10">
             <div className="flex items-center font-cM text-xl">
                 <Link to="/"><img src={goonjLogo} className="flex mx-auto w-16" alt="Goonj Logo" /></Link>
-                <Link to="/"><h1 className="text-white hidden md:flex">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
             </div>
             <div className="flex items-center gap-3 md:hidden">
                 <div className="">
@@ -71,8 +71,9 @@ const Header = () => {
                         </div>
                         <div className="p-4">
                             <ul className="text-white">
-                                <li className="mb-4">
-                                    <Link to="/" onClick={toggleSidebar}>HOME</Link>
+                                <li className="mb-4 ">
+                                    <RiHome2Line />
+                                    <Link to="/" onClick={toggleSidebar}> HOME</Link>
                                 </li>
                                 <li className="mb-4">
                                     <Link to="/events" onClick={toggleSidebar}>EVENTS</Link>

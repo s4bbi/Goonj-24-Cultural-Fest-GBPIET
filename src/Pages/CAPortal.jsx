@@ -50,8 +50,8 @@ const CAPortal = () => {
                     </div>
 
                     <div className="flex justify-between py-10 items-center gap-16">
-                        <div className="w-7/12">
-                            <div className="flex flex-col gap-14 font-cM ">
+                        <div className="sm:w-9/12 mx-auto">
+                            <div className="flex flex-col gap-14 font-cM text-center sm:text-left">
                                 <p className="text-4xl">Why become a <span className="text-[#5F43B2]">Campus Ambassador?</span></p>
                                 <p className="font-cR">Elevate your college experience by becoming a <span className="text-[#5F43B2] font-cM">Campus Ambassador</span> for our cultural fest! 
                                     As an ambassador, you will be the catalyst for the fest s success, leading promotional efforts and shaping the events narrative. 
@@ -65,17 +65,15 @@ const CAPortal = () => {
                             <img src={CAPortal_Astro2} alt="Astronaut 2 img" />
                         </div>
                     </div>
-                    <div className="font-cM w-full flex flex-col justify-center items-center mx-auto ">
-                        
-                    <p className="text-4xl my-10">Perks</p>
-                        
-                        <div className="flex justify-center gap-14 mx-auto items-center">
+                    <div className="font-cM sm:w-full flex flex-col justify-center items-center mx-auto">
+                        <p className="text-3xl sm:text-5xl my-10">Perks</p>
+                        <div className="flex justify-center mx-auto items-center text-xl">
                             <div className="flex flex-col gap-20">
                                 <p> <span className="text-[#5F43B2]">Free Entry</span> for the Campus Ambassador on 15+ Participation. </p>
                                 <p>  <span className="text-[#5F43B2]">Free</span> Goonj  <span className="text-[#5F43B2]">T-shirt</span></p>
                             </div>
 
-                            <div className="w-1/4 hidden md:flex">
+                            <div className="sm:w-1/4 hidden md:flex">
                                 <img src={CAPortal_Astro3} alt="Astronaut 3 img"  />
                             </div>
 
@@ -85,7 +83,7 @@ const CAPortal = () => {
                         </div>
                     </div>
 
-                    <div className="font-cM text-xl sm:text-2xl lg:text-4xl flex flex-col justify-center py-36 items-center gap-5 text-center">
+                    <div className="font-cM text-xl sm:text-2xl flex flex-col justify-center py-36 items-center gap-5 text-center">
                         <p>WHAT ARE YOU WAITIN’ FOR?</p>
                         <p className="text-[#5F43B2]">REGISTER NOW!!</p>
                     </div>
