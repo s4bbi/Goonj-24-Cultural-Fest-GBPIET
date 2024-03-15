@@ -89,7 +89,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="py-10">
-                        <img src={orbitHome} className="w-full"/>
+                        <img src={orbitHome} clacssName="w-full"/>
                     </div>
                 </div>
                 <div>
