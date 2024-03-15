@@ -108,7 +108,7 @@ const HomePage = () => {
                             </div>
                             </div>
                             <div className="flex justify-center items-center pt-12 ">
-                                <img src={saturnimage} className="sm:w-[450px] w-56 absolute mt-8"></img>
+                                <img src={saturnimage} className="sm:w-[450px] w-56 absolute mt-8 hidden sm:block"></img>
                             </div>
                            <div className="flex flex-col pt-10 sm:pt-0">
                              <div className="flex flex-row-reverse w-full">
