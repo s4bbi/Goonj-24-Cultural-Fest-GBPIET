@@ -36,19 +36,19 @@ const Gallery = () => {
                     <source src={GalleryVid} type="video/webm" />
                 </video>
             </div>
-            <div className="bg-cover bg-center bg-no-repeat bg-EventBG py-0">
-                <div className="w-full flex gap-14 px-16 py-28">
+            <div className="bg-cover bg-center bg-no-repeat bg-EventBG py-1 ">
+                <div className="w-full flex gap-2 sm:gap-14 px-1 sm:py-10 ">
                     <div>
-                        <img src={Img1} className="object-cover w-[550px] h-[650px] rounded-lg bg-center ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl" alt="" />
+                        <img src={Img1} className="object-cover w-[550px] sm:h-[650px] rounded-lg bg-center ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl" alt="" />
                     </div>
                     <div>
-                        <img src={Img2} className="object-cover  w-[550px] h-[650px] rounded-lg bg-center ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl" alt="" />
+                        <img src={Img2} className="object-cover  w-[550px] sm:h-[650px] rounded-lg bg-center ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl" alt="" />
                     </div>
                     <div>
-                        <img src={Img3} className="object-cover  w-[550px] h-[650px] rounded-lg bg-center ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl" alt=""/>
+                        <img src={Img3} className="object-cover  w-[550px] sm:h-[650px] rounded-lg bg-center ease-in-out duration-200 hover:border-[4px] hover:scale-[1.05] border-[#5f43b2] hover:rounded-3xl" alt=""/>
                     </div>
                 </div>
-                <div className="w-[1000px] mx-auto py-16">
+                <div className="sm:w-[90%] w-[95%] mx-auto mt-10 sm:py-16">
                     <img src={Img4} className="object-cover" alt=""/>
                 </div>
                 <div className="flex p-16 gap-14">
