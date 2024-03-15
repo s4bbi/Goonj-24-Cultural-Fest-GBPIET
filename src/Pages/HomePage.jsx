@@ -13,10 +13,10 @@ import saturnimage from  "../assets/Images/Home_Saturn_Img.webp"
 const HomePage = () => {
     return (
         <div>
-            <div >
+            <div>
                 <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-96 px-12 mx-auto">
-                    <div className="font-cM text-white text-left text-xs  sm:text-3xl ">
-                        <h1 className=" sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
+                    <div className="font-cM text-white text-left text-xs sm:text-3xl ">
+                        <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
                     </div>
                     <div className="">
                         <h1 className="font-samarkan text-white text-[80px] md:text-[200px] lg:text-[320px] text-center ">GOONJ 24</h1>
@@ -26,7 +26,7 @@ const HomePage = () => {
                     </div>
                 </div>    
                 <div>
-                    <video src={vidHome} autoPlay muted loop className="w-screen h-screen object-cover"></video>
+                    <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>
                 </div>
             </div>
             <div className="bg-EventBG py-4 w-full h-full">
@@ -42,7 +42,7 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-end text-white mx-72  sm:pt-10">
+                        <div className="flex justify-end text-white mx-72 sm:pt-10">
                             <Link to="/gallery">
                                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                                     <p>
