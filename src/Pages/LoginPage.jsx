@@ -3,13 +3,13 @@ import LoginAstro from "../assets/Images/LoginAstronaut.png";
 
 const LoginPage = () => {
   return (
-    <div className="bg-EventBG h-screen flex">
-      <div className="flex flex-col justify-end w-5/12">
+    <div className="bg-EventBG h-fit flex justify-center">
+      <div className="hidden sm:flex flex-col justify-end w-5/12">
           <img src={LoginAstro} alt="Astronaut" className="w-9/12"/>
       </div>
-      <div className="w-6/12 my-24 mr-20 rounded-3xl bg-cover bg-center bg-no-repeat text-white " style={{ backgroundImage: "url('/src/assets/Images/LoginBG.png')" }}>
+      <div className="sm:w-6/12 my-24 sm:mr-20 mx-2 rounded-3xl bg-cover bg-center bg-no-repeat text-white bg-[#5f43b2] " style={{ backgroundImage: "url('/src/assets/Images/LoginBG.png')" }}>
         <h1 className="font-cuda text-3xl flex justify-center py-8">USER SIGNUP</h1>
-        <div className=" sm:mx-16">
+        <div className=" sm:mx-16 mx-2">
             <form action="">
                 <div className="flex justify-between">
                     <div className="flex flex-col mb-6 w-5/12">
@@ -64,7 +64,7 @@ const LoginPage = () => {
                         <input type="text" placeholder="CA Referral ID" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
                     </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center mb-5">
                     <button className="btn" type="submit">
                         <Link to="/profile">
                             Submit
