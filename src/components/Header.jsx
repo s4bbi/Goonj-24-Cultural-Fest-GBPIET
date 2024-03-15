@@ -60,8 +60,8 @@ const Header = () => {
                 </ul>
             </div>
             {showSidebar && (
-                <div className="fixed inset-0 z-30 bg-black bg-opacity-50 md:hidden">
-                    <div className="absolute top-0 right-0 h-screen w-64 bg-black shadow-lg">
+                <div className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden">
+                    <div className="absolute top-0 right-0 h-screen w-64 bg-EventBG shadow-lg">
                         <div className="flex justify-end p-4">
                             <button onClick={toggleSidebar} className="text-gray-600 hover:text-gray-800 focus:outline-none">
                                 <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -88,6 +88,11 @@ const Header = () => {
                                 </li>
                                 <li className="mb-4">
                                     <Link to="/caportal" onClick={toggleSidebar}>CA PORTAL</Link>
+                                </li>
+                                <li>
+                                <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 p-1 hover:bg-[#5c2ee3] font-cR">
+                                    <Link to="/login">LOGIN</Link>
+                                </button>
                                 </li>
                             </ul>
                         </div>
