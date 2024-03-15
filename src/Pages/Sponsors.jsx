@@ -4,7 +4,7 @@ const Sponsors = () => {
     return (
         <div className="bg-EventBG">
             <div className="relative flex items-center justify-center h-screen">
-                <div className="text-white z-30 md:text-[150px] font-cuda text-5xl ">
+                <div className="text-white z-30 md:text-[150px] font-cuda text-5xl drop-shadow-2xl ">
                     Sponsors
                 </div>
                 <video

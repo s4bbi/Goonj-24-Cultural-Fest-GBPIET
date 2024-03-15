@@ -19,7 +19,7 @@ const HomePage = () => {
                         <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
                     </div>
                     <div className="">
-                        <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center">GOONJ 24</h1>
+                        <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center drop-shadow-2xl">GOONJ 24</h1>
                     </div>    
                     <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56 sm:pt-28 mr-16 sm:mr-0">
                         <h1 className="font-cM text-white w-fit">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
