@@ -10,10 +10,12 @@ const Footer = () => {
     <div className="px-4 bg-EventBG font-cM text-lg md:px-6">
       <div className="w-full bg-[url('src/assets/Images/Moon_Img.webp')] bg-right p-4 md:p-6 bg-cover object-contain">
         <div className="text-white flex flex-col md:flex-row justify-between items-start">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-4 md:mb-0 text-center">
+            <p>
             GOONJ 20<span className="text-violet-700">24</span>
+            </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-10 font-cM text-wider">
+          <div className="flex md:flex-row gap-4 md:gap-10 font-cM text-wider">
             <div>
               <h1>
                 <Link to="/events">Events</Link>

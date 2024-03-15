@@ -11,13 +11,18 @@ const Header = () => {
     };
 
     return (
-        <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-20 md:px-10 md:py-10">
+        <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-10 md:py-10">
             <div className="flex items-center font-cM text-xl">
                 <Link to="/"><img src={goonjLogo} className="flex mx-auto w-16" alt="Goonj Logo" /></Link>
                 <Link to="/"><h1 className="text-white hidden md:flex">GOONJ<span className='text-[#5f43b2]'>'24</span></h1></Link>
             </div>
-            <div className="flex items-center md:hidden">
-                <button onClick={toggleSidebar} className="text-white focus:outline-none mr-4">
+            <div className="flex items-center gap-3 md:hidden">
+                <div className="">
+                    <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 py-1 px-1 hover:bg-[#5c2ee3] font-cM">
+                        <Link to="/login">LOGIN</Link>
+                    </button>
+                </div>
+                <button onClick={toggleSidebar} className="text-white focus:outline-none">
                     <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                         {showSidebar ? (
                             <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
@@ -26,11 +31,6 @@ const Header = () => {
                         )}
                     </svg>
                 </button>
-                <div className="">
-                    <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 py-1 px-1 hover:bg-[#5c2ee3] font-cM">
-                        <Link to="/login">LOGIN</Link>
-                    </button>
-                </div>
             </div>
             <div className="hidden md:flex">
                 <ul className="flex justify-between text-center gap-6 text-white text-xl">
@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden">
                     <div className="absolute top-0 right-0 h-screen w-64 bg-EventBG shadow-lg">
                         <div className="flex justify-end p-4">
-                            <button onClick={toggleSidebar} className="text-gray-600 hover:text-gray-800 focus:outline-none">
+                            <button onClick={toggleSidebar} className="text-white hover:text-gray-800 focus:outline-none">
                                 <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                                     <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
                                 </svg>
