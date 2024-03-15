@@ -26,7 +26,7 @@ const HomePage = () => {
                     </div>
                 </div>    
                 <div>
-                    <video src={vidHome} autoPlay muted loop className="w-screen h-screen object-cover"></video>
+                    <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>
                 </div>
             </div>
             <div className="bg-EventBG py-4 w-full h-full">
@@ -42,7 +42,7 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-end text-white mx-72  sm:pt-10">
+                        <div className="flex justify-end text-white mx-72 sm:pt-10">
                             <Link to="/gallery">
                                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                                     <p>
