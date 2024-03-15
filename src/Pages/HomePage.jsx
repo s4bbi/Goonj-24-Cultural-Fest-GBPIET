@@ -8,6 +8,7 @@ import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
 import { Link } from "react-router-dom"
+import saturnimage from  "../assets/Images/Home_Saturn_Img.webp"
 
 const HomePage = () => {
     return (
@@ -107,7 +108,7 @@ const HomePage = () => {
                             </div>
                             </div>
                             <div className="flex justify-center items-center p-4">
-                                <img src="src/assets/Images/Home_Saturn_Img.webp" className="sm:w-[450px] w-56 absolute mt-8"></img>
+                                <img src={saturnimage} className="sm:w-[450px] w-56 absolute mt-8"></img>
                             </div>
                            <div className="flex flex-col pt-10 sm:pt-0">
                              <div className="flex flex-row-reverse w-full">
