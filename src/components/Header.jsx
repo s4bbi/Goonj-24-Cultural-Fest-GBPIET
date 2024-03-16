@@ -71,8 +71,8 @@ const Header = () => {
                         </div>
                         <div className="p-4">
                             <ul className="text-white">
-                                <li className="mb-4 ">
-                                    <RiHome2Line />
+                                <li className="mb-4 flex gap-2">
+                                    <RiHome2Line className="mt-1"/>
                                     <Link to="/" onClick={toggleSidebar}> HOME</Link>
                                 </li>
                                 <li className="mb-4">
