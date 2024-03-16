@@ -3,13 +3,13 @@ import LoginAstro from "../assets/Images/LoginAstronaut.png";
 
 const LoginPage = () => {
   return (
-    <div className="bg-EventBG h-fit flex justify-center">
+    <div className="bg-EventBG h-fit flex justify-center pt-8">
       <div className="hidden sm:flex flex-col justify-end w-5/12">
           <img src={LoginAstro} alt="Astronaut" className="w-9/12"/>
       </div>
       <div className="sm:w-6/12 my-24 sm:mr-20 mx-2 rounded-3xl bg-cover bg-center bg-no-repeat text-white  bg-LoginBG">
         <h1 className="font-cuda text-3xl flex justify-center py-8">USER SIGNUP</h1>
-        <div className=" sm:mx-16 mx-2">
+        <div className="sm:mx-16 mx-2">
             <form action="">
                 <div className="flex justify-between">
                     <div className="flex flex-col mb-6 w-5/12">

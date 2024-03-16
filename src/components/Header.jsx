@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../index.css';
 import goonjLogo from "../assets/goonjLogo.png"
+import { BsRocketTakeoff } from "react-icons/bs";
 import { RiHome2Line } from "react-icons/ri";
+import { FaRegImages } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
+import { FaUserTie } from "react-icons/fa";
+import { FaDollarSign } from "react-icons/fa";
 
 const Header = () => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -18,8 +24,9 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3 md:hidden">
                 <div className="">
-                    <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 py-1 px-1 hover:bg-[#5c2ee3] font-cM">
-                        <Link to="/login">LOGIN</Link>
+                    <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 hover:bg-[#5c2ee3] font-cM">
+                        <Link to="/login">LOGIN </Link>
+                        <BsRocketTakeoff className="mt-1"/>
                     </button>
                 </div>
                 <button onClick={toggleSidebar} className="text-white focus:outline-none">
@@ -53,8 +60,9 @@ const Header = () => {
                         <Link to="/caportal">CA PORTAL</Link>
                     </li>
                     <div className="">
-                        <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 px-1 hover:bg-[#5c2ee3] font-cM">
-                            <Link to="/login">LOGIN</Link>
+                        <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 hover:bg-[#5c2ee3] font-cM text-lg">
+                            <Link to="/login">LOGIN </Link>
+                            <BsRocketTakeoff className="mt-1"/>
                         </button>
                     </div>
                 </ul>
@@ -71,28 +79,34 @@ const Header = () => {
                         </div>
                         <div className="p-4">
                             <ul className="text-white">
-                                <li className="mb-4 flex gap-2">
+                                <li className="mb-4 flex gap-3">
                                     <RiHome2Line className="mt-1"/>
                                     <Link to="/" onClick={toggleSidebar}> HOME</Link>
                                 </li>
-                                <li className="mb-4">
+                                <li className="mb-4 flex gap-3">
+                                    <FaCalendarCheck className="mt-1"/>
                                     <Link to="/events" onClick={toggleSidebar}>EVENTS</Link>
                                 </li>
-                                <li className="mb-4">
+                                <li className="mb-4 flex gap-3">
+                                    <FaRegImages className="mt-1"/>
                                     <Link to="/gallery" onClick={toggleSidebar}>GALLERY</Link>
                                 </li>
-                                <li className="mb-4">
+                                <li className="mb-4 flex gap-3">
+                                    <FaDollarSign className="mt-1"/>
                                     <Link to="/sponsors" onClick={toggleSidebar}>SPONSORS</Link>
                                 </li>
-                                <li className="mb-4">
+                                <li className="mb-4 flex gap-3">
+                                    <FaUsers className="mt-1"/>
                                     <Link to="/teams" onClick={toggleSidebar}>TEAMS</Link>
                                 </li>
-                                <li className="mb-4">
+                                <li className="mb-4 flex gap-3">
+                                    <FaUserTie className="mt-1"/>
                                     <Link to="/caportal" onClick={toggleSidebar}>CA PORTAL</Link>
                                 </li>
                                 <li>
-                                <button type="button" className="bg-[#7a59df] text-white rounded-3xl w-24 p-1 hover:bg-[#5c2ee3] font-cR">
-                                    <Link to="/login">LOGIN</Link>
+                                <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 p-1 hover:bg-[#5c2ee3] font-cR">
+                                    <Link to="/login">LOGIN </Link>
+                                    <BsRocketTakeoff className="mt-1"/>
                                 </button>
                                 </li>
                             </ul>
