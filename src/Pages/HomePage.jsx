@@ -32,7 +32,7 @@ const HomePage = () => {
             <div className="bg-EventBG py-12 w-full h-full">
                 <div>
                     <div className="absolute w-full font-cSB">
-                        <div className="flex text-white sm:mx-44 ml-5 pt-1  sm:pt-4">
+                        <div className="flex text-white sm:mx-44 ml-5 pt-1 sm:pt-4">
                             <Link to="/events">
                                 <div className="flex flex-col items-center sm:text-2xl text-sm">
                                     <p>
@@ -52,7 +52,7 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex text-white sm:mx-64 sm:pt-44 ml-16 -mt-16 sm:mt-0">
+                        <div className="flex text-white sm:mx-64 sm:pt-44 ml-16 sm:mt-0">
                             <Link to="/sponsors">
                                 <div className="flex flex-col items-center sm:text-2xl text-sm">
                                     <p>
@@ -62,9 +62,9 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white mt-20 sm:mt-0">
-                            <div className="flex flex-col items-center text-2xl ">
-                                <video src={orbitSun} autoPlay muted loop className="sm:w-28 w-16" ></video>
+                        <div className="flex justify-center text-white sm:mt-0">
+                            <div className="flex flex-col items-center text-2xl w-1/2">
+                                <video src={orbitSun} autoPlay muted loop className="sm:w-28 w-12" ></video>
                             </div>
                         </div>
                         <div className="flex justify-end text-white sm:mx-40 sm:pt-36 sm:mt-0">
@@ -77,7 +77,7 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white   sm:pt-44">
+                        <div className="flex justify-center text-white sm:pt-44">
                             <Link to="/caportal">
                                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                                     <p>

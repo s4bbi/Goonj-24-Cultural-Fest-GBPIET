@@ -49,7 +49,7 @@ const CAPortal = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-between py-10 items-center gap-16">
+                    <div className="div2 flex justify-between py-10 items-center gap-16">
                         <div className="sm:w-9/12 mx-auto">
                             <div className="flex flex-col gap-14 font-cM text-center sm:text-left">
                                 <p className="text-4xl">Why become a <span className="text-[#5F43B2]">Campus Ambassador?</span></p>
