@@ -54,7 +54,7 @@ const HomePage = () => {
                         </div>
                         <div className="flex text-white sm:mx-64 sm:pt-44 ml-16 sm:mt-0">
                             <Link to="/sponsors">
-                                <div className="flex flex-col items-center sm:text-2xl text-sm">
+                                <div className="flex flex-col items-center sm:text-2xl text-sm -mt-5 sm:-mt-0">
                                     <p>
                                         SPONSORS
                                     </p>
