@@ -1,6 +1,7 @@
 import EventVid from "../assets/Videos/EventsVid.webm";
 import EventShowCase from "../components/EventsShowCase.jsx";
 import {data} from "../data/dummydata.js"
+
 const Events = () => {
   console.log(data)
   return (

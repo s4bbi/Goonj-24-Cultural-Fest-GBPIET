@@ -59,12 +59,10 @@ const Header = () => {
                     <li>
                         <Link to="/caportal">CA PORTAL</Link>
                     </li>
-                    <div className="">
                         <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 hover:bg-[#5c2ee3] font-cM text-lg">
                             <Link to="/login">LOGIN </Link>
                             <BsRocketTakeoff className="mt-1"/>
                         </button>
-                    </div>
                 </ul>
             </div>
             {showSidebar && (

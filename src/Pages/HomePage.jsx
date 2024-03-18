@@ -10,12 +10,13 @@ import orbitSun from "../assets/Videos/orbitSun.webm"
 import { Link } from "react-router-dom"
 import saturnImage from  "../assets/Images/Home_Saturn_Img.webp"
 
+
 const HomePage = () => {
     return (
         <div>
             <div >
                 <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
-                    <div className="font-cM text-white text-left text-sm sm:text-3xl sm:pb-16 ml-16 sm:ml-0">
+                    <div className="font-cM text-white text-center text-sm sm:text-3xl sm:pb-16 ml-16 sm:ml-0">
                         <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
                     </div>
                     <div className="">
@@ -64,7 +65,7 @@ const HomePage = () => {
                         </div>
                         <div className="flex justify-center text-white sm:mt-0">
                             <div className="flex flex-col items-center text-2xl w-1/2">
-                                <video src={orbitSun} autoPlay muted loop className="sm:w-28 w-12" ></video>
+                                <video src={orbitSun} autoPlay muted loop className="sm:w-20 w-12" ></video>
                             </div>
                         </div>
                         <div className="flex justify-end text-white sm:mx-40 sm:pt-36 sm:mt-0">

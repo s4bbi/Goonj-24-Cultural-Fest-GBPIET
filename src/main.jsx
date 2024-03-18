@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Header from '../src/components/Header.jsx'
@@ -13,13 +13,14 @@ import CAPortal from '../src/Pages/CAPortal.jsx'
 import Teams from '../src/Pages/Teams.jsx'
 import Profile from '../src/Pages/Profile.jsx'
 import CARegisterPage from './Pages/CARegisterPage.jsx'
+import Loader from './components/Loader.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 const AppComponent = () => {
   return (
     <div className='selection:bg-[#5F43B2]'>
       <Header />
-      <Outlet />
+      <Outlet />  
       <Footer />
     </div>
   )
@@ -32,7 +33,10 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomePage />
+        element: 
+          <Suspense fallback={<Loader/>} >
+            <HomePage />
+          </Suspense>
       },
       {
         path: '/events',
@@ -76,6 +80,6 @@ const appRouter = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={appRouter} />
+    <RouterProvider router={appRouter} />  
   </React.StrictMode>,
 )

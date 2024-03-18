@@ -9,7 +9,7 @@ const CAPortal = () => {
     return (
         <div className="bg-black text-white">
             <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
-                <h1 className="font-cuda text-white text-5xl sm:text-6xl md:text-7xl drop-shadow-2xl">
+                <h1 className="text-white z-30 md:text-[150px] font-cuda text-5xl drop-shadow-2xl">
                     CA Portal
                 </h1>
                 <button className="btn" type="button">
@@ -31,7 +31,6 @@ const CAPortal = () => {
                 </video>
             </div>
             <div className="bg-cover bg-center bg-no-repeat h-full bg-EventBG">
-
                 <div className="mx-20">
                     <div className="flex justify-between pt-20 pb-10 items-center gap-24">
                         <div className="w-3/12 hidden sm:flex">
@@ -49,7 +48,7 @@ const CAPortal = () => {
                         </div>
                     </div>
 
-                    <div className="div2 flex justify-between py-10 items-center gap-16">
+                    <div className="flex justify-between py-10 items-center gap-16">
                         <div className="sm:w-9/12 mx-auto">
                             <div className="flex flex-col gap-14 font-cM text-center sm:text-left">
                                 <p className="text-4xl">Why become a <span className="text-[#5F43B2]">Campus Ambassador?</span></p>
@@ -76,7 +75,6 @@ const CAPortal = () => {
                             <div className="sm:w-1/4 hidden md:flex">
                                 <img src={CAPortal_Astro3} alt="Astronaut 3 img"  />
                             </div>
-
                             <div className="text-right">
                                 <p> <span className="text-[#5F43B2]">Free Entry</span> to the Workshops conducted by our partners.</p>
                             </div>

@@ -18,6 +18,7 @@ export default {
         bg_image: "url('/src/assets/Images/Event_detail_bg.png')",
         moonImg: "url('src/assets/Images/Moon_Img.webp')",
         LoginBG: "url('/src/assets/Images/LoginBG.png')",
+        drama_skit: "url('/src/assets/Images/EventImages/drama_skit.png')",
       },
       
 

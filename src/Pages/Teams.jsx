@@ -17,7 +17,7 @@ const Teams = () => {
           Your browser does not support the video tag.
         </video>
         </div>
-        <div className="text-white md:flex w-screen text-lg md:text-[50px] py-10 font-cuda text-bold justify-center items-center md:mt-20 grid place-items-center ">
+        <div className="text-white md:flex w-full text-lg md:text-[50px] py-10 font-cuda text-bold justify-center items-center md:mt-20 grid place-items-center ">
             <div className="" >
                 DEV TEAM
             </div>
