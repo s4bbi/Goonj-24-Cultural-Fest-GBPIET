@@ -10,7 +10,7 @@ const CARegisterPage = () => {
           </h1>
         </div>
         <div className='flex justify-between px-12 py-10'>
-          <div className="w-[500px] md:w-[770px] h-[800px] md:h-[500px] rounded-3xl bg-cover bg-center bg-no-repeat text-white b-1 -my-6 md:mx-10 bg-[url('src/assets/Images/LoginBG.png')]">
+          <div className="w-[500px] md:w-[770px] h-[800px] md:h-[500px] rounded-3xl bg-cover bg-center bg-no-repeat text-white b-1 -my-6 md:mx-10 bg-LoginBG">
             <div className='p-12 absolute'>
               <div className='flex flex-col justify-between md:flex-row md:gap-12'>
                 <div>
