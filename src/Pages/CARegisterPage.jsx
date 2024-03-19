@@ -5,7 +5,7 @@ const CARegisterPage = () => {
     <div className='bg-EventBG w-screen h-full bg-cover bg-no-repeat'>
       <div className='p-2'>
         <div className='flex w-[40%] pt-24 mx-28'>
-          <h1 className='font-cuda text-white text-center text-4xl md:text-center md:w-50% -mx-10'>
+          <h1 className='font-cuda text-white text-center text-3xl md:text-center md:w-50% -mx-10 md:text-4xl md:ml-56'>
             Registration
           </h1>
         </div>
