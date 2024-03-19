@@ -18,7 +18,7 @@ const CARegisterPage = () => {
                     <h1>Your name</h1>
                   </div>
                   <div>
-                    <input type='text' placeholder='Your Name' className='text-white border-white rounded-md py-4 px-4 text-start bg-[#5f43b2] w-72 md:w-[320px]'></input>
+                    <input type='text' placeholder='Your Name' className='text-white border-white rounded-md py-4 px-4 text-start bg-[#5f43b2] w-56 md:w-[320px]'></input>
                   </div>
                 </div>
                 <div>
@@ -26,7 +26,7 @@ const CARegisterPage = () => {
                     <h1>Email Id</h1>
                   </div>
                   <div>
-                    <input type='text' placeholder='Email Id' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-72 md:w-[320px]'></input>
+                    <input type='text' placeholder='Email Id' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-56 md:w-[320px]'></input>
                   </div>
                 </div>
               </div>
@@ -36,14 +36,14 @@ const CARegisterPage = () => {
                     <h1>Your Phone Number</h1>
                   </div>
                   <div>
-                    <input type='text' placeholder='xxxxxxxxxx' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-72 md:w-[320px]'></input>
+                    <input type='text' placeholder='xxxxxxxxxx' className='text-white border-white rounded-md py-4 p-4 text-start bg-[#5f43b2] w-56 md:w-[320px]'></input>
                   </div>
                 </div>
                 <div>
                   <div className='text-white py-3'>
                     <h1>Choose State</h1>
                   </div>
-                  <select name='College City' className='bg-[#5f43b2]  rounded-lg  w-72 md:w-[320px] py-4 p-4 px-2 text-start'>
+                  <select name='College City' className='bg-[#5f43b2]  rounded-lg  w-56 md:w-[320px] py-4 p-4 px-2 text-start'>
                     <option value='xx'>Uttarakhand</option>
                     <option value='xx'>xx</option>
                     <option value='xx'>xx</option>
@@ -56,7 +56,7 @@ const CARegisterPage = () => {
                   <div className='text-white pb-3'>
                     <h1>College City</h1>
                   </div>
-                  <select name='College City' className='bg-[#5f43b2] px-3 rounded-lg  w-72 md:w-[320px] py-4 text-start'>
+                  <select name='College City' className='bg-[#5f43b2] px-3 rounded-lg  w-56 md:w-[320px] py-4 text-start'>
                     <option value='xx'> Choose City</option>
                     <option value='xx'>xx</option>
                     <option value='xx'>xx</option>
@@ -67,7 +67,7 @@ const CARegisterPage = () => {
                   <div className='text-white text-start pb-3'>
                     <h1>College Name</h1>
                   </div>
-                  <select placeholder='Choose State' name='' id='' className='bg-[#5f43b2] bg-opacity-[0.8] border text-white w-72 md:w-[320px]  p-4  rounded-xl text-start'>
+                  <select placeholder='Choose State' name='' id='' className='bg-[#5f43b2] bg-opacity-[0.8] border text-white w-56 md:w-[320px]  p-4  rounded-xl text-start'>
                     <option value='' className='bg-[#5f43b2] text-white '>
                       Choose Name
                     </option>
