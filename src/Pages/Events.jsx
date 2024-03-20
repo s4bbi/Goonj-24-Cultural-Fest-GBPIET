@@ -22,7 +22,7 @@ const Events = () => {
       </div>
       <div className="py-5 md:px-20 ">
         {data.map((item)=>(
-          <div key={item.id} className="px-10 md:py-4">
+          <div key={item.id} className="px-5 md:py-4">
             <EventShowCase item={item} />
            </div>
         ))}
