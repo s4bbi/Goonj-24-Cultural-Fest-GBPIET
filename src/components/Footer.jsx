@@ -4,6 +4,7 @@ import ytIcon from "../assets/Images/youtubeIcon.png"
 import igIcon from "../assets/Images/instagramIcon.png"
 import liIcon from "../assets/Images/linkedinIcon.png"
 import fbIcon from "../assets/Images/facebookIcon.png"
+import xIcon from "../assets/Images/twitterIcon.png"
 
 const Footer = () => {
   return (
@@ -57,28 +58,42 @@ const Footer = () => {
           </h1>
           <div className="flex gap-6 text-white">
             <h1>Connect with us on:</h1>
-            <link href="https://www.youtube.com/@OFFICIALSACGBPIET/" >
+            <Link to="https://www.youtube.com/@OFFICIALSACGBPIET/" >
               <img
                 src={ytIcon}
                 alt="YouTube"
                 className="h-6"
               />
-            </link>
-            <img
-              src={liIcon}
-              alt="LinkedIn"
-              className="h-6"
-            />
-            <img
-              src={igIcon}
-              alt="Instagram"
-              className="h-6"
-            />
-            <img
-              src={fbIcon}
-              alt="Facebook"
-              className="h-6"
-            />
+            </Link>
+            <Link  to="https://www.facebook.com/GBPIET/" >
+              <img
+                src={xIcon}
+                alt="Facebook"
+                className="h-6"
+              />
+            </Link>
+            <Link  to="https://www.instagram.com/sacgbpiet/" > 
+              <img
+                src={igIcon}
+                alt="Instagram"
+                className="h-6"
+              />
+            </Link>
+            <Link  to="https://www.linkedin.com/in/gbpiet-pauri-84579b1b5/?originalSubdomain=ins" >
+              <img
+                src={liIcon}
+                alt="LinkedIn"
+                className="h-6"
+              />
+            </Link>
+            <Link  to="https://www.facebook.com/GBPIET/" >
+              <img
+                src={fbIcon}
+                alt="Facebook"
+                className="h-6"
+              />
+            </Link>
+            
           </div>
         </div>
       </div>
