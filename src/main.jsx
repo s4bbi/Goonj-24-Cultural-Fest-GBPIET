@@ -63,7 +63,7 @@ const appRouter = createBrowserRouter([
         element: <LoginPage />
       },
       {
-        path: '/eventsDetail',
+        path: '/events/:id',
         element: <EventDetail />
       },
       {
