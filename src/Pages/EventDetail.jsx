@@ -35,7 +35,7 @@ const EventDetail = () => {
                     </ul>}
                     <div className="text-white  leading-7	">
                         <h1 className="text-sm md:text-2xl font-cR font-semibold my-5">GUIDELINES :</h1>
-                        <ul className="list-disc ml-8 md:ml-16 font-normal text-sm font-cR md:text-xl  text-white/55 text-justify">
+                        <ul className="list-disc ml-8 md:ml-16 font-normal text-xm font-cR md:text-xl  text-white/55 text-justify">
                             {eventDetail.guidelines.map((item)=>(
                                 <li>{
                                     item
