@@ -5,19 +5,19 @@ const CARegisterPage = () => {
     <div className='bg-EventBG w-screen h-full bg-cover bg-no-repeat'>
       <div className='p-2'>
         <div className='flex w-[40%] pt-24 mx-28'>
-          <h1 className='font-cuda text-white text-center text-3xl md:text-center md:w-50% -mx-10 md:text-4xl md:ml-56'>
+          <h1 className='font-cuda text-white text-center text-2xl md:text-center md:w-50% -mx-9 md:text-4xl md:ml-56'>
             Registration
           </h1>
         </div>
         <div className='flex justify-between px-12 py-10'>
-          <div className="w-[500px] md:w-[770px] h-[800px] md:h-[500px] rounded-3xl bg-cover bg-center bg-no-repeat text-white b-1 -my-6 md:mx-10 bg-LoginBG">
+          <div className="w-[550px] md:w-[770px] h-[800px] md:h-[500px] rounded-3xl bg-cover bg-center bg-no-repeat text-white b-1 -my-6 md:mx-10 bg-LoginBG -mx-3">
             <div className='p-12 absolute'>
               <div className='flex flex-col justify-between md:flex-row md:gap-12'>
                 <div>
                   <div className='text-white pb-3'>
                     <h1>Your name</h1>
                   </div>
-                  <div>
+                  <div className=''>
                     <input type='text' placeholder='Your Name' className='text-white border-white rounded-md py-4 px-4 text-start bg-[#5f43b2] w-56 md:w-[320px]'></input>
                   </div>
                 </div>
