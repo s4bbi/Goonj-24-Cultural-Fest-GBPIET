@@ -58,12 +58,6 @@ const LoginPage = () => {
                         </select>
                     </div>
                 </div>
-                <div className="flex justify-center mt-8">
-                    <div className="flex flex-col mb-6 w-5/12">
-                        <label className="font-cR mb-2 font-light text-sm">CA Referral ID</label>
-                        <input type="text" placeholder="CA Referral ID" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
-                    </div>
-                </div>
                 <div className="flex justify-center mb-5">
                     <button className="btn" type="submit">
                         <Link to="/profile">
