@@ -62,35 +62,35 @@ const Footer = () => {
               <img
                 src={ytIcon}
                 alt="YouTube"
-                className="h-4 sm:h-6"
+                className="w-full h-4 sm:h-6"
               />
             </Link>
             <Link  to="https://www.facebook.com/GBPIET/" >
               <img
                 src={xIcon}
                 alt="Facebook"
-                className="h-4 sm:h-6"
+                className="w-full h-4 sm:h-6"
               />
             </Link>
             <Link  to="https://www.instagram.com/sacgbpiet/" > 
               <img
                 src={igIcon}
                 alt="Instagram"
-                className="h-4 sm:h-6"
+                className="w-full h-4 sm:h-6"
               />
             </Link>
             <Link  to="https://www.linkedin.com/in/gbpiet-pauri-84579b1b5/?originalSubdomain=ins" >
               <img
                 src={liIcon}
                 alt="LinkedIn"
-                className="h-4 sm:h-6"
+                className="w-full h-4 sm:h-6"
               />
             </Link>
             <Link  to="https://www.facebook.com/GBPIET/" >
               <img
                 src={fbIcon}
                 alt="Facebook"
-                className="h-4 sm:h-6"
+                className="w-full h-4 sm:h-6"
               />
             </Link>
             
