@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-4">
-          <h1 className="text-white w-full md:w-4/12 pb-8 font-cR">
+          <h1 className="hidden sm:flex text-white w-full md:w-4/12 pb-8 font-cR">
             A dynamic cultural fest uniting traditions and modern expressions.
             Join us for a fusion of dance, music, art, and global flavours.
             Celebrate diversity, forge connections, and make lasting memories at
@@ -57,11 +57,13 @@ const Footer = () => {
           </h1>
           <div className="flex gap-6 text-white">
             <h1>Connect with us on:</h1>
-            <img
-              src={ytIcon}
-              alt="YouTube"
-              className="h-6"
-            />
+            <link href="https://www.youtube.com/@OFFICIALSACGBPIET/" >
+              <img
+                src={ytIcon}
+                alt="YouTube"
+                className="h-6"
+              />
+            </link>
             <img
               src={liIcon}
               alt="LinkedIn"
