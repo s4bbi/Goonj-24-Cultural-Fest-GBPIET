@@ -86,14 +86,6 @@ const Footer = () => {
                 className="w-full h-4 sm:h-6"
               />
             </Link>
-            <Link  to="https://www.facebook.com/GBPIET/" >
-              <img
-                src={fbIcon}
-                alt="Facebook"
-                className="w-full h-4 sm:h-6"
-              />
-            </Link>
-            
           </div>
         </div>
       </div>
