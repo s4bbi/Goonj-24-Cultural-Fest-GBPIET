@@ -5,26 +5,31 @@
 @font-face {
   font-family: Chillax-Medium;
   src: url("./assets/fonts/Chillax-Medium.otf") format(opentype);
+  font-display: optional;
 }
 
 @font-face {
   font-family: Chillax-Regular;
   src: url("./assets/fonts/Chillax-Regular.otf") format(opentype);
+  font-display: optional;
 }
 
 @font-face {
   font-family: Chillax-SemiBold;
   src: url("./assets/fonts/Chillax-Semibold.otf") format(opentype);
+  font-display: optional;
 }
 
 @font-face {
   font-family: CUDA;
   src: url("./assets/fonts/CUDA.otf") format(opentype);
+  font-display: optional;
 }
 
 @font-face {
   font-family: Samarkan;
   src: url("./assets/fonts/Samarkan.TTF") format(truetype);
+  font-display: optional;
 }
 
 .btn {

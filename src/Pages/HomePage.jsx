@@ -39,7 +39,7 @@ const HomePage = () => {
                                     <p>
                                         EVENTS
                                     </p>
-                                    <img src={EventsGlobe} className="w-20 sm:w-72 hover:scale-110 ease-in-out duration-200"/>
+                                    <img src={EventsGlobe} className="w-20 sm:w-72 hover:scale-110 ease-in-out duration-200" alt="Events Globe"/>
                                 </div>
                             </Link>
                         </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
                                     <p>
                                         GALLERY
                                     </p>
-                                    <img src={GalleryGlobe} className="w-16 sm:w-56 hover:scale-110 ease-in-out duration-200"/>
+                                    <img src={GalleryGlobe} className="w-16 sm:w-56 hover:scale-110 ease-in-out duration-200" alt="Gallery Globe"/>
                                 </div>
                             </Link>
                         </div>
@@ -59,7 +59,7 @@ const HomePage = () => {
                                     <p>
                                         SPONSORS
                                     </p>
-                                    <img src={SponsorsGlobe} className="sm:w-48 w-20 hover:scale-110 ease-in-out duration-200"/>
+                                    <img src={SponsorsGlobe} className="sm:w-48 w-20 hover:scale-110 ease-in-out duration-200" alt="Sponsors GLobe"/>
                                 </div>
                             </Link>
                         </div>
@@ -74,7 +74,7 @@ const HomePage = () => {
                                     <p>
                                         TEAMS
                                     </p>
-                                    <img src={TeamsGlobe} className="sm:w-80 w-20 hover:scale-110 ease-in-out duration-200"/>
+                                    <img src={TeamsGlobe} className="sm:w-80 w-20 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
                                 </div>
                             </Link>
                         </div>
@@ -84,13 +84,13 @@ const HomePage = () => {
                                     <p>
                                         CA PORTAL
                                     </p>
-                                    <img src={CAPortal_Globe} className="w-24 sm:w-64 hover:scale-110 ease-in-out duration-200"/>
+                                    <img src={CAPortal_Globe} className="w-24 sm:w-64 hover:scale-110 ease-in-out duration-200" alt="CAPortal Globe"/>
                                 </div>
                             </Link>
                         </div>
                     </div>
                     <div className="py-10">
-                        <img src={orbitHome} className="w-full"/>
+                        <img src={orbitHome} className="w-full" alt="Orbit Home"/>
                     </div>
                 </div>
                 <div>
@@ -102,18 +102,18 @@ const HomePage = () => {
                         <div className="font-cM text-sm sm:mx-16 sm:text-lg">
                             <div className="flex flex-col">
                             <div className="">
-                                <img src={AboutHome} className="w-20 sm:w-56"></img>
+                                <img src={AboutHome} className="w-20 sm:w-56" alt="About Home"></img>
                             </div>
                             <div className="border-l-2  border-[#5f43b2] pl-5 border-solid z-20 md:text-lg">
                                 <h1 className="sm:w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>", where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
                             </div>
                             </div>
                             <div className="flex justify-center items-center pt-10 ">
-                                <img src={saturnImage} className="sm:w-[450px] w-56 absolute mt-8 hidden sm:block"></img>
+                                <img src={saturnImage} className="sm:w-[450px] w-56 absolute mt-8 hidden sm:block" alt="Saturn Image"></img>
                             </div>
                            <div className="flex flex-col pt-10 sm:pt-0">
                              <div className="flex flex-row-reverse w-full">
-                                <img src={AboutHome} className="w-20 sm:w-56"/>
+                                <img src={AboutHome} className="w-20 sm:w-56" alt="About Home"/>
                                 </div>
                             <div className="border-r-2  border-[#5f43b2] pr-5 border-solid flex justify-end md:text-lg">
                                 <h1 className="sm:w-[38%] text-end"><span className="text-[#5f43b2] z-20">Goonj's</span> events are a high-spirited mix of dance, music, discussions, and global flavours. From thrilling competitions to artistic exhibitions, each moment is a burst of creativity and cultural celebration. Join us for a dynamic experience that transcends boundaries!</h1>
@@ -121,7 +121,7 @@ const HomePage = () => {
                             </div>
                             <div>
                             <div className="flex justify-start items-center pt-10 sm:pt-0">
-                                <img src={AboutHome} className="w-20 sm:w-56  "></img>
+                                <img src={AboutHome} className="w-20 sm:w-56" alt="About Home"></img>
                             </div>
                             <div className="border-l-2  border-[#5f43b2] pl-5 border-solid pt-2 flex md:text-lg">
                                 <h1 className="sm:w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>," where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>

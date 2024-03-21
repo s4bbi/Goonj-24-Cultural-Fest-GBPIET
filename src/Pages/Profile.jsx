@@ -10,7 +10,7 @@ const Profile = () => {
                 </div>
                 <div className="flex justify-center p-12 gap-9 font-cM ">
                     <div>
-                        <img src={astro} className="w-72 border-2 border-[#5f43b2] rounded-2xl"/>
+                        <img src={astro} className="w-72 border-2 border-[#5f43b2] rounded-2xl" alt="User Image"/>
                     </div>
                     <div className="flex justify-center md:flex
                     ">
