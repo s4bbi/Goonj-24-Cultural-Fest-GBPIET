@@ -3,7 +3,6 @@ import "../index.css";
 import ytIcon from "../assets/Images/youtubeIcon.png"
 import igIcon from "../assets/Images/instagramIcon.png"
 import liIcon from "../assets/Images/linkedinIcon.png"
-import fbIcon from "../assets/Images/facebookIcon.png"
 import xIcon from "../assets/Images/twitterIcon.png"
 
 const Footer = () => {
