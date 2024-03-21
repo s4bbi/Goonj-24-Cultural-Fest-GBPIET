@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <div className="px-4 bg-EventBG font-cM text-lg md:px-6">
       <div className="w-full p-4 md:p-6 bg-moonImg bg-cover object-contain">
-        <div className="text-white flex flex-col md:flex-row justify-between items-start">
-          <div className="mb-4 md:mb-0 text-center">
+        <div className="text-white flex flex-col md:flex-row justify-between">
+          <div className="mb-4 md:mb-0">
             <p>
             GOONJ 20<span className="text-violet-700">24</span>
             </p>
           </div>
-          <div className="flex md:flex-row gap-4 md:gap-10 font-cM text-wider">
+          <div className="flex gap-4 sm:gap-10 font-cM justify-between">
             <div>
               <h1>
                 <Link to="/events">Events</Link>
@@ -42,49 +42,43 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4">
-          <h1 className="hidden sm:flex text-white w-full md:w-4/12 pb-8 font-cR">
-            A dynamic cultural fest uniting traditions and modern expressions.
-            Join us for a fusion of dance, music, art, and global flavours.
-            Celebrate diversity, forge connections, and make lasting memories at
-            Goonj!
-          </h1>
-        </div>
-        <div className="border-b border-white border-[3px]"></div>
-        <div className="py-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-b border-white border-[3px] my-6"></div>
+        <div className=" flex flex-col md:flex-row justify-between items-center">
           <h1 className="text-white mb-4 md:mb-0">
             @Goonj 2024. All rights reserved
           </h1>
-          <div className="flex gap-6 text-white">
+          <div className="flex flex-col sm:flex gap-6 text-white ">
             <h1>Connect with us on:</h1>
-            <Link to="https://www.youtube.com/@OFFICIALSACGBPIET/" target="blank">
+           <div className="flex justify-between">
+           <Link to="https://www.youtube.com/@OFFICIALSACGBPIET/" target="blank">
               <img
                 src={ytIcon}
                 alt="YouTube"
-                className="w-full h-6"
+                className="h-6"
               />
             </Link>
             <Link  to="https://twitter.com/gbpietpauri" target="blank">
               <img
                 src={xIcon}
                 alt="X"
-                className="w-full h-6"
+                className="h-6"
               />
             </Link>
             <Link  to="https://www.instagram.com/sacgbpiet/" target="blank"> 
               <img
                 src={igIcon}
                 alt="Instagram"
-                className="w-full h-6"
+                className="h-6"
               />
             </Link>
             <Link  to="https://www.linkedin.com/in/gbpiet-pauri-84579b1b5/" target="blank">
               <img
                 src={liIcon}
                 alt="LinkedIn"
-                className="w-full h-6"
+                className="h-6"
               />
             </Link>
+           </div>
           </div>
         </div>
       </div>
