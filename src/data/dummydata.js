@@ -31,7 +31,7 @@ export const data = [
     Event:[
     {
     id:101,
-    name:"DRAMA/SKIT (Theme – India 2047)",
+    name:"DRAMA/SKIT (Theme: India 2047)",
     img : skitImage,
     decription:"A type of drama conflict in which members of each team will showcase their play based on the theme.",
     guidelines:["6 to 8 members are allowed for each team. If members less or exceeds points deduction will be there.","The content should be socially relevant and suitable for performance. No vulgarity or obscene should be there else it can lead to disqualification.","Use of props are allowed","Arrangement of props and outfits will be done by the team itself.","To enhance or highlight the drama use of music (instruments, singing) is allowed.","The drama should not exceed more than 7 minutes and 1 minute for stage clearance will be given. If time exceeded points deduction will be there.","if there is technical fault , extra time will be given accordingly."],
