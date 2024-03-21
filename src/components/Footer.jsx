@@ -58,32 +58,32 @@ const Footer = () => {
           </h1>
           <div className="flex gap-6 text-white">
             <h1>Connect with us on:</h1>
-            <Link to="https://www.youtube.com/@OFFICIALSACGBPIET/" >
+            <Link to="https://www.youtube.com/@OFFICIALSACGBPIET/" target="blank">
               <img
                 src={ytIcon}
                 alt="YouTube"
-                className="w-full h-4 sm:h-6"
+                className="w-full h-6"
               />
             </Link>
-            <Link  to="https://www.facebook.com/GBPIET/" >
+            <Link  to="https://twitter.com/gbpietpauri" target="blank">
               <img
                 src={xIcon}
-                alt="Facebook"
-                className="w-full h-4 sm:h-6"
+                alt="X"
+                className="w-full h-6"
               />
             </Link>
-            <Link  to="https://www.instagram.com/sacgbpiet/" > 
+            <Link  to="https://www.instagram.com/sacgbpiet/" target="blank"> 
               <img
                 src={igIcon}
                 alt="Instagram"
-                className="w-full h-4 sm:h-6"
+                className="w-full h-6"
               />
             </Link>
-            <Link  to="https://www.linkedin.com/in/gbpiet-pauri-84579b1b5/?originalSubdomain=ins" >
+            <Link  to="https://www.linkedin.com/in/gbpiet-pauri-84579b1b5/" target="blank">
               <img
                 src={liIcon}
                 alt="LinkedIn"
-                className="w-full h-4 sm:h-6"
+                className="w-full h-6"
               />
             </Link>
           </div>

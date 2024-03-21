@@ -62,8 +62,8 @@ const LoginPage = () => {
                     <button className="btn" type="submit">
                         <Link to="/profile">
                             Submit
-                            </Link>    
-                        </button>
+                        </Link>    
+                    </button>
                 </div>
             </form>
         </div>
