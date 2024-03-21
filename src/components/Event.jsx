@@ -1,5 +1,4 @@
 import { Link ,useNavigate} from "react-router-dom"
-import img from "../assets/Images/EventImages/nukkad.webp"
 const Event = (props) => {
    const navigate = useNavigate();
    console.log(props)

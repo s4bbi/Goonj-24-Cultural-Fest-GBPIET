@@ -1,6 +1,4 @@
-import planetImage from "../assets/Images/Dramaflict_planet.webp"
 import Event from "./Event";
-
 
 const EventShowCase = (item) => {
     console.log(item.item.Event)
