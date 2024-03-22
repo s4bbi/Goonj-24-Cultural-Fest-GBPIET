@@ -83,7 +83,7 @@ const CAPortal = () => {
 
                     <div className="font-cM text-xl sm:text-2xl flex flex-col justify-center py-36 items-center gap-5 text-center">
                         <p>WHAT ARE YOU WAITIN’ FOR?</p>
-                        <p className="text-[#5F43B2]">REGISTER NOW!!</p>
+                        <p className="text-[#5F43B2]"><a href="/caregister">REGISTER NOW!!</a></p>
                     </div>
                 
                 </div>

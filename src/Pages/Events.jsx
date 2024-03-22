@@ -20,7 +20,7 @@ const Events = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="py-5 md:px-20 ">
+      <div className="py-5 md:px-20 " style={{overflow:'hidden'}}>
         {data.map((item)=>(
           <div key={item.id} className="px-5 md:py-4">
             <EventShowCase item={item} />

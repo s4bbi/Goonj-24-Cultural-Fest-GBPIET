@@ -23,6 +23,8 @@ import qawalli from "../assets/Images/EventImages/qawalli.webp"
 import reel_mania from "../assets/Images/EventImages/reel_mania.webp"
 import singing from "../assets/Images/EventImages/singing.webp"
 import stepup from "../assets/Images/EventImages/stepup.webp"
+import openmic from "../assets/Images/EventImages/open_mic.webp"
+import esport from "../assets/Images/EventImages/e_sports.webp"
 export const data = [
     {
     id:1,
@@ -186,7 +188,7 @@ export const data = [
     {
         id:404,
         name:"BEATBOXING",
-        img:sanskriti,
+        img:openmic,
         description:"Make beats into something beautiful",
         topics:[],
         guidelines:[  "Beatboxer will be assigned 5 minutes of performance time with 5 minutes of setup.",  "Exceeding the time limit will have one mark deducted from the beatboxer’s score for every extra 2 minutes.",  "Group performance is not allowed.",  "Performance will be judged based on technique, arrangement, creativity, crowd response, and overall musicality."]
@@ -384,4 +386,30 @@ export const data = [
                 judging:"Creativity + Adherence to theme + overall visual impact."}
     ]
 },
+{
+    id:7,
+    name:"EXTRAS",
+    img:img3,
+    Event:[
+        {
+        id:601,
+        name:"ESPORTS",
+        img:esport,
+        description:"Unleash your gaming Prowess",
+        topics:[],
+        guidelines:[""]
+
+
+
+
+
+
+
+
+        ,
+
+        judging:""}]
+
+
+}
 ]
