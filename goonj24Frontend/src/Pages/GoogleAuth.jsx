@@ -1,8 +1,7 @@
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import LoginAstro from "../assets/Images/LoginAstronaut.png";
 import { jwtDecode } from "jwt-decode";
-import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const GoogleAuth = () => {
   const [userData, setUserData] = useState({
