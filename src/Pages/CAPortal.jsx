@@ -10,18 +10,19 @@ const CAPortal = () => {
         <div className="bg-black text-white">
             <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
                 <h1 className="text-white z-30 md:text-[150px] font-cuda text-5xl drop-shadow-2xl">CA Portal</h1>
-                <button className="btn" type="button">
-                    <Link to="/caregister" className="link">
-                        <strong className="font-cM">REGISTER NOW</strong>
+                <Link to="/caregister" className="link">
+                    <button className="btn" type="button">
+                        <strong>REGISTER NOW</strong>
                         <div id="container-stars">
                             <div id="stars"></div>
                         </div>
+
                         <div id="glow">
                             <div className="circle"></div>
                             <div className="circle"></div>
                         </div>
-                    </Link>
-                </button>
+                    </button>
+                </Link>
             </div>
 
             <div className="w-full h-screen">
