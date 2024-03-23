@@ -13,15 +13,6 @@ const userSchema = new mongoose.Schema({
         lowercase: true,
         validate: [validator.isEmail, 'Invalid Email']
     },
-
-    role:{
-        type: String,
-        default: 'audience',
-        enum: {
-            values: ['participant', 'audience', 'ambassador'],
-            message: 'Not a valid role'
-        }
-    },
     pNum:{
         type: String,
         required: [true, 'Please provide a phone number'],
