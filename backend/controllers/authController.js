@@ -63,7 +63,7 @@ const casignup = catchAsync(async (req, res, next) => {
 
 
 // this is to check if the useer already exists and if they don't we will get error 400 if no email provided and error 401 if user with that email has not signed up
-const checkUser = catchAsync(async (req, res)=>{
+const checkUser = catchAsync(async (req, res, next)=>{
     let user = await UserData.findOne({
         email: req.body.email
     })
