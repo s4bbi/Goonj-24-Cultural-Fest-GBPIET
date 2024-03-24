@@ -1,11 +1,22 @@
 const express = require('express');
 
 const router = express.Router();
+
 const authController = require('../controllers/authController');
+const paymentController = require('../controllers/paymentController');
+const eventController = require('../controllers/eventController');
 
 
-router.get('/', authController.validateToken, (req, res)=>{
-    res.send('validation complete... time to implement eventSaving routes');
-} )
+router
+    .route('/')
+    .get(
+        authController.validateToken,
+        eventController.getUserEvents
+    )
+    .post(
+        authController.validateToken,
+        paymentController.isPaid,
+        eventController.registerUser
+    )
 
 module.exports = router;
