@@ -3,9 +3,21 @@ const catchAsync = require('../utils/catchAsync');
 
 
 const registerUser = catchAsync(async (req, res, next)=>{
-    req.user.events.push(req.body.eventCode);
+    const isPresent = req.user.events.includes(req.body.eventCode);
+    if (isPresent) {
+        return res.status(409).json({
+            status: 'error',
+            message: 'You are already registered for this event.'
+        }); 
+    }
 
-    const user = await UserData.findByIdAndUpdate(req.user._id, req.user);
+
+    req.user.events.push(req.body.eventCode);
+    const eventsToUpdate = {
+        events: req.user.events
+    }
+
+    const user = await UserData.findByIdAndUpdate(req.user._id, eventsToUpdate);
 
     if (!user){
         return next('The user no longer exists', 404);
