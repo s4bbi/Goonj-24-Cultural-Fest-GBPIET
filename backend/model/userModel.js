@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema({
         type: Array,
         default: []
     },
-    ca_id: {
+    generated_id: {
         type: String
     },
     date:{

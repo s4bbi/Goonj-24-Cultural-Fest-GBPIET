@@ -11,12 +11,19 @@ router
     .route('/')
     .get(
         authController.validateToken,
+        authController.restrictTo,
         eventController.getUserEvents
     )
     .post(
         authController.validateToken,
+        authController.restrictTo,
         paymentController.isPaid,
         eventController.registerUser
+    )
+    .delete(
+        authController.validateToken,
+        authController.restrictTo,
+        eventController.unRegisterUser
     )
 
 module.exports = router;
