@@ -62,9 +62,7 @@ const sendProd = (err, res)=>{
 // Main globalErrorHandler function 
 module.exports = (err, req, res, next) => {
     if (process.env.NODE_ENV === 'development') {
-        console.error(err.errors.email);
         sendDev(err, res);
-        console.log(err.name)
 
     } else if (process.env.NODE_ENV === 'production') {
         let error = {...err}; // destructing 
