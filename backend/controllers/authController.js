@@ -119,6 +119,18 @@ const validateToken = catchAsync(async (req, res, next)=>{
     req.user = user;
 
     next(); 
-})
+});
 
-module.exports = { signup, casignup, validateToken, checkUser };
+
+// restricting audience role user to access register routes
+const restrictTo = (...roles) => {
+    return (req, res, next)=>{
+        if (!roles.includes(req.user.role)){
+            return next(new AppError('You are not authorized to access this route', 403)) 
+        }
+        
+        next();
+    }
+}
+
+module.exports = { signup, casignup, validateToken, checkUser, restrictTo };

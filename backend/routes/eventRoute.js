@@ -4,9 +4,24 @@ const router = express.Router();
 const authController = require('../controllers/authController');
 
 
-router.get('/', authController.validateToken, (req, res)=>{
-    res.send('validation complete... time to implement eventSaving routes');
-} )
+router
+    .route('/')
+    .get(
+        authController.validateToken,
+        authController.restrictTo,
+        eventController.getUserEvents
+    )
+    .post(
+        authController.validateToken,
+        authController.restrictTo,
+        paymentController.isPaid,
+        eventController.registerUser
+    )
+    .delete(
+        authController.validateToken,
+        authController.restrictTo,
+        eventController.unRegisterUser
+    )
 
 module.exports = router;
 
