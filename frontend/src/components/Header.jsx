@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../index.css';
-import goonjLogo from "../assets/goonjLogo.png"
+import goonjLogo from "../assets/goonjLogo.webp"
 import { BsRocketTakeoff } from "react-icons/bs";
 import { RiHome2Line } from "react-icons/ri";
 import { FaRegImages } from "react-icons/fa";
