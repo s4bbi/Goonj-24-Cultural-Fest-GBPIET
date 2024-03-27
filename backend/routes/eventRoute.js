@@ -1,10 +1,7 @@
 const express = require('express');
 
 const router = express.Router();
-
 const authController = require('../controllers/authController');
-const paymentController = require('../controllers/paymentController');
-const eventController = require('../controllers/eventController');
 
 
 router
@@ -27,3 +24,4 @@ router
     )
 
 module.exports = router;
+

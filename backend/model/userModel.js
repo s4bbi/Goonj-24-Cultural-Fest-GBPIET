@@ -9,18 +9,9 @@ const userSchema = new mongoose.Schema({
     email:{
         type: String,
         required: [true, 'Please provide an email'],
-        unique: true,
+        // unique: true,
         lowercase: true,
         validate: [validator.isEmail, 'Invalid Email']
-    },
-
-    role:{
-        type: String,
-        default: 'audience',
-        enum: {
-            values: ['participant', 'audience', 'ambassador'],
-            message: 'Not a valid role'
-        }
     },
     pNum:{
         type: String,

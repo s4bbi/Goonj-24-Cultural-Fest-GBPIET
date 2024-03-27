@@ -4,22 +4,19 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const util = require('util');
 
-// this returns JWT token after taking user document id as payload
+
 const signToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRES_IN
     });
 };
 
-// this returns a promise which will be then awaited in the controller. I did it this way to use async in signup and caregister function and with that use catchAsync to use globalErrorMiddleware
-const createUser =  (userData) => {
-    return UserData.create(userData);
+const createUser = async (userData) => {
+    return await UserData.create(userData);
 };
 
-
-// this will take userData and generate JWT and send response to user
-const createAndSendTokenResponse =  (userData, res) => {
-    const token =  signToken(userData._id);
+const createAndSendTokenResponse = async (userData, res) => {
+    const token = signToken(userData._id);
 
     res.status(201).json({
         status: 'success',
@@ -28,7 +25,17 @@ const createAndSendTokenResponse =  (userData, res) => {
     });
 };
 
-// this is the function to sign up the user
+// there can be two cases the user is first time sigining up or user is logging in again... We can use email as a unique field to handle that case...
+
+// Condidion SP1 - user already exists... in that case we just log in them...
+
+// then there is going to be a get and a post request...
+// in first request we only send email to check if the user is logged in and if they don't then move to second case... 
+// when user signup their googleOuath field then a get will be made to check if a user with that email already exists... 
+// if it doesnt then only they move to login page....
+// TODO if user exists -> send JWT and redirect to login page (frontend work);
+
+
 const signup = catchAsync(async (req, res, next) => {
     const userData = {
         name: req.body.name,
@@ -40,12 +47,10 @@ const signup = catchAsync(async (req, res, next) => {
         ca_id: req.body.ca_id || undefined
     };
 
-    const newUser = await createUser(userData); // we are awaiting the promise we get from createUser here
-    createAndSendTokenResponse(newUser, res);
+    const newUser = await createUser(userData);
+    await createAndSendTokenResponse(newUser, res);
 });
 
-
-// this is the function to sign up CA // TODO modify CA sign up function 
 const casignup = catchAsync(async (req, res, next) => {
     const userData = {
         name: req.body.name,
@@ -58,31 +63,32 @@ const casignup = catchAsync(async (req, res, next) => {
     };
 
     const newUser = await createUser(userData);
-    createAndSendTokenResponse(newUser, res);
+    await createAndSendTokenResponse(newUser, res);
 });
 
 
-// this is to check if the useer already exists and if they don't we will get error 400 if no email provided and error 401 if user with that email has not signed up
-const checkUser = catchAsync(async (req, res, next)=>{
+// this will throw an error of user not existing... and we need to handle it 
+const checkUser = catchAsync(async (req, res)=>{
     let user = await UserData.findOne({
         email: req.body.email
     })
 
-    if (!req.body.email){ // to check if body has email or not
+    if (!req.body.email){
         return next(new AppError('Email is required', 400));
     }
 
-    // user does not exists and they need to sign up
-    if (!user){
-        return next(new AppError('Please Sign up!', 401))
+    // user already exists send response token
+    if (user){
+        createAndSendTokenResponse(user, res);
+        return;
     }
 
-    // if user exist send JWT 
-    createAndSendTokenResponse(user, res);
-
+    res.status(401).json({
+        errorCode: 'CU401',
+        message: 'You have not signed up'
+    })
 })
 
-// this is to authorize for protected register route. If JWT is correct user will get access to other middlewares in stack else they will get error 401 
 const validateToken = catchAsync(async (req, res, next)=>{
     // Step 1 : check if token exists in headers
     let token;
@@ -103,13 +109,15 @@ const validateToken = catchAsync(async (req, res, next)=>{
     const decoded = await promisedToken(token, process.env.JWT_SECRET);
 
     // to check if the uesr is not deleted 
-    const user = await UserData.findById(decoded.id);
+    const user = UserData.findById(decoded.id);
+
 
     if (!user){
         return next (new AppError('The user no longer exists', 401));
     }
 
     req.user = user;
+
     next(); 
 });
 
