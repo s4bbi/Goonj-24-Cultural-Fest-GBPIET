@@ -9,6 +9,8 @@ import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
 import { Link } from "react-router-dom"
 import saturnImage from  "../assets/Images/Home_Saturn_Img.webp"
+import director from "../assets/Images/peopleImages/director.webp"
+import sac_oic from "../assets/Images/peopleImages/sac-oic.webp"
 
 
 const HomePage = () => {
@@ -94,7 +96,31 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="text-white h-full pt-10 mx-4 ">
+                    <div className="text-white h-full pt-10 mx-4">
+                        <div className="flex flex-col w-10/12 mx-auto sm:flex-row justify-center gap-5 pb-20">
+                            <div className="flex flex-col justify-center items-center font-cM">
+                                <img src={director} className="w-32 sm:w-48 mb-4 rounded-xl border-b-4 border-[#5f43b2]" alt="GBPIET Director" />
+                                <p className="text-white">Dr. V. N. Kala</p>
+                                <p><span className="text-[#5f43b2]">Director, </span><span className="text-white">GBPIET</span></p>
+                            </div>
+                            <div className="flex flex-col gap-3 font-cM items-center sm:w-9/12 sm:items-start mx-5">
+                                <span className="text-[#5f43b2]">Director's Message:</span>
+                                <p className="text-white text-center sm:text-left">With boundless excitement, I welcome you to Goonj , our vibrant annual cultural fest! Organized by our dedicated students and management, Goonj is a celebration of creativity and unity. Join us for thrilling competitions, captivating performances, and unforgettable memories. Let's make this fest a success together!</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col w-10/12 mx-auto sm:flex-row justify-center gap-5 pb-20">
+                            <div className="flex flex-col justify-center items-center font-cM sm:order-2">
+                                <img src={sac_oic} className="w-32 sm:w-48 mb-4 rounded-xl border-b-4 border-[#5f43b2]" alt="Student Activity Cell Officer in Charge" />
+                                <p className="text-white">Dr. Priti Dimri</p>
+                                <p><span className="text-[#5f43b2]">OIC, SAC</span></p>
+                            </div>
+                            <div className="flex flex-col gap-3 font-cM items-center sm:w-9/12 sm:items-start mx-5 sm:order-1">
+                                <span className="text-[#5f43b2]">SAC OIC Message:</span>
+                                <p className="text-white text-center sm:text-left">Namaste, we invite you to Goonj – a wonderful showcase of our students' talents and creativity. Crafted with love and dedication by our amazing students, this festival is a celebration of unity, culture, and dreams coming to life. Come join us, embrace the magic, and make unforgettable memories together! Let's make this celebration one to remember, filled with laughter, joy, and the spirit of our vibrant student community!</p>
+                            </div>
+                        </div>
+
                         <div className="text-center font-cuda text-4xl sm:text-7xl p-6">
                             <h1 className="">ABOUT</h1>
                             <p className="font-cR sm:text-base text-xs font-bold">GBPIET's CULTURAL FEST</p>
@@ -124,7 +150,7 @@ const HomePage = () => {
                                 <img src={AboutHome} className="w-20 sm:w-56" alt="About Home"></img>
                             </div>
                             <div className="border-l-2  border-[#5f43b2] pl-5 border-solid pt-2 flex md:text-lg">
-                                <h1 className="sm:w-[38%]">Welcome to "<span className="text-[#5f43b2] ">Goonj</span>," where the vibrant tapestry of cultures converges in a celebration of diversity and unity! Goonj, our annual college cultural fest, is a kaleidoscope of creativity, talent, and traditions that come together to create an unforgettable experience.</h1>
+                                <h1 className="sm:w-[38%]"><span className="text-[#5f43b2]">Goonj</span> is not just a fest; it's a symbol of unity amidst diversity. It serves as a powerful platform for cultural exchange, fostering understanding and connections that transcend boundaries. Through vibrant performances and engaging discussions, Goonj promotes inclusivity, friendship, and the celebration of our shared humanity. It's not just an event; it's a vital expression of our collective identity and values.</h1>
                             </div>
                             </div>
                         </div>
