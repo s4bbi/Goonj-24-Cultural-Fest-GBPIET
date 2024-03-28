@@ -1,5 +1,7 @@
 import TeamsVid from "../assets/Videos/TeamsVid.webm";
 import TeamsEarth from "../assets/Images/TeamsEarth.png";
+import Card from "../components/Card"
+import {teamData} from "../data/TeamData"
 const Teams = () => {
     return (
        <div className="bg-EventBG">
@@ -17,17 +19,18 @@ const Teams = () => {
           Your browser does not support the video tag.
         </video>
         </div>
-        <div className="text-white md:flex w-full text-lg md:text-[50px] py-10 font-cuda text-bold justify-center items-center md:mt-20 grid place-items-center ">
-            <div className="" >
-                DEV TEAM
+        <div className="">
+           {teamData.map((item)=>(
+            <div key={item.id}>
+            <p  className="text-white  font-cuda text-bold text-lg  sm:text-[50px] pt-16 text-center ">{item.name}</p>
+            <div className="w-[220px] mx-auto sm:w-full  sm:flex sm:justify-evenly md:justify-between sm:gap-10 sm:p-20 sm:flex-wrap">
+              {item.members.map((member)=>(
+                <Card data={member}/>
+              ))}
             </div>
-            <div className="md:px-20">
-                {/*img  */}
-                <img src={TeamsEarth} alt="team_earth img" /> 
+            
             </div>
-            <div className="">
-                CORE TEAM
-            </div>
+           ))}
         </div>
                
        </div>
