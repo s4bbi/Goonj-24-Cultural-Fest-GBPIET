@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import '../index.css';
 import goonjLogo from "../assets/goonjLogo.webp"
-import { BsRocketTakeoff } from "react-icons/bs";
+import LoginButton from "./LoginButton";
 import { RiHome2Line } from "react-icons/ri";
 import { FaRegImages } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
@@ -24,10 +24,9 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3 md:hidden">
                 <div className="">
-                    <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 hover:bg-[#5c2ee3] font-cM">
-                        <Link to="/login">LOGIN </Link>
-                        <BsRocketTakeoff className="mt-1"/>
-                    </button>
+                <Link to="/login"> 
+                    <LoginButton />
+                </Link>
                 </div>
                 <button onClick={toggleSidebar} className="text-white focus:outline-none">
                     <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -59,10 +58,9 @@ const Header = () => {
                     <li>
                         <Link to="/caportal">CA PORTAL</Link>
                     </li>
-                        <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 hover:bg-[#5c2ee3] font-cM text-lg">
-                            <Link to="/login">LOGIN </Link>
-                            <BsRocketTakeoff className="mt-1"/>
-                        </button>
+                    <Link to="/login"> 
+                        <LoginButton />
+                    </Link>
                 </ul>
             </div>
             {showSidebar && (
@@ -102,10 +100,9 @@ const Header = () => {
                                     <Link to="/caportal" onClick={toggleSidebar}>CA PORTAL</Link>
                                 </li>
                                 <li>
-                                <button type="button" className="flex gap-3 bg-[#7a59df] justify-center text-white rounded-3xl w-28 p-1 hover:bg-[#5c2ee3] font-cR">
-                                    <Link to="/login">LOGIN </Link>
-                                    <BsRocketTakeoff className="mt-1"/>
-                                </button>
+                                <Link to="/login"> 
+                                    <LoginButton />
+                                </Link>
                                 </li>
                             </ul>
                         </div>

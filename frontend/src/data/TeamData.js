@@ -5,6 +5,8 @@ import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg"
 import niharika from "../assets/Images/TeamsImages/DevTeam/niharika.jpeg"
 import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg"
 
+// jb sbki ajaygi tb bulk convert krdunga webp mein
+
 export const teamData = [{
     id:1,
     name:"Dev Team",
