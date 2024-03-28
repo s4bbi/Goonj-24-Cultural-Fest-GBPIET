@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 dotenv.config({path: './config.env'});
 
 const DB = process.env.DATABASE_URL.replace('<password>', process.env.DATABASE_PASSWORD);
-console.log(process.env.RAZORPAY_API_KEY)
 
 mongoose.connect(DB).then(con=>{
     console.log('DB connection successful');

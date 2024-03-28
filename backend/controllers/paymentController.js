@@ -1,12 +1,6 @@
 const Razorpay = require("razorpay")
 const crypto = require('crypto');
 
-const instance = new Razorpay({
-    key_id: `${process.env.RAZORPAY_API_KEY}`,
-    key_secret: `${process.env.RAZORPAY_API_SECRET}`
-});
-
-console.log(process.env.RAZORPAY_API_KEY)
 
 const isPaid = (req, res, next)=>{
     next();
@@ -14,6 +8,12 @@ const isPaid = (req, res, next)=>{
 
 
 const createOrderId = async (req, res)=>{
+    const instance = new Razorpay({
+        key_id: `${process.env.RAZORPAY_API_KEY}`,
+        key_secret: `${process.env.RAZORPAY_API_SECRET}`
+    });
+
+
     const options = {
         amount: 50000,
         currency: 'INR',
