@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Header from '../src/components/Header.jsx'
@@ -84,6 +85,7 @@ const appRouter = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <SpeedInsights />
     <RouterProvider router={appRouter} />  
   </React.StrictMode>,
 )
