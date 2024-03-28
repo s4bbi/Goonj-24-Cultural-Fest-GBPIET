@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
 const UserData = require('../model/userModel');
 const catchAsync = require('../utils/catchAsync');
-
-
 
 // adding users to the event
 const registerUser = catchAsync(async (req, res, next)=>{
@@ -77,4 +73,3 @@ const unRegisterUser = catchAsync(async (req, res, next)=>{
 })
 
 module.exports = {registerUser, getUserEvents, unRegisterUser};
->>>>>>> 81fb2104f81a3db2f4bdc0a103ce02862c4ace18
