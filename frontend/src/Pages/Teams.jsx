@@ -23,11 +23,12 @@ const Teams = () => {
               <div key={item.id}>
                 <p  className="text-white font-cuda text-bold text-3xl md:text-[50px] py-20 text-center">{item.name}</p>
                 <div className="mx-auto w-full sm:flex sm:justify-evenly md:justify-between sm:gap-20 sm:flex-wrap font-cuda">
-                  {item.members.map((member)=>(
+                  {item.members.map((member)=>( 
+                    <div key={member.id}>
                     <Card data={member} />
+                    </div>
                   ))}
               </div>
-              
               </div>
             ))}
           </div>      
