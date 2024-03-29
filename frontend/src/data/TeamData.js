@@ -84,7 +84,7 @@ export const teamData = [{
         git:"",
         linkdin:"https://www.linkedin.com/in/aditya-rawat-3a2942276",
         insta:"",
-        gmail:"niharikachauhan425@gmail.com"
+        gmail:""
     },
 ]
 }]
