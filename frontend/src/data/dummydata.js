@@ -10,7 +10,6 @@ import classical from "../assets/Images/EventImages/classical.webp"
 import clickfest from "../assets/Images/EventImages/clickfest.webp"
 import dance_battle from "../assets/Images/EventImages/dance_battle.webp"
 import debate from "../assets/Images/EventImages/debate.webp"
-import drama_skit from "../assets/Images/EventImages/drama_skit.webp"
 import dress_to_impress from "../assets/Images/EventImages/dress_to_impress.webp"
 import extempore from "../assets/Images/EventImages/extempore.webp"
 import frame from "../assets/Images/EventImages/frame.webp"
@@ -21,19 +20,20 @@ import mr_miss_goonj from "../assets/Images/EventImages/mr_miss_goonj.webp"
 import oppo from "../assets/Images/EventImages/oppo.webp"
 import qawalli from "../assets/Images/EventImages/qawalli.webp"
 import reel_mania from "../assets/Images/EventImages/reel_mania.webp"
-import singing from "../assets/Images/EventImages/singing.webp"
 import stepup from "../assets/Images/EventImages/stepup.webp"
 import openmic from "../assets/Images/EventImages/open_mic.webp"
 import esport from "../assets/Images/EventImages/e_sports.webp"
+
+
 export const data = [
     {
     id:1,
-    name:"DRAMAFLICT",
+    name:"DRAMAFLICT - Prizes upto ₹20K",
     img:img1,
     Event:[
     {
     id:101,
-    name:"DRAMA/SKIT (Theme: India 2047)",
+    name:"DRAMA/SKIT",
     img : skitImage,
     decription:"A type of drama conflict in which members of each team will showcase their play based on the theme.",
     guidelines:["6 to 8 members are allowed for each team. If members less or exceeds points deduction will be there.","The content should be socially relevant and suitable for performance. No vulgarity or obscene should be there else it can lead to disqualification.","Use of props are allowed","Arrangement of props and outfits will be done by the team itself.","To enhance or highlight the drama use of music (instruments, singing) is allowed.","The drama should not exceed more than 7 minutes and 1 minute for stage clearance will be given. If time exceeded points deduction will be there.","if there is technical fault , extra time will be given accordingly."],
@@ -73,7 +73,7 @@ export const data = [
 },
 {
     id:2,
-    name:"FUSION FEVER",
+    name:"FUSION FEVER - Prizes upto ₹30K",
     img:img2,
     Event:[
         {
@@ -142,7 +142,7 @@ export const data = [
 },
 {
     id:4,
-    name:"BATTLES",
+    name:"BATTLES - Prizes upto ₹25K",
     img:img1,
     Event:[
         {
@@ -151,11 +151,7 @@ export const data = [
         img:dance_battle,
         description:"Ready to show off your groovy moves? Here is the freestyle tadka where you compete with yourself and give the best version of yourself. The baƩle will be done in 5 rounds (1 v/s 1 ,  2 v/s 2, 3 v/s 3, group v/s group & random freestyle).",
         topics:[],
-        guidelines:[  "There is no limit in team participants (make sure to prepare yourself according to the five rounds).",  "Both boys & girls (co-ed team) entries are allowed per branch.",  "Teams have to prepare their own choreography (choice of song will be yours) of 1 minute for each round (1 vs 1, 2 vs 2, 3 vs 3, group vs group).",  "The final showdown (random freestyle) will take place between the aces of selected teams (top 3).",  "For the final showdown, the song will be provided by the core committee present on the spot for fair play.",  "The battle between aces will determine the ultimate winner.",  "Dress up must be in good taste and no vulgarity is allowed.",  "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",  "If there is a technical fault, extra time will be given accordingly."]
-
-
-        ,
-
+        guidelines:[  "There is no limit in team participants (make sure to prepare yourself according to the five rounds).",  "Both boys & girls (co-ed team) entries are allowed per branch.",  "Teams have to prepare their own choreography (choice of song will be yours) of 1 minute for each round (1 vs 1, 2 vs 2, 3 vs 3, group vs group).",  "The final showdown (random freestyle) will take place between the aces of selected teams (top 3).",  "For the final showdown, the song will be provided by the core committee present on the spot for fair play.",  "The battle between aces will determine the ultimate winner.",  "Dress up must be in good taste and no vulgarity is allowed.",  "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",  "If there is a technical fault, extra time will be given accordingly."],
         judging:"choreography + confidence + coordination (group, duo, trio) + cheering impact + overall performance.,"},
         {
         id:402,
@@ -177,12 +173,7 @@ export const data = [
         img:battle_bands,
         description:"“Words make you think.. Those who wish to sing always find a song”.",
         topics:[],
-        guidelines:[  "Bands should consist of at least 2 members.",  "Each band will be given 15 minutes with 10 minutes of setup.",  "Performance should not exceed the allotted time.",  "Every 2 minutes after 15 minutes will have one mark deducted from the band’s score.",  "Bands will be judged based on a number of metrics such as technique, arrangement, crowd response, and uniqueness."]
-
-
-
-        ,
-
+        guidelines:[  "Bands should consist of at least 2 members.",  "Each band will be given 15 minutes with 10 minutes of setup.",  "Performance should not exceed the allotted time.",  "Every 2 minutes after 15 minutes will have one mark deducted from the band’s score.",  "Bands will be judged based on a number of metrics such as technique, arrangement, crowd response, and uniqueness."],
         judging:"technique + arrangement + crowd response + uniqueness," 
     },
     {
@@ -191,13 +182,7 @@ export const data = [
         img:openmic,
         description:"Make beats into something beautiful",
         topics:[],
-        guidelines:[  "Beatboxer will be assigned 5 minutes of performance time with 5 minutes of setup.",  "Exceeding the time limit will have one mark deducted from the beatboxer’s score for every extra 2 minutes.",  "Group performance is not allowed.",  "Performance will be judged based on technique, arrangement, creativity, crowd response, and overall musicality."]
-
-
-
-
-        ,
-
+        guidelines:[  "Beatboxer will be assigned 5 minutes of performance time with 5 minutes of setup.",  "Exceeding the time limit will have one mark deducted from the beatboxer’s score for every extra 2 minutes.",  "Group performance is not allowed.",  "Performance will be judged based on technique, arrangement, creativity, crowd response, and overall musicality."],
         judging:"technique + arrangement + crowd response + overall musicality," 
     },
     {
@@ -206,21 +191,13 @@ export const data = [
         img:qawalli,
         description:"Unleash the Soulful Harmony: Embrace the Spirit of Qawwali",
         topics:[],
-        guidelines:[  "Inter-branch competition.",  "The branches will be given the topics for each round beforehand so they can prepare.",  "The competition will be conducted in three rounds.",  "The team which satisfies the judging criteria shall move to the next round.",  "Only one group can participate from each branch.",  "Minimum number of participants in one group: 8.",  "Maximum number of participants in one group: 10."]
-
-
-
-
-
-        ,
-
+        guidelines:[  "Inter-branch competition.",  "The branches will be given the topics for each round beforehand so they can prepare.",  "The competition will be conducted in three rounds.",  "The team which satisfies the judging criteria shall move to the next round.",  "Only one group can participate from each branch.",  "Minimum number of participants in one group: 8.",  "Maximum number of participants in one group: 10."],
         judging:"originality + creativity + uniformity + vocal strength"}
-
     ]
 },
 {
     id:5,
-    name:"LITERATURE EVENTS [Theme – India 2047 Youth Parliament]",
+    name:"LITERATURE EVENTS - Prizes upto ₹20K",
     img:img2,
     Event:[
         {
@@ -229,15 +206,7 @@ export const data = [
         img:debate,
         description:"Step within the sanctifying halls of democracy at GOONJ as  we present the Youth Parliament—an intellectual battlefield where opinions clash, convictions resound, and the voices of the youth reverberate with the echoes of revolution. The  stage is set, the arguments are prepared to be heard, and the chairs await the politicians of tomorrow. Are you  prepared to debate, address, and determine the future? Prepare for a conflict of ideas and an amalgamation of philosophies—welcome to the epicentre of debate, the  Youth Parliament!",
         topics:[],
-        guidelines:[  "Each team will be given 5+1 minutes to speak.",  "Negative marking will be done for over-exceeding time.",  "The questioning will be restricted to 1 minute, and the response should be completed in the next 2 minutes.",  "A slip of paper bearing only the key points is permitted.",  "JUDGING"]
-
-
-
-
-
-
-        ,
-
+        guidelines:[  "Each team will be given 5+1 minutes to speak.",  "Negative marking will be done for over-exceeding time.",  "The questioning will be restricted to 1 minute, and the response should be completed in the next 2 minutes.",  "A slip of paper bearing only the key points is permitted.",  "JUDGING"],
         judging:"Knowledge + content + critical thinking + rebuttal skills + time management."},
         {
         id:502,
@@ -245,15 +214,7 @@ export const data = [
         img:extempore,
         description:"An impromptu amalgamation of thoughts culminating into a self-composed speech, the topic for which one receives then and there. Extempore speech is typically used to gain  a deeper knowledge of a participant’s many points, but it  also comes with a lot of problems. No prior preparation for which is permissible.",
         topics:[],
-        guidelines:[  "Each participant will draw a random slip to get a topic.",  "2 minutes timing for evaluation of the topic will be provided to the participant.",  "The participant must speak on the topic for at least 3 minutes."]
-
-
-
-
-
-
-
-        ,
+        guidelines:[  "Each participant will draw a random slip to get a topic.",  "2 minutes timing for evaluation of the topic will be provided to the participant.",  "The participant must speak on the topic for at least 3 minutes."],
 
         judging:"Knowledge + content + critical thinking + management."},
         {
@@ -262,16 +223,7 @@ export const data = [
         img:alfaaz,
         description:"Grab a pen and paper, drop into an ocean of words, and  compose a symphony of thoughts and emotions. Whether  you're an experienced poet or just discovering the power of words, Alfaaz-e-Kalam is your chance to shine. Unleash  your inner poet, share your poetry, and participate in an  exciting event. Come join us for a lyrical celebration in  which each phrase represents a step towards poetic  excellence.",
         topics:[],
-        guidelines:[  "Mode of language: Hindi.",  "All entries should be original, and plagiarism will result in immediate disqualification.",  "Submissions should be typed and submitted in PDF format.",  "There is no specific theme for the competition.",  "A poem or Shayari should not violate any religion, community, caste, or other aspect of social or cultural sensitivity. The use of any abusive or obscene language is prohibited.",  "Poetry entries should not exceed 30 lines.",  "Late submissions will not be considered."]
-
-
-
-
-
-
-
-
-        ,
+        guidelines:[  "Mode of language: Hindi.",  "All entries should be original, and plagiarism will result in immediate disqualification.",  "Submissions should be typed and submitted in PDF format.",  "There is no specific theme for the competition.",  "A poem or Shayari should not violate any religion, community, caste, or other aspect of social or cultural sensitivity. The use of any abusive or obscene language is prohibited.",  "Poetry entries should not exceed 30 lines.",  "Late submissions will not be considered."],
 
         judging:"Creativity + Originality + Language proficiency"}, 
        
@@ -289,17 +241,7 @@ export const data = [
         img:frame,
         description:"Are you ready to embark on a creative adventure like no other? Welcome to 'Frame by Frame' where your imagination takes center stage and every frame is a canvas  for your storytelling magic! We invite you to be a part of this thrilling stop-motion animation challenge that promises to  turn your wildest ideas into animated reality.",
         topics:[],
-        guidelines:[  "Team may consist of 2-4 members.",  "Each frame must be clicked through the phone’s camera.",  "Duration of animation up to 1 minute.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification."]
-
-
-
-
-
-
-
-
-
-        ,
+        guidelines:[  "Team may consist of 2-4 members.",  "Each frame must be clicked through the phone’s camera.",  "Duration of animation up to 1 minute.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification."],
 
         judging:"Creativity + technical skill + overall impact/ appearance."},
         {
@@ -308,17 +250,7 @@ export const data = [
         img:clickfest,
         description:"Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
         topics:[],
-        guidelines:[  "Team may consist of 2-4 members.",  "Each frame must be clicked through the phone’s camera.",  "Duration of animation up to 1 minute.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification."]
-
-
-
-
-
-
-
-
-
-        ,
+        guidelines:[  "Team may consist of 2-4 members.",  "Each frame must be clicked through the phone’s camera.",  "Duration of animation up to 1 minute.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification."],
 
         judging:"Creativity + Adherence to theme + overall visual impact."},
         {
@@ -327,18 +259,7 @@ export const data = [
         img:light_painting,
         description:"Illuminate the Night with Your Light! Get ready to embark on  a luminous journey as we present 'Light Painting,'. Unleash  your creativity, capture the magic of light, and let your  imagination paint the night!",
         topics:[],
-        guidelines:[  "Every individual can participate in the contest.",  "Photos must be clicked through the phone’s camera.",  "Keep editing tools away, we love your raw images.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification.",  "Shutter Speed should be less than 90 seconds."]
-
-
-
-
-
-
-
-
-
-
-        ,
+        guidelines:[  "Every individual can participate in the contest.",  "Photos must be clicked through the phone’s camera.",  "Keep editing tools away, we love your raw images.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification.",  "Shutter Speed should be less than 90 seconds."],
 
         judging:"Creativity + Adherence to theme + overall visual impact."},
         {
@@ -347,19 +268,7 @@ export const data = [
             img:reel_mania,
             description:"Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
             topics:[],
-            guidelines:[  "Every individual can participate in the contest.",  "Reels must be shot through the phone’s camera.",  "Ensure your reel seamlessly integrates the Reel Mania theme.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification."]
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            ,
+            guidelines:[  "Every individual can participate in the contest.",  "Reels must be shot through the phone’s camera.",  "Ensure your reel seamlessly integrates the Reel Mania theme.",  "Your creation should be an original piece of work.",  "Plagiarism content will lead to disqualification."],
     
             judging:"Creativity + Adherence to theme + overall visual impact."},
             {
@@ -368,27 +277,14 @@ export const data = [
                 img:goonj_movie,
                 description:"Get ready for the ultimate adventure as we present 'G Movie,' an electrifying filmography event that transforms our campus into a cinematic playground. Whether you're a budding director, actor, or film enthusiast, this is your chance to make movie magic on our very own campus stage.",
                 topics:[],
-                guidelines:[  "There is no particular theme for the short film.",  "The entries can be documentaries, short films, animations, or experimental art forms.",  "The duration for the short film must be from 1 minute to 15 minutes.",  "The short film must be original and no watermark of any kind should be on the film.",  "The film must be of the highest quality possible.",  "Adult content of any kind will not be entertained and would lead to direct disqualification."]
-
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                ,
+                guidelines:[  "There is no particular theme for the short film.",  "The entries can be documentaries, short films, animations, or experimental art forms.",  "The duration for the short film must be from 1 minute to 15 minutes.",  "The short film must be original and no watermark of any kind should be on the film.",  "The film must be of the highest quality possible.",  "Adult content of any kind will not be entertained and would lead to direct disqualification."],
         
                 judging:"Creativity + Adherence to theme + overall visual impact."}
     ]
 },
 {
     id:7,
-    name:"EXTRAS",
+    name:"MISCELLANEOUS - Prizes upto ₹30K",
     img:img3,
     Event:[
         {
@@ -397,19 +293,17 @@ export const data = [
         img:esport,
         description:"Unleash your gaming Prowess",
         topics:[],
-        guidelines:[""]
-
-
-
-
-
-
-
-
-        ,
-
-        judging:""}]
-
-
+        guidelines:[""],
+        judging:""
+    },
+    {
+        id:602,
+        name:"ESPORTS",
+        img:"",
+        description:"Unleash your gaming Prowess",
+        topics:[],
+        guidelines:[""],
+        judging:""}
+    ]
 }
 ]

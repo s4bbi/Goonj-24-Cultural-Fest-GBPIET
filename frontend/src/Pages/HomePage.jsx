@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import vidHome from "../assets/Videos/HeroBG.webm"
 import orbitHome from "../assets/Images/Orbits.png" 
 import AboutHome from "../assets/Images/AboutMoon_Img.webp"
@@ -6,8 +7,8 @@ import GalleryGlobe from "../assets/Images/Gallery_Globe.webp"
 import SponsorsGlobe from "../assets/Images/Sponsors_Globe.webp"
 import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
+import audienceGlobe from "../assets/Images/audienceGlobe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
-import { Link } from "react-router-dom"
 import saturnImage from  "../assets/Images/Home_Saturn_Img.webp"
 import director from "../assets/Images/peopleImages/director.webp"
 import sac_oic from "../assets/Images/peopleImages/sac-oic.webp"
@@ -41,23 +42,23 @@ const HomePage = () => {
                                     <p>
                                         EVENTS
                                     </p>
-                                    <img src={EventsGlobe} className="w-20 sm:w-72 hover:scale-110 ease-in-out duration-200" alt="Events Globe"/>
+                                    <img src={EventsGlobe} className="w-20 sm:w-60 hover:scale-110 ease-in-out duration-200" alt="Events Globe"/>
                                 </div>
                             </Link>
                         </div>
                         <div className="flex justify-end text-white mx-72 sm:pt-10">
                             <Link to="/gallery">
-                                <div className="flex flex-col items-center text-sm sm:text-2xl">
+                                <div className="flex flex-col items-center text-sm sm:text-2xl -mt-4">
                                     <p>
                                         GALLERY
                                     </p>
-                                    <img src={GalleryGlobe} className="w-16 sm:w-56 hover:scale-110 ease-in-out duration-200" alt="Gallery Globe"/>
+                                    <img src={GalleryGlobe} className="w-12 sm:w-56 hover:scale-110 ease-in-out duration-200 " alt="Gallery Globe"/>
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex text-white sm:mx-64 sm:pt-44 ml-16 sm:mt-0">
+                        <div className="flex text-white sm:mx-80 -mt-10 ml-1 sm:ml-80">
                             <Link to="/sponsors">
-                                <div className="flex flex-col items-center sm:text-2xl text-sm -mt-5 sm:-mt-0">
+                                <div className="flex flex-col items-center sm:text-2xl text-sm sm:-mt-0">
                                     <p>
                                         SPONSORS
                                     </p>
@@ -65,31 +66,43 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white sm:mt-0">
+                        <div className="flex justify-center text-white mr-2 sm:-mt-10 mt-3 sm:mr-16">
                             <div className="flex flex-col items-center text-2xl w-1/2">
-                                <video src={orbitSun} autoPlay muted loop className="sm:w-20 w-12" ></video>
+                                <video src={orbitSun} autoPlay muted loop className="sm:w-20 w-6" ></video>
                             </div>
                         </div>
-                        <div className="flex justify-end text-white sm:mx-40 sm:pt-36 sm:mt-0">
-                            <Link to="/teams">
-                                <div className="flex flex-col items-center text-sm sm:text-2xl">
-                                    <p>
-                                        TEAMS
-                                    </p>
-                                    <img src={TeamsGlobe} className="sm:w-80 w-20 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
-                                </div>
-                            </Link>
+                        <div className="flex justify-between w-10/12 mx-auto mt-2 sm:mt-20">
+                            <div className="flex  text-white">
+                                <Link to="/caportal">
+                                    <div className="flex flex-col items-center text-sm sm:text-2xl mt-5 sm:mt-16">
+                                        <p>
+                                            CA PORTAL
+                                        </p>
+                                        <img src={CAPortal_Globe} className="w-16 sm:w-64 hover:scale-110 ease-in-out duration-200" alt="CAPortal Globe"/>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="flex justify-end text-white">
+                                <Link to="/teams">
+                                    <div className="flex flex-col items-center text-sm sm:text-2xl">
+                                        <p>
+                                            TEAMS
+                                        </p>
+                                        <img src={TeamsGlobe} className="sm:w-80 w-28 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-                        <div className="flex justify-center text-white sm:pt-44">
-                            <Link to="/caportal">
-                                <div className="flex flex-col items-center text-sm sm:text-2xl">
-                                    <p>
-                                        CA PORTAL
-                                    </p>
-                                    <img src={CAPortal_Globe} className="w-24 sm:w-64 hover:scale-110 ease-in-out duration-200" alt="CAPortal Globe"/>
-                                </div>
-                            </Link>
-                        </div>
+                        <div className="flex justify-center text-white sm:-mt-0 sm:mt-32 mr-10">
+                                <Link to="/audience">
+                                    <div className="flex flex-col items-center text-sm sm:text-2xl">
+                                        <p>
+                                            AUDIENCE PORTAL
+                                        </p>
+                                        <img src={audienceGlobe} className="sm:w-40 w-14 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
+                                    </div>
+                                </Link>
+                            </div>
                     </div>
                     <div className="py-10">
                         <img src={orbitHome} className="w-full" alt="Orbit Home"/>

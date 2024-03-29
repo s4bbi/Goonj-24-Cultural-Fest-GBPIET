@@ -38,7 +38,7 @@ const AudiencePortal = () => {
                         <div className="w-full md:w-8/12">
                             <div className="flex flex-col gap-14 font-cM text-center md:text-left">
                                 <h2 className="text-4xl">What is <span className="text-[#5F43B2]">Audience Portal?</span></h2>
-                                <p className="font-cR">As an audience member, you'll have the opportunity to immerse yourself in a rich tapestry of diverse talents, from mesmerizing dance routines and soulful musical performances to thought-provoking theatrical acts. Goonj is more than just a festival; it's a platform for expression, unity, and shared joy.</p>
+                                <p className="font-cR">As an audience member, you will have the opportunity to immerse yourself in a rich tapestry of diverse talents, from mesmerizing dance routines and soulful musical performances to thought-provoking theatrical acts. Goonj is more than just a festival; it is a platform for expression, unity, and shared joy.</p>
                             </div>
                         </div>
                     </div>

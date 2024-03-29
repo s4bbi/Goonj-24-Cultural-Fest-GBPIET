@@ -2,10 +2,11 @@ import yashi from "../assets/Images/TeamsImages/DevTeam/Yashpreet.png"
 import Nitesh from "../assets/Images/TeamsImages/DevTeam/Nitesh.png"
 import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg"
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg"
-import niharika from "../assets/Images/TeamsImages/DevTeam/niharika.jpeg"
 import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg"
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg"
 
+import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg"
+import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg"
 // jb sbki ajaygi tb bulk convert krdunga webp mein
 
 export const teamData = [{
@@ -81,7 +82,7 @@ export const teamData = [{
     {
         id:202,
         name:"Aditya Rawat",
-        img:"",
+        img:aditya,
         git:"",
         linkdin:"https://www.linkedin.com/in/aditya-rawat-3a2942276",
         insta:"",
