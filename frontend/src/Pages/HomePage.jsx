@@ -66,12 +66,12 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white mr-2 sm:-mt-10 mt-3 sm:mr-16">
+                        <div className="flex justify-center text-white mr-2 sm:-mt-10 sm:mr-16">
                             <div className="flex flex-col items-center text-2xl w-1/2">
                                 <video src={orbitSun} autoPlay muted loop className="sm:w-20 w-6" ></video>
                             </div>
                         </div>
-                        <div className="flex justify-between w-10/12 mx-auto mt-2 sm:mt-20">
+                        <div className="flex justify-between w-10/12 mx-auto sm:mt-20">
                             <div className="flex  text-white">
                                 <Link to="/caportal">
                                     <div className="flex flex-col items-center text-sm sm:text-2xl mt-5 sm:mt-16">
@@ -93,7 +93,7 @@ const HomePage = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex justify-center text-white sm:-mt-0 sm:mt-32 mr-10">
+                        <div className="flex justify-center text-white -mt-4 sm:-mt-0 sm:mt-32 mr-10">
                                 <Link to="/audience">
                                     <div className="flex flex-col items-center text-sm sm:text-2xl">
                                         <p>
