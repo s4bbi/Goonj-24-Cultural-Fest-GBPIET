@@ -1,5 +1,6 @@
 const Razorpay = require("razorpay")
 const crypto = require('crypto');
+const catchAsync = require("../utils/catchAsync");
 
 
 const isPaid = (req, res, next)=>{
@@ -7,7 +8,7 @@ const isPaid = (req, res, next)=>{
 }
 
 
-const createOrderId = async (req, res)=>{
+const createOrderId = catchAsync(async (req, res)=>{
     const instance = new Razorpay({
         key_id: `${process.env.RAZORPAY_API_KEY}`,
         key_secret: `${process.env.RAZORPAY_API_SECRET}`
@@ -25,7 +26,7 @@ const createOrderId = async (req, res)=>{
         status: 'success',
         order
     })
-}
+})
 
 const paymentVerification = async (req, res)=>{
     const {razorpay_payment_id, razorpay_order_id, razorpay_signature} = req.body
