@@ -4,6 +4,7 @@ import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg"
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg"
 import niharika from "../assets/Images/TeamsImages/DevTeam/niharika.jpeg"
 import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg"
+import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg"
 
 // jb sbki ajaygi tb bulk convert krdunga webp mein
 
@@ -40,7 +41,7 @@ export const teamData = [{
     {
         id:104,
         name:"Ankur Bahuguna",
-        img:"",
+        img:ankur,
         git:"https://github.com/bahugunaAnkur810",
         linkdin:"https://www.linkedin.com/in/ankur-bahuguna-9075b12a7",
         insta:"",
@@ -53,7 +54,7 @@ export const teamData = [{
         git:"https://github.com/vky5",
         linkdin:"https://www.linkedin.com/in/vaibhav-y-80969b283/",
         insta:"",
-        gmail:""
+        gmail:"vky0579@gmail.com"
     },
     {
         id:106,
