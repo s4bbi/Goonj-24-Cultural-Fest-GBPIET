@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import "../CssFiles/Card.css"; // Import CSS file
 
 const Card = (props) => {
-  console.log(props.data);
-
   return (
     <div className="card mt-5 sm:mt-0 w-full mx-auto text-white ">
       <div className="background">

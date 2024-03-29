@@ -70,7 +70,7 @@ export const teamData = [{
     name:"Graphics Team",
     members:[{
         id:201,
-        name:"Niharika",
+        name:"Niharika Chauhan",
         img:niharika,
         git:"",
         linkdin:"https://www.linkedin.com/in/niharika-chauhan-351162227",
