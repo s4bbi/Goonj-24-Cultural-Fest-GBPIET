@@ -9,6 +9,7 @@ import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
 import audienceGlobe from "../assets/Images/audienceGlobe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
+import viksit from "../assets/Images/viksit_bharat.svg"
 import saturnImage from  "../assets/Images/Home_Saturn_Img.webp"
 import director from "../assets/Images/peopleImages/director.webp"
 import sac_oic from "../assets/Images/peopleImages/sac-oic.webp"
@@ -19,15 +20,11 @@ const HomePage = () => {
         <div>
             <div >
                 <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
-                    <div className="font-cM text-white text-center text-sm sm:text-3xl sm:pb-16 ml-16 sm:ml-0">
-                        <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
-                    </div>
+                    <img src={viksit} className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"/>
                     <div className="">
-                        <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center drop-shadow-2xl">GOONJ 24</h1>
-                    </div>    
-                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56 sm:pt-28 mr-16 sm:mr-0">
-                        <h1 className="font-cM text-white w-fit">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
-                    </div>
+                        <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[320px] text-center drop-shadow-2xl select-none">GOONJ 24</h1>
+                    </div> 
+                    <h1 className="text-lg sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>   
                 </div>    
                 <div>
                     <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>

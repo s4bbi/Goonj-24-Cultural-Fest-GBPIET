@@ -4,16 +4,40 @@ import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg"
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg"
 import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg"
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg"
-
+import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg"
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg"
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg"
 // jb sbki ajaygi tb bulk convert krdunga webp mein
 
-export const teamData = [{
-    id:1,
+export const teamData = [
+    {
+        id:1,
+        name:"Core Team",
+        members:[{
+            id:101,
+            name:"Chandra Prakash",
+            img:chandu,
+            git:"",
+            linkdin:"https://www.linkedin.com/in/chandra-prakash-pandey-6254a9223/",
+            insta:"https://www.instagram.com/chandra_p.pandey/",
+            gmail:"chandraprakashpandey2003@gmail.com"
+        },
+        {
+            id:102,
+            name:"Prajjwal Chauhan",
+            img:"",
+            git:"",
+            linkdin:"https://www.linkedin.com/in/prajjwal-chauhan-b326b120b/",
+            insta:"https://www.instagram.com/prajjwal740/",
+            gmail:""
+        },
+        ]
+    },
+    {
+    id:2,
     name:"Dev Team",
     members:[{
-        id:101,
+        id:201,
         name:"Yashpreet Singh",
         img:yashi,
         git:"https://github.com/s4bbi",
@@ -22,16 +46,7 @@ export const teamData = [{
         gmail:"singhyashpreet22@gmail.com"
     },
     {
-        id:102,
-        name:"Nitesh Singh Bisht",
-        img:Nitesh,
-        git:"https://github.com/Niteshsinghbisht03",
-        linkdin:"https://www.linkedin.com/in/nitesh-singh-bisht",
-        insta:"",
-        gmail:"niteshsinghbisht6398@gmail.com"
-    },
-    {
-        id:103,
+        id:202,
         name:"Priya Kandpal",
         img:priya,
         git:"https://github.com/priya4596",
@@ -40,7 +55,16 @@ export const teamData = [{
         gmail:"priyakandpal79@gmail.com"
     },
     {
-        id:104,
+        id:203,
+        name:"Nitesh Singh Bisht",
+        img:Nitesh,
+        git:"https://github.com/Niteshsinghbisht03",
+        linkdin:"https://www.linkedin.com/in/nitesh-singh-bisht",
+        insta:"",
+        gmail:"niteshsinghbisht6398@gmail.com"
+    },
+    {
+        id:204,
         name:"Ankur Bahuguna",
         img:ankur,
         git:"https://github.com/bahugunaAnkur810",
@@ -49,7 +73,7 @@ export const teamData = [{
         gmail:""
     },
     {
-        id:105,
+        id:205,
         name:"Vaibhav Yadav",
         img:vaibhav,
         git:"https://github.com/vky5",
@@ -58,7 +82,7 @@ export const teamData = [{
         gmail:"vky0579@gmail.com"
     },
     {
-        id:106,
+        id:206,
         name:"Rohit Mahant",
         img:rohit,
         git: "https://github.com/Semicile17",
@@ -68,10 +92,10 @@ export const teamData = [{
     },]
 },
 {
-    id:2,
+    id:3,
     name:"Graphics Team",
     members:[{
-        id:201,
+        id:301,
         name:"Niharika Chauhan",
         img:niharika,
         git:"",
@@ -80,7 +104,7 @@ export const teamData = [{
         gmail:"niharikachauhan425@gmail.com"
     },
     {
-        id:202,
+        id:302,
         name:"Aditya Rawat",
         img:aditya,
         git:"",
