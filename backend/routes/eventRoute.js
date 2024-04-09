@@ -12,18 +12,18 @@ router
     .route('/')
     .get(
         authController.validateToken,
-        authController.restrictTo,
+        authController.restrictTo('CA', 'PT'),
         eventController.getUserEvents
     )
     .post(
         authController.validateToken,
-        authController.restrictTo,
+        authController.restrictTo('CA', 'PT'),
         paymentController.isPaid,
         eventController.registerUser
     )
     .delete(
         authController.validateToken,
-        authController.restrictTo,
+        authController.restrictTo('CA', 'PT'),
         eventController.unRegisterUser
     )
 

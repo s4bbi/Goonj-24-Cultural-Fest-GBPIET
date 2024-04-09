@@ -5,16 +5,16 @@ const AppError = require('../utils/appError');
 const util = require('util');
 
 
+// to create JWT from signature
 const signToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRES_IN
     });
 };
 
-const createUser = async (userData) => {
-    return await UserData.create(userData);
-};
 
+
+// to send JWT to client
 const createAndSendTokenResponse = async (userData, res) => {
     const token = signToken(userData._id);
 
@@ -47,22 +47,7 @@ const signup = catchAsync(async (req, res, next) => {
         ca_id: req.body.ca_id || undefined
     };
 
-    const newUser = await createUser(userData);
-    await createAndSendTokenResponse(newUser, res);
-});
-
-const casignup = catchAsync(async (req, res, next) => {
-    const userData = {
-        name: req.body.name,
-        email: req.body.email,
-        pNum: req.body.pNum,
-        state: req.body.state,
-        city: req.body.city,
-        college: req.body.college,
-        role: 'ambassador'
-    };
-
-    const newUser = await createUser(userData);
+    const newUser = await UserData.create(userData);
     await createAndSendTokenResponse(newUser, res);
 });
 
@@ -89,6 +74,8 @@ const checkUser = catchAsync(async (req, res)=>{
     })
 })
 
+
+// this is to authenticate JWT token
 const validateToken = catchAsync(async (req, res, next)=>{
     // Step 1 : check if token exists in headers
     let token;
@@ -133,4 +120,4 @@ const restrictTo = (...roles) => {
     }
 }
 
-module.exports = { signup, casignup, validateToken, checkUser, restrictTo };
+module.exports = { signup, validateToken, checkUser, restrictTo };
