@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
     email:{
         type: String,
         required: [true, 'Please provide an email'],
-        // unique: true,
+        unique: true,
         lowercase: true,
         validate: [validator.isEmail, 'Invalid Email']
     },
@@ -35,12 +35,25 @@ const userSchema = new mongoose.Schema({
         type: String, 
         required: [true, 'Please enter a college name']
     },
+    isPaid: {
+        type: Boolean,
+        default: false
+    },
     payment: {
         type: Number
     },
     events: {
         type: Array,
         default: []
+    },
+    ca_counter: {
+        type: Number,
+        default:0
+    },
+    role: {
+        type: String,
+        enum: ['CA', 'AUD', 'PT'],
+        default: 'PT'
     },
     generated_id: {
         type: String
@@ -52,10 +65,25 @@ const userSchema = new mongoose.Schema({
 })
 
 
+
+
+// this is generated id to send back to client after payment
+userSchema.pre('save', async function (next){
+    const num = await generateuniqueId();
+    this.generated_id = 'GNJ-' + this.role + num;
+})
+
+async function generateuniqueId(){
+    let id;
+    do{
+        id = Math.floor(Math.random() + 90000) + 10000;
+    }while (await UserData.exists({
+        generatedId: id
+    }));
+
+    return id;
+}
+
+
 const UserData = mongoose.model('UserData', userSchema);
-
 module.exports = UserData;
-
-// TODO no need to save ca_id. Create a separate auth for ca and create their IDs but will these coupon be valid indefinitely or for once.
-// TODO if a person pays participant fees then change role from audience to participant
-// TODO add +91 b4 pnum to make validator work
