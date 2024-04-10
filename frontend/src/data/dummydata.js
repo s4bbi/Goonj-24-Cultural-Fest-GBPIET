@@ -290,7 +290,7 @@ export const data = [
 },
 {
     id:10,
-    name:"VIDEO & PHOTOGRAPHY EVENTS",
+    name:"VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students)",
     img:img3,
     Event:[
         {
