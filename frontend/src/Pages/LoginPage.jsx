@@ -69,31 +69,17 @@ const CARegisterPage = () => {
                     </div>
                     <div className='flex flex-col sm:w-5/12'>
                         <label className="font-cR mb-2 font-light text-sm">College State</label>
-                        <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>                              <option value="xx">xx</option>
-                          </select>
+                        <input type="text" placeholder="State" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
                       </div>              
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
                     <div className="flex flex-col sm:w-5/12">
                         <label className="font-cR mb-2 font-light text-sm">College City </label>
-                        <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                        </select>
+                        <input type="text" placeholder="College City" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
                     </div>
                     <div className="flex flex-col sm:w-5/12">
                         <label className="font-cR mb-2 font-light text-sm">College Name</label>
-                        <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                        </select>
+                        <input type="text" placeholder="College Name" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
                     </div>
                 </div>
                 <div className="flex justify-center my-4 pb-2">
