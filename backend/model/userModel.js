@@ -52,7 +52,8 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['CA', 'AUD', 'PT']
+        enum: ['CA', 'AUD', 'PT'],
+        default: 'PT'
     },
     generated_id: {
         type: String
@@ -76,7 +77,7 @@ async function generateuniqueId(){
     let id;
     do{
         id = Math.floor(Math.random() + 90000) + 10000;
-    }while (await PostModel.exists({
+    }while (await UserData.exists({
         generatedId: id
     }));
 
