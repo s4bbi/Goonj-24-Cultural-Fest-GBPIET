@@ -53,7 +53,7 @@ const signup = catchAsync(async (req, res, next) => {
 
 
 // this will throw an error of user not existing... and we need to handle it 
-const checkUser = catchAsync(async (req, res)=>{
+const checkUser = catchAsync(async (req, res, next)=>{
     let user = await UserData.findOne({
         email: req.body.email
     })
