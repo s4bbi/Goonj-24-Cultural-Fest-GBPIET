@@ -1,3 +1,4 @@
+import CountdownTimer from "../components/CountdownTimer.jsx"
 import { Link } from "react-router-dom"
 import vidHome from "../assets/Videos/HeroBG.webm"
 import orbitHome from "../assets/Images/Orbits.png" 
@@ -16,6 +17,9 @@ import sac_oic from "../assets/Images/peopleImages/sac-oic.webp"
 
 
 const HomePage = () => {
+
+    const endTime = '2024-05-13T00:00:00';
+
     return (
         <div>
             <div >
@@ -24,14 +28,18 @@ const HomePage = () => {
                     <div className="">
                         <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[320px] text-center drop-shadow-2xl select-none">GOONJ 24</h1>
                     </div> 
-                    <h1 className="text-lg sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>   
+                    <div className="flex flex-col gap-1 items-center sm:flex-row justify-between">
+                        <h1 className="text-lg sm:text-2xl text-white font-cM text-left sm:-mt-10 sm:ml-48">13th May - 14th May</h1>
+                        <h1 className="text-lg sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>   
+                    </div>
                 </div>    
                 <div>
                     <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>
                 </div>
             </div>
-            <div className="bg-EventBG py-12 w-full h-full">
-                <div>
+            <div className="bg-EventBG pb-12 w-full h-full">
+                <CountdownTimer endTime={endTime} className="w-full h-2/6 bg-inherit" />
+                <div className="pt-12">
                     <div className="absolute w-full font-cSB">
                         <div className="flex text-white sm:mx-44 ml-5 pt-1 sm:pt-4">
                             <Link to="/events">

@@ -84,7 +84,7 @@ const appRouter = createBrowserRouter([
       {
         path: '/audience',
         element: <AudiencePortal />
-      }
+      },
     ]
   }
 ])
