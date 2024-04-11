@@ -114,8 +114,6 @@ const validateToken = catchAsync(async (req, res, next)=>{
 const restrictTo = (...roles) => {
     return (req, res, next)=>{
         if (!roles.includes(req.user.role)){
-            console.log(req.user);
-            console.log(req.user.role);
             return next(new AppError('You are not authorized to access this route', 403)) 
         }
         

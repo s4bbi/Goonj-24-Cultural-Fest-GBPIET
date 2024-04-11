@@ -46,7 +46,7 @@ const Profile = () => {
                                 )
                             ))}
                         </ul>   
-                        
+                        profile
                         
                     </div>
 
