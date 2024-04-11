@@ -14,6 +14,7 @@ import CAPortal from '../src/Pages/CAPortal.jsx'
 import Teams from '../src/Pages/Teams.jsx'
 import Profile from '../src/Pages/Profile.jsx'
 import CARegisterPage from './Pages/CARegisterPage.jsx'
+import AudiencePortal from './Pages/AudiencePortal.jsx'
 import Loader from './components/Loader.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import GoogleAuth from './Pages/GoogleAuth.jsx'
@@ -75,10 +76,15 @@ const appRouter = createBrowserRouter([
       {
         path: '/profile',
         element: <Profile />
-      },{
+      },
+      {
         path: '/googleauth',
         element: <GoogleAuth/>
-      }
+      },
+      {
+        path: '/audience',
+        element: <AudiencePortal />
+      },
     ]
   }
 ])

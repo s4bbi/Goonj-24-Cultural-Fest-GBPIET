@@ -1,5 +1,6 @@
 const Razorpay = require("razorpay")
 const crypto = require('crypto');
+const paymentData = require("../utils/paymentTypes");
 
 const isPaid = (req, res, next)=>{
     next();
@@ -11,12 +12,18 @@ const createOrderId = async (req, res)=>{
         key_secret: `${process.env.RAZORPAY_API_SECRET}`
     });
 
+    let options;
+    if (req.user.role==='PT'){ // this is only for participant and once paid we will generate ID and update it in their model
+        options = paymentData['type5'];
 
-    const options = {
-        amount: 6900,
-        currency: 'INR',
-        receipt: 'RCP12'
+    }else{
+        options = {
+            amount: 50000,
+            currency: 'INR',
+            receipt: 'RCP12'
+        }
     }
+
     
     const order = await instance.orders.create(options);
     res.status(200).json({
@@ -26,7 +33,6 @@ const createOrderId = async (req, res)=>{
 }
 
 const paymentVerification = async (req, res)=>{
-    const {razorpay_payment_id, razorpay_order_id, razorpay_signature} = req.body
     let generatedSignature = crypto.createHmac('sha256', process.env.RAZORPAY_API_SECRET)
                                 .update(req.body.razorpay_order_id + '|' +req.body.razorpay_payment_id)
                                 .digest('hex')

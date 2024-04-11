@@ -50,7 +50,7 @@ const CAPortal = () => {
                         <div className="w-full md:w-8/12">
                             <div className="flex flex-col gap-14 font-cM text-center md:text-left">
                                 <h2 className="text-4xl">Why become a <span className="text-[#5F43B2]">Campus Ambassador?</span></h2>
-                                <p className="font-cR">Elevate your college experience by becoming a Campus Ambassador for our cultural fest! As an ambassador, you will be the catalyst for the fest's success, leading promotional efforts and shaping the event's narrative. This role is not just about leadership and creativity; it is a chance to forge lasting connections within the college community. Enjoy exclusive perks, gain recognition, and contribute to the vibrant cultural tapestry of our college. Be part of something extraordinary—join us in creating an unforgettable cultural fest!</p>
+                                <p className="font-cR">Elevate your college experience by becoming a Campus Ambassador for our cultural fest! As an ambassador, you will be the catalyst for the fests success, leading promotional efforts and shaping the events narrative. This role is not just about leadership and creativity; it is a chance to forge lasting connections within the college community. Enjoy exclusive perks, gain recognition, and contribute to the vibrant cultural tapestry of our college. Be part of something extraordinary—join us in creating an unforgettable cultural fest!</p>
                             </div>
                         </div>
                         <div className="w-full md:w-4/12">

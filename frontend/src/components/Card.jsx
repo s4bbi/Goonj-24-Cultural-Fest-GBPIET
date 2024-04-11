@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -37,7 +36,7 @@ const Card = (props) => {
       </div>
       <div className="box box3">
         <span className="icon">
-          <Link to={props.data.email} target="_blank">
+          <Link to={props.data.gmail} target="_blank">
             <MdEmail className="text-2xl absolute hover:cursor-pointer" />
           </Link>
         </span>

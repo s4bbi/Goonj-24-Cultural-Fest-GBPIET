@@ -9,6 +9,4 @@ router.post('/login', authController.checkUser); // if the user exists token wil
 router.post('/signup', authController.signup); // error code CU401 will be sent to the client and it will be read by frontend application and it will redirect to registeration form
 
 
-router.post('/casignup', authController.casignup);
-
 module.exports = router;

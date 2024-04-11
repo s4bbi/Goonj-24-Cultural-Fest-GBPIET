@@ -9,6 +9,7 @@ import { FaUsers } from "react-icons/fa";
 import { FaCalendarCheck } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
 import { FaDollarSign } from "react-icons/fa";
+import { FaUserGroup } from "react-icons/fa6";
 
 const Header = () => {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -58,6 +59,9 @@ const Header = () => {
                     <li>
                         <Link to="/caportal">CA PORTAL</Link>
                     </li>
+                    <li>
+                        <Link to="/audience">Audience Portal</Link>
+                    </li>
                     <Link to="/login"> 
                         <LoginButton />
                     </Link>
@@ -99,10 +103,14 @@ const Header = () => {
                                     <FaUserTie className="mt-1"/>
                                     <Link to="/caportal" onClick={toggleSidebar}>CA PORTAL</Link>
                                 </li>
+                                <li className="mb-4 flex gap-3">
+                                    <FaUserGroup className="mt-1"/>
+                                        <Link to="/audience" onClick={toggleSidebar}>Audience Portal</Link>
+                                    </li>
                                 <li>
-                                <Link to="/login"> 
-                                    <LoginButton />
-                                </Link>
+                                    <Link to="/login" onClick={toggleSidebar}> 
+                                        <LoginButton />
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

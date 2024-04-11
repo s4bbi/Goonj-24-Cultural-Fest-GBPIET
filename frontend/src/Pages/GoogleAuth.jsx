@@ -1,8 +1,9 @@
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import LoginAstro from "../assets/Images/LoginAstronaut.png";
 import { jwtDecode } from "jwt-decode";
-import { useState} from "react";
-
+import { useEffect, useState} from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom"; 
 const GoogleAuth = () => {
   const [userData, setUserData] = useState({
     name: undefined,
@@ -11,17 +12,44 @@ const GoogleAuth = () => {
 
   
   const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  const navigate = useNavigate();
+  const handleSuccess = async (credentialResponse) => {
+    try{
   
-  const handleSuccess = (credentialResponse) => {
-    
     let decoded = jwtDecode(credentialResponse.credential);
     setUserData({
       name: decoded.name,
       email: decoded.email
-    })
-
+    });
     console.log(userData)
+
+
+    const response = await axios.post(import.meta.env.VITE_BACKEND_URL + "/api/v1/auth/login", {
+      email: userData.email,
+    });
+
+
+    if (response.data.status==='success'){
+      console.log(response.data)
+      navigate('/profile', {state:response.data.userCreated});
+    }
+  }
+
+  catch(err){
+    if (err.response.status===401){
+      navigate('/login');
+    }else{
+      console.log(err);
+      console.error("Error checking email existence");
+    }
+
+  }
+    
   };
+  useEffect(()=>{
+
+
+  },[])
   
 
 

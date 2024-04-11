@@ -1,3 +1,5 @@
+import CountdownTimer from "../components/CountdownTimer.jsx"
+import { Link } from "react-router-dom"
 import vidHome from "../assets/Videos/HeroBG.webm"
 import orbitHome from "../assets/Images/Orbits.png" 
 import AboutHome from "../assets/Images/AboutMoon_Img.webp"
@@ -6,34 +8,38 @@ import GalleryGlobe from "../assets/Images/Gallery_Globe.webp"
 import SponsorsGlobe from "../assets/Images/Sponsors_Globe.webp"
 import TeamsGlobe from "../assets/Images/Teams_Globe.webp"
 import CAPortal_Globe from "../assets/Images/CAPortal_Globe.webp"
+import audienceGlobe from "../assets/Images/audienceGlobe.webp"
 import orbitSun from "../assets/Videos/orbitSun.webm"
-import { Link } from "react-router-dom"
+import viksit from "../assets/Images/viksit_bharat.svg"
 import saturnImage from  "../assets/Images/Home_Saturn_Img.webp"
 import director from "../assets/Images/peopleImages/director.webp"
 import sac_oic from "../assets/Images/peopleImages/sac-oic.webp"
 
 
 const HomePage = () => {
+
+    const endTime = '2024-05-13T00:00:00';
+
     return (
         <div>
             <div >
                 <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
-                    <div className="font-cM text-white text-center text-sm sm:text-3xl sm:pb-16 ml-16 sm:ml-0">
-                        <h1 className="sm:mx-48 absolute sm:mt-28">GBPIET'S</h1>
-                    </div>
+                    <img src={viksit} className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"/>
                     <div className="">
-                        <h1 className="font-samarkan text-white text-[90px] md:text-[200px] lg:text-[320px] text-center drop-shadow-2xl">GOONJ 24</h1>
-                    </div>    
-                    <div className="flex justify-end text-xs sm:text-2xl sm:absolute sm:mt-96 sm:right-56 sm:pt-28 mr-16 sm:mr-0">
-                        <h1 className="font-cM text-white w-fit">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>
+                        <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[320px] text-center drop-shadow-2xl select-none">GOONJ 24</h1>
+                    </div> 
+                    <div className="flex flex-col gap-1 items-center sm:flex-row justify-between">
+                        <h1 className="text-lg sm:text-2xl text-white font-cM text-left sm:-mt-10 sm:ml-48">13th May - 14th May</h1>
+                        <h1 className="text-lg sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">VIKSIT BHARAT @2047: VOICE OF YOUTH</h1>   
                     </div>
                 </div>    
                 <div>
                     <video src={vidHome} autoPlay muted loop className="w-full h-screen object-cover"></video>
                 </div>
             </div>
-            <div className="bg-EventBG py-12 w-full h-full">
-                <div>
+            <div className="bg-EventBG pb-12 w-full h-full">
+                <CountdownTimer endTime={endTime} className="w-full h-2/6 bg-inherit" />
+                <div className="pt-12">
                     <div className="absolute w-full font-cSB">
                         <div className="flex text-white sm:mx-44 ml-5 pt-1 sm:pt-4">
                             <Link to="/events">
@@ -41,23 +47,23 @@ const HomePage = () => {
                                     <p>
                                         EVENTS
                                     </p>
-                                    <img src={EventsGlobe} className="w-20 sm:w-72 hover:scale-110 ease-in-out duration-200" alt="Events Globe"/>
+                                    <img src={EventsGlobe} className="w-20 sm:w-60 hover:scale-110 ease-in-out duration-200" alt="Events Globe"/>
                                 </div>
                             </Link>
                         </div>
                         <div className="flex justify-end text-white mx-72 sm:pt-10">
                             <Link to="/gallery">
-                                <div className="flex flex-col items-center text-sm sm:text-2xl">
+                                <div className="flex flex-col items-center text-sm sm:text-2xl -mt-4">
                                     <p>
                                         GALLERY
                                     </p>
-                                    <img src={GalleryGlobe} className="w-16 sm:w-56 hover:scale-110 ease-in-out duration-200" alt="Gallery Globe"/>
+                                    <img src={GalleryGlobe} className="w-12 sm:w-56 hover:scale-110 ease-in-out duration-200 " alt="Gallery Globe"/>
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex text-white sm:mx-64 sm:pt-44 ml-16 sm:mt-0">
+                        <div className="flex text-white sm:mx-80 -mt-10 ml-1 sm:ml-80">
                             <Link to="/sponsors">
-                                <div className="flex flex-col items-center sm:text-2xl text-sm -mt-5 sm:-mt-0">
+                                <div className="flex flex-col items-center sm:text-2xl text-sm sm:-mt-0">
                                     <p>
                                         SPONSORS
                                     </p>
@@ -65,31 +71,43 @@ const HomePage = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex justify-center text-white sm:mt-0">
+                        <div className="flex justify-center text-white mr-2 sm:-mt-10 sm:mr-16">
                             <div className="flex flex-col items-center text-2xl w-1/2">
-                                <video src={orbitSun} autoPlay muted loop className="sm:w-20 w-12" ></video>
+                                <video src={orbitSun} autoPlay muted loop className="sm:w-20 w-6" ></video>
                             </div>
                         </div>
-                        <div className="flex justify-end text-white sm:mx-40 sm:pt-36 sm:mt-0">
-                            <Link to="/teams">
-                                <div className="flex flex-col items-center text-sm sm:text-2xl">
-                                    <p>
-                                        TEAMS
-                                    </p>
-                                    <img src={TeamsGlobe} className="sm:w-80 w-20 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
-                                </div>
-                            </Link>
+                        <div className="flex justify-between w-10/12 mx-auto sm:mt-20">
+                            <div className="flex  text-white">
+                                <Link to="/caportal">
+                                    <div className="flex flex-col items-center text-sm sm:text-2xl mt-5 sm:mt-16">
+                                        <p>
+                                            CA PORTAL
+                                        </p>
+                                        <img src={CAPortal_Globe} className="w-16 sm:w-64 hover:scale-110 ease-in-out duration-200" alt="CAPortal Globe"/>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="flex justify-end text-white">
+                                <Link to="/teams">
+                                    <div className="flex flex-col items-center text-sm sm:text-2xl">
+                                        <p>
+                                            TEAMS
+                                        </p>
+                                        <img src={TeamsGlobe} className="sm:w-80 w-28 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-                        <div className="flex justify-center text-white sm:pt-44">
-                            <Link to="/caportal">
-                                <div className="flex flex-col items-center text-sm sm:text-2xl">
-                                    <p>
-                                        CA PORTAL
-                                    </p>
-                                    <img src={CAPortal_Globe} className="w-24 sm:w-64 hover:scale-110 ease-in-out duration-200" alt="CAPortal Globe"/>
-                                </div>
-                            </Link>
-                        </div>
+                        <div className="flex justify-center text-white -mt-4 sm:-mt-0 sm:mt-32 mr-10">
+                                <Link to="/audience">
+                                    <div className="flex flex-col items-center text-sm sm:text-2xl">
+                                        <p>
+                                            AUDIENCE PORTAL
+                                        </p>
+                                        <img src={audienceGlobe} className="sm:w-40 w-14 hover:scale-110 ease-in-out duration-200" alt="Teams Globe"/>
+                                    </div>
+                                </Link>
+                            </div>
                     </div>
                     <div className="py-10">
                         <img src={orbitHome} className="w-full" alt="Orbit Home"/>
