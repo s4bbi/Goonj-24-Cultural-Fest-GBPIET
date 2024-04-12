@@ -5,7 +5,6 @@ import axios from 'axios';
 const CARegisterPage = () => {
     const checkoutFunction = async () => {
 
-
         try {
             // Fetch order details from the backend API
             const res = await axios.get('http://127.0.0.1:3000/api/v1/checkout/orderid');
