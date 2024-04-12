@@ -23,7 +23,6 @@ const CARegisterPage = () => {
                 description: "Test transaction",
                 order_id: id,
 
-
                 // This should ideally be handled server-side for security reasons. It has similar authentication procedure just like JWT
                 callback_url: 'http://127.0.0.1:3000/api/v1/checkout/paymentverify',
                 theme: {
