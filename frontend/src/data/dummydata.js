@@ -21,7 +21,6 @@ import hop_notch_group from "../assets/Images/EventImages/hop-notch-group.webp"
 import light_painting from "../assets/Images/EventImages/light-painting.webp"
 import mr_miss_goonj from "../assets/Images/EventImages/mr-and-miss-goonj.webp"
 import singing from "../assets/Images/EventImages/singing.webp"
-import TEDx from "../assets/Images/EventImages/tedx-talks.webp"
 import qawalli from "../assets/Images/EventImages/qawalli.webp"
 import reel_mania from "../assets/Images/EventImages/reel-mania.webp"
 import standup from "../assets/Images/EventImages/standup-comedy.webp"
@@ -31,11 +30,14 @@ import open_mic from "../assets/Images/EventImages/open-mic.webp"
 import salsa from "../assets/Images/EventImages/salsa.webp"
 import esport from "../assets/Images/EventImages/e-sports.webp"
 import step_up from "../assets/Images/EventImages/step-up.webp"
+import ggt from "../assets/Images/EventImages/ggt.webp"
+import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp"
+
 
 export const data = [
     {
     id:1,
-    name:"DRAMAFLICT - Prizes upto ₹20K",
+    name:"DRAMAFLICT - Prizes upto ₹10K",
     img:img1,
     Event:[
     {
@@ -103,7 +105,7 @@ export const data = [
 },
 {
     id:3,
-    name:"FOOTLOOSE",
+    name:"FOOTLOOSE - Prizes upto ₹10K",
     img:img1,
     Event:[
         {
@@ -130,7 +132,7 @@ export const data = [
 },
 {
     id:4,
-    name:"FLASHMOB",
+    name:"FLASHMOB - Prizes upto ₹20K",
     img:img3,
     Event:[
         {
@@ -161,7 +163,7 @@ export const data = [
 },
 {
     id:5,
-    name:"SALSAA",
+    name:"SALSAA - Prizes upto ₹5K",
     img:img3,
     Event:[
         {
@@ -192,7 +194,7 @@ export const data = [
 
 {
     id:7,
-    name:"BATTLES - Prizes upto ₹25K",
+    name:"BATTLES - Prizes upto ₹10K",
     img:img1,
     Event:[
         {
@@ -218,7 +220,7 @@ export const data = [
 
 {
     id:8,
-    name:"BAND EVENTS",
+    name:"BAND EVENTS - Prizes upto ₹6K",
     img:img1,
     Event:[
         {
@@ -276,21 +278,12 @@ export const data = [
 
         judging:"Creativity + Originality + Language proficiency"
         },
-        {
-        id:904,
-        name:"TEDx TALKS",
-        img:TEDx
-        ,
-        description:"Grab a pen and paper, drop into an ocean of words, and  compose a symphony of thoughts and emotions. Whether  you're an experienced poet or just discovering the power of words, Alfaaz-e-Kalam is your chance to shine. Unleash  your inner poet, share your poetry, and participate in an  exciting event. Come join us for a lyrical celebration in  which each phrase represents a step towards poetic  excellence.",
-        topics:[],
-        guidelines:[  "Mode of language: Hindi.",  "All entries should be original, and plagiarism will result in immediate disqualification.",  "Submissions should be typed and submitted in PDF format.",  "There is no specific theme for the competition.",  "A poem or Shayari should not violate any religion, community, caste, or other aspect of social or cultural sensitivity. The use of any abusive or obscene language is prohibited.",  "Poetry entries should not exceed 30 lines.",  "Late submissions will not be considered."],
-
-        judging:"Creativity + Originality + Language proficiency"},
+       
     ]
 },
 {
     id:10,
-    name:"VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students)",
+    name:"VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students) - Prizes upto ₹10K",
     img:img3,
     Event:[
         {
@@ -342,7 +335,7 @@ export const data = [
 },
 {
     id:11,
-    name:"OPEN EVENTS - Prizes upto ₹30K",
+    name:"OPEN EVENTS - Prizes upto ₹45K",
     img:img3,
     Event:[
         {
@@ -385,6 +378,24 @@ export const data = [
         id:1105,
         name:"Step Up",
         img:step_up,
+        description:"Unleash your gaming Prowess",
+        topics:[],
+        guidelines:[""],
+        judging:""
+    },
+    {
+        id:1106,
+        name:"Tug of War",
+        img:tug_of_war,
+        description:"Unleash your gaming Prowess",
+        topics:[],
+        guidelines:[""],
+        judging:""
+    },
+    {
+        id:1107,
+        name:"Goonj Got Talent",
+        img:ggt,
         description:"Unleash your gaming Prowess",
         topics:[],
         guidelines:[""],
