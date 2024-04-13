@@ -5,7 +5,6 @@ import axios from 'axios';
 const CARegisterPage = () => {
     const checkoutFunction = async () => {
 
-
         try {
             // Fetch order details from the backend API
             const res = await axios.get('http://127.0.0.1:3000/api/v1/checkout/orderid');
@@ -22,7 +21,6 @@ const CARegisterPage = () => {
                 name: "Goonj 24",
                 description: "Test transaction",
                 order_id: id,
-
 
                 // This should ideally be handled server-side for security reasons. It has similar authentication procedure just like JWT
                 callback_url: 'http://127.0.0.1:3000/api/v1/checkout/paymentverify',
