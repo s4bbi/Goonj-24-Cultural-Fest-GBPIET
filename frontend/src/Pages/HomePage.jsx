@@ -66,7 +66,7 @@ const HomePage = () => {
                 </div>
               </Link>
             </div>
-            <div className="flex justify-end text-white mx-72  sm:pl-72 lg:mt-12 xl:mt-6 ">
+            <div className="flex justify-end text-white mx-72  sm:pl-72 md:mt-10 lg:mt-12 xl:mt-6 ">
               <Link to="/gallery">
                 <div className="flex flex-col items-center text-sm sm:text-2xl -mt-4">
                   <p>GALLERY</p>
@@ -78,7 +78,7 @@ const HomePage = () => {
                 </div>
               </Link>
             </div>
-            <div className="flex text-white sm:mx-40 -mt-14 sm:-mt-32 ml-1 sm:ml-80 md:ml-40 md:-mt-12 lg:mt-0 lg:ml-56 xl:ml-72 ">
+            <div className="flex text-white sm:mx-40 -mt-14 sm:-mt-32 ml-1 sm:ml-80 md:ml-56 md:-mt-0 lg:mt-0 lg:ml-56 xl:ml-72 ">
               <Link to="/sponsors">
                 <div className="flex flex-col items-center sm:text-2xl text-sm sm:-mt-0">
                   <p>SPONSORS</p>
@@ -101,7 +101,7 @@ const HomePage = () => {
                 ></video>
               </div>
             </div>
-            <div className="flex justify-between w-10/12 mx-auto lg:mt-16 xl:mt-32">
+            <div className="flex justify-between w-10/12 mx-auto lg:mt-16 xl:mt-32 md:mt-12">
               <div className="flex  text-white ">
                 <Link to="/caportal">
                   <div className="flex flex-col items-center text-sm sm:text-2xl mt-5 sm:mt-0  ">
@@ -127,7 +127,7 @@ const HomePage = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center text-white -mt-6 mr-10 md:mt-0 lg:mt-20 xl:mt-4">
+            <div className="flex justify-center text-white -mt-6 mr-10 md:mt-16 lg:mt-20 xl:mt-4">
               <Link to="/audience">
                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                   <p>AUDIENCE PORTAL</p>
