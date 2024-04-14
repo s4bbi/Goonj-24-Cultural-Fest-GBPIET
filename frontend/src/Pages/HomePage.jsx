@@ -127,7 +127,7 @@ const HomePage = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center text-white  mr-10 md:mt-16 lg:mt-20 xl:mt-4">
+            <div className="flex justify-center text-white -mt-2  mr-10 md:mt-16 lg:mt-20 xl:mt-4">
               <Link to="/audience">
                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                   <p>AUDIENCE PORTAL</p>
