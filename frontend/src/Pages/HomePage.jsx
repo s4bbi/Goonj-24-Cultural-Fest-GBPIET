@@ -78,7 +78,7 @@ const HomePage = () => {
                 </div>
               </Link>
             </div>
-            <div className="flex text-white sm:mx-40 -mt-14 sm:-mt-32 ml-1 sm:ml-80 md:ml-56 md:-mt-0 lg:mt-0 lg:ml-56 xl:ml-72 ">
+            <div className="flex text-white sm:mx-40 -mt-4 sm:-mt-32 ml-28  sm:ml-80 md:ml-56 md:-mt-0 lg:mt-0 lg:ml-56 xl:ml-72 ">
               <Link to="/sponsors">
                 <div className="flex flex-col items-center sm:text-2xl text-sm sm:-mt-0">
                   <p>SPONSORS</p>
@@ -90,7 +90,7 @@ const HomePage = () => {
                 </div>
               </Link>
             </div>
-            <div className="flex justify-center text-white mr-2 sm:mr-4 sm:-mt-4 xl:-mt-12 ">
+            <div className="flex justify-center text-white mr-2 mt-0 sm:mr-4 sm:-mt-4 xl:-mt-12 ">
               <div className="flex flex-col items-center text-2xl w-1/2">
                 <video
                   src={orbitSun}
@@ -101,7 +101,7 @@ const HomePage = () => {
                 ></video>
               </div>
             </div>
-            <div className="flex justify-between w-10/12 mx-auto lg:mt-16 xl:mt-32 md:mt-12">
+            <div className="flex justify-between w-10/12 mx-auto  lg:mt-16 xl:mt-32 md:mt-12">
               <div className="flex  text-white ">
                 <Link to="/caportal">
                   <div className="flex flex-col items-center text-sm sm:text-2xl mt-5 sm:mt-0  ">
@@ -114,20 +114,20 @@ const HomePage = () => {
                   </div>
                 </Link>
               </div>
-              <div className="flex justify-end text-white sm:mt-8">
+              <div className="flex justify-end text-white mt-6 sm:mt-8">
                 <Link to="/teams">
                   <div className="flex flex-col items-center text-sm sm:text-2xl">
                     <p>TEAMS</p>
                     <img
                       src={TeamsGlobe}
-                      className="sm:w-32 w-28 xl:w-56 hover:scale-110 ease-in-out duration-200"
+                      className="sm:w-32 w-16 xl:w-56 hover:scale-110 ease-in-out duration-200"
                       alt="Teams Globe"
                     />
                   </div>
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center text-white -mt-6 mr-10 md:mt-16 lg:mt-20 xl:mt-4">
+            <div className="flex justify-center text-white  mr-10 md:mt-16 lg:mt-20 xl:mt-4">
               <Link to="/audience">
                 <div className="flex flex-col items-center text-sm sm:text-2xl">
                   <p>AUDIENCE PORTAL</p>
