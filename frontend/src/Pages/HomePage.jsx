@@ -27,7 +27,7 @@ const HomePage = () => {
             className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"
           />
           <div className="">
-            <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[340px] text-center drop-shadow-2xl select-none">
+            <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[325px] text-center drop-shadow-2xl select-none">
               GOONJ 24
             </h1>
           </div>
@@ -52,7 +52,7 @@ const HomePage = () => {
       </div>
       <div className="bg-EventBG pb-12 w-full h-full">
         <CountdownTimer endTime={endTime} className="w-full h-2/6 bg-inherit" />
-        <div className="pt-12 md:pt-0">
+        <div className="pt-12">
           <div className="absolute w-full font-cSB">
             <div className="flex text-white sm:mx-44 ml-5 pt-1 sm:pt-0">
               <Link to="/events">
