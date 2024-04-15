@@ -71,12 +71,15 @@ const userSchema = new mongoose.Schema({
 userSchema.pre('save', async function (next){
     const num = await generateuniqueId();
     this.generated_id = 'GNJ-' + this.role + num;
+    if(this.role !== 'CA'){
+        this.ca_counter=undefined;
+    }
 })
 
 async function generateuniqueId(){
     let id;
     do{
-        id = Math.floor(Math.random() + 90000) + 10000;
+        id = Math.floor(Math.random() * (69999 - 61111 + 1)) + 61111;
     }while (await UserData.exists({
         generatedId: id
     }));
@@ -87,3 +90,5 @@ async function generateuniqueId(){
 
 const UserData = mongoose.model('UserData', userSchema);
 module.exports = UserData;
+// task 1 : ca_counter increment with each CA ID use 
+// task 2 : Checking for valid CA ID 

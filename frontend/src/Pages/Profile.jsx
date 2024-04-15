@@ -22,14 +22,13 @@ const Profile = () => {
                     ">
                     <div className="flex justify-between gap-28 pt-4 text-lg px-24">
                         <div className=" gap-20">
-                        <h1 className="p-2 text-[#5f43b2] text-lg">{receivedUserData.name}</h1>
-                        {console.log(receivedUserData.pNum)}
-                        <h1 className="p-2">{receivedUserData.pNum}</h1>
-                        <p className="w-80 p-2">{receivedUserData.college},{receivedUserData.city}, {receivedUserData.state}</p>
+                        <h1 className="p-2 text-[#5f43b2] text-lg">{receivedUserData?.name}</h1>
+                        <h1 className="p-2">{receivedUserData?.pNum}</h1>
+                        <p className="w-80 p-2">{receivedUserData?.college},{receivedUserData?.city}, {receivedUserData?.state}</p>
                     </div>
                     <div className="gap-28">
-                        <div className="text-white font-cM p-2">GOONJ ID: <span className="text-[#5f43b2]">{receivedUserData.generated_id}</span></div>
-                        <div className="p-2">{receivedUserData.email}</div>
+                        <div className="text-white font-cM p-2">GOONJ ID: <span className="text-[#5f43b2]">{receivedUserData?.generated_id}</span></div>
+                        <div className="p-2">{receivedUserData?.email}</div>
                     </div>
                     </div>
                 </div>
@@ -46,14 +45,10 @@ const Profile = () => {
                                 )
                             ))}
                         </ul>   
-                        profile
                         
+
                     </div>
-
-
-
             </div>
-           
         </div>
         </div>
     );

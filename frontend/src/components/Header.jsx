@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3 md:hidden">
                 <div className="">
-                <Link to="/login"> 
+                <Link to="/googleauth"> 
                     <LoginButton />
                 </Link>
                 </div>
@@ -62,7 +62,7 @@ const Header = () => {
                     <li>
                         <Link to="/audience">Audience Portal</Link>
                     </li>
-                    <Link to="/login"> 
+                    <Link to="/googleauth"> 
                         <LoginButton />
                     </Link>
                 </ul>
@@ -108,7 +108,7 @@ const Header = () => {
                                         <Link to="/audience" onClick={toggleSidebar}>Audience Portal</Link>
                                     </li>
                                 <li>
-                                    <Link to="/login" onClick={toggleSidebar}> 
+                                    <Link to="/googleauth" onClick={toggleSidebar}> 
                                         <LoginButton />
                                     </Link>
                                 </li>

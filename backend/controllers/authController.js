@@ -3,7 +3,7 @@ const UserData = require('../model/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const util = require('util');
-
+const validid = require('../utils/collegeId')
 
 // to create JWT from signature
 const signToken = (id) => {
@@ -17,6 +17,15 @@ const signToken = (id) => {
 // to send JWT to client
 const createAndSendTokenResponse = async (userData, res) => {
     const token = signToken(userData._id);
+
+    const responseCookie = {
+        expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
+        httpOnly: true
+    }
+
+    if (process.env.NODE_ENV==='production') responseCookie.secure = true;
+
+    res.cookie('jwt', token, responseCookie);
 
     res.status(201).json({
         status: 'success',
@@ -69,7 +78,7 @@ const checkUser = catchAsync(async (req, res, next)=>{
     }
 
     res.status(401).json({
-        errorCode: 'CU401',
+       
         message: 'You have not signed up'
     })
 })
@@ -120,5 +129,34 @@ const restrictTo = (...roles) => {
         next();
     }
 }
+const checkCaId = catchAsync( async (req,res,next)=>{
+    
+    let user = await UserData.findOne({
+       generated_id : req.body.generated_id     // College_id is incorrect , CA id is incorrect , CA id correct but role is incorrect , CA id is 
+    })
+    if(user){
+    if(user.role == 'CA' ){
+        user.ca_counter++ ;
+        res.status(200).json({status:"success"});
+    }
+    else{
+        return next(new AppError('Invalid CA id',400))
+    }
+}
+else{
+    return next(new AppError('Invalid CA id',400))
+   
+}
+})
+const checkClgId = catchAsync( async (req,res,next)=>{
+    const exist = validid.includes(req.body.college_id * 1);
+    if(exist){
+        res.status(200).json({status:"success"})
+    }
+    else{
+        return next(new AppError('Invalid College id',400)) 
+    }
+})
 
-module.exports = { signup, validateToken, checkUser, restrictTo };
+module.exports = { signup, validateToken, checkUser, restrictTo, checkCaId , checkClgId };
+
