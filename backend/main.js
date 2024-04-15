@@ -43,6 +43,10 @@ app.use(hpp());
 
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res)=>{
+    res.send('Server is working properly');
+})
+
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/events', eventRoute);
 app.use('/api/v1/checkout', paymentRoute);
