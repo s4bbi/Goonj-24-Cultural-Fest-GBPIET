@@ -10,7 +10,7 @@ const AudiencePortal = () => {
             <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
                 <h1 className="text-white z-30 md:text-[100px] font-cuda text-5xl drop-shadow-2xl text-center">Audience Portal</h1>
                 <button className="btn" type="button">
-                    <Link to="/login">
+                    <Link to="https://forms.gle/sRWBgxbfoRusQhue9">
                         <strong className="font-cM">REGISTER NOW</strong>
                         <div id="container-stars">
                             <div id="stars"></div>
