@@ -27,7 +27,7 @@ const EventDetail = () => {
                   </button>
                 </Link>
               )}
-              <Link to="">
+              <Link to="https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing">
                 <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
                   RULE BOOK
                 </button>

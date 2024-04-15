@@ -1,4 +1,4 @@
-import astro from "../assets/Images/CAPortal_Astro3.webp"
+                            import astro from "../assets/Images/CAPortal_Astro3.webp"
 import { useLocation } from "react-router-dom";
 
 const Profile = () => {
