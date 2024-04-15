@@ -541,6 +541,7 @@ export const data = [
         ],
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
+        entryfees: "Entry Fees: ₹99"
       },
       {
         id: 1004,
@@ -558,6 +559,7 @@ export const data = [
         ],
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
+        entryfees: "Entry Fees: ₹99"
       },
       {
         id: 1101,
@@ -575,6 +577,7 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        entryfees: "Entry Fees: ₹99"
       },
       {
         id: 1102,
@@ -589,8 +592,8 @@ export const data = [
         ],
         judging: "",
         interCollege: true,
-        registerLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSfAaTk30s6erZXj6d2eAqczy1aUMPMeU7do7ArbwZRDYGG4Pw/viewform",
+        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        entryfees: "Entry Fees: ₹400"
       },
       {
         id: 1103,
@@ -606,7 +609,9 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        entryfees: "Entry Fees: ₹99"
       },
+      
       {
         id: 1104,
         name: "Treasure Hunt",
@@ -620,6 +625,8 @@ export const data = [
         ],
         judging: "",
         interCollege: true,
+        registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
+        entryfees: "Entry Fees: ₹400"
       },
       {
         id: 1105,
@@ -638,6 +645,7 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        entryfees: "Entry Fees: ₹99"
       },
       {
         id: 1106,
@@ -648,6 +656,7 @@ export const data = [
         guidelines: ["Download the RuleBook for Imformation"],
         judging: "",
         interCollege: false,
+        entryfees: "Entry Fees: ₹99"
       },
       {
         id: 1107,
@@ -666,6 +675,7 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        entryfees: "Entry Fees: ₹99"
       },
     ],
   },

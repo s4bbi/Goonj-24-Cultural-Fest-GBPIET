@@ -1,13 +1,13 @@
 import yashi from "../assets/Images/TeamsImages/DevTeam/Yashpreet.png";
+import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg";
 import Nitesh from "../assets/Images/TeamsImages/DevTeam/Nitesh.png";
 import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg";
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg";
-import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg";
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
-// jb sbki ajaygi tb bulk convert krdunga webp mein
+
 
 export const teamData = [
   {

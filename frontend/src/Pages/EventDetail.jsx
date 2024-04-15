@@ -8,7 +8,7 @@ const EventDetail = () => {
 
   return (
     <div className="w-full bg-cover">
-      <div className="bg-bg_image bg-cover py-20 px-5 md:px-20 md:py-36 h-full hover:none">
+      <div className="bg-EventBG bg-cover py-20 px-5 md:px-20 md:py-36 h-full hover:none">
         <div className="text-white">
           <div className="w-full flex justify-between items-center">
             <div className="font-cuda md:text-4xl">{eventDetail.name}</div>
@@ -36,9 +36,10 @@ const EventDetail = () => {
           </div>
           <div>
             <div className="text-white leading-7">
-              <p className="text-xs  md:text-lg font-cR text-justify my-8 uppercase font-extrabold">
+                <p className="text-xs md:text-xl font-cR text-justify my-8 uppercase font-extrabold"><span className="text-yellow-500">{eventDetail.entryfees}</span></p>
+                <p className="text-xs md:text-xl font-cR text-justify my-8 uppercase font-extrabold">
                 {eventDetail.description}
-              </p>
+                </p>
               <h1 className="text-sm md:text-2xl font-cSB my-5">GUIDELINES:</h1>
               <ul className="list-disc ml-8 md:ml-16 font-cR text-justify mb-8">
                 {eventDetail.guidelines.map((item) => (
