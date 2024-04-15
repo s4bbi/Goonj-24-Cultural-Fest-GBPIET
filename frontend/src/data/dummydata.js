@@ -597,7 +597,7 @@ export const data = [
         ],
         judging: "",
         interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        registerLink: "https://forms.gle/hYinBCFt9jXr88xcA",
         entryfees: "Entry Fees: ₹400"
       },
       {
