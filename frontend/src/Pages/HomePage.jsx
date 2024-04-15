@@ -27,7 +27,7 @@ const HomePage = () => {
             className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"
           />
           <div className="">
-            <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[200px] text-center drop-shadow-2xl select-none">
+            <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[340px] text-center drop-shadow-2xl select-none">
               GOONJ 24
             </h1>
           </div>
