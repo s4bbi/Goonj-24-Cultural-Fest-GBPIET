@@ -12,13 +12,11 @@ const Profile = () => {
             <div className="flex justify-center p-12 gap-9 font-cM">
                 <img src={astro} className="w-72 border-2 border-[#5f43b2] rounded-2xl" alt="User Image"/>
                 <div className="flex flex-col justify-center gap-6">
-                    <div className="flex gap-4">
+                    <div className="flex flex-col gap-2">
                         <div className="text-[#5f43b2] text-lg">{receivedUserData?.name}</div>
                         <div className="text-[#5f43b2]">GOONJ ID: {receivedUserData?.generated_id}</div>
-                    </div>
-                    <div className="flex flex-col gap-2">
                         <div>{receivedUserData?.pNum}</div>
-                        <p>{receivedUserData?.college}, {receivedUserData?.city}, {receivedUserData?.state}</p>
+                        <div>{receivedUserData?.college}, {receivedUserData?.city}, {receivedUserData?.state}</div>
                         <div>{receivedUserData?.email}</div>
                     </div>
                 </div>
