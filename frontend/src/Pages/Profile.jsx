@@ -7,10 +7,10 @@ const Profile = () => {
     const events = receivedUserData?.events || [];
     
     return (
-        <div className="text-white bg-EventBG min-h-screen">
+        <div className="text-white bg-EventBG w-full">
             <h1 className="text-5xl text-center pt-36 font-cuda">PROFILE</h1>
             <div className="flex justify-center p-12 gap-9 font-cM">
-                <img src={astro} className="w-72 border-2 border-[#5f43b2] rounded-2xl" alt="User Image"/>
+                <img src={astro} className="w-36 md:w-72 border-2 border-[#5f43b2] rounded-2xl" alt="User Image"/>
                 <div className="flex flex-col justify-center gap-6">
                     <div className="flex flex-col gap-3">
                         <div className="text-[#5f43b2] text-lg">{receivedUserData?.name}</div>
