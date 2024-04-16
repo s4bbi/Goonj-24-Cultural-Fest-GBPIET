@@ -61,7 +61,7 @@ const signup = catchAsync(async (req, res, next) => {
         state: req.body.state,
         city: req.body.city,
         college: req.body.college,
-        ca_id: req.body.ca_id || undefined
+        role: req.body.role || 'PT'
     };
 
     const newUser = await UserData.create(userData);
