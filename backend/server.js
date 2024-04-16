@@ -7,7 +7,7 @@ process.on('unhandledRejection', err=>{
     console.log('UNHANDLER REJECTION! 💣 Shutting down...')
 })
 
-dotenv.config({path: './*.env'});
+dotenv.config({path: './config.env'});
 
 const DB = process.env.DATABASE_URL.replace('<password>', process.env.DATABASE_PASSWORD);
 

@@ -4,6 +4,8 @@ import { jwtDecode } from "jwt-decode";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
+
 const GoogleAuth = () => {
   const [userData, setUserData] = useState({
     name: undefined,
@@ -37,8 +39,8 @@ const GoogleAuth = () => {
         if (response.data.status === "success") {
           console.log(response.data);
           navigate("/profile", { state: response.data.userCreated });
-        }
-      } catch (err) {
+      }} 
+      catch (err) {
         if (err.response.status === 401) {
           navigate("/login", { state: userData });
         } else {

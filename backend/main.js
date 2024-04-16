@@ -17,10 +17,12 @@ const app = express();
 app.use(helmet());
 
 
-app.use(cors({
-    origin: ["https://goonj24.vercel.app", "https://goonj.gbpiet.in"],
-    methods: 'GET,POST,PATCH,DELETE'
-}))
+// app.use(cors({
+//     origin: ["https://goonj24.vercel.app", "https://goonj.gbpiet.in"],
+//     methods: 'GET,POST,PATCH,DELETE'
+// }))
+
+app.use(cors());
 
 app.use(morgan('dev'));
 
