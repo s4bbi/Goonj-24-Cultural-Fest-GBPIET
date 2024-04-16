@@ -68,7 +68,7 @@ const GoogleAuth = () => {
         <h1 className="font-cuda text-xl flex justify-center">
           Google Sign up
         </h1>
-        <div className="p-10 w-1/2 flex mx-auto">
+        <div className="p-10 w-1/3 md:w-1/2 flex mx-auto justify-center items-center">
           <GoogleOAuthProvider clientId={clientID}>
             <GoogleLogin onSuccess={handleSuccess} onError={handleError} />
           </GoogleOAuthProvider>
