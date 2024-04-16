@@ -14,7 +14,7 @@ const Profile = () => {
                 <div className="flex flex-col justify-center gap-6">
                     <div className="flex flex-col gap-3">
                         <div className="text-[#5f43b2] text-lg">{receivedUserData?.name}</div>
-                        <div className="text-[#5f43b2]">GOONJ ID: {receivedUserData?.generated_id}</div>
+                        <div className="text-[#5f43b2]"><span className="text-white">GOONJ ID: </span> {receivedUserData?.generated_id}</div>
                         <div>{receivedUserData?.pNum}</div>
                         <div>{receivedUserData?.college}, {receivedUserData?.city}, {receivedUserData?.state}</div>
                         <div>{receivedUserData?.email}</div>
