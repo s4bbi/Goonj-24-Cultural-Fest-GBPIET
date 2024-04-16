@@ -18,12 +18,20 @@ const signToken = (id) => {
 const createAndSendTokenResponse = async (userData, res) => {
     const token = signToken(userData._id);
 
-    const responseCookie = {
-        expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
-        httpOnly: true
-    }
+    // Check if JWT_COOKIE_EXPIRES_IN is defined and a valid number
+    const expiresInDays = process.env.JWT_COOKIE_EXPIRES_IN ? parseInt(process.env.JWT_COOKIE_EXPIRES_IN) : 180;
 
-    if (process.env.NODE_ENV==='production') responseCookie.secure = true;
+    // Calculate expiration time
+    const expirationDate = new Date(Date.now() + expiresInDays * 24 * 60 * 60 * 1000);
+
+    const responseCookie = {
+        expires: expirationDate,
+        httpOnly: true
+    };
+
+    if (process.env.NODE_ENV === 'production') {
+        responseCookie.secure = true;
+    }
 
     res.cookie('jwt', token, responseCookie);
 
@@ -53,7 +61,7 @@ const signup = catchAsync(async (req, res, next) => {
         state: req.body.state,
         city: req.body.city,
         college: req.body.college,
-        ca_id: req.body.ca_id || undefined
+        role: req.body.role || 'PT'
     };
 
     const newUser = await UserData.create(userData);

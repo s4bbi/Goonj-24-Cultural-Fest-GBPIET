@@ -1,70 +1,146 @@
-import aerocraft from '../assets/Images/Registration_Rocket.webp';
-import { Link } from 'react-router-dom';
+import aerocraft from "../assets/Images/Registration_Rocket.webp";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CARegisterPage = () => {
+  const location = useLocation();
+  const receivedUserData = location.state;
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: receivedUserData?.name,
+    email: receivedUserData?.email,
+    pNum: "",
+    state: "",
+    city: "",
+    college: "",
+    role: "CA"
+  });
+
+  const handleChange = (e, name) => {
+    setFormData({ ...formData, [name]: e.target.value });
+  };
+
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        import.meta.env.VITE_BACKEND_URL + "/auth/signup",
+        formData
+      );
+      console.log(response);
+
+      if (response.data.status === "success") {
+        navigate("/profile", { state: response.data.userCreated });
+      }
+    } catch (error) {
+      console.log(error);
+      setFormData({
+        name: receivedUserData?.name,
+        email: receivedUserData?.email,
+        pNum: "",
+        state: "",
+        city: "",
+        college: "",
+      });
+    }
+  };
+
+
   return (
     <div className="bg-EventBG h-fit flex justify-center pt-8">
       <div className="sm:w-6/12 my-24 sm:mr-20 mx-2 rounded-3xl bg-cover bg-center bg-no-repeat text-white bg-LoginBG">
-        <h1 className="font-cuda text-2xl sm:text-4xl flex justify-center py-8">Registration</h1>
+        <h1 className="font-cuda text-2xl sm:text-4xl flex justify-center py-8">
+          Registration
+        </h1>
         <div className="sm:px-16 px-10">
-            <form action="">
-                <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
-                    <div className="flex flex-col w-full sm:w-5/12">
-                        <label className="font-cR mb-2 font-light text-sm">Your Name</label>
-                        <input type="text" placeholder="YourName" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
-                    </div>
-                    <div className="flex flex-col w-full sm:w-5/12">
-                        <label className="font-cR mb-2 font-light text-sm">Your Email</label>
-                        <input type="text" placeholder="E-Mail ID" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
-                    </div>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
-                    <div className="flex flex-col sm:w-5/12">
-                        <label className="font-cR mb-2 text-sm">Your Phone Number</label>
-                        <input type="text" placeholder="+91" className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"/>
-                    </div>
-                    <div className='flex flex-col sm:w-5/12'>
-                        <label className="font-cR mb-2 font-light text-sm">College State</label>
-                        <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>                              <option value="xx">xx</option>
-                          </select>
-                      </div>              
-                </div>
-                <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
-                    <div className="flex flex-col sm:w-5/12">
-                        <label className="font-cR mb-2 font-light text-sm">College City </label>
-                        <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                        </select>
-                    </div>
-                    <div className="flex flex-col sm:w-5/12">
-                        <label className="font-cR mb-2 font-light text-sm">College Name</label>
-                        
-                        <select name="College City"className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full">
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                            <option value="xx">xx</option>
-                        </select>
-                    </div>
-                </div>
-                <div className="flex justify-center my-4">
-                    <button className="btn" type="submit">
-                        <Link to="/profile">
-                            Submit
-                        </Link>    
-                    </button>
-                </div>
-            </form>
+          <form action="">
+            <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
+              <div className="flex flex-col w-full sm:w-5/12">
+                <label className="font-cR mb-2 font-light text-sm">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="YourName"
+                  defaultValue={receivedUserData?.name}
+                  disabled
+                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
+                />
+              </div>
+              <div className="flex flex-col w-full sm:w-5/12">
+                <label className="font-cR mb-2 font-light text-sm">
+                  Your Email
+                </label>
+                <input
+                  type="text"
+                  placeholder="E-Mail ID"
+                  defaultValue={receivedUserData?.email}
+                  disabled
+                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
+              <div className="flex flex-col sm:w-5/12">
+                <label className="font-cR mb-2 text-sm">
+                  Your Phone Number
+                </label>
+                <input
+                  type="text"
+                  placeholder="+91"
+                  onChange={(e) => handleChange(e, "pNum")}
+                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
+                />
+              </div>
+              <div className="flex flex-col sm:w-5/12">
+                <label className="font-cR mb-2 font-light text-sm">
+                  College State
+                </label>
+                <input
+                  type="text"
+                  placeholder="State"
+                  onChange={(e) => handleChange(e, "state")}
+                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
+              <div className="flex flex-col sm:w-5/12">
+                <label className="font-cR mb-2 font-light text-sm">
+                  College City{" "}
+                </label>
+                <input
+                  type="text"
+                  placeholder="College City"
+                  onChange={(e) => handleChange(e, "city")}
+                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
+                />
+              </div>
+              <div className="flex flex-col sm:w-5/12">
+                <label className="font-cR mb-2 font-light text-sm">
+                  College Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="College Name"
+                  onChange={(e) => handleChange(e, "college")}
+                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center my-4 pb-2">
+              <button className="btn" type="submit" onClick={submitForm}>
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
       <div className="hidden sm:flex flex-col justify-end w-5/12">
-          <img src={aerocraft} alt="Astronaut" className="w-9/12"/>
+        <img src={aerocraft} alt="Astronaut" className="w-9/12" />
       </div>
     </div>
   );
