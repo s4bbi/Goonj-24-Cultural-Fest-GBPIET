@@ -31,7 +31,7 @@ const CARegisterPage = () => {
       console.log(response);
 
       if (response.data.status === "success") {
-        // navigate("/profile", { state: response.data.userCreated });
+        navigate("/profile", { state: response.data.userCreated });
       }
     } catch (error) {
       console.log(error);
