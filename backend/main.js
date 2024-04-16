@@ -18,7 +18,7 @@ app.use(helmet());
 
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ["https://goonj24.vercel.app", "https://goonj.gbpiet.in"],
     methods: 'GET,POST,PATCH,DELETE'
 }))
 

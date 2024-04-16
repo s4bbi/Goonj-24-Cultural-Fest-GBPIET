@@ -25,7 +25,7 @@ const CARegisterPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        import.meta.env.VITE_BACKEND_URL + "/api/v1/auth/signup",
+        import.meta.env.VITE_BACKEND_URL + "/auth/signup",
         formData
       );
       console.log(response);

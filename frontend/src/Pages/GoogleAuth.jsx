@@ -28,7 +28,7 @@ const GoogleAuth = () => {
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          import.meta.env.VITE_BACKEND_URL + "/api/v1/auth/login",
+          import.meta.env.VITE_BACKEND_URL + "/auth/login",
           {
             email: userData.email,
           }
