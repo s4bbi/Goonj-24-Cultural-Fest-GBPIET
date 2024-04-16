@@ -9,8 +9,8 @@ const Profile = () => {
     return (
         <div className="text-white bg-EventBG w-full h-screen">
             <h1 className="text-5xl text-center pt-36 font-cuda">PROFILE</h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center p-12 gap-9 font-cM ">
-                <img src={astro} className="w-36 h-36 md:w-72 border-2 border-[#5f43b2] rounded-2xl" alt="User Image"/>
+            <div className="flex flex-col sm:flex-row text-center sm:text-left items-center justify-center p-12 gap-9 font-cM ">
+                <img src={astro} className="w-36 h-36 md:w-72 md:h-72 border-2 border-[#5f43b2] rounded-2xl" alt="User Image"/>
                 <div className="flex flex-col justify-center gap-6">
                     <div className="flex flex-col gap-3">
                         <div className="text-[#5f43b2] text-lg">{receivedUserData?.name}</div>
