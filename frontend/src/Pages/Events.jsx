@@ -10,7 +10,7 @@ const Events = () => {
           <h1 className="text-5xl md:text-[150px] text-white font-cuda text-center">
             Events
           </h1>
-          <h1 className="text-2xl text-yellow-500 shadow-lg font-cuda text-center">
+          <h1 className="text-xl sm:text-2xl text-yellow-500 shadow-lg font-cuda text-center">
             Prizes upto 2 Lakhs
           </h1>
         </div>
