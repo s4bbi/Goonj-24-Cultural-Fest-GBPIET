@@ -57,7 +57,8 @@ const userSchema = new mongoose.Schema({
     },
     generated_id: {
         type: String,
-        default: undefined
+        unique: true,
+        select: false
     },
     date:{
         type: Date,
@@ -71,23 +72,19 @@ const userSchema = new mongoose.Schema({
 // this is generated id to send back to client after payment
 
 
-userSchema.methods.createId =  async function (next){
-    const num = await generateuniqueId();
-    this.generated_id = 'GNJ-' + this.role + num;
-    if(this.role !== 'CA'){
-        this.ca_counter=undefined;
-    }
+userSchema.methods.generateUniqueId = async function() {
+    let id;
+    do {
+        id = 'GNJ-' + this.role + generateRandomNumber();
+    } while (await UserData.exists({ generated_id: id })); // Corrected this line
+    this.generated_id = id;
+    await this.save();
+    return id;
 }
 
-async function generateuniqueId(){
-    let id;
-    do{
-        id = Math.floor(Math.random() * (69999 - 61111 + 1)) + 61111;
-    }while (await UserData.exists({
-        generatedId: id
-    }));
 
-    return id;
+function generateRandomNumber(){
+    return Math.floor(Math.random() * (69999 - 61111 + 1)) + 61111;   
 }
 
 
