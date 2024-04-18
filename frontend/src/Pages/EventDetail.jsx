@@ -127,7 +127,7 @@ const EventDetail = () => {
                   <p>Event Participation + I'd Card + Dj Night Pass</p>
                 </label>
                 <label for="caRefferId" className=" text-xl font-semibold">
-                  If Your Are Your CA Reffer
+                  If Your Are a CA Reffer
                 </label>
                 <input
                   type="text"
