@@ -57,8 +57,7 @@ const userSchema = new mongoose.Schema({
     },
     generated_id: {
         type: String,
-        unique: true,
-        select: false
+        unique: true
     },
     date:{
         type: Date,
@@ -71,6 +70,11 @@ const userSchema = new mongoose.Schema({
 
 // this is generated id to send back to client after payment
 
+
+userSchema.pre('save', function(next){
+    this.generated_id= undefined;
+    next();
+})
 
 userSchema.methods.generateUniqueId = async function() {
     let id;

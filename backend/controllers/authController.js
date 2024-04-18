@@ -66,7 +66,6 @@ const signup = catchAsync(async (req, res, next) => {
 
     const newUser = await UserData.create(userData);
     if (newUser.role==='CA'){
-        console.log('Hey baby');
         await newUser.generateUniqueId();
     };
 
