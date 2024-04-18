@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { data } from "../data/dummydata";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
+import { FaRocket } from "react-icons/fa6";
+
 const EventDetail = () => {
   const [isPaymentDone, setIsPaymentDone] = useState(false);
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
@@ -128,7 +130,7 @@ const EventDetail = () => {
                   <p className="font-cR">Event Participation + I'd Card + Dj Night Pass</p>
                 </label>
                 <div className="flex flex-col gap-2 py-2">
-                  <label for="caRefferalId" className=" text-xl font-semibold">
+                  <label for="caRefferalId" className=" text-xl font-cM pt-2">
                     CA Referral ID
                   </label>
                   <input
@@ -141,7 +143,7 @@ const EventDetail = () => {
                 </div>
                  
               </div>
-              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-CR">Proceed to Pay</button>
+              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center"> <span className="flex gap-2">Proceed to Pay <FaRocket className="mt-[6px]" /></span> </button>
             </div>
           </div>
         )}
