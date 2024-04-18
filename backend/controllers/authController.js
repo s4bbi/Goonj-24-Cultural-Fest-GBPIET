@@ -65,6 +65,10 @@ const signup = catchAsync(async (req, res, next) => {
     };
 
     const newUser = await UserData.create(userData);
+    if (newUser.role==='CA'){
+        await newUser.generateUniqueId();
+    };
+
     await createAndSendTokenResponse(newUser, res);
 });
 
