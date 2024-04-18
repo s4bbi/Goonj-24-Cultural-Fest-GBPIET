@@ -124,10 +124,7 @@ const EventDetail = () => {
                       ₹ {withOutAccomodation}
                     </large>
                   </span>
-                  <p>
-                    Event Participation + Accomodation + Food (2 Meals) + I'd
-                    Card + Dj Night Pass
-                  </p>
+                  <p>Event Participation + I'd Card + Dj Night Pass</p>
                 </label>
                 <label for="caRefferId" className=" text-xl font-semibold">
                   If Your Are Your CA Reffer
