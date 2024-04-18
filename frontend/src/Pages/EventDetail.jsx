@@ -79,11 +79,11 @@ const EventDetail = () => {
         {showPaymentDialog && (
           <div className="h-screen ">
             <div
-              className="h-fit w-fit  sm:w-96 mx-auto mt-24 border-2 border-[#4a338e] bg-[#5F43B2] rounded-[32px] bg-clip-padding backdrop-filter bg-opacity-[0.2] px-5 py-5 text-white flex flex-col justify-evenly"
+              className="h-fit w-fit sm:w-96 mx-auto mt-24 border-2 border-[#4a338e] bg-[#5F43B2] rounded-[32px] bg-clip-padding backdrop-filter bg-opacity-[0.2] px-5 py-5 text-white flex flex-col justify-evenly"
               data-aos="zoom-in"
             >
               <div className="flex justify-between items-center">
-                <h2 className="text-2xl font-semibold">Basic Details</h2>
+                <h2 className="text-2xl font-cSB">Select accordingly</h2>
                 <div onClick={() => setShowPaymentDialog(!showPaymentDialog)}>
                   <ImCross
                     className="cursor-pointer
@@ -98,13 +98,14 @@ const EventDetail = () => {
                   name="optionChoice"
                   value="withAccomodation"
                 />
+                {" "}
                 <label for="accomodation">
-                  <span>
+                  <span className="font-cM">
                     <large className="text-xl font-semibold">
-                      ₹ {withAccomodation}
+                      ₹ {withAccomodation} <span className="font-cR"> (with Accomodation)</span>
                     </large>
                   </span>
-                  <p>
+                  <p className="font-cR">
                     Event Participation + Accomodation + Food (2 Meals) + I'd
                     Card + Dj Night Pass
                   </p>
@@ -119,26 +120,28 @@ const EventDetail = () => {
                  {" "}
                 <label for="withoutAccomodation">
                   {" "}
-                  <span>
+                  <span className="font-cM">
                     <large className="text-xl font-semibold">
-                      ₹ {withOutAccomodation}
+                      ₹ {withOutAccomodation} <span className="font-cR"> (Non Accomodation)</span>
                     </large>
                   </span>
-                  <p>Event Participation + I'd Card + Dj Night Pass</p>
+                  <p className="font-cR">Event Participation + I'd Card + Dj Night Pass</p>
                 </label>
-                <label for="caRefferId" className=" text-xl font-semibold">
-                  If Your Are a CA Reffer
-                </label>
-                <input
-                  type="text"
-                  id="caRefferId"
-                  name="caReffer"
-                  placeholder="Enter CA Id"
-                  className="text-black"
-                />
+                <div className="flex flex-col gap-2 py-2">
+                  <label for="caRefferalId" className=" text-xl font-semibold">
+                    CA Referral ID
+                  </label>
+                  <input
+                    type="text"
+                    id="caRefferId"
+                    name="caReffer"
+                    placeholder="Enter CA Id"
+                    className="text-black p-2 rounded-xl "
+                  />
+                </div>
                  
               </div>
-              <button className="w-full py-2 bg-[#5F43B2]">Payment</button>
+              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-CR">Payment</button>
             </div>
           </div>
         )}
