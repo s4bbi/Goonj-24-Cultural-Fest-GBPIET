@@ -56,7 +56,8 @@ const userSchema = new mongoose.Schema({
         default: 'PT'
     },
     generated_id: {
-        type: String
+        type: String,
+        default: undefined
     },
     date:{
         type: Date,
@@ -68,13 +69,15 @@ const userSchema = new mongoose.Schema({
 
 
 // this is generated id to send back to client after payment
-userSchema.pre('save', async function (next){
+
+
+userSchema.methods.createId =  async function (next){
     const num = await generateuniqueId();
     this.generated_id = 'GNJ-' + this.role + num;
     if(this.role !== 'CA'){
         this.ca_counter=undefined;
     }
-})
+}
 
 async function generateuniqueId(){
     let id;

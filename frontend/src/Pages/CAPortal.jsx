@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { Link, useNavigate} from "react-router-dom";
 import '../index.css';
 import CAPortalVid from "../assets/Videos/CAPortalVid.webm";
 import CAPortal_Astro1 from "../assets/Images/CAPortal_Astro1.webp";
@@ -6,12 +7,18 @@ import CAPortal_Astro2 from "../assets/Images/CAPortal_Astro2.webp";
 import CAPortal_Astro3 from "../assets/Images/CAPortal_Astro3.webp";
 
 const CAPortal = () => {
+   // Get access to the history object
+    const navigate = useNavigate()
+    const handleRegisterClick = () => {
+        // Redirect the user to the googleauth page
+        navigate('/googleauth', { state: { referrer: '/caportal' } })
+    };
     return (
         <div className="bg-black text-white">
             <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
                 <h1 className="text-white z-30 md:text-[150px] font-cuda text-5xl drop-shadow-2xl">CA Portal</h1>
-                <button className="btn" type="button">
-                    <Link to="/googleauth" className="link">
+                <button className="btn" type="button" onClick={handleRegisterClick}>
+                   
                         <strong className="font-cM">REGISTER NOW</strong>
                         <div id="container-stars">
                             <div id="stars"></div>
@@ -20,7 +27,7 @@ const CAPortal = () => {
                             <div className="circle"></div>
                             <div className="circle"></div>
                         </div>
-                    </Link>
+                   
                 </button>
             </div>
 
