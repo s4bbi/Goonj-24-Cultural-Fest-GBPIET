@@ -172,7 +172,7 @@ const CARegisterPage = () => {
             </div>
             <div className="flex justify-center my-4 pb-2">
               <button className="btn" type="submit" onClick={submitForm}>
-                Submit
+                <span className="px-16">Submit</span>
               </button>
             </div>
           </form>

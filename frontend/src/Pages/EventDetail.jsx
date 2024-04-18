@@ -77,7 +77,7 @@ const EventDetail = () => {
           </div>
         )}
         {showPaymentDialog && (
-          <div className="h-screen ">
+          <div className="h-fit ">
             <div
               className="h-fit w-fit sm:w-96 mx-auto mt-24 border-2 border-[#4a338e] bg-[#5F43B2] rounded-[32px] bg-clip-padding backdrop-filter bg-opacity-[0.2] px-5 py-5 text-white flex flex-col justify-evenly"
               data-aos="zoom-in"

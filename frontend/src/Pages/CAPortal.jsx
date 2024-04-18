@@ -19,7 +19,7 @@ const CAPortal = () => {
                 <h1 className="text-white z-30 md:text-[150px] font-cuda text-5xl drop-shadow-2xl">CA Portal</h1>
                 <button className="btn" type="button" onClick={handleRegisterClick}>
                    
-                        <strong className="font-cM">REGISTER NOW</strong>
+                        <strong className="font-cM px-5">REGISTER NOW</strong>
                         <div id="container-stars">
                             <div id="stars"></div>
                         </div>
