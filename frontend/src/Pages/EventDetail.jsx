@@ -79,10 +79,10 @@ const EventDetail = () => {
         {showPaymentDialog && (
           <div className="h-screen ">
             <div
-              className="h-96 w-96 mx-auto mt-24 border-2 border-[#4a338e] bg-[#5F43B2] rounded-[32px] bg-clip-padding backdrop-filter bg-opacity-[0.2] px-5  text-white flex flex-col justify-evenly"
+              className="h-fit w-fit  sm:w-96 mx-auto mt-24 border-2 border-[#4a338e] bg-[#5F43B2] rounded-[32px] bg-clip-padding backdrop-filter bg-opacity-[0.2] px-5 py-5 text-white flex flex-col justify-evenly"
               data-aos="zoom-in"
             >
-              <div className="flex justify-between ">
+              <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-semibold">Basic Details</h2>
                 <div onClick={() => setShowPaymentDialog(!showPaymentDialog)}>
                   <ImCross
@@ -91,7 +91,7 @@ const EventDetail = () => {
                   />
                 </div>
               </div>
-              <div className="text-lg ">
+              <div className="text-lg py-5">
                 <input
                   type="radio"
                   id="accomodation"
@@ -129,7 +129,7 @@ const EventDetail = () => {
                     Card + Dj Night Pass
                   </p>
                 </label>
-                <label for="caRefferId" className="mt-4 text-xl font-semibold">
+                <label for="caRefferId" className=" text-xl font-semibold">
                   If Your Are Your CA Reffer
                 </label>
                 <input
