@@ -141,7 +141,7 @@ const EventDetail = () => {
                 </div>
                  
               </div>
-              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-CR">Payment</button>
+              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-CR">Proceed to Pay</button>
             </div>
           </div>
         )}
