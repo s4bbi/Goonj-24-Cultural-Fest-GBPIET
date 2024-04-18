@@ -22,7 +22,7 @@ const AudiencePortal = () => {
                             </div>
                         </Link>
                     </button>
-                    <button className="btn" type="button">
+                    <button className="btn text-center" type="button">
                         <Link to="https://forms.gle/N2sRPXRN78wgk8JcA" target="blank">
                             <strong className="font-cM text-xs px-4">Register as Non-GBPIETian</strong>
                             <div id="container-stars">
