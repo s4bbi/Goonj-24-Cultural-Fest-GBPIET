@@ -518,6 +518,7 @@ export const data = [
         ],
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
+        
       },
     ],
   },
@@ -541,7 +542,9 @@ export const data = [
         ],
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+
       },
       {
         id: 1004,
@@ -559,7 +562,9 @@ export const data = [
         ],
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+
       },
       {
         id: 1101,
@@ -592,7 +597,7 @@ export const data = [
         ],
         judging: "",
         interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        registerLink: "https://forms.gle/hYinBCFt9jXr88xcA",
         entryfees: "Entry Fees: ₹400"
       },
       {
