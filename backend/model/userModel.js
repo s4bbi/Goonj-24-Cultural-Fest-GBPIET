@@ -72,14 +72,14 @@ const userSchema = new mongoose.Schema({
 
 
 userSchema.pre('save', function(next){
-    this.generated_id= undefined;
+    this.generated_id = undefined;
     next();
 })
 
 userSchema.methods.generateUniqueId = async function() {
     let id;
     do {
-        id = 'GNJ-' + this.role + generateRandomNumber();
+        id = 'GNJ-' + this.role + "-" + generateRandomNumber();
     } while (await UserData.exists({ generated_id: id })); // Corrected this line
     this.generated_id = id;
     await this.save();

@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"; // Add this import statement at the beginning of your file
-
+import axios from "axios";
 import { data } from "../data/dummydata";
 const EventDetail = () => {
   const location = useLocation(); // Corrected variable name to 'location'
@@ -13,7 +13,7 @@ const EventDetail = () => {
           <div className="w-full flex justify-between items-center">
             <div className="font-cuda md:text-4xl">{eventDetail.name}</div>
             <div className="flex gap-2 sm:gap-5 text-sm">
-              {eventDetail.interCollege && (
+              {/* {eventDetail.interCollege && (
                 <Link
                   to={
                     eventDetail.registerLink
@@ -21,12 +21,14 @@ const EventDetail = () => {
                       : "/register"
                   }
                   target="_blank"
-                >
-                  <button className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
+                > */}
+                  <button 
+                  onClick={handleRegistration}
+                  className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
                     REGISTER
                   </button>
-                </Link>
-              )}
+                {/* </Link>
+              )} */}
               <Link to="https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing">
                 <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
                   RULE BOOK
