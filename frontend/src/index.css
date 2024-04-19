@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13rem;
+  width: fit-content;
   overflow: hidden;
   height: 3rem;
   background-size: 300% 300%;

@@ -4,9 +4,9 @@ import Nitesh from "../assets/Images/TeamsImages/DevTeam/Nitesh.png";
 import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg";
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg";
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
-import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
+import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 
 
 export const teamData = [
@@ -116,6 +116,53 @@ export const teamData = [
         img: aditya,
         git: "",
         linkdin: "https://www.linkedin.com/in/aditya-rawat-3a2942276",
+        insta: "",
+        gmail: "",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Goonj Management Team",
+    members: [
+      {
+        id: 401,
+        name: "",
+        img: "",
+        git: "",
+        designation: "",
+        linkdin:
+          "",
+        insta: "",
+        gmail: "",
+      },
+      {
+        id: 402,
+        name: "",
+        img: "",
+        git: "",
+        designation: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+      },
+      {
+        id: 403,
+        name: "",
+        img: "",
+        git: "",
+        designation: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+      },
+      {
+        id: 404,
+        name: "",
+        img: "",
+        git: "",
+        designation: "",
+        linkdin: "",
         insta: "",
         gmail: "",
       },

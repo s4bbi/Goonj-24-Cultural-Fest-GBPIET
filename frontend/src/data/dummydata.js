@@ -588,7 +588,7 @@ export const data = [
         id: 1102,
         name: "ESPORTS",
         img: esport,
-        description: "Embrace the journey, embrace the treasure!",
+        description: "Embrace the journey, embrace the treasure!", 
         topics: [],
         guidelines: [
           "This event is open for everyone so there is no limit in participants. Anyone can participate!",
