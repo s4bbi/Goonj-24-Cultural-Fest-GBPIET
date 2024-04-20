@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, createContext, useState } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -19,13 +19,19 @@ import Loader from "./components/Loader.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import GoogleAuth from "./Pages/GoogleAuth.jsx";
 
+const LoggedContext = createContext();
+export default LoggedContext;
+
+
 const AppComponent = () => {
   const [isLogin, setIsLogin] = useState(false);
   return (
     <div className="selection:bg-[#5F43B2]">
-      <Header />
-      <Outlet />
-      <Footer />
+      <LoggedContext.Provider value={{isLogin, setIsLogin}}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </LoggedContext.Provider>
     </div>
   );
 };

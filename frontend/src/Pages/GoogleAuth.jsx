@@ -1,17 +1,20 @@
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import LoginAstro from "../assets/Images/LoginAstronaut.png";
 import { jwtDecode } from "jwt-decode";
-import { useEffect, useState } from "react";
+import { useEffect, useState , useContext} from "react";
 import axios from "axios";
 import { useNavigate ,useLocation } from "react-router-dom";
+import { setCookie, getCookie} from "../utils/Cookies";
+import LoggedContext from "../main";
 
 const GoogleAuth = () => {
   const [userData, setUserData] = useState({
     name: undefined,
     email: undefined
   });
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+  const {setIsLogin} = useContext(LoggedContext);
 
   const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
   
@@ -25,6 +28,7 @@ const GoogleAuth = () => {
         name: decoded.name,
         email: decoded.email
       });
+      
       console.log(userData)
     }
 
@@ -42,12 +46,22 @@ const GoogleAuth = () => {
           email: userData.email,
 
         });
-        console.log()
+        
+        setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN); // storing cookies from response in cookies
+        if (getCookie('jwt')){
+          setIsLogin(true);
+        }else{
+          setIsLogin(false);
+        }
+
         if (response.data.status === 'success') {
           console.log(response.data)
           setIsLoggedIn(true); // Set login status to true
+          
           const referrer = location.state && location.state.referrer;
+
           console.log(referrer)
+
           if (referrer === '/caportal') {
             navigate('/profile', { state: response.data.userCreated }); // Redirect to caregister if the referrer is '/caportal'
           } else {

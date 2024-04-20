@@ -11,15 +11,26 @@ import { FaUserTie } from "react-icons/fa";
 import { FaDollarSign } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
 import profile from "../assets/Images/profile.png";
+import { useContext } from "react";
+import LoggedContext from '../main'
+import { deleteCookie } from "../utils/Cookies";
+
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
+  const {isLogin, setIsLogin} = useContext(LoggedContext);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
 
   const buttonRefs = useRef([]);
+
+  const handleLogOut = ()=>{
+    setIsLogin(false);
+    deleteCookie('jwt');
+
+  }
+
 
   const data = [
     {
@@ -56,19 +67,7 @@ const Header = () => {
     E: FaUserTie,
     F: FaUserGroup,
   };
-  //   useEffect(() => {
-  //     buttonRefs.current.forEach((button) => {
-  //       if (button) {
-  //         if (isLogin) {
-  //           button.removeAttribute("disabled");
-  //           button.classList.remove("opacity-50", "cursor-not-allowed");
-  //         } else {
-  //           button.setAttribute("disabled", true);
-  //           button.classList.add("opacity-50", "cursor-not-allowed");
-  //         }
-  //       }
-  //     });
-  //   }, [isLogin]);
+  
   return (
     <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-10 md:py-10">
       <div className="flex items-center font-cM text-xl">
@@ -80,7 +79,10 @@ const Header = () => {
         <div className="">
           {isLogin ? (
             <div className="flex items-center">
-              <Link to="/googleauth" onClick={toggleSidebar}>
+              <Link to="/" onClick={()=>{
+                toggleSidebar();
+                handleLogOut();
+              }}>
                 <LoginButton text="LOGOUT" />
               </Link>
               <Link to="/profile">
@@ -181,7 +183,7 @@ const Header = () => {
                 {data.map((item) => {
                   const Component = componentMap[item.type];
                   return (
-                    <li className="mb-4 flex gap-3">
+                    <li className="mb-4 flex gap-3" key={item.id}>
                       <Component className="mt-1" />
                       <Link to={item.link} onClick={toggleSidebar}>
                         <button

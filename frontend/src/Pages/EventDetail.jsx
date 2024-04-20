@@ -29,6 +29,45 @@ const EventDetail = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  const checkoutFunction = async () => {
+    try {
+      // Fetch order details from the backend API
+      const res = await axios.get(
+        "http://127.0.0.1:3000/api/v1/checkout/orderid"
+      );
+      console.log(res.data);
+
+      // Extract necessary data from the response
+      const { amount, id } = res.data.order;
+
+      // Prepare options for Razorpay payment
+      const options = {
+        key: import.meta.env.VITE_RAZORPAY_API_KEY,
+        amount: amount,
+        currency: "INR",
+        name: "Goonj 24",
+        description: "Test transaction",
+        order_id: id,
+
+        // This should ideally be handled server-side for security reasons. It has similar authentication procedure just like JWT
+        callback_url: "http://127.0.0.1:3000/api/v1/checkout/paymentverify",
+        theme: {
+          color: "#0000FF",
+        },
+      };
+
+      // Make sure the Razorpay script is loaded before creating a new instance
+      if (window.Razorpay) {
+        const razor = new window.Razorpay(options);
+        razor.open();
+      } else {
+        console.error("Razorpay script is not loaded");
+      }
+    } catch (error) {
+      console.error("Error occurred while fetching order details:", error);
+    }
+  };
+
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
   return (
@@ -87,10 +126,11 @@ const EventDetail = () => {
               <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-cSB">Select accordingly</h2>
                 <div onClick={() => setShowPaymentDialog(!showPaymentDialog)}>
+                  
                   <ImCross
-                    className="cursor-pointer
-                "
+                    className="cursor-pointer"
                   />
+
                 </div>
               </div>
               <div className="text-lg py-5">
@@ -119,7 +159,7 @@ const EventDetail = () => {
                   value="with Out Accomodation"
                   className="mt-4"
                 />
-                 {" "}
+              
                 <label for="withoutAccomodation">
                   {" "}
                   <span className="font-cM">
@@ -141,9 +181,9 @@ const EventDetail = () => {
                     className="text-black p-2 rounded-xl "
                   />
                 </div>
-                 
+              
               </div>
-              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center"> <span className="flex gap-2">Proceed to Pay <FaRocket className="mt-[6px]" /></span> </button>
+              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center"> <span className="flex gap-2" onClick={checkoutFunction}>Proceed to Pay <FaRocket className="mt-[6px]" /></span> </button>
             </div>
           </div>
         )}
