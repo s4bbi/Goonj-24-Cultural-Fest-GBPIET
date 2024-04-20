@@ -11,6 +11,7 @@ const globalErrorHandler = require('./controllers/globalErrorHandler');
 const authRoute = require('./routes/authRoute');
 const eventRoute = require('./routes/eventRoute');
 const paymentRoute = require('./routes/paymentRoute');
+const userRoute = require('./routes/userRoute');
 
 const app = express();
 
@@ -52,6 +53,7 @@ app.get('/', (req, res)=>{
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/events', eventRoute);
 app.use('/api/v1/checkout', paymentRoute);
+app.use('/api/v1/users', userRoute);
 
 app.use(globalErrorHandler);
 

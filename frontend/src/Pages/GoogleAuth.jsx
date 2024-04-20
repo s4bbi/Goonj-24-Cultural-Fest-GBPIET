@@ -61,9 +61,9 @@ const GoogleAuth = () => {
           console.log(referrer)
 
           if (referrer === '/caportal') {
-            navigate('/profile', { state: response.data.userCreated }); // Redirect to caregister if the referrer is '/caportal'
+            navigate('/profile'); // Redirect to caregister if the referrer is '/caportal'
           } else {
-            navigate('/profile', { state: response.data.userCreated }); // Redirect to profile page for other referrers
+            navigate('/profile'); // Redirect to profile page for other referrers
           }
         }
   

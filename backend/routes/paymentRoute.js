@@ -10,8 +10,10 @@ router.get('/orderid',
     paymentController.createOrderId
 );
 
-
-router.post('/paymentverify', paymentController.paymentVerification);
+router.post('/paymentverify', 
+    authController.validateToken,
+    paymentController.paymentVerification
+);
 
 
 module.exports = router;

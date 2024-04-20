@@ -136,7 +136,11 @@ const Header = () => {
           {isLogin ? (
             <div className="flex items-center">
               <li>
-                <Link to="/googleauth" onClick={toggleSidebar}>
+                {/* <Link to="/" onClick={toggleSidebar}> */}
+                <Link to="/" onClick={()=>{
+                  toggleSidebar();
+                  handleLogOut();
+                }}>
                   <LoginButton text="LOGOUT" />
                 </Link>
               </li>
@@ -198,7 +202,11 @@ const Header = () => {
                 })}
                 {isLogin ? (
                   <li>
-                    <Link to="/googleauth" onClick={toggleSidebar}>
+                    {/* <Link to="/" onClick={toggleSidebar}> */}
+                    <Link to="/" onClick={()=>{
+                      toggleSidebar();
+                      handleLogOut();
+                    }}>
                       <LoginButton text="LOGOUT" />
                     </Link>
                   </li>
