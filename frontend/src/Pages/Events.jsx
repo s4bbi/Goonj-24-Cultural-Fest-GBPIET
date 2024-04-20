@@ -1,6 +1,7 @@
 import EventVid from "../assets/Videos/EventsVid.webm";
 import EventShowCase from "../components/EventsShowCase.jsx";
 import { data } from "../data/dummydata.js";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   return (
@@ -13,6 +14,11 @@ const Events = () => {
           <h1 className="text-xl sm:text-2xl text-yellow-500 shadow-lg font-cuda text-center">
             Prizes upto 2 Lakhs
           </h1>
+          <Link to={"https://docs.google.com/document/d/1mu5PZMSbht2vgUaaJtxnjni0gc4le3DANzaoopBlJF4/edit?usp=sharing"}>
+            <h1 className="text-xs sm:text-xs text-gray-300 font-cR shadow-lg text-center">
+              terms and conditions apply*
+            </h1>
+          </Link>
         </div>
         <video
           autoPlay

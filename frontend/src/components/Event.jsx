@@ -28,7 +28,7 @@ const Event = (props) => {
       }
       className="text-white my-8 h-[150px] w-28 md:w-52 md:h-64 cursor-pointer"
     >
-      <div className={`hover:scale-110 ${imageLoaded ? "opacity-100" : "opacity-0"}`}>
+      <div className={` duration-300 hover:scale-[1.06] ${imageLoaded ? "opacity-100" : "opacity-0"}`}>
         <img
           src={props.data.img}
           className="h-[150px] md:h-64 w-32 md:w-48 rounded-[32px] border-2 border-[#717075] object-cover transition-opacity duration-1000 hover:scale-100"

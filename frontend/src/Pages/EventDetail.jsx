@@ -13,6 +13,7 @@ const EventDetail = () => {
   const location = useLocation(); // Corrected variable name to 'location'
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
+  const [caId, setCaId] = useState('');
 
   const handleRegister = async () => {
     try {
@@ -31,6 +32,29 @@ const EventDetail = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+
+  // used to check ca id validity
+  useEffect(()=>{
+    async function checkCaId(){
+      if (caId.length===5){
+        try{
+          const response = await VKYRequest("post", "/auth/caidcheck", {
+            ca_id: "GNJ-CA-" + caId
+          });
+
+          if (response.data.status==='success'){
+            console.log("CA ID is valid"); // here write the code to display that ca id is invalid
+          }
+        }catch(error){
+          console.log(error);
+          // will show error only when ca id is invalid so display error here
+        }
+      }
+    }
+    checkCaId();
+
+  }, [caId])
 
   const checkoutFunction = async () => {
     try {
@@ -201,8 +225,9 @@ const EventDetail = () => {
                     type="text"
                     id="caRefferId"
                     name="caReffer"
-                    placeholder="Enter CA Id"
-                    className="text-black p-2 rounded-xl "
+                    placeholder="Enter CA Id last 5 digits"
+                    className="text-black p-2 rounded-xl"
+                    onChange={(e)=>{setCaId(e.target.value)}}
                   />
                 </div>
               </div>
