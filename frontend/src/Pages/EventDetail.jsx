@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router-dom"; // Add this import statement at the beginning of your file
-import axios from "axios";import Aos from "aos";
+import { Link, useLocation, useNavigate } from "react-router-dom"; // Add this import statement at the beginning of your file
+import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 // import { data } from "../data/dummydata";
@@ -9,18 +9,23 @@ import { FaRocket } from "react-icons/fa6";
 import { VKYRequest } from "../utils/requests";
 
 const EventDetail = () => {
-  // const [isPaymentDone, setIsPaymentDone] = useState(false);
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
   const location = useLocation(); // Corrected variable name to 'location'
-
+  const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
 
   const handleRegister = async () => {
-    const response = await VKYRequest('post', '/events', {
-      "eventCode": 1920
-    })
+    try {
+      const response = await VKYRequest("post", "/events", {
+        eventCode: 1920,
+      });
 
-    console.log(response);
+      console.log(response);
+    } catch (error) {
+      if (error.response.status === 402) {
+        setShowPaymentDialog(true);
+      }
+    }
   };
 
   useEffect(() => {
@@ -29,10 +34,7 @@ const EventDetail = () => {
 
   const checkoutFunction = async () => {
     try {
-      // Fetch order details from the backend API
-      const res = await axios.get(
-        "http://127.0.0.1:3000/api/v1/checkout/orderid"
-      );
+      const res = await VKYRequest("get", `/checkout/orderid/${paymentType}`);
       console.log(res.data);
 
       // Extract necessary data from the response
@@ -47,8 +49,28 @@ const EventDetail = () => {
         description: "Test transaction",
         order_id: id,
 
-        // This should ideally be handled server-side for security reasons. It has similar authentication procedure just like JWT
-        callback_url: "http://127.0.0.1:3000/api/v1/checkout/paymentverify",
+        // Include the Authorization header with the JWT
+
+        handler: async function (response) {
+
+          try {
+            
+            const responses = await VKYRequest(
+              "post",
+              "/checkout/paymentverify",
+              response
+            );
+            if (responses.data.status === "success") {
+              console.log("We have verif");
+            } else {
+              alert(
+                "Your razorpay credential is invalid"
+              );
+            }
+          }catch (error) {
+            console.log(error);
+          }},
+
         theme: {
           color: "#0000FF",
         },
@@ -66,6 +88,9 @@ const EventDetail = () => {
     }
   };
 
+  useEffect(()=>{
+    console.log(paymentType);
+  }, [paymentType])
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
   return (
@@ -124,11 +149,7 @@ const EventDetail = () => {
               <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-cSB">Select accordingly</h2>
                 <div onClick={() => setShowPaymentDialog(!showPaymentDialog)}>
-                  
-                  <ImCross
-                    className="cursor-pointer"
-                  />
-
+                  <ImCross className="cursor-pointer" />
                 </div>
               </div>
               <div className="text-lg py-5">
@@ -137,12 +158,14 @@ const EventDetail = () => {
                   id="accomodation"
                   name="optionChoice"
                   value="withAccomodation"
-                />
-                {" "}
+                  checked
+                  onClick={()=>{setPaymentType(1)}}
+                />{" "}
                 <label for="accomodation">
                   <span className="font-cM">
                     <large className="text-xl font-semibold">
-                      ₹ {withAccomodation} <span className="font-cR"> (with Accomodation)</span>
+                      ₹ {withAccomodation}{" "}
+                      <span className="font-cR"> (with Accomodation)</span>
                     </large>
                   </span>
                   <p className="font-cR">
@@ -156,16 +179,19 @@ const EventDetail = () => {
                   name="optionChoice"
                   value="with Out Accomodation"
                   className="mt-4"
+                  onClick={()=>{setPaymentType(2)}}
                 />
-              
                 <label for="withoutAccomodation">
                   {" "}
                   <span className="font-cM">
                     <large className="text-xl font-semibold">
-                      ₹ {withOutAccomodation} <span className="font-cR"> (Non Accomodation)</span>
+                      ₹ {withOutAccomodation}{" "}
+                      <span className="font-cR"> (Non Accomodation)</span>
                     </large>
                   </span>
-                  <p className="font-cR">Event Participation + I'd Card + Dj Night Pass</p>
+                  <p className="font-cR">
+                    Event Participation + I'd Card + Dj Night Pass
+                  </p>
                 </label>
                 <div className="flex flex-col gap-2 py-2">
                   <label for="caRefferalId" className=" text-xl font-cM pt-2">
@@ -179,9 +205,13 @@ const EventDetail = () => {
                     className="text-black p-2 rounded-xl "
                   />
                 </div>
-              
               </div>
-              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center"> <span className="flex gap-2" onClick={checkoutFunction}>Proceed to Pay <FaRocket className="mt-[6px]" /></span> </button>
+              <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center">
+                {" "}
+                <span className="flex gap-2" onClick={checkoutFunction}>
+                  Proceed to Pay <FaRocket className="mt-[6px]" />
+                </span>{" "}
+              </button>
             </div>
           </div>
         )}

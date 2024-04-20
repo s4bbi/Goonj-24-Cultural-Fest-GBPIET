@@ -1,37 +1,18 @@
-const paymentData = [ // this is for both CA and participant
-    { type1: // complete cost
-        {
-            amount: 199900,
-            currency: 'INR',
-            receipt: 'PT1'
-        }
-    },{
-        type2:{ // only ca discont
-            amount: 189900,
-            currency: 'INR',
-            receipt: 'PT2'
-        }
-    },{
-        type3: { // only college id
-            amount: 159900,
-            currency: 'INR',
-            receipt: 'PT3'
-        }
-    },{
-        type4 :{ // ca + college id
-            amount: 149900,
-            currency: 'INR',
-            receipt: 'PT4'
-        }
-    },{
-        type5: { // this is for participant
-            amount: 30000,
-            currency: 'INR',
-            receipt: 'A1'
-        }
-    }
-]
+const paymentData = [
+  // this is for both CA and participant
+  {
+    amount: 169900,
+    currency: "INR",
+    receipt: "Type 1",
+  },
 
+  {
+    // only ca discont
+    amount: 99900,
+    currency: "INR",
+    receipt: "Type 2",
+  },
+];
 
 // light nhi hai aur battery 9 per cent my clue to wait for now
 

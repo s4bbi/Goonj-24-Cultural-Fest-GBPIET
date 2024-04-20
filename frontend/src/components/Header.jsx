@@ -11,13 +11,24 @@ import { FaUserTie } from "react-icons/fa";
 import { FaDollarSign } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
 import profile from "../assets/Images/profile.png";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import LoggedContext from '../main'
-import { deleteCookie } from "../utils/Cookies";
+import { deleteCookie, getCookie } from "../utils/Cookies";
 
 const Header = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
+
   const {isLogin, setIsLogin} = useContext(LoggedContext);
+  const [showSidebar, setShowSidebar] = useState(false);
+  useEffect(()=>{
+    function globalLogger(){
+      if (getCookie('jwt')){
+        setIsLogin(true);
+      }else{
+        setIsLogin(false);
+      }
+    }
+    globalLogger()
+ }, []);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
