@@ -7,8 +7,11 @@ import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { FaRocket } from "react-icons/fa6";
 import { VKYRequest } from "../utils/requests";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EventDetail = () => {
+
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
   const location = useLocation(); // Corrected variable name to 'location'
   const [paymentType, setPaymentType] = useState(1);
@@ -20,8 +23,9 @@ const EventDetail = () => {
       const response = await VKYRequest("post", "/events", {
         eventCode: 1920,
       });
-
+  
       console.log(response);
+      toast.success("Successfully registered!");
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
@@ -241,6 +245,9 @@ const EventDetail = () => {
           </div>
         )}
       </div>
+      
+      <ToastContainer />
+
     </div>
   );
 };
