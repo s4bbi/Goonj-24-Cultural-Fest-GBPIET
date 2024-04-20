@@ -71,7 +71,7 @@ const Footer = () => {
                 className="h-6"
               />
             </Link>
-            <Link  to="https://www.linkedin.com/in/gbpiet-pauri-84579b1b5/" target="blank">
+            <Link  to="https://www.linkedin.com/company/goonj-gbpec-pauri/" target="blank">
               <img
                 src={liIcon}
                 alt="LinkedIn"
