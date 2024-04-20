@@ -3,6 +3,7 @@ const crypto = require("crypto");
 const paymentData = require("../utils/paymentTypes");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
+const UserModel = require('../model/userModel');
 
 const isPaid = (req, res, next) => {
   if (!req.user.isPaid) {
@@ -48,9 +49,12 @@ const paymentVerification = catchAsync(async (req, res) => {
 
   if (generatedSignature === req.body.razorpay_signature) {
 
-    req.user.isPaid = true;
-    await req.user.save();
+    const user = await UserModel.findByIdAndUpdate(req.user._id, {
+        isPaid: true
+    })
 
+    await user.generateUniqueId();
+    
     res.json({
       status: "success",
     });

@@ -70,12 +70,6 @@ const userSchema = new mongoose.Schema({
 
 // this is generated id to send back to client after payment
 
-
-userSchema.pre('save', function(next){
-    this.generated_id = undefined;
-    next();
-})
-
 userSchema.methods.generateUniqueId = async function() {
     let id;
     do {

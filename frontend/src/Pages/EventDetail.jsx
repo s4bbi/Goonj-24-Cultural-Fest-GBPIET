@@ -14,6 +14,7 @@ const EventDetail = () => {
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
 
+  console.log(location);
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
