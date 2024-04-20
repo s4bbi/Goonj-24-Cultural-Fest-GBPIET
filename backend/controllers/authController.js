@@ -42,16 +42,6 @@ const createAndSendTokenResponse = async (userData, res) => {
     });
 };
 
-// there can be two cases the user is first time sigining up or user is logging in again... We can use email as a unique field to handle that case...
-
-// Condidion SP1 - user already exists... in that case we just log in them...
-
-// then there is going to be a get and a post request...
-// in first request we only send email to check if the user is logged in and if they don't then move to second case... 
-// when user signup their googleOuath field then a get will be made to check if a user with that email already exists... 
-// if it doesnt then only they move to login page....
-// TODO if user exists -> send JWT and redirect to login page (frontend work);
-
 
 const signup = catchAsync(async (req, res, next) => {
     const userData = {
@@ -144,7 +134,7 @@ const restrictTo = (...roles) => {
 const checkCaId = catchAsync( async (req,res,next)=>{
     
     let user = await UserData.findOne({
-       generated_id : req.body.generated_id     // College_id is incorrect , CA id is incorrect , CA id correct but role is incorrect , CA id is 
+       generated_id : req.body.ca_id
     })
     if(user){
     if(user.role == 'CA' ){
@@ -160,6 +150,8 @@ else{
    
 }
 })
+
+
 const checkClgId = catchAsync( async (req,res,next)=>{
     const exist = validid.includes(req.body.college_id * 1);
     if(exist){
