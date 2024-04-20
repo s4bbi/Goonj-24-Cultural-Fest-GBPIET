@@ -7,7 +7,9 @@ import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
-
+import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
+import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
+import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
 
 export const teamData = [
   {
@@ -28,18 +30,38 @@ export const teamData = [
       {
         id: 102,
         name: "Prajjwal Chauhan",
-        img: "",
+        img: prajjwal,
         git: "",
         designation: "Cultural Head",
         linkdin: "https://www.linkedin.com/in/prajjwal-chauhan-b326b120b/",
         insta: "https://www.instagram.com/prajjwal740/",
         gmail: "",
       },
+      {
+        id: 103,
+        name: "",
+        img: "",
+        git: "",
+        designation: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+      },
+      {
+        id: 104,
+        name: "",
+        img: "",
+        git: "",
+        designation: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+      },
     ],
   },
   {
     id: 2,
-    name: "Dev Team",
+    name: "Goonj Team",
     members: [
       {
         id: 201,
@@ -49,6 +71,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/s4bbi",
         insta: "",
         gmail: "singhyashpreet22@gmail.com",
+        designation: "Dev Team Head",
       },
       {
         id: 202,
@@ -58,6 +81,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/priya-kandpal-8811ab268",
         insta: "",
         gmail: "priyakandpal79@gmail.com",
+        designation: "Web Team Developer",
       },
       {
         id: 203,
@@ -67,6 +91,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/nitesh-singh-bisht",
         insta: "",
         gmail: "niteshsinghbisht6398@gmail.com",
+        designation: "Web Team Developer",
       },
       {
         id: 204,
@@ -76,6 +101,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/ankur-bahuguna-9075b12a7",
         insta: "",
         gmail: "",
+        designation: "Web Team Developer",
       },
       {
         id: 205,
@@ -85,6 +111,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/vaibhav-y-80969b283/",
         insta: "",
         gmail: "vky0579@gmail.com",
+        designation: "Web Team Developer",
       },
       {
         id: 206,
@@ -94,78 +121,50 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/rohit-mahant",
         insta: "",
         gmail: "rohitsinghmahant707@gmail.com",
+        designation: "Web Team Developer",
       },
-    ],
-  },
-  {
-    id: 3,
-    name: "Graphics Team",
-    members: [
       {
-        id: 301,
+        id: 207,
         name: "Niharika Chauhan",
         img: niharika,
         git: "",
         linkdin: "https://www.linkedin.com/in/niharika-chauhan-351162227",
         insta: "",
         gmail: "niharikachauhan425@gmail.com",
+        designation: "Graphics Team",
       },
       {
-        id: 302,
+        id: 208,
         name: "Aditya Rawat",
         img: aditya,
         git: "",
         linkdin: "https://www.linkedin.com/in/aditya-rawat-3a2942276",
         insta: "",
         gmail: "",
+        designation: "Graphics Team",
+      },
+      {
+        id: 208,
+        name: "Ravi Nailwal",
+        img: ravi,
+        git: "",
+        linkdin: "https://in.linkedin.com/in/ravi-nailwal-215514286",
+        insta: "https://www.instagram.com/ravinailwal3/",
+        gmail: "nailwalravi8@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 209,
+        name: "Kriti Uniyal",
+        img: kriti,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/kriti-uniyal-703692297",
+        insta: "https://www.instagram.com/kritiuniyal_",
+        gmail: "kritiuniyal28@gmail.com",
+        designation: "Event Coordinator",
       },
     ],
   },
-  {
-    id: 4,
-    name: "Goonj Management Team",
-    members: [
-      {
-        id: 401,
-        name: "",
-        img: "",
-        git: "",
-        designation: "",
-        linkdin:
-          "",
-        insta: "",
-        gmail: "",
-      },
-      {
-        id: 402,
-        name: "",
-        img: "",
-        git: "",
-        designation: "",
-        linkdin: "",
-        insta: "",
-        gmail: "",
-      },
-      {
-        id: 403,
-        name: "",
-        img: "",
-        git: "",
-        designation: "",
-        linkdin: "",
-        insta: "",
-        gmail: "",
-      },
-      {
-        id: 404,
-        name: "",
-        img: "",
-        git: "",
-        designation: "",
-        linkdin: "",
-        insta: "",
-        gmail: "",
-      },
-    ],
-  },
+  
+  
 ];

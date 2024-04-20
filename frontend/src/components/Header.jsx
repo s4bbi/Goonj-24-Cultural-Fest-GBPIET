@@ -31,7 +31,6 @@ const Header = () => {
 
   }
 
-
   const data = [
     {
       id: 1,
@@ -43,7 +42,7 @@ const Header = () => {
     { id: 3, name: "SPONSORS", link: "/sponsors", type: "C" },
     { id: 4, name: "TEAMS", link: "/teams", type: "D" },
     { id: 5, name: "CA PORTAL", link: "/caportal", type: "E" },
-    { id: 6, name: "Audience Portal ", link: "/audience", type: "F" },
+    { id: 6, name: "AUDIENCE PORTAL", link: "/audience", type: "F" },
   ];
 
   const deskdata = [
@@ -56,7 +55,7 @@ const Header = () => {
     { id: 13, name: "SPONSORS", link: "/sponsors" },
     { id: 14, name: "TEAMS", link: "/teams" },
     { id: 15, name: "CA PORTAL", link: "/caportal" },
-    { id: 16, name: "Audience Portal ", link: "/audience" },
+    { id: 16, name: "AUDIENCE PORTAL ", link: "/audience" },
   ];
 
   const componentMap = {
