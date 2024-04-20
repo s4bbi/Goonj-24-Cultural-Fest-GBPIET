@@ -1,10 +1,15 @@
 import aerocraft from "../assets/Images/Registration_Rocket.webp";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState , useContext} from "react";
 import { useNavigate } from "react-router-dom";
 
+import { setCookie, getCookie } from "../utils/Cookies";
+import LoggedContext from "../main";
+
 const CARegisterPage = () => {
+  const {setIsLogin} = useContext(LoggedContext);
+
   const location = useLocation();
   const receivedUserData = location.state;
   const navigate = useNavigate();
@@ -18,6 +23,7 @@ const CARegisterPage = () => {
     role: "CA"
   });
 
+
   const handleChange = (e, name) => {
     setFormData({ ...formData, [name]: e.target.value });
   };
@@ -29,22 +35,23 @@ const CARegisterPage = () => {
       const response = await axios.post(
         import.meta.env.VITE_BACKEND_URL + "/auth/signup",
         formData
-      );
-      console.log(response);
+      )
+
+      setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
+
+      if (getCookie('jwt')){
+        setIsLogin(true);
+
+      }else{
+        setIsLogin(false);
+
+      }
 
       if (response.data.status === "success") {
         navigate("/profile", { state: response.data.userCreated });
       }
     } catch (error) {
       console.log(error);
-      setFormData({
-        name: receivedUserData?.name,
-        email: receivedUserData?.email,
-        pNum: "",
-        state: "",
-        city: "",
-        college: "",
-      });
     }
   };
 

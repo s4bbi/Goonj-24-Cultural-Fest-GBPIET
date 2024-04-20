@@ -1,8 +1,10 @@
 import astro from "../assets/Images/LoginAstronaut.png";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { getCookie, setCookie } from "../utils/Cookies";
+import LoggedContext from "../main";
 
 const CARegisterPage = () => {
   const location = useLocation();
@@ -17,6 +19,8 @@ const CARegisterPage = () => {
     college: "",
   });
 
+  const { setIsLogin} = useContext(LoggedContext);
+
   const handleChange = (e, name) => {
     setFormData({ ...formData, [name]: e.target.value });
   };
@@ -28,62 +32,25 @@ const CARegisterPage = () => {
         import.meta.env.VITE_BACKEND_URL + "/auth/signup",
         formData
       );
-      console.log(response);
+      
+      setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
+
+      if (getCookie('jwt')){
+        setIsLogin(true);
+      }else{
+        setIsLogin(false);
+      }
 
       if (response.data.status === "success") {
         navigate("/profile", { state: response.data.userCreated });
+
       }
     } catch (error) {
       console.log(error);
-      setFormData({
-        name: receivedUserData?.name,
-        email: receivedUserData?.email,
-        pNum: "",
-        state: "",
-        city: "",
-        college: "",
-      });
     }
   };
 
-  const checkoutFunction = async () => {
-    try {
-      // Fetch order details from the backend API
-      const res = await axios.get(
-        "http://127.0.0.1:3000/api/v1/checkout/orderid"
-      );
-      console.log(res.data);
-
-      // Extract necessary data from the response
-      const { amount, id } = res.data.order;
-
-      // Prepare options for Razorpay payment
-      const options = {
-        key: import.meta.env.VITE_RAZORPAY_API_KEY,
-        amount: amount,
-        currency: "INR",
-        name: "Goonj 24",
-        description: "Test transaction",
-        order_id: id,
-
-        // This should ideally be handled server-side for security reasons. It has similar authentication procedure just like JWT
-        callback_url: "http://127.0.0.1:3000/api/v1/checkout/paymentverify",
-        theme: {
-          color: "#0000FF",
-        },
-      };
-
-      // Make sure the Razorpay script is loaded before creating a new instance
-      if (window.Razorpay) {
-        const razor = new window.Razorpay(options);
-        razor.open();
-      } else {
-        console.error("Razorpay script is not loaded");
-      }
-    } catch (error) {
-      console.error("Error occurred while fetching order details:", error);
-    }
-  };
+  
 
   return (
     <div className="bg-EventBG h-fit flex justify-center pt-8">
