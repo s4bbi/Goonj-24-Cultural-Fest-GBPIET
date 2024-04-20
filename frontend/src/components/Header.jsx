@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import "../index.css";
 import goonjLogo from "../assets/goonjLogo.webp";
 import LoginButton from "./LoginButton";

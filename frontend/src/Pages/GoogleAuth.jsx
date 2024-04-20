@@ -2,7 +2,7 @@ import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import LoginAstro from "../assets/Images/LoginAstronaut.png";
 import { jwtDecode } from "jwt-decode";
 import { useEffect, useState , useContext} from "react";
-import axios from "axios";
+import { VKYRequest } from "../utils/requests";
 import { useNavigate ,useLocation } from "react-router-dom";
 import { setCookie, getCookie} from "../utils/Cookies";
 import LoggedContext from "../main";
@@ -42,12 +42,10 @@ const GoogleAuth = () => {
   useEffect(() => {
     const fetchData =async ()=>{
       try{
-        const response = await axios.post(import.meta.env.VITE_BACKEND_URL + "/auth/login", {
-          email: userData.email,
-
-        });
+        const response = await VKYRequest('post', '/auth/login', userData);
         
         setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN); // storing cookies from response in cookies
+        
         if (getCookie('jwt')){
           setIsLogin(true);
         }else{

@@ -1,11 +1,11 @@
 import aerocraft from "../assets/Images/Registration_Rocket.webp";
-import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useState , useContext} from "react";
 import { useNavigate } from "react-router-dom";
 
 import { setCookie, getCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
+import { VKYRequest } from "../utils/requests";
 
 const CARegisterPage = () => {
   const {setIsLogin} = useContext(LoggedContext);
@@ -32,10 +32,8 @@ const CARegisterPage = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        import.meta.env.VITE_BACKEND_URL + "/auth/signup",
-        formData
-      )
+
+      const response = await VKYRequest('post', '/auth/signup', formData);
 
       setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
 
