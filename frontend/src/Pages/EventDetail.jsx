@@ -2,29 +2,27 @@ import { Link, useLocation } from "react-router-dom"; // Add this import stateme
 import axios from "axios";import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { data } from "../data/dummydata";
+// import { data } from "../data/dummydata";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { FaRocket } from "react-icons/fa6";
+import { VKYRequest } from "../utils/requests";
 
 const EventDetail = () => {
-  const [isPaymentDone, setIsPaymentDone] = useState(false);
+  // const [isPaymentDone, setIsPaymentDone] = useState(false);
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
   const location = useLocation(); // Corrected variable name to 'location'
 
   const eventDetail = location.state.event.data;
 
-  const handleRegister = () => {
-    if (eventDetail.registerLink) {
-      window.location.href = eventDetail.registerLink;
-    } else {
-      if (isPaymentDone) {
-        console.log("Event registered!");
-      } else {
-        setShowPaymentDialog(true);
-      }
-    }
+  const handleRegister = async () => {
+    const response = await VKYRequest('post', '/events', {
+      "eventCode": 1920
+    })
+
+    console.log(response);
   };
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);

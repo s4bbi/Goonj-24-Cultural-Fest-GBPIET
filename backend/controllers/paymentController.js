@@ -1,8 +1,12 @@
 const Razorpay = require("razorpay")
 const crypto = require('crypto');
 const paymentData = require("../utils/paymentTypes");
+const AppError = require("../utils/appError");
 
 const isPaid = (req, res, next)=>{
+    if (!req.user.isPaid){
+        return next(new AppError('You have not paid yet', 402));
+    }
     next();
 }
 
@@ -39,7 +43,8 @@ const paymentVerification = async (req, res)=>{
 
 
     if (generatedSignature===req.body.razorpay_signature){
-        console.log('request is legit')
+        console.log('request is legit');
+
         res.json({
             status: 'ok'
         })
