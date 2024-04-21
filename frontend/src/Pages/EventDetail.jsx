@@ -139,7 +139,7 @@ const EventDetail = () => {
                 {eventDetail.name}
               </div>
               <div className="flex gap-2 sm:gap-5 text-sm">
-                {eventDetail.interCollege && eventDetail.registerLink && (
+                {eventDetail.interCollege && (
                   <button
                     onClick={() => {
                       if (eventDetail.registerLink) {
