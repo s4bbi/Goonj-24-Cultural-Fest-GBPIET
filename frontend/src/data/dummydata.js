@@ -118,9 +118,9 @@ export const data = [
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
+        coordinator: "Rashmi Rawat",
+        email: "rawatrashmi162@gmail.com",
+        phone: "",
       },
     ],
   },
