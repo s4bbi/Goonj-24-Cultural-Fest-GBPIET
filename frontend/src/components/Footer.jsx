@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "../index.css";
-import ytIcon from "../assets/Images/youtubeIcon.png"
-import igIcon from "../assets/Images/instagramIcon.png"
-import liIcon from "../assets/Images/linkedinIcon.png"
-import xIcon from "../assets/Images/twitterIcon.png"
+import ytIcon from "../assets/Images/youtubeIcon.png";
+import igIcon from "../assets/Images/instagramIcon.png";
+import liIcon from "../assets/Images/linkedinIcon.png";
+import xIcon from "../assets/Images/twitterIcon.png";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="text-white flex flex-col md:flex-row justify-between">
           <div className="mb-4 md:mb-0">
             <p>
-            GOONJ 20<span className="text-violet-700">24</span>
+              GOONJ 20<span className="text-violet-700">24</span>
             </p>
           </div>
           <div className="flex gap-4 sm:gap-10 font-cM justify-between">
@@ -49,36 +49,26 @@ const Footer = () => {
           </h1>
           <div className="flex flex-col sm:flex gap-6 text-white ">
             <h1>Connect with us on:</h1>
-           <div className="flex justify-between">
-           <Link to="https://www.youtube.com/@OFFICIALSACGBPIET/" target="blank">
-              <img
-                src={ytIcon}
-                alt="YouTube"
-                className="h-6"
-              />
-            </Link>
-            <Link  to="https://twitter.com/gbpietpauri" target="blank">
-              <img
-                src={xIcon}
-                alt="X"
-                className="h-6"
-              />
-            </Link>
-            <Link  to="https://www.instagram.com/sacgbpiet/" target="blank"> 
-              <img
-                src={igIcon}
-                alt="Instagram"
-                className="h-6"
-              />
-            </Link>
-            <Link  to="https://www.linkedin.com/company/goonj-gbpec-pauri/" target="blank">
-              <img
-                src={liIcon}
-                alt="LinkedIn"
-                className="h-6"
-              />
-            </Link>
-           </div>
+            <div className="flex justify-between">
+              <Link
+                to="https://www.youtube.com/@OFFICIALSACGBPIET/"
+                target="blank"
+              >
+                <img src={ytIcon} alt="YouTube" className="h-6" />
+              </Link>
+              <Link to="https://twitter.com/gbpietpauri" target="blank">
+                <img src={xIcon} alt="X" className="h-6" />
+              </Link>
+              <Link to="https://www.instagram.com/sacgbpiet/" target="blank">
+                <img src={igIcon} alt="Instagram" className="h-6" />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/company/goonj-gbpec-pauri/"
+                target="blank"
+              >
+                <img src={liIcon} alt="LinkedIn" className="h-6" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

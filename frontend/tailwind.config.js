@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -20,9 +17,7 @@ export default {
         LoginBG: "url('/src/assets/Images/LoginBG.png')",
         drama_skit: "url('/src/assets/Images/EventImages/drama_skit.webp')",
       },
-      
-
     },
   },
   plugins: [],
-}
+};
