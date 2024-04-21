@@ -18,36 +18,18 @@ const EventDetail = () => {
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState('');
 
-  const handleRegister = () => {
-    // try {
-    //   const response = await VKYRequest("post", "/events", {
-    //     eventCode: 1920,
-    //   });
+  const handleRegister = async () => {
+    try {
+      const response = await VKYRequest("post", "/events", {
+        eventCode: 1920,
+      });
   
-      
-    toast.info("Registration Begins from 25th April to 5th May!, Contact the event coordinator for more info.", {
-      position: "top-center",
-      style: {
-        backgroundColor: "#000",
-        color: "#fff",
-        fontSize: "1rem",
-        padding: ".5rem 1rem",
-        borderRadius: ".25rem",
-        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-        width: "30rem",
-        maxWidth: "90vw",
-      }
-    });
     
-    // } catch (error) {
-    //   if (error.response.status === 402) {
-    //     setShowPaymentDialog(true);
-    //   }
-    // }
-
-    // toast.info("Registration Begins from 25th April to 5th May!", {
-    //   position: toast.POSITION.CENTER,
-    // });
+    } catch (error) {
+      if (error.response.status === 402) {
+        setShowPaymentDialog(true);
+      }
+    }
 
   };
 
@@ -79,59 +61,73 @@ const EventDetail = () => {
   }, [caId])
 
   const checkoutFunction = async () => {
-    try {
-      const res = await VKYRequest("get", `/checkout/orderid/${paymentType}`);
-      console.log(res.data);
 
-      // Extract necessary data from the response
-      const { amount, id } = res.data.order;
+    toast.info("Registration Begins from 25th April to 5th May!, Contact the event coordinator for more info.", {
+      position: "top-center",
+      style: {
+        backgroundColor: "#000",
+        color: "#fff",
+        fontSize: "1rem",
+        padding: ".5rem 1rem",
+        borderRadius: ".25rem",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+        width: "30rem",
+        maxWidth: "90vw",
+      }
+    });
+    // try {
+    //   const res = await VKYRequest("get", `/checkout/orderid/${paymentType}`);
+    //   console.log(res.data);
 
-      // Prepare options for Razorpay payment
-      const options = {
-        key: import.meta.env.VITE_RAZORPAY_API_KEY,
-        amount: amount,
-        currency: "INR",
-        name: "Goonj '24",
-        description: "Test transaction",
-        order_id: id,
+    //   // Extract necessary data from the response
+    //   const { amount, id } = res.data.order;
 
-        // Include the Authorization header with the JWT
+    //   // Prepare options for Razorpay payment
+    //   const options = {
+    //     key: import.meta.env.VITE_RAZORPAY_API_KEY,
+    //     amount: amount,
+    //     currency: "INR",
+    //     name: "Goonj '24",
+    //     description: "Test transaction",
+    //     order_id: id,
 
-        handler: async function (response) {
+    //     // Include the Authorization header with the JWT
 
-          try {
+    //     handler: async function (response) {
+
+    //       try {
             
-            const responses = await VKYRequest(
-              "post",
-              "/checkout/paymentverify",
-              response
-            );
-            if (responses.data.status === "success") {
-              console.log("We have verified you");
-            } else {
-              alert(
-                "Your razorpay credential is invalid"
-              );
-            }
-          }catch (error) {
-            console.log(error);
-          }},
+    //         const responses = await VKYRequest(
+    //           "post",
+    //           "/checkout/paymentverify",
+    //           response
+    //         );
+    //         if (responses.data.status === "success") {
+    //           console.log("We have verified you");
+    //         } else {
+    //           alert(
+    //             "Your razorpay credential is invalid"
+    //           );
+    //         }
+    //       }catch (error) {
+    //         console.log(error);
+    //       }},
 
-        theme: {
-          color: "#0000FF",
-        },
-      };
+    //     theme: {
+    //       color: "#0000FF",
+    //     },
+      // };
 
       // Make sure the Razorpay script is loaded before creating a new instance
-      if (window.Razorpay) {
-        const razor = new window.Razorpay(options);
-        razor.open();
-      } else {
-        console.error("Razorpay script is not loaded");
-      }
-    } catch (error) {
-      console.error("Error occurred while fetching order details:", error);
-    }
+  //     if (window.Razorpay) {
+  //       const razor = new window.Razorpay(options);
+  //       razor.open();
+  //     } else {
+  //       console.error("Razorpay script is not loaded");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error occurred while fetching order details:", error);
+  //   }
   };
 
   useEffect(()=>{
