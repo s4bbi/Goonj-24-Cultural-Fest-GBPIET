@@ -71,7 +71,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/s4bbi",
         insta: "",
         gmail: "singhyashpreet22@gmail.com",
-        designation: "Dev Team Head",
+        designation: "Web Team Head",
       },
       {
         id: 202,

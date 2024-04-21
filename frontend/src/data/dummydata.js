@@ -32,6 +32,7 @@ import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
 import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp";
+import { MdEmail } from "react-icons/md";
 
 export const data = [
   {
@@ -58,6 +59,9 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + representation + expressions + theme & dialogue execution + costume.",
+        coordinator: "Pallavi Pathak",
+        email: "p26alla02vi@gmail.com",
+        phone: "",
       },
       {
         id: 102,
@@ -77,6 +81,9 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + representation + facial expressions + theme execution + overall performance.",
+        coordinator: "Vidhi Nabiyal",
+        email: "vidhinabiyal@gmail.com",
+        phone: "",  
       },
       {
         id: 103,
@@ -159,6 +166,9 @@ export const data = [
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
+        coordinator: "Akshit Anand",
+        email: "akshitanand121@gmail.com",
+        phone: "8979098390",
       },
 
       {
@@ -177,6 +187,9 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + facial expressions + execution + stage coverage + outfit + overall performance.",
+        coordinator: "Akansha Rawat",
+        email: "akanshaar3256@gmail.com",
+        phone: "",   
       },
     ],
   },
@@ -201,6 +214,9 @@ export const data = [
         interCollege: false,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
+        coordinator: "Ramneet Kaur",
+        email: "ramneetkaur0028@gmail.com",
+        phone: "",   
       },
       {
         id: 302,
@@ -229,7 +245,7 @@ export const data = [
     Event: [
       {
         id: 401,
-        name: "FASHIONISTA [Theme – Cosplaying (Bollywood / Indian Mythology )]",
+        name: "Dress to Impress [Theme – Cosplaying (Bollywood / Indian Mythology )]",
         img: dress_to_impress,
         description: "Make your fashion statement!",
         topics: [],
@@ -242,6 +258,9 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
+        coordinator: "Ragini Bisht",
+        email: "raginibisht987@gmail.com",
+        phone: "",   
       },
 
       {
@@ -262,6 +281,9 @@ export const data = [
         interCollege: false,
         judging:
           "dressing sense + appearance + ramp + confidence + facial  expressions + fluency + overall performance",
+        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
+        email: "Ashutosh Rana (9118798461)",
+        phone: "",  
       },
     ],
   },
@@ -286,6 +308,9 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
+        coordinator: "Vidhi Nabiyal (vidhinabiyal@gmail.com)",
+        email: "Tanuja Adhikari (tanujaadhikari390@gmail.com)",
+        phone: "",  
       },
     ],
   },
@@ -311,6 +336,9 @@ export const data = [
         interCollege: false,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
+        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
+        email: "Drona Chamoli (9045118831)",
+        phone: "", 
       },
     ],
   },
@@ -322,7 +350,7 @@ export const data = [
     Event: [
       {
         id: 701,
-        name: "CHOREOGRAPHY SHOWDOWN- Only For GBPIET",
+        name: "CHOREOGRAPHY SHOWDOWN - Only For GBPIET",
         img: dance_battle,
         description:
           "Ready to show off your groovy moves? Here is the freestyle tadka where you compete with yourself and give the best version of yourself.",
@@ -337,6 +365,9 @@ export const data = [
         interCollege: false,
         judging:
           "choreography + confidence + coordination (group, duo, trio) + cheering impact + overall performance.,",
+        coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
+        email: "Ashlesh Ranjan (+91 941115530)",
+        phone: "",  
       },
       {
         id: 702,
@@ -650,7 +681,10 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
+        email: " Ashlesh Ranjan (+91 941115530)",
+        phone: "",
       },
       {
         id: 1106,
@@ -658,7 +692,7 @@ export const data = [
         img: tug_of_war,
         description: "Unleash your gaming Prowess",
         topics: [],
-        guidelines: ["Download the RuleBook for Imformation"],
+        guidelines: ["Download the RuleBook for more Information"],
         judging: "",
         interCollege: false,
         entryfees: "Entry Fees: ₹99"
@@ -680,7 +714,10 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        coordinator: "Priyanshu Rana (9548973945)",
+        email: "Drona Chamoli (9045118831)",
+        phone: "Ramneet Kaur (ramneetkaur0028@gmail.com)", 
       },
     ],
   },

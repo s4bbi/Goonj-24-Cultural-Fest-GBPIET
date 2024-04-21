@@ -123,11 +123,11 @@ const EventDetail = () => {
   const withOutAccomodation = 999;
   return (
     <div className="w-full bg-cover">
-      <div className="bg-EventBG bg-cover py-20 px-5 md:px-20 md:py-32 h-full hover:none">
+      <div className="bg-EventBG bg-cover py-20 px-5 md:px-20 md:pt-32 h-full hover:none">
         {!showPaymentDialog && (
           <div className="text-white">
             <div className="w-full flex justify-between items-center">
-              <div className="font-cuda md:text-4xl">{eventDetail.name}</div>
+              <div className="font-cuda md:text-4xl text-yellow-600 ">{eventDetail.name}</div>
               <div className="flex gap-2 sm:gap-5 text-sm">
                 {eventDetail.interCollege && (
                   <button
@@ -171,6 +171,13 @@ const EventDetail = () => {
                     </li>
                   ))}
                 </ul>
+                <div className="flex flex-col gap-4 font-cM text-sm md:text-xl"> Contact for more info: 
+                  <div className="flex flex-col gap-1 text-yellow-500 text-sm md:text-lg">
+                    <span> {eventDetail.coordinator} </span> 
+                    <span> {eventDetail.email} </span> 
+                    <span> {eventDetail.phone} </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
