@@ -209,7 +209,6 @@ const EventDetail = () => {
                             <Link to={item.formlink} target="_blank">
                               REGISTER
                             </Link>
-                            )
                           </button>
 
                           <button className="w-full text-xs bg-[#5F43B2] font-cM md:text-lg px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
