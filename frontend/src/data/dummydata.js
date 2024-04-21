@@ -641,7 +641,7 @@ export const data = [
           {
             name: "Free Fire",
             formlink: "https://forms.gle/JAVPULZTTjht6c827",
-            coordinator: "Akshay Tomar - 84495 51027)",
+            coordinator: "Akshay Tomar - 84495 51027",
             subRuleBook:
               "https://docs.google.com/document/d/13Imgk1j0ZbygmnR1vvbEIYNldZF70rAr_FFXwDgDHJ8/edit?usp=sharing",
           },

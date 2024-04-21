@@ -16,6 +16,7 @@ const EventDetail = () => {
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
+  console.log(eventDetail);
 
   const handleRegister = async () => {
     try {
@@ -121,7 +122,7 @@ const EventDetail = () => {
             <div className="w-full flex justify-between items-center">
               <div className="font-cuda md:text-4xl">{eventDetail.name}</div>
               <div className="flex gap-2 sm:gap-5 text-sm">
-                {eventDetail.interCollege && (
+                {eventDetail.interCollege && eventDetail.registerLink && (
                   <button
                     onClick={() => {
                       if (eventDetail.registerLink) {
@@ -165,26 +166,28 @@ const EventDetail = () => {
                   ))}
                 </ul>
                 {eventDetail.type && (
-                  <div>
+                  <div className="">
                     {eventDetail.type.map((item) => (
-                      <div className="flex justify-between">
-                        <div>
-                          <p>{item.name}</p>
+                      <div
+                        key={item.name}
+                        className="flex justify-between my-5"
+                      >
+                        <div className="gap-1">
+                          <p className="md:text-2xl font-cuda">{item.name}</p>
                           <p>{item.coordinator}</p>
                         </div>
-                        <div className="flex items-start">
-                          {eventDetail.interCollege && (
-                            <button className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
-                              <Link>REGISTER</Link>
-                            </button>
-                          )}
-                          {item.subRuleBook && (
-                            <Link to={eventDetail.Rulebook} target="_blank">
-                              <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
-                                RULE BOOK
-                              </button>
+                        <div className="flex items-start gap-2">
+                          <button className="bg-[#5F43B2] font-cM md:text-lg px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
+                            <Link to={item.formlink} target="_blank">
+                              REGISTER
                             </Link>
-                          )}
+                          </button>
+
+                          <button className="w-full bg-[#5F43B2] font-cM md:text-lg px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
+                            <Link to={item.subRuleBook} target="_blank">
+                              RULE BOOK
+                            </Link>
+                          </button>
                         </div>
                       </div>
                     ))}
