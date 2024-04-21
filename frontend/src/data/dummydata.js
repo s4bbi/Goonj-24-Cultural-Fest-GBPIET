@@ -32,8 +32,8 @@ import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
 import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp";
-import { MdEmail } from "react-icons/md";
-
+const eventRulebook =
+  "https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing";
 export const data = [
   {
     id: 1,
@@ -56,12 +56,10 @@ export const data = [
           " Maximum number of participants in one group :- 8",
           "(if there is technical fault, extra time will be given accordingly.)",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Audience impact + representation + expressions + theme & dialogue execution + costume.",
-        coordinator: "Pallavi Pathak",
-        email: "p26alla02vi@gmail.com",
-        phone: "",
       },
       {
         id: 102,
@@ -79,11 +77,9 @@ export const data = [
           "(if there is technical fault, extra time will be given accordingly.)",
         ],
         interCollege: true,
+        Rulebook: eventRulebook,
         judging:
           "Audience impact + representation + facial expressions + theme execution + overall performance.",
-        coordinator: "Vidhi Nabiyal",
-        email: "vidhinabiyal@gmail.com",
-        phone: "",  
       },
       {
         id: 103,
@@ -115,12 +111,10 @@ export const data = [
           "Scripts will be submitted to the core committee 5 days before the event",
           "Performances should be acoustically driven, and the use of microphones is not allowed",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
-        coordinator: "Rashmi Rawat",
-        email: "rawatrashmi162@gmail.com",
-        phone: "",
       },
     ],
   },
@@ -147,12 +141,10 @@ export const data = [
           "Maximum number of participants in one group :- 10",
           "(if there is technical fault, extra time will be given accordingly)",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
-          coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 202,
@@ -169,12 +161,10 @@ export const data = [
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared)",
           "if there is technical fault, extra time will be given accordingly",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
-        coordinator: "Akshit Anand",
-        email: "akshitanand121@gmail.com",
-        phone: "8979098390",
       },
 
       {
@@ -190,12 +180,10 @@ export const data = [
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
           "If there is a technical fault, extra time will be given accordingly.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Audience impact + facial expressions + execution + stage coverage + outfit + overall performance.",
-        coordinator: "Akansha Rawat",
-        email: "akanshaar3256@gmail.com",
-        phone: "",   
       },
     ],
   },
@@ -217,12 +205,10 @@ export const data = [
           "The performance should not exceed 3-5 minutes and 1 minute for stage clearance is given",
           "Exceeding the performance time limit will lead to point deduction",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
-        coordinator: "Ramneet Kaur",
-        email: "ramneetkaur0028@gmail.com",
-        phone: "",   
       },
       {
         id: 302,
@@ -238,12 +224,10 @@ export const data = [
           "Songs will be submitted to the core commitee a day prior to the event.",
           "if there is technical fault, extra time will ber given.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
-          coordinator: "Prajjwal Chauhan",
-          email: "prajjwal1120@gmail.com",
-          phone: "+91 8755293708",
       },
     ],
   },
@@ -254,7 +238,7 @@ export const data = [
     Event: [
       {
         id: 401,
-        name: "Dress to Impress [Theme – Cosplaying (Bollywood / Indian Mythology )]",
+        name: "FASHIONISTA [Theme – Cosplaying (Bollywood / Indian Mythology )]",
         img: dress_to_impress,
         description: "Make your fashion statement!",
         topics: [],
@@ -264,12 +248,10 @@ export const data = [
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
           "(if there is technical fault, extra time will be given accordingly.)",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Ragini Bisht",
-        email: "raginibisht987@gmail.com",
-        phone: "",   
       },
 
       {
@@ -287,12 +269,10 @@ export const data = [
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
           "If there is a technical fault, extra time will be given accordingly.",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging:
           "dressing sense + appearance + ramp + confidence + facial  expressions + fluency + overall performance",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Ashutosh Rana (9118798461)",
-        phone: "",  
       },
     ],
   },
@@ -314,12 +294,10 @@ export const data = [
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
           "if there is technical fault , extra time will be given accordingly.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Vidhi Nabiyal (vidhinabiyal@gmail.com)",
-        email: "Tanuja Adhikari (tanujaadhikari390@gmail.com)",
-        phone: "",  
       },
     ],
   },
@@ -342,12 +320,10 @@ export const data = [
           "Dress up must be in good taste and no vulgarity is allowed.",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Drona Chamoli (9045118831)",
-        phone: "", 
       },
     ],
   },
@@ -359,7 +335,7 @@ export const data = [
     Event: [
       {
         id: 701,
-        name: "CHOREOGRAPHY SHOWDOWN - Only For GBPIET",
+        name: "CHOREOGRAPHY SHOWDOWN- Only For GBPIET",
         img: dance_battle,
         description:
           "Ready to show off your groovy moves? Here is the freestyle tadka where you compete with yourself and give the best version of yourself.",
@@ -371,12 +347,10 @@ export const data = [
           "For final showdown the song will be provided by core committee present on the spot for fair play.",
           "The battle between aces will determine the ultimate winner.",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging:
           "choreography + confidence + coordination (group, duo, trio) + cheering impact + overall performance.,",
-        coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
-        email: "Ashlesh Ranjan (+91 941115530)",
-        phone: "",  
       },
       {
         id: 702,
@@ -396,11 +370,9 @@ export const data = [
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
           "if there is technical fault, extra time will be given accordingly.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging: "technique + arrangement + crowd response + uniqueness,",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
     ],
   },
@@ -422,12 +394,10 @@ export const data = [
           "Minimum number of participants in one group :- 8. ",
           "Maximum number of participants in one group :- 10.",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
-          coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 802,
@@ -441,14 +411,11 @@ export const data = [
           "Minimum number of participants in one group :- 1  +musicians.",
           "Maximum number of participants in one group :- 5 + musicians = 8. ",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
-          coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
-      
     ],
   },
 
@@ -470,12 +437,10 @@ export const data = [
           "The questioning will be restricted to 1 minute, and the response should be completed in the next 2 minutes.",
           "A slip of paper bearing only the key points is permitted.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging:
           "Knowledge + content + critical thinking + rebuttal skills + time management.",
-          coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 902,
@@ -489,15 +454,13 @@ export const data = [
           "2 minutes timing for evaluation of the topic will be provided to the participant.",
           "The participant must speak on the topic for at least 3 minutes.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging: "Knowledge + content + critical thinking + management.",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 903,
-        name: "KAVIKRAM",
+        name: "ALFAAZ-E-KALAM",
         img: alfaaz,
         description:
           "Grab a pen and paper, drop into an ocean of words, and  compose a symphony of thoughts and emotions. Whether  you're an experienced poet or just discovering the power of words, Alfaaz-e-Kalam is your chance to shine. Unleash  your inner poet, share your poetry, and participate in an  exciting event. Come join us for a lyrical celebration in  which each phrase represents a step towards poetic  excellence.",
@@ -511,11 +474,9 @@ export const data = [
           "Poetry entries should not exceed 30 lines.",
           "Late submissions will not be considered.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging: "Creativity + Originality + Language proficiency",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
     ],
   },
@@ -539,11 +500,9 @@ export const data = [
           "Your creation should be an original piece of work. ",
           "Plagiarism content will lead to disqualification.",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + technical skill + overall impact/ appearance.",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
       },
 
       {
@@ -560,11 +519,9 @@ export const data = [
           "Plagiarism content will lead to disqualification.",
           "Shutter Speed should be less than 90 seconds.",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
       },
       {
         id: 1005,
@@ -581,12 +538,9 @@ export const data = [
           "The film must be of the highest quality possible.",
           "Adult content of any kind will not be entertained and would lead to direct disqualification.",
         ],
+        Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
-        
       },
     ],
   },
@@ -608,14 +562,11 @@ export const data = [
           "Your creation should be an original piece of work. ",
           "Plagiarism content will lead to disqualification. ",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
-
       },
       {
         id: 1004,
@@ -631,14 +582,11 @@ export const data = [
           "Your creation should be an original piece of work.",
           "Plagiarism content will lead to disqualification.",
         ],
+        Rulebook: eventRulebook,
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
-
       },
       {
         id: 1101,
@@ -653,30 +601,51 @@ export const data = [
           "Group performance is not allowed. ",
           "Performance will be judged based on technique, arrangement, creativity, crowd response and overall musicality.",
         ],
+        Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
         entryfees: "Entry Fees: ₹99",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
-
       },
       {
         id: 1102,
         name: "ESPORTS",
         img: esport,
-        description: "Embrace the journey, embrace the treasure!", 
+        description: "Embrace the journey, embrace the treasure!",
         topics: [],
         guidelines: [
           "This event is open for everyone so there is no limit in participants. Anyone can participate!",
           "Do not violate the community guidelines by foul playing.",
           "If anyone caught cheating, leads to immediate disqualification.",
         ],
+        Rulebook: "",
         judging: "",
         interCollege: true,
-        registerLink: "https://forms.gle/hYinBCFt9jXr88xcA",
-        entryfees: "Entry Fees: ₹400"
+        registerLink: "",
+        entryfees: "Entry Fees: ₹400",
+        type: [
+          {
+            name: "Valorant",
+            formlink: "https://forms.gle/NH8SED5gHxGhKZxW6",
+            coordinator: "Pankaj Raturi - 7668503726",
+            subRuleBook:
+              "https://docs.google.com/document/d/1bA-YHj-_62NEv6Sn3pUE686bUrc231bhGUqWoZ13Ouo/edit?usp=sharing",
+          },
+          {
+            name: "BGMI",
+            formlink: "https://forms.gle/JAVPULZTTjht6c827 ",
+            coordinator: "Ravi Nailwal - 9837989785 ",
+            subRuleBook:
+              "https://docs.google.com/document/d/1DlbCslMfYPzguH2uE32swycuLkD9SQ1NC_tyJBC3L7c/edit?usp=sharing",
+          },
+          {
+            name: "Free Fire",
+            formlink: "https://forms.gle/JAVPULZTTjht6c827",
+            coordinator: "Akshay Tomar - 84495 51027",
+            subRuleBook:
+              "https://docs.google.com/document/d/13Imgk1j0ZbygmnR1vvbEIYNldZF70rAr_FFXwDgDHJ8/edit?usp=sharing",
+          },
+        ],
       },
       {
         id: 1103,
@@ -689,15 +658,13 @@ export const data = [
           "There is a time limit of 3 minutes.",
           "Exceeding the time limit will have marks deduction.",
         ],
+        Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
         entryfees: "Entry Fees: ₹99",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
       },
-      
+
       {
         id: 1104,
         name: "Treasure Hunt",
@@ -709,13 +676,11 @@ export const data = [
           "A team must consist of only 5 members.",
           "There is a time limit of one hour. The first one reaches the finish line with all the clue wins!",
         ],
+        Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
         entryfees: "Entry Fees: ₹400",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 1105,
@@ -731,27 +696,23 @@ export const data = [
           "Songs will be played by the core committee present at the site randomly.",
           "The opponents will be known on the spot only",
         ],
+        Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
         entryfees: "Entry Fees: ₹99",
-        coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
-        email: " Ashlesh Ranjan (+91 941115530)",
-        phone: "",
       },
       {
         id: 1106,
         name: "Tug of War - Only For GBPIET",
         img: tug_of_war,
-        description: "Unleash your gaming Prowess, Prizes will be revealed on spot.",
+        description: "Unleash your gaming Prowess",
         topics: [],
-        guidelines: ["Download the RuleBook for more Information"],
+        guidelines: ["Download the RuleBook for Imformation"],
+        Rulebook: eventRulebook,
         judging: "",
         interCollege: false,
         entryfees: "Entry Fees: ₹99",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 1107,
@@ -767,13 +728,11 @@ export const data = [
           "The participants will be judged on the basis of confidence, dress up, expressions, representation and overall impact.",
           "if there is technical fault , extra time will be given accordingly.",
         ],
+        Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
         entryfees: "Entry Fees: ₹99",
-        coordinator: "Priyanshu Rana (9548973945)",
-        email: "Drona Chamoli (9045118831)",
-        phone: "Ramneet Kaur (ramneetkaur0028@gmail.com)", 
       },
     ],
   },

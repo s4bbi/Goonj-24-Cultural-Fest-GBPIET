@@ -162,7 +162,7 @@ const Header = () => {
             </div>
           ) : (
             <li>
-              <Link to="/googleauth">
+              <Link to="/googleauth" onClick={toggleSidebar}>
                 <LoginButton text="LOGIN" />
               </Link>
             </li>
