@@ -7,26 +7,24 @@ import { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { FaRocket } from "react-icons/fa6";
 import { VKYRequest } from "../utils/requests";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const EventDetail = () => {
-
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
   const location = useLocation(); // Corrected variable name to 'location'
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
-  const [caId, setCaId] = useState('');
+  const [caId, setCaId] = useState("");
 
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
         eventCode: 1920,
       });
-  
+
       console.log(response);
       toast.success("Successfully registered!", {});
-      
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
@@ -38,28 +36,26 @@ const EventDetail = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-
   // used to check ca id validity
-  useEffect(()=>{
-    async function checkCaId(){
-      if (caId.length===5){
-        try{
+  useEffect(() => {
+    async function checkCaId() {
+      if (caId.length === 5) {
+        try {
           const response = await VKYRequest("post", "/auth/caidcheck", {
-            ca_id: "GNJ-CA-" + caId
+            ca_id: "GNJ-CA-" + caId,
           });
 
-          if (response.data.status==='success'){
+          if (response.data.status === "success") {
             console.log("CA ID is valid"); // here write the code to display that ca id is invalid
           }
-        }catch(error){
+        } catch (error) {
           console.log(error);
           // will show error only when ca id is invalid so display error here
         }
       }
     }
     checkCaId();
-
-  }, [caId])
+  }, [caId]);
 
   const checkoutFunction = async () => {
     try {
@@ -81,9 +77,7 @@ const EventDetail = () => {
         // Include the Authorization header with the JWT
 
         handler: async function (response) {
-
           try {
-            
             const responses = await VKYRequest(
               "post",
               "/checkout/paymentverify",
@@ -92,13 +86,12 @@ const EventDetail = () => {
             if (responses.data.status === "success") {
               console.log("We have verified you");
             } else {
-              alert(
-                "Your razorpay credential is invalid"
-              );
+              alert("Your razorpay credential is invalid");
             }
-          }catch (error) {
+          } catch (error) {
             console.log(error);
-          }},
+          }
+        },
 
         theme: {
           color: "#0000FF",
@@ -117,8 +110,7 @@ const EventDetail = () => {
     }
   };
 
-  useEffect(()=>{
-  }, [paymentType])
+  useEffect(() => {}, [paymentType]);
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
   return (
@@ -131,24 +123,25 @@ const EventDetail = () => {
               <div className="flex gap-2 sm:gap-5 text-sm">
                 {eventDetail.interCollege && (
                   <button
-                  onClick={() => {
-                    if (eventDetail.registerLink) {
-                      window.open(eventDetail.registerLink, "_blank");
-                    } else {
-                      handleRegister();
-                    }
-                  }}
-                  className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]"
-                >
-                  REGISTER
-                </button>
-                              
-                )}
-                <Link to="https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing">
-                  <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
-                    RULE BOOK
+                    onClick={() => {
+                      if (eventDetail.registerLink) {
+                        window.open(eventDetail.registerLink, "_blank");
+                      } else {
+                        handleRegister();
+                      }
+                    }}
+                    className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]"
+                  >
+                    REGISTER
                   </button>
-                </Link>
+                )}
+                {eventDetail.Rulebook && (
+                  <Link to={eventDetail.Rulebook} target="_blank">
+                    <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
+                      RULE BOOK
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
             <div>
@@ -171,6 +164,32 @@ const EventDetail = () => {
                     </li>
                   ))}
                 </ul>
+                {eventDetail.type && (
+                  <div>
+                    {eventDetail.type.map((item) => (
+                      <div className="flex justify-between">
+                        <div>
+                          <p>{item.name}</p>
+                          <p>{item.coordinator}</p>
+                        </div>
+                        <div className="flex items-start">
+                          {eventDetail.interCollege && (
+                            <button className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
+                              <Link>REGISTER</Link>
+                            </button>
+                          )}
+                          {item.subRuleBook && (
+                            <Link to={eventDetail.Rulebook} target="_blank">
+                              <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
+                                RULE BOOK
+                              </button>
+                            </Link>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -194,7 +213,9 @@ const EventDetail = () => {
                   name="optionChoice"
                   value="withAccomodation"
                   checked
-                  onClick={()=>{setPaymentType(1)}}
+                  onClick={() => {
+                    setPaymentType(1);
+                  }}
                 />{" "}
                 <label for="accomodation">
                   <span className="font-cM">
@@ -214,7 +235,9 @@ const EventDetail = () => {
                   name="optionChoice"
                   value="with Out Accomodation"
                   className="mt-4"
-                  onClick={()=>{setPaymentType(2)}}
+                  onClick={() => {
+                    setPaymentType(2);
+                  }}
                 />
                 <label for="withoutAccomodation">
                   {" "}
@@ -238,7 +261,9 @@ const EventDetail = () => {
                     name="caReffer"
                     placeholder="Enter CA Id last 5 digits"
                     className="text-black p-2 rounded-xl"
-                    onChange={(e)=>{setCaId(e.target.value)}}
+                    onChange={(e) => {
+                      setCaId(e.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -253,7 +278,6 @@ const EventDetail = () => {
         )}
       </div>
       <ToastContainer />
-
     </div>
   );
 };
