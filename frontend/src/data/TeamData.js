@@ -10,6 +10,11 @@ import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
 import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
+import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg"
+import akansha from "../assets/Images/TeamsImages/EventTeam/akansha.jpg"
+import prabhleen from "../assets/Images/TeamsImages/EventTeam/prabhleen.jpg"
+import rashmi from "../assets/Images/TeamsImages/EventTeam/rashmi.jpg"
+import ramneet from "../assets/Images/TeamsImages/EventTeam/ramneet.jpg"
 
 export const teamData = [
   {
@@ -49,8 +54,8 @@ export const teamData = [
       },
       {
         id: 104,
-        name: "",
-        img: "",
+        name: "Dipendra Arya",
+        img: dipendra,
         git: "",
         designation: "",
         linkdin: "",
@@ -162,6 +167,46 @@ export const teamData = [
         insta: "https://www.instagram.com/kritiuniyal_",
         gmail: "kritiuniyal28@gmail.com",
         designation: "Event Coordinator",
+      },
+      {
+        id: 210,
+        name: "Rashmi Rawat ",
+        img: rashmi,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
+      },
+      {
+        id: 211,
+        name: "Akanksha Rawat",
+        img: akansha,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
+      },
+      {
+        id: 212,
+        name: "Prabhleen Kaur",
+        img: prabhleen,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
+      },
+      {
+        id: 213,
+        name: "Ramneet Kaur",
+        img: ramneet,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
       },
     ],
   },
