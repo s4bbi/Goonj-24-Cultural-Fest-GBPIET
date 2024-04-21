@@ -26,10 +26,6 @@ const EventDetail = () => {
   
       console.log(response);
       toast.success("Successfully registered!", {});
-
-      if (eventDetail.registerLink) {
-        window.open(eventDetail.registerLink, "_blank");
-      } 
       
     } catch (error) {
       if (error.response.status === 402) {
@@ -78,7 +74,7 @@ const EventDetail = () => {
         key: import.meta.env.VITE_RAZORPAY_API_KEY,
         amount: amount,
         currency: "INR",
-        name: "Goonj 24",
+        name: "Goonj '24",
         description: "Test transaction",
         order_id: id,
 
@@ -94,7 +90,7 @@ const EventDetail = () => {
               response
             );
             if (responses.data.status === "success") {
-              console.log("We have verif");
+              console.log("We have verified you");
             } else {
               alert(
                 "Your razorpay credential is invalid"
@@ -122,7 +118,6 @@ const EventDetail = () => {
   };
 
   useEffect(()=>{
-    console.log(paymentType);
   }, [paymentType])
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
@@ -136,11 +131,18 @@ const EventDetail = () => {
               <div className="flex gap-2 sm:gap-5 text-sm">
                 {eventDetail.interCollege && (
                   <button
-                    onClick={handleRegister}
-                    className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]"
-                  >
-                    REGISTER
-                  </button>
+                  onClick={() => {
+                    if (eventDetail.registerLink) {
+                      window.open(eventDetail.registerLink, "_blank");
+                    } else {
+                      handleRegister();
+                    }
+                  }}
+                  className="bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]"
+                >
+                  REGISTER
+                </button>
+                              
                 )}
                 <Link to="https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing">
                   <button className="w-full bg-[#5F43B2] font-cM md:text-xl px-4 py-1 rounded-full shadow-md shadow-[#5F43B2] hover:bg-[#5c2ee3]">
