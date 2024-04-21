@@ -14,7 +14,7 @@ import viksit from "../assets/Images/viksit_bharat.svg";
 import saturnImage from "../assets/Images/Home_Saturn_Img.webp";
 import director from "../assets/Images/peopleImages/director.webp";
 import sac_oic from "../assets/Images/peopleImages/sac-oic.webp";
-
+import { motion } from "framer-motion"
 const HomePage = () => {
   const endTime = "2024-05-13T00:00:00";
 
@@ -26,11 +26,15 @@ const HomePage = () => {
             src={viksit}
             className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"
           />
-          <div className="">
+          <div 
+            className="xyz"
+          >
             <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[325px] text-center drop-shadow-2xl select-none">
               GOONJ 24
             </h1>
           </div>
+
+
           <div className="flex flex-col gap-1 items-center sm:flex-row justify-between">
             <h1 className="text-lg sm:text-2xl text-white font-cM text-left sm:-mt-10 sm:ml-48">
               13th May - 15th May
