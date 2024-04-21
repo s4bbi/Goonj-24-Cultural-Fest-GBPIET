@@ -1,8 +1,16 @@
 import Event from "./Event";
-
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const EventShowCase = (item) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="border-2 border-[#5F43B2] my-10 bg-[#5F43B2] rounded-[42px] bg-clip-padding backdrop-filter bg-opacity-[0.2] touch-none md:px-16 md:py-2">
+    <div
+      data-aos="fade-up"
+      className="border-2 border-[#5F43B2] my-10 bg-[#5F43B2] rounded-[42px] bg-clip-padding backdrop-filter bg-opacity-[0.2] touch-none md:px-16 md:py-2"
+    >
       <div className="flex items-center mt-4 mx-5 gap-4 md:gap-10">
         <div className="w-16 h-16 md:w-20 md:h-20 ">
           <img src={item.item.img} />
