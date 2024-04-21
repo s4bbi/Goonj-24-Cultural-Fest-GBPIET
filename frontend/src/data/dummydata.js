@@ -118,6 +118,9 @@ export const data = [
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
     ],
   },
@@ -235,6 +238,9 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
+          coordinator: "Prajjwal Chauhan",
+          email: "prajjwal1120@gmail.com",
+          phone: "+91 8755293708",
       },
     ],
   },
@@ -389,6 +395,9 @@ export const data = [
         ],
         interCollege: true,
         judging: "technique + arrangement + crowd response + uniqueness,",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
     ],
   },
@@ -413,6 +422,9 @@ export const data = [
         interCollege: false,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
+          coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
       {
         id: 802,
@@ -429,7 +441,11 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
+          coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
+      
     ],
   },
 
@@ -454,6 +470,9 @@ export const data = [
         interCollege: true,
         judging:
           "Knowledge + content + critical thinking + rebuttal skills + time management.",
+          coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
       {
         id: 902,
@@ -469,10 +488,13 @@ export const data = [
         ],
         interCollege: true,
         judging: "Knowledge + content + critical thinking + management.",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
       {
         id: 903,
-        name: "ALFAAZ-E-KALAM",
+        name: "KAVIKRAM",
         img: alfaaz,
         description:
           "Grab a pen and paper, drop into an ocean of words, and  compose a symphony of thoughts and emotions. Whether  you're an experienced poet or just discovering the power of words, Alfaaz-e-Kalam is your chance to shine. Unleash  your inner poet, share your poetry, and participate in an  exciting event. Come join us for a lyrical celebration in  which each phrase represents a step towards poetic  excellence.",
@@ -488,6 +510,9 @@ export const data = [
         ],
         interCollege: true,
         judging: "Creativity + Originality + Language proficiency",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
     ],
   },
@@ -513,6 +538,9 @@ export const data = [
         ],
         interCollege: false,
         judging: "Creativity + technical skill + overall impact/ appearance.",
+        coordinator: "Neeraj Kandpal",
+        email: "",
+        phone: "+91 9027855477",
       },
 
       {
@@ -531,6 +559,9 @@ export const data = [
         ],
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
+        coordinator: "Neeraj Kandpal",
+        email: "",
+        phone: "+91 9027855477",
       },
       {
         id: 1005,
@@ -549,6 +580,9 @@ export const data = [
         ],
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
+        coordinator: "Neeraj Kandpal",
+        email: "",
+        phone: "+91 9027855477",
         
       },
     ],
@@ -575,6 +609,9 @@ export const data = [
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        coordinator: "Neeraj Kandpal",
+        email: "",
+        phone: "+91 9027855477",
 
       },
       {
@@ -595,6 +632,9 @@ export const data = [
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        coordinator: "Neeraj Kandpal",
+        email: "",
+        phone: "+91 9027855477",
 
       },
       {
@@ -613,7 +653,11 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
+
       },
       {
         id: 1102,
@@ -645,7 +689,10 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        coordinator: "Neeraj Kandpal",
+        email: "",
+        phone: "+91 9027855477",
       },
       
       {
@@ -662,7 +709,10 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
-        entryfees: "Entry Fees: ₹400"
+        entryfees: "Entry Fees: ₹400",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
       {
         id: 1105,
@@ -690,12 +740,15 @@ export const data = [
         id: 1106,
         name: "Tug of War - Only For GBPIET",
         img: tug_of_war,
-        description: "Unleash your gaming Prowess",
+        description: "Unleash your gaming Prowess, Prizes will be revealed on spot.",
         topics: [],
         guidelines: ["Download the RuleBook for more Information"],
         judging: "",
         interCollege: false,
-        entryfees: "Entry Fees: ₹99"
+        entryfees: "Entry Fees: ₹99",
+        coordinator: "Prajjwal Chauhan",
+        email: "prajjwal1120@gmail.com",
+        phone: "+91 8755293708",
       },
       {
         id: 1107,

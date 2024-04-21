@@ -18,20 +18,37 @@ const EventDetail = () => {
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState('');
 
-  const handleRegister = async () => {
-    try {
-      const response = await VKYRequest("post", "/events", {
-        eventCode: 1920,
-      });
+  const handleRegister = () => {
+    // try {
+    //   const response = await VKYRequest("post", "/events", {
+    //     eventCode: 1920,
+    //   });
   
-      console.log(response);
-      toast.success("Successfully registered!", {});
       
-    } catch (error) {
-      if (error.response.status === 402) {
-        setShowPaymentDialog(true);
+    toast.info("Registration Begins from 25th April to 5th May!, Contact the event coordinator for more info.", {
+      position: "top-center",
+      style: {
+        backgroundColor: "#000",
+        color: "#fff",
+        fontSize: "1rem",
+        padding: ".5rem 1rem",
+        borderRadius: ".25rem",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+        width: "30rem",
+        maxWidth: "90vw",
       }
-    }
+    });
+    
+    // } catch (error) {
+    //   if (error.response.status === 402) {
+    //     setShowPaymentDialog(true);
+    //   }
+    // }
+
+    // toast.info("Registration Begins from 25th April to 5th May!", {
+    //   position: toast.POSITION.CENTER,
+    // });
+
   };
 
   useEffect(() => {
@@ -171,7 +188,7 @@ const EventDetail = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-col gap-4 font-cM text-sm md:text-xl"> Contact for more info: 
+                <div className="flex flex-col gap-4 font-cM text-sm md:text-xl"> Event Coordinator: 
                   <div className="flex flex-col gap-1 text-yellow-500 text-sm md:text-lg">
                     <span> {eventDetail.coordinator} </span> 
                     <span> {eventDetail.email} </span> 
