@@ -25,7 +25,12 @@ const EventDetail = () => {
       });
   
       console.log(response);
-      toast.success("Successfully registered!");
+      toast.success("Successfully registered!", {});
+
+      if (eventDetail.registerLink) {
+        window.open(eventDetail.registerLink, "_blank");
+      } 
+      
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
@@ -245,7 +250,6 @@ const EventDetail = () => {
           </div>
         )}
       </div>
-      
       <ToastContainer />
 
     </div>
