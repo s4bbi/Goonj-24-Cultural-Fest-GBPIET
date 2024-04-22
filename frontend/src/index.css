@@ -27,6 +27,14 @@
   src: url("./assets/fonts/Samarkan.TTF") format(truetype);
 }
 
+.app{
+  z-index: 1;
+  top: 0;
+  left: 0;
+  cursor: url("cursor.png"), auto;
+}
+
+
 .btn {
   display: flex;
   justify-content: center;

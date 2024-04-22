@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="flex justify-between">
               <Link
                 to="https://www.youtube.com/@OFFICIALSACGBPIET/"
-                target="blank"
+                target="blank" className="link"
               >
                 <img src={ytIcon} alt="YouTube" className="h-6" />
               </Link>

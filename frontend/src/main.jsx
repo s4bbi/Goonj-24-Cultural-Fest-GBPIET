@@ -19,6 +19,7 @@ import Loader from "./components/Loader.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import GoogleAuth from "./Pages/GoogleAuth.jsx";
 import { getCookie } from "./utils/Cookies.js";
+import "./index.css"
 
 const LoggedContext = createContext();
 export default LoggedContext;
@@ -40,7 +41,7 @@ const AppComponent = () => {
 
 
   return (
-    <div className="selection:bg-[#5F43B2]">
+    <div className="selection:bg-[#5F43B2] app">
       <LoggedContext.Provider value={{isLogin, setIsLogin}}>
         <Header />
         <Outlet />
