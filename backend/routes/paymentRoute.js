@@ -10,7 +10,7 @@ router.get('/orderid/:paymentId',
     paymentController.createOrderId
 );
 
-router.post('/paymentverify', 
+router.post('/paymentverify/:caid?', 
     authController.validateToken,
     paymentController.paymentVerification
 );

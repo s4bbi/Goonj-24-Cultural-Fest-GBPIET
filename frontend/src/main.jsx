@@ -19,6 +19,7 @@ import Loader from "./components/Loader.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import GoogleAuth from "./Pages/GoogleAuth.jsx";
 import { getCookie } from "./utils/Cookies.js";
+import ProtectedComponent from "./components/ProtectedRoutes.jsx";
 import "./index.css"
 
 const LoggedContext = createContext();

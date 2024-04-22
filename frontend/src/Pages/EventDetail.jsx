@@ -129,6 +129,8 @@ const EventDetail = () => {
   useEffect(() => {}, [paymentType]);
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
+
+
   return (
     <div className="w-full bg-cover">
       <div className="bg-EventBG bg-cover py-20 px-5 md:px-20 md:pt-32 h-full hover:none">
