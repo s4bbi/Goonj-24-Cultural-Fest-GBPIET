@@ -24,8 +24,8 @@ export const VKYRequest = (type, endpoint, body) => {
             body,
             { headers: headers }
         );
-    } else if (type.toLowerCase() === 'update') {
-        responsePromise = axios.put(
+    } else if (type.toLowerCase() === 'patch') {
+        responsePromise = axios.patch(
             import.meta.env.VITE_BACKEND_URL + endpoint,
             body,
             { headers: headers }

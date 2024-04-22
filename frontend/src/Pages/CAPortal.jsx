@@ -5,13 +5,29 @@ import CAPortalVid from "../assets/Videos/CAPortalVid.webm";
 import CAPortal_Astro1 from "../assets/Images/CAPortal_Astro1.webp";
 import CAPortal_Astro2 from "../assets/Images/CAPortal_Astro2.webp";
 import CAPortal_Astro3 from "../assets/Images/CAPortal_Astro3.webp";
+import LoggedContext from "../main";
+import { useContext } from "react";
+import { VKYRequest } from "../utils/requests";
 
 const CAPortal = () => {
    // Get access to the history object
+
+   const {isLogin, setIsLogin} = useContext(LoggedContext);
     const navigate = useNavigate()
-    const handleRegisterClick = () => {
-        // Redirect the user to the googleauth page
-        navigate('/googleauth', { state: { referrer: '/caportal' } })
+    const handleRegisterClick = async () => {
+        // Redirect the user to the googleauth page (if user is not logged in else update role in backend);
+        if (!isLogin){
+            navigate('/googleauth', { state: { referrer: '/caportal' } })
+        }else{
+            try {
+                const response = await VKYRequest('patch', '/users/updaterole');
+                if (response.data.status==='success'){
+                    console.log("role updated"); // here render this page as per your convenience
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
     };
     return (
         <div className="bg-black text-white">

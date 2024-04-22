@@ -57,6 +57,7 @@ const paymentVerification = catchAsync(async (req, res) => {
 
     await user.generateUniqueId();
 
+    // TODO IMPORTANT complete this ASAP
     // to increment ca id 
     const info = await UserModel.findOne({
       generated_id: req.params.caid

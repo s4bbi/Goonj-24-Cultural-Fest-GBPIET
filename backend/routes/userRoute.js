@@ -10,5 +10,10 @@ router.get('/',
     uesrController.getUserData
 );
 
+router.patch('/updaterole',
+    authController.validateToken,
+    uesrController.updateRole
+)
+
 
 module.exports = router;
