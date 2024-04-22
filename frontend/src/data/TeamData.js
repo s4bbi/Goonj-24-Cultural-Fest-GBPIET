@@ -8,7 +8,9 @@ import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
+import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
+import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
 import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
 import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg"
@@ -21,6 +23,8 @@ import ragini from "../assets/Images/TeamsImages/EventTeam/ragini.jpg"
 import vidhi from "../assets/Images/TeamsImages/EventTeam/vidhi.jpg"
 import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg"
 import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg"
+import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg"
+import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg"
 
 export const teamData = [
   {
@@ -70,20 +74,20 @@ export const teamData = [
       },
       {
         id: 105,
-        name: "Dipendra Arya",
-        img: dipendra,
+        name: "Akshita Rajbhar",
+        img: akshita,
         git: "",
-        designation: "",
-        linkdin: "",
+        designation: "Literacy and Debate Club Head",
+        linkdin: "https://www.linkedin.com/in/akshita-rajbhar-48a3a4216",
         insta: "",
-        gmail: "",
+        gmail: "akshitavinod00@gmail.com",
       },
       {
         id: 106,
-        name: "",
-        img: "",
+        name: "Prafful Mittal",
+        img: prafful,
         git: "",
-        designation: "",
+        designation: "Media and Graphics Head",
         linkdin: "",
         insta: "",
         gmail: "",
@@ -175,7 +179,27 @@ export const teamData = [
         designation: "Graphics Team",
       },
       {
-        id: 208,
+        id: 209,
+        name: "Dipendra Singh Arya",
+        img: dipendra,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/aditya-rawat-3a2942276",
+        insta: "https://www.instagram.com/_d.ipendra_",
+        gmail: "",
+        designation: "Auditorium Head",
+      },
+      {
+        id: 210,
+        name: "Jaypal Rangeela",
+        img: jaypal,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/jaypal-rangeela-4552462b4",
+        insta: "https://www.instagram.com/_vicky_uk09?igsh=ZGUzMzM3NWJiOQ==",
+        gmail: "",
+        designation: "Event Management",
+      },
+      {
+        id: 211,
         name: "Priyanshu Rana",
         img: priyanshu,
         git: "",
@@ -185,7 +209,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 209,
+        id: 212,
         name: "Kriti Uniyal",
         img: kriti,
         git: "",
@@ -195,7 +219,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 210,
+        id: 213,
         name: "Rashmi Rawat",
         img: rashmi,
         git: "",
@@ -205,7 +229,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 211,
+        id: 214,
         name: "Akanksha Rawat",
         img: akansha,
         git: "",
@@ -215,7 +239,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 212,
+        id: 215,
         name: "Prabhleen Kaur",
         img: prabhleen,
         git: "",
@@ -225,7 +249,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 213,
+        id: 216,
         name: "Ramneet Kaur",
         img: ramneet,
         git: "",
@@ -235,7 +259,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 214,
+        id: 217,
         name: "Ragini Bisht",
         img: ragini,
         git: "",
@@ -245,7 +269,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 215,
+        id: 218,
         name: "Vidhi Nabiyal",
         img: vidhi,
         git: "",
@@ -255,7 +279,17 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 216,
+        id: 219,
+        name: "Akshit Anand",
+        img: akshit,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/akshit-anand",
+        insta: "",
+        gmail: "akshitanand121@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 220,
         name: "Arvind Singh Rawat",
         img: arvind,
         git: "",
@@ -265,7 +299,7 @@ export const teamData = [
         designation: "Marketing Team",
       },
       {
-        id: 217,
+        id: 221,
         name: "Ayush Gaur",
         img: ayush,
         git: "",
@@ -274,6 +308,27 @@ export const teamData = [
         gmail: "gaurayush0909@gmail.com",
         designation: "Marketing Team",
       },
+      {
+        id: 222,
+        name: "",
+        img: "",
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
+      },
+      {
+        id: 223,
+        name: "",
+        img: "",
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
+      },
+      
     ],
   },
   
