@@ -131,7 +131,7 @@ const CAPortal = () => {
                 <div className="flex flex-col gap-10 pb-10">
                   <p>
                     <span className="text-[#5F43B2]">Free Entry</span> for the
-                    Campus Ambassador on 15+ Participation.
+                    Campus Ambassador on 20+ Participation.
                   </p>
                   <p>
                     <span className="text-[#5F43B2]">Free</span> Goonj{" "}
