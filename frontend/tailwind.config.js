@@ -16,6 +16,7 @@ export default {
         moonImg: "url('src/assets/Images/Moon_Img.webp')",
         LoginBG: "url('/src/assets/Images/LoginBG.png')",
         drama_skit: "url('/src/assets/Images/EventImages/drama_skit.webp')",
+        bg_planet: "url('src/assets/Images/Fusion_Planet.webp')",
       },
     },
   },
