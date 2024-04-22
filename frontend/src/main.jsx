@@ -19,31 +19,106 @@ import Loader from "./components/Loader.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import GoogleAuth from "./Pages/GoogleAuth.jsx";
 import { getCookie } from "./utils/Cookies.js";
+import ProtectedComponent from "./components/ProtectedRoutes.jsx";
 
 const LoggedContext = createContext();
 export default LoggedContext;
 
 
-const AppComponent = () => {
+const loggedInRoutes = [
+  {
+    path: "/",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <HomePage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/events",
+    element:<ProtectedComponent>
+      <Events/>
+    </ProtectedComponent>,
+  },
+  {
+    path: "/gallery",
+    element: <ProtectedComponent>
 
+      <Gallery />
+    </ProtectedComponent>
+  },
+  {
+    path: "/sponsors",
+    element: <ProtectedComponent>
+      <Sponsors />
+    </ProtectedComponent> ,
+  },
+  {
+    path: "/caportal",
+    element: <CAPortal />,
+  },
+  {
+    path: "/teams",
+    element: <ProtectedComponent>
+
+      <Teams />
+    </ProtectedComponent>,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/events/:id",
+    element: 
+    <ProtectedComponent>
+
+      <EventDetail />
+    </ProtectedComponent>,
+  },
+  {
+    path: "/caregister",
+    element: <CARegisterPage />,
+  },
+  {
+    path: "/profile",
+    element: <ProtectedComponent>
+
+      <Profile />
+    </ProtectedComponent>,
+  },
+  {
+    path: "/googleauth",
+    element: <GoogleAuth />,
+  },
+  {
+    path: "/audience",
+    element: <AudiencePortal />,
+  }
+]
+
+
+const AppComponent = () => {
   const [isLogin, setIsLogin] = useState(false);
-  useEffect(()=>{
-    function globalLogger(){
-      if (getCookie('jwt')){
+
+  useEffect(() => {
+    function globalLogger() {
+      if (getCookie('jwt')) {
         setIsLogin(true);
-      }else{
+      } else {
         setIsLogin(false);
       }
     }
-    globalLogger()
- }, []);
+    globalLogger();
+  }, []);
 
+  // const routes = isLogin ? loggedInRoutes : loggedOutRoutes;
 
   return (
     <div className="selection:bg-[#5F43B2]">
-      <LoggedContext.Provider value={{isLogin, setIsLogin}}>
+      <LoggedContext.Provider value={{ isLogin, setIsLogin }}>
         <Header />
-        <Outlet />
+        <Outlet/>
         <Footer />
       </LoggedContext.Provider>
     </div>
@@ -54,60 +129,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppComponent />,
-    children: [
-      {
-        path: "/",
-        element: (
-          <Suspense fallback={<Loader />}>
-            <HomePage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/events",
-        element: <Events />,
-      },
-      {
-        path: "/gallery",
-        element: <Gallery />,
-      },
-      {
-        path: "/sponsors",
-        element: <Sponsors />,
-      },
-      {
-        path: "/caportal",
-        element: <CAPortal />,
-      },
-      {
-        path: "/teams",
-        element: <Teams />,
-      },
-      {
-        path: "/login",
-        element: <LoginPage />,
-      },
-      {
-        path: "/events/:id",
-        element: <EventDetail />,
-      },
-      {
-        path: "/caregister",
-        element: <CARegisterPage />,
-      },
-      {
-        path: "/profile",
-        element: <Profile />,
-      },
-      {
-        path: "/googleauth",
-        element: <GoogleAuth />,
-      },
-      {
-        path: "/audience",
-        element: <AudiencePortal />,
-      },
-    ],
+    children: loggedInRoutes,
   },
 ]);
 

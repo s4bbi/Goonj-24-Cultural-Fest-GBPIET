@@ -41,6 +41,8 @@ const createOrderId = catchAsync(async (req, res, next) => {
   }
 });
 
+
+// this is for verification of payment, updating user's isPaid field, generating unique id for the users and incrementing ca id
 const paymentVerification = catchAsync(async (req, res) => {
   let generatedSignature = crypto
     .createHmac("sha256", process.env.RAZORPAY_API_SECRET)
@@ -48,12 +50,19 @@ const paymentVerification = catchAsync(async (req, res) => {
     .digest("hex");
 
   if (generatedSignature === req.body.razorpay_signature) {
-
+    // this is to update isPaid field and generate unique id
     const user = await UserModel.findByIdAndUpdate(req.user._id, {
         isPaid: true
     })
 
     await user.generateUniqueId();
+
+    // to increment ca id 
+    const info = await UserModel.findOne({
+      generated_id: req.params.caid
+    });
+
+    
     
     res.json({
       status: "success",
