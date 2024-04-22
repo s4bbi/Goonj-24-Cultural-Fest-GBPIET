@@ -8,7 +8,7 @@ import { VKYRequest } from "../utils/requests";
 import desktop_bg_image from "../assets/Images/RegSuccess_Astro.webp";
 const CARegisterPage = () => {
   const { setIsLogin } = useContext(LoggedContext);
-  const [isregister, setIsregister] = useState(true);
+  const [isregister, setIsregister] = useState(false);
   const location = useLocation();
   const receivedUserData = location.state;
   const navigate = useNavigate();
