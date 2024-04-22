@@ -1,4 +1,5 @@
 import CountdownTimer from "../components/CountdownTimer.jsx";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import vidHome from "../assets/Videos/HeroBG.webm";
 import orbitHome from "../assets/Images/Orbits.png";
@@ -14,8 +15,13 @@ import viksit from "../assets/Images/viksit_bharat.svg";
 import saturnImage from "../assets/Images/Home_Saturn_Img.webp";
 import director from "../assets/Images/peopleImages/director.webp";
 import sac_oic from "../assets/Images/peopleImages/sac-oic.webp";
-
+import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const HomePage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   const endTime = "2024-05-13T00:00:00";
 
   return (
@@ -26,11 +32,12 @@ const HomePage = () => {
             src={viksit}
             className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"
           />
-          <div className="">
+          <div className="xyz">
             <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[325px] text-center drop-shadow-2xl select-none">
               GOONJ 24
             </h1>
           </div>
+
           <div className="flex flex-col gap-1 items-center sm:flex-row justify-between">
             <h1 className="text-lg sm:text-2xl text-white font-cM text-left sm:-mt-10 sm:ml-48">
               13th May - 15th May
@@ -146,7 +153,10 @@ const HomePage = () => {
         </div>
         <div>
           <div className="text-white h-full pt-10 mx-4">
-            <div className="flex flex-col w-10/12 mx-auto sm:flex-row justify-center gap-5 pb-20">
+            <div
+              className="flex flex-col w-10/12 mx-auto sm:flex-row justify-center gap-5 pb-20"
+              data-aos="fade-up"
+            >
               <div className="flex flex-col justify-center items-center font-cM">
                 <img
                   src={director}
@@ -172,7 +182,10 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col w-10/12 mx-auto sm:flex-row justify-center gap-5 pb-20">
+            <div
+              className="flex flex-col w-10/12 mx-auto sm:flex-row justify-center gap-5 pb-20"
+              data-aos="fade-up"
+            >
               <div className="flex flex-col justify-center items-center font-cM sm:order-2">
                 <img
                   src={sac_oic}
@@ -199,7 +212,10 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="text-center font-cuda text-4xl sm:text-7xl p-6">
+            <div
+              className="text-center font-cuda text-4xl sm:text-7xl p-6"
+              data-aos="fade-up"
+            >
               <h1 className="">ABOUT</h1>
               <p className="font-cR sm:text-base text-xs font-bold">
                 GBPIET's CULTURAL FEST
@@ -215,7 +231,7 @@ const HomePage = () => {
                   ></img>
                 </div>
                 <div className="border-l-2  border-[#5f43b2] pl-5 border-solid z-20 md:text-lg">
-                  <h1 className="sm:w-[38%]">
+                  <h1 className="sm:w-[38%]" data-aos="fade-up">
                     Welcome to "<span className="text-[#5f43b2] ">Goonj</span>",
                     where the vibrant tapestry of cultures converges in a
                     celebration of diversity and unity! Goonj, our annual
@@ -241,7 +257,7 @@ const HomePage = () => {
                   />
                 </div>
                 <div className="border-r-2  border-[#5f43b2] pr-5 border-solid flex justify-end md:text-lg">
-                  <h1 className="sm:w-[38%] text-end">
+                  <h1 className="sm:w-[38%] text-end" data-aos="fade-up">
                     <span className="text-[#5f43b2] z-20">Goonj's</span> events
                     are a high-spirited mix of dance, music, discussions, and
                     global flavours. From thrilling competitions to artistic
@@ -259,7 +275,10 @@ const HomePage = () => {
                     alt="About Home"
                   ></img>
                 </div>
-                <div className="border-l-2  border-[#5f43b2] pl-5 border-solid pt-2 flex md:text-lg">
+                <div
+                  className="border-l-2  border-[#5f43b2] pl-5 border-solid pt-2 flex md:text-lg"
+                  data-aos="fade-up"
+                >
                   <h1 className="sm:w-[38%]">
                     <span className="text-[#5f43b2]">Goonj</span> is not just a
                     fest; it's a symbol of unity amidst diversity. It serves as

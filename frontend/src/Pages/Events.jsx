@@ -1,8 +1,14 @@
 import EventVid from "../assets/Videos/EventsVid.webm";
+import { useEffect } from "react";
 import EventShowCase from "../components/EventsShowCase.jsx";
 import { data } from "../data/dummydata.js";
-
+import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Events = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="bg-EventBG">
       <div className="w-full flex items-center justify-center h-screen">
@@ -10,9 +16,24 @@ const Events = () => {
           <h1 className="text-5xl md:text-[150px] text-white font-cuda text-center">
             Events
           </h1>
-          <h1 className="text-xl sm:text-2xl text-yellow-500 shadow-lg font-cuda text-center">
+          <h1
+            className="text-xl sm:text-2xl text-yellow-500 shadow-lg font-cuda text-center"
+            data-aos="fade-up"
+          >
             Prizes upto 2 Lakhs
           </h1>
+          <Link
+            to={
+              "https://docs.google.com/document/d/1mu5PZMSbht2vgUaaJtxnjni0gc4le3DANzaoopBlJF4/edit?usp=sharing"
+            }
+          >
+            <h1
+              className="text-xs sm:text-xs text-gray-300 font-cR shadow-lg text-center"
+              data-aos="fade-up"
+            >
+              terms and conditions apply*
+            </h1>
+          </Link>
         </div>
         <video
           autoPlay
