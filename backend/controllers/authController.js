@@ -47,6 +47,8 @@ const signup = catchAsync(async (req, res, next) => {
     const userData = {
         name: req.body.name,
         email: req.body.email,
+        googleSubjectId: req.body.googleSubjectId,
+        img: req.body.img,
         pNum: req.body.pNum,
         state: req.body.state,
         city: req.body.city,
@@ -65,14 +67,20 @@ const signup = catchAsync(async (req, res, next) => {
 
 // this will throw an error of user not existing... and we need to handle it 
 const checkUser = catchAsync(async (req, res, next)=>{
-    let user = await UserData.findOne({
-        email: req.body.email
-    })
-
+    
     if (!req.body.email){
         return next(new AppError('Email is required', 400));
     }
-
+    
+    
+    if (!req.body.googleSubjectId){
+        return next(new AppError('Google subject id is required', 400));
+    }
+    
+    let user = await UserData.findOne({
+        email: req.body.email,
+        googleSubjectId: req.body.googleSubjectId
+    })
     // user already exists send response token
     if (user){
         createAndSendTokenResponse(user, res);
@@ -80,7 +88,6 @@ const checkUser = catchAsync(async (req, res, next)=>{
     }
 
     res.status(401).json({
-       
         message: 'You have not signed up'
     })
 })

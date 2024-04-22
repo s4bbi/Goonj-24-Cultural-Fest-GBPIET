@@ -14,11 +14,15 @@ import profile from "../assets/Images/profile.png";
 import { useContext, useEffect } from "react";
 import LoggedContext from '../main'
 import { deleteCookie, getCookie } from "../utils/Cookies";
+import { UserContext } from "../main";
 
 const Header = () => {
 
   const {isLogin, setIsLogin} = useContext(LoggedContext);
   const [showSidebar, setShowSidebar] = useState(false);
+   
+  const {userData} = useContext(UserContext);
+  
   useEffect(()=>{
     function globalLogger(){
       if (getCookie('jwt')){
@@ -39,7 +43,6 @@ const Header = () => {
   const handleLogOut = ()=>{
     setIsLogin(false);
     deleteCookie('jwt');
-
   }
 
   const data = [
@@ -93,17 +96,17 @@ const Header = () => {
                 toggleSidebar();
                 handleLogOut();
               }}>
-                <LoginButton text="LOGOUT" />
+                <LoginButton text="LOGOUT"/>
               </Link>
               <Link to="/profile">
                 <div className="w-12 h-12">
-                  <img src={profile} />
+                  <img src={userData?.img || profile} />
                 </div>
               </Link>
             </div>
           ) : (
             <Link to="/googleauth" onClick={toggleSidebar}>
-              <LoginButton text="LOGIN" />
+              <LoginButton text="LOGIN"/>
             </Link>
           )}
         </div>
@@ -156,7 +159,7 @@ const Header = () => {
               </li>
               <Link to="/profile">
                 <div className="w-12 h-12">
-                  <img src={profile} />
+                  <img src={userData?.img || profile} />
                 </div>
               </Link>
             </div>

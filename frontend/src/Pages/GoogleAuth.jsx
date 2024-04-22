@@ -4,17 +4,17 @@ import { jwtDecode } from "jwt-decode";
 import { useEffect, useState , useContext} from "react";
 import { VKYRequest } from "../utils/requests";
 import { useNavigate ,useLocation } from "react-router-dom";
-import { setCookie, getCookie} from "../utils/Cookies";
+import { setCookie, getCookie, deleteCookie} from "../utils/Cookies";
 import LoggedContext from "../main";
+import { UserContext } from "../main";
 
 const GoogleAuth = () => {
-  const [userData, setUserData] = useState({
-    name: undefined,
-    email: undefined
-  });
+  
 
   const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
   const {setIsLogin} = useContext(LoggedContext);
+
+  const {userData, setUserData} = useContext(UserContext);
 
   const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
   
@@ -24,23 +24,35 @@ const GoogleAuth = () => {
     try {
 
       let decoded = jwtDecode(credentialResponse.credential);
+      console.log(decoded);
       setUserData({
         name: decoded.name,
-        email: decoded.email
+        email: decoded.email,
+        img: decoded.picture,
+        googleSubjectId: decoded.sub
       });
-      
-      console.log(userData)
     }
 
     catch (err) {
        console.log("Error",err)
-
-    }
-
-  };
+       deleteCookie('jwt');
+          setIsLogin(false);
+          setUserData({
+            name: undefined,
+            email: undefined,
+            googleSubjectId: undefined,
+            img: undefined,
+            pNum: undefined,
+            state: undefined,
+            city: undefined,
+            college: undefined
+          });
+        }
+    };
 
   useEffect(() => {
     const fetchData =async ()=>{
+      console.log('sent login request')
       try{
         const response = await VKYRequest('post', '/auth/login', userData);
         
@@ -58,7 +70,6 @@ const GoogleAuth = () => {
           
           const referrer = location.state && location.state.referrer;
 
-          console.log(referrer)
 
           if (referrer === '/caportal') {
             navigate('/profile'); // Redirect to caregister if the referrer is '/caportal'
@@ -71,10 +82,22 @@ const GoogleAuth = () => {
       catch(err){
         if (err.response.status === 401) {
           const referrer = location.state && location.state.referrer;
+          deleteCookie('jwt');
+          setIsLogin(false);
+          setUserData({
+            name: undefined,
+            email: undefined,
+            googleSubjectId: undefined,
+            img: undefined,
+            pNum: undefined,
+            state: undefined,
+            city: undefined,
+            college: undefined
+          });
           if (referrer === '/caportal') {
-            navigate('/caregister', { state: userData }); // Redirect to caregister if the referrer is '/caportal'
+            navigate('/caregister'); // Redirect to caregister if the referrer is '/caportal'
           } else {
-            navigate('/login', { state: userData }); // Redirect to profile page for other referrers
+            navigate('/login'); // Redirect to profile page for other referrers
           }
         } else {
           console.log(err);

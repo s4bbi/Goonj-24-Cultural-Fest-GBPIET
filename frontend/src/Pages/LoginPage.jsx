@@ -6,30 +6,26 @@ import { getCookie, setCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
 import { VKYRequest } from "../utils/requests";
 
+import { UserContext } from "../main";
+
 const CARegisterPage = () => {
   const location = useLocation();
   const receivedUserData = location.state;
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: receivedUserData?.name,
-    email: receivedUserData?.email,
-    pNum: "",
-    state: "",
-    city: "",
-    college: "",
-  });
+  
 
   const { setIsLogin} = useContext(LoggedContext);
-
+  const {userData, setUserData} = useContext(UserContext);
+  
   const handleChange = (e, name) => {
-    setFormData({ ...formData, [name]: e.target.value });
+    setUserData({ ...userData, [name]: e.target.value });
   };
 
   const submitForm = async (e) => {
     e.preventDefault();
     try {
       
-      const response = await VKYRequest('post', '/auth/signup', formData);
+      const response = await VKYRequest('post', '/auth/signup', userData);
 
       setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
 
@@ -69,7 +65,7 @@ const CARegisterPage = () => {
                 <input
                   type="text"
                   placeholder="YourName"
-                  defaultValue={receivedUserData?.name}
+                  defaultValue={userData?.name}
                   disabled
                   className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                 />
@@ -81,7 +77,7 @@ const CARegisterPage = () => {
                 <input
                   type="text"
                   placeholder="E-Mail ID"
-                  defaultValue={receivedUserData?.email}
+                  defaultValue={userData?.email}
                   disabled
                   className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                 />

@@ -24,6 +24,7 @@ import ProtectedComponent from "./components/ProtectedRoutes.jsx";
 const LoggedContext = createContext();
 export default LoggedContext;
 
+export const UserContext = createContext();
 
 const loggedInRoutes = [
   {
@@ -100,6 +101,20 @@ const loggedInRoutes = [
 
 const AppComponent = () => {
   const [isLogin, setIsLogin] = useState(false);
+  const [userData, setUserData] = useState({
+    name: undefined,
+    email: undefined,
+    googleSubjectId: undefined,
+    img: undefined,
+    pNum: undefined,
+    state: undefined,
+    city: undefined,
+    college: undefined
+  });
+
+  useEffect(()=>{
+    
+  }, [userData])
 
   useEffect(() => {
     function globalLogger() {
@@ -117,9 +132,11 @@ const AppComponent = () => {
   return (
     <div className="selection:bg-[#5F43B2]">
       <LoggedContext.Provider value={{ isLogin, setIsLogin }}>
+      <UserContext.Provider value={{userData, setUserData}}>
         <Header />
         <Outlet/>
         <Footer />
+      </UserContext.Provider>
       </LoggedContext.Provider>
     </div>
   );

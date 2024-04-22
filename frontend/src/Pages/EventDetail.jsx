@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom"; // Add this import statement at the beginning of your file
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 // import { data } from "../data/dummydata";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
@@ -9,6 +9,9 @@ import { FaRocket } from "react-icons/fa6";
 import { VKYRequest } from "../utils/requests";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoggedContext from "../main";
+import { UserContext } from "../main";
+import { deleteCookie } from "../utils/Cookies";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
@@ -16,6 +19,9 @@ const EventDetail = () => {
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
+
+  const {setIsLogin} = useContext(LoggedContext);
+  const {setUserData} = useContext(UserContext);
 
   const handleRegister = async () => {
     try {
@@ -25,9 +31,23 @@ const EventDetail = () => {
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
+      }else{
+        deleteCookie('jwt');
+          setIsLogin(false);
+          setUserData({
+            name: undefined,
+            email: undefined,
+            googleSubjectId: undefined,
+            img: undefined,
+            pNum: undefined,
+            state: undefined,
+            city: undefined,
+            college: undefined
+          });
+        }
       }
     }
-  };
+  
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
