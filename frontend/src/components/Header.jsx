@@ -129,8 +129,8 @@ const Header = () => {
                 <LoginButton text="LOGOUT"/>
               </Link>
               <Link to="/profile">
-                <div className="w-12 h-12">
-                  <img src={userData?.img || profile} />
+                <div>
+                  <img src={userData?.img || profile} className="w-8 h-8 md:w-12 md:h-12 rounded-xl"/>
                 </div>
               </Link>
             </div>
@@ -188,8 +188,8 @@ const Header = () => {
                 </Link>
               </li>
               <Link to="/profile">
-                <div className="w-12 h-12">
-                  <img src={userData?.img || profile} />
+                <div className="">
+                  <img src={userData?.img || profile} className="w-8 h-8 md:w-12 md:h-12 rounded-xl" />
                 </div>
               </Link>
             </div>
