@@ -248,7 +248,7 @@ const EventDetail = () => {
                 </h1>
                 <ul className="list-disc ml-8 md:ml-16 font-cR text-justify mb-8">
                   {eventDetail.guidelines.map((item) => (
-                    <li key={item} className="text-xs  md:text-lg">
+                    <li key={item} className="text-xs md:text-lg">
                       {item}
                     </li>
                   ))}

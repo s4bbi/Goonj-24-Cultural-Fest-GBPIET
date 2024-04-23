@@ -15,9 +15,10 @@ import viksit from "../assets/Images/viksit_bharat.svg";
 import saturnImage from "../assets/Images/Home_Saturn_Img.webp";
 import director from "../assets/Images/peopleImages/director.webp";
 import sac_oic from "../assets/Images/peopleImages/sac-oic.webp";
-import { motion } from "framer-motion";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+
 const HomePage = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });

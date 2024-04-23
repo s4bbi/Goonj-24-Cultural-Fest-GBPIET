@@ -112,6 +112,7 @@ const AppComponent = () => {
     college: undefined
   });
 
+
   useEffect(() => {
     function globalLogger() {
       if (getCookie('jwt')) {
@@ -126,7 +127,7 @@ const AppComponent = () => {
   // const routes = isLogin ? loggedInRoutes : loggedOutRoutes;
 
   return (
-    <div className="selection:bg-[#5F43B2]">
+    <div className="selection:bg-[#5F43B2] app">
       <LoggedContext.Provider value={{ isLogin, setIsLogin }}>
       <UserContext.Provider value={{userData, setUserData}}>
         <Header />

@@ -8,6 +8,11 @@ import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
+import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
+import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
+import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
+import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
+import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
 import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
 import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg"
@@ -15,6 +20,13 @@ import akansha from "../assets/Images/TeamsImages/EventTeam/akansha.jpg"
 import prabhleen from "../assets/Images/TeamsImages/EventTeam/prabhleen.jpg"
 import rashmi from "../assets/Images/TeamsImages/EventTeam/rashmi.jpg"
 import ramneet from "../assets/Images/TeamsImages/EventTeam/ramneet.jpg"
+import priyanshu from "../assets/Images/TeamsImages/EventTeam/priyanshu.jpg"
+import ragini from "../assets/Images/TeamsImages/EventTeam/ragini.jpg"
+import vidhi from "../assets/Images/TeamsImages/EventTeam/vidhi.jpg"
+import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg"
+import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg"
+import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg"
+import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg"
 
 export const teamData = [
   {
@@ -44,6 +56,16 @@ export const teamData = [
       },
       {
         id: 103,
+        name: "Arpan Chauhan",
+        img: arpan,
+        git: "",
+        designation: "GBPIET's Discipline Head",
+        linkdin: "https://www.linkedin.com/in/arpanchauhan90",
+        insta: "https://www.instagram.com/arpan_jaihind",
+        gmail: "arpanchauhan1502@gmail.com",
+      },
+      {
+        id: 104,
         name: "Ravi Nailwal",
         img: ravi,
         git: "",
@@ -53,14 +75,44 @@ export const teamData = [
         gmail: "nailwalravi8@gmail.com",
       },
       {
-        id: 104,
-        name: "Dipendra Arya",
-        img: dipendra,
+        id: 105,
+        name: "Utkarsh Patel",
+        img: utkarsh,
         git: "",
-        designation: "",
-        linkdin: "",
+        designation: "SAC Treasurer",
+        linkdin: "https://www.linkedin.com/in/utkarshpatelin",
+        insta: "",
+        gmail: "UtkarshPatel.in@gmail.com",
+      },
+      {
+        id: 106,
+        name: "Akshita Rajbhar",
+        img: akshita,
+        git: "",
+        designation: "Literacy and Debate Club Head",
+        linkdin: "https://www.linkedin.com/in/akshita-rajbhar-48a3a4216",
+        insta: "",
+        gmail: "akshitavinod00@gmail.com",
+      },
+      {
+        id: 107,
+        name: "Prafful Mittal",
+        img: prafful,
+        git: "",
+        designation: "Media and Graphics Head",
+        linkdin: "https://www.linkedin.com/in/prafful-mittal",
         insta: "",
         gmail: "",
+      },
+      {
+        id: 108,
+        name: "Tanmay Bist",
+        img: tanmay,
+        git: "",
+        designation: "Photography Head",
+        linkdin: "https://www.linkedin.com/in/tanmay-bist-30n",
+        insta: "",
+        gmail: "Praffulmittal75@gmail.com",
       },
     ],
   },
@@ -76,7 +128,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/s4bbi",
         insta: "",
         gmail: "singhyashpreet22@gmail.com",
-        designation: "Dev Team Head",
+        designation: "Web Team Head",
       },
       {
         id: 202,
@@ -149,17 +201,37 @@ export const teamData = [
         designation: "Graphics Team",
       },
       {
-        id: 208,
-        name: "",
-        img: "",
+        id: 209,
+        name: "Dipendra Singh Arya",
+        img: dipendra,
         git: "",
-        linkdin: "",
-        insta: "",
+        linkdin: "https://www.linkedin.com/in/aditya-rawat-3a2942276",
+        insta: "https://www.instagram.com/_d.ipendra_",
         gmail: "",
-        designation: "",
+        designation: "Auditorium Head",
       },
       {
-        id: 209,
+        id: 210,
+        name: "Jaypal Rangeela",
+        img: jaypal,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/jaypal-rangeela-4552462b4",
+        insta: "https://www.instagram.com/_vicky_uk09?igsh=ZGUzMzM3NWJiOQ==",
+        gmail: "",
+        designation: "Event Management",
+      },
+      {
+        id: 211,
+        name: "Priyanshu Rana",
+        img: priyanshu,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/priyanshu-rana-a83190272?",
+        insta: "",
+        gmail: "pr9534467@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 212,
         name: "Kriti Uniyal",
         img: kriti,
         git: "",
@@ -169,45 +241,116 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 210,
-        name: "Rashmi Rawat ",
+        id: 213,
+        name: "Rashmi Rawat",
         img: rashmi,
         git: "",
-        linkdin: "",
+        linkdin: "https://www.linkedin.com/in/rashmi-rawat-a593752ab",
         insta: "",
-        gmail: "",
-        designation: "",
+        gmail: "rawatrashmi162@gmail.com",
+        designation: "Event Coordinator",
       },
       {
-        id: 211,
+        id: 214,
         name: "Akanksha Rawat",
         img: akansha,
         git: "",
         linkdin: "",
         insta: "",
-        gmail: "",
-        designation: "",
+        gmail: "akankshaar3256@gmail.com",
+        designation: "Event Coordinator",
       },
       {
-        id: 212,
+        id: 215,
         name: "Prabhleen Kaur",
         img: prabhleen,
         git: "",
-        linkdin: "",
+        linkdin: "https://www.linkedin.com/in/prabhleen-kaur-516208290",
         insta: "",
         gmail: "",
-        designation: "",
+        designation: "Event Coordinator",
       },
       {
-        id: 213,
+        id: 216,
         name: "Ramneet Kaur",
         img: ramneet,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/ramneet-kaur-696473301",
+        insta: "",
+        gmail: "ramneetkaur0028@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 217,
+        name: "Ragini Bisht",
+        img: ragini,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/ragini-bisht-600849255?",
+        insta: "",
+        gmail: "raginibisht987@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 218,
+        name: "Vidhi Nabiyal",
+        img: vidhi,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/vidhi-nabiyal-b1545a2a2",
+        insta: "",
+        gmail: "vidhinabiyal@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 219,
+        name: "Akshit Anand",
+        img: akshit,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/akshit-anand",
+        insta: "",
+        gmail: "akshitanand121@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 220,
+        name: "Arvind Singh Rawat",
+        img: arvind,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/arvind-rawat-5289a92a8",
+        insta: "",
+        gmail: "singhrawatarvind8@gmail.com",
+        designation: "Marketing Team",
+      },
+      {
+        id: 221,
+        name: "Ayush Gaur",
+        img: ayush,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "gaurayush0909@gmail.com",
+        designation: "Marketing Team",
+      },
+      {
+        id: 222,
+        name: "",
+        img: "",
         git: "",
         linkdin: "",
         insta: "",
         gmail: "",
         designation: "",
       },
+      {
+        id: 223,
+        name: "",
+        img: "",
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "",
+        designation: "",
+      },
+      
     ],
   },
   
