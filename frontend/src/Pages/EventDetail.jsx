@@ -23,31 +23,78 @@ const EventDetail = () => {
   const {setIsLogin} = useContext(LoggedContext);
   const {setUserData} = useContext(UserContext);
 
-  const handleRegister = async () => {
+  // const handleRegister =async () => {
+  //   try {
+  //     const response = await VKYRequest("post", "/events", {
+  //       eventCode: 1920,
+  //     }, setIsLogin);
+  //     if (response.response.status === 402) {
+  //       setShowPaymentDialog(true);
+  //     } 
+  //     if (response.response.status===401){
+  //       deleteCookie('jwt');
+  //         setIsLogin(false);
+  //         setUserData({
+  //           name: undefined,
+  //           email: undefined,
+  //           googleSubjectId: undefined,
+  //           img: undefined,
+  //           pNum: undefined,
+  //           state: undefined,
+  //           city: undefined,
+  //           college: undefined
+  //         });
+  //       }
+      
+  //   } catch (error) {
+  //     console.log(error);
+  //     if (error.response.status === 402) {
+  //       setShowPaymentDialog(true);
+  //     } if (error.response.status===401){
+  //       deleteCookie('jwt');
+  //         setIsLogin(false);
+  //         setUserData({
+  //           name: undefined,
+  //           email: undefined,
+  //           googleSubjectId: undefined,
+  //           img: undefined,
+  //           pNum: undefined,
+  //           state: undefined,
+  //           city: undefined,
+  //           college: undefined
+  //         });
+  //       }
+  //     }
+  //   }
+
+
+  const handleRegister = async ()=>{
     try {
-      const response = await VKYRequest("post", "/events", {
-        eventCode: 1920,
-      });
+      const response = await VKYRequest('post', '/events', {
+        eventCode: 1803,
+      })
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
-      }else{
+      } 
+      else{
         deleteCookie('jwt');
-          setIsLogin(false);
-          setUserData({
-            name: undefined,
-            email: undefined,
-            googleSubjectId: undefined,
-            img: undefined,
-            pNum: undefined,
-            state: undefined,
-            city: undefined,
-            college: undefined
-          });
-        }
+        setIsLogin(false);
+        setUserData({
+          name: undefined,
+          email: undefined,
+          googleSubjectId: undefined,
+          img: undefined,
+          pNum: undefined,
+          state: undefined,
+          city: undefined,
+          college: undefined
+        });
       }
     }
-  
+  }
+
+
 
   useEffect(() => {
     Aos.init({ duration: 2000 });

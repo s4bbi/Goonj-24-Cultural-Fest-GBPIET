@@ -16,12 +16,14 @@ import LoggedContext from '../main'
 import { deleteCookie, getCookie } from "../utils/Cookies";
 import { UserContext } from "../main";
 
+
 const Header = () => {
 
   const {isLogin, setIsLogin} = useContext(LoggedContext);
   const [showSidebar, setShowSidebar] = useState(false);
    
-  const {userData} = useContext(UserContext);
+  const {userData, setUserData} = useContext(UserContext);
+
   
   useEffect(()=>{
     function globalLogger(){
@@ -43,6 +45,16 @@ const Header = () => {
   const handleLogOut = ()=>{
     setIsLogin(false);
     deleteCookie('jwt');
+    setUserData({
+      name: undefined,
+      email: undefined,
+      googleSubjectId: undefined,
+      img: undefined,
+      pNum: undefined,
+      state: undefined,
+      city: undefined,
+      college: undefined,
+    });
   }
 
   const data = [

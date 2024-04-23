@@ -1,16 +1,13 @@
 import astro from "../assets/Images/LoginAstronaut.png";
-import { useLocation } from "react-router-dom";
-import { useState, useContext } from "react";
+import {  useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCookie, setCookie } from "../utils/Cookies";
+import { setCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
 import { VKYRequest } from "../utils/requests";
 
 import { UserContext } from "../main";
 
 const CARegisterPage = () => {
-  const location = useLocation();
-  const receivedUserData = location.state;
   const navigate = useNavigate();
   
 
@@ -28,15 +25,10 @@ const CARegisterPage = () => {
       const response = await VKYRequest('post', '/auth/signup', userData);
 
       setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
-
-      if (getCookie('jwt')){
-        setIsLogin(true);
-      }else{
-        setIsLogin(false);
-      }
+      setIsLogin(true);
 
       if (response.data.status === "success") {
-        navigate("/profile", { state: response.data.userCreated });
+        navigate("/profile");
 
       }
     } catch (error) {

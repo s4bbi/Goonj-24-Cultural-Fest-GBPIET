@@ -5,6 +5,7 @@ import { deleteCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
 import { UserContext } from "../main";
 
+
 const Profile = () => {
   const [receivedUserData, setReceivedUserData] = useState({});
   const {setIsLogin} = useContext(LoggedContext);
@@ -14,22 +15,23 @@ const Profile = () => {
       try {
         const response = await VKYRequest("get", "/users");
         setReceivedUserData(response.data.user);
-        console.log(response);
-        console.log(receivedUserData);
+
       } catch (error) {
+        console.log(error);
         deleteCookie('jwt');
-          setIsLogin(false);
-          setUserData({
-            name: undefined,
-            email: undefined,
-            googleSubjectId: undefined,
-            img: undefined,
-            pNum: undefined,
-            state: undefined,
-            city: undefined,
-            college: undefined
-          });
-        }
+        setIsLogin(false);
+
+        setUserData({
+          name: undefined,
+          email: undefined,
+          googleSubjectId: undefined,
+          img: undefined,
+          pNum: undefined,
+          state: undefined,
+          city: undefined,
+          college: undefined
+        });
+      }
     };
 
     renderProfile();
