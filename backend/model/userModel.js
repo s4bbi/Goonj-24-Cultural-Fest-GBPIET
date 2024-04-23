@@ -23,6 +23,14 @@ const userSchema = new mongoose.Schema({
             message: props=>  `${props.value} is not a valid phone number`
         }
     },
+    img: {
+        type: String
+    },
+    googleSubjectId:{
+        type: String,
+        required: true,
+        select: false
+    },
     state: {
         type: String, 
         required: [true, 'Please enter a state']

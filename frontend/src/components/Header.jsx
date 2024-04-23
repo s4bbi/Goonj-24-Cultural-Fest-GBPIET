@@ -14,15 +14,39 @@ import profile from "../assets/Images/profile.png";
 import { useContext, useEffect } from "react";
 import LoggedContext from '../main'
 import { deleteCookie, getCookie } from "../utils/Cookies";
+import { UserContext } from "../main";
+import { VKYRequest } from "../utils/requests";
+
 
 const Header = () => {
 
   const {isLogin, setIsLogin} = useContext(LoggedContext);
   const [showSidebar, setShowSidebar] = useState(false);
+   
+  const {userData, setUserData} = useContext(UserContext);
+
+  
   useEffect(()=>{
-    function globalLogger(){
+    async function globalLogger(){
       if (getCookie('jwt')){
         setIsLogin(true);
+        try {
+          const response = await VKYRequest('get', '/users');
+          setUserData(response.data.user);
+        }catch (error) {
+          deleteCookie("jwt");
+          setIsLogin(false);
+          setUserData({
+            name: undefined,
+            email: undefined,
+            googleSubjectId: undefined,
+            img: undefined,
+            pNum: undefined,
+            state: undefined,
+            city: undefined,
+            college: undefined,
+          });
+        }
       }else{
         setIsLogin(false);
       }
@@ -39,7 +63,16 @@ const Header = () => {
   const handleLogOut = ()=>{
     setIsLogin(false);
     deleteCookie('jwt');
-
+    setUserData({
+      name: undefined,
+      email: undefined,
+      googleSubjectId: undefined,
+      img: undefined,
+      pNum: undefined,
+      state: undefined,
+      city: undefined,
+      college: undefined,
+    });
   }
 
   const data = [
@@ -93,17 +126,17 @@ const Header = () => {
                 toggleSidebar();
                 handleLogOut();
               }}>
-                <LoginButton text="LOGOUT" />
+                <LoginButton text="LOGOUT"/>
               </Link>
               <Link to="/profile">
                 <div className="w-12 h-12">
-                  <img src={profile} />
+                  <img src={userData?.img || profile} />
                 </div>
               </Link>
             </div>
           ) : (
             <Link to="/googleauth" onClick={toggleSidebar}>
-              <LoginButton text="LOGIN" />
+              <LoginButton text="LOGIN"/>
             </Link>
           )}
         </div>
@@ -156,7 +189,7 @@ const Header = () => {
               </li>
               <Link to="/profile">
                 <div className="w-12 h-12">
-                  <img src={profile} />
+                  <img src={userData?.img || profile} />
                 </div>
               </Link>
             </div>

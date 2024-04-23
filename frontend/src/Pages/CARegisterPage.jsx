@@ -5,49 +5,56 @@ import { useNavigate } from "react-router-dom";
 import { setCookie, getCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
 import { VKYRequest } from "../utils/requests";
+
+import { UserContext } from "../main";
+
 import desktop_bg_image from "../assets/Images/RegSuccess_Astro.webp";
+
 const CARegisterPage = () => {
+
+  // const location = useLocation();
+  // const receivedUserData = location.state;
+
+  const navigate = useNavigate();
+  const {userData, setUserData} = useContext(UserContext);
+
   const { setIsLogin } = useContext(LoggedContext);
   const [isregister, setIsregister] = useState(false);
+  
   const location = useLocation();
   const receivedUserData = location.state;
-  const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: receivedUserData?.name,
-    email: receivedUserData?.email,
-    pNum: "",
-    state: "",
-    city: "",
-    college: "",
-    role: "CA",
-  });
 
   const handleChange = (e, name) => {
-    setFormData({ ...formData, [name]: e.target.value });
+    setUserData({ ...userData, [name]: e.target.value });
   };
 
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await VKYRequest("post", "/auth/signup", formData);
 
-      setCookie(
-        "jwt",
-        response.data.token,
-        import.meta.env.VITE_JWT_EXPIRES_IN
-      );
+      const response = await VKYRequest('post', '/auth/signup', {...userData, role: 'CA'});
 
-      if (getCookie("jwt")) {
-        setIsLogin(true);
-      } else {
-        setIsLogin(false);
-      }
-
+      setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
+      setIsLogin(true);
+      
       if (response.data.status === "success") {
-        navigate("/profile", { state: response.data.userCreated });
+        navigate("/profile");
       }
     } catch (error) {
       console.log(error);
+      deleteCookie('jwt');
+        setIsLogin(false);
+
+        setUserData({
+          name: undefined,
+          email: undefined,
+          googleSubjectId: undefined,
+          img: undefined,
+          pNum: undefined,
+          state: undefined,
+          city: undefined,
+          college: undefined
+        });
     }
   };
 
@@ -56,6 +63,8 @@ const CARegisterPage = () => {
     caID: "123654789",
   };
   return (
+
+   
     <div className="bg-EventBG ">
       {!isregister && (
         <div className="h-fit flex justify-center pt-8">
@@ -146,6 +155,7 @@ const CARegisterPage = () => {
                   </button>
                 </div>
               </form>
+
             </div>
           </div>
           <div className="hidden sm:flex flex-col justify-end w-5/12">
