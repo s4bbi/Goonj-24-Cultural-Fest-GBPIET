@@ -8,7 +8,7 @@ import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
-import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpg"
+import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
 import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
@@ -55,7 +55,7 @@ export const teamData = [
         gmail: "",
       },
       {
-        id: 102,
+        id: 103,
         name: "Arpan Chauhan",
         img: arpan,
         git: "",
@@ -100,7 +100,7 @@ export const teamData = [
         img: prafful,
         git: "",
         designation: "Media and Graphics Head",
-        linkdin: "",
+        linkdin: "https://www.linkedin.com/in/prafful-mittal",
         insta: "",
         gmail: "",
       },
@@ -112,7 +112,7 @@ export const teamData = [
         designation: "Photography Head",
         linkdin: "https://www.linkedin.com/in/tanmay-bist-30n",
         insta: "",
-        gmail: "tarunbist30@gmail.com",
+        gmail: "Praffulmittal75@gmail.com",
       },
     ],
   },
