@@ -6,11 +6,12 @@ import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg";
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
-import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
+import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
 import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
 import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
 import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
+import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
@@ -61,7 +62,7 @@ export const teamData = [
         name: "Arpan Chauhan",
         img: arpan,
         git: "",
-        designation: "GBPIET's Discipline Head",
+        designation: "Discipline Secratary",
         linkdin: "https://www.linkedin.com/in/arpanchauhan90",
         insta: "https://www.instagram.com/arpan_jaihind",
         gmail: "arpanchauhan1502@gmail.com",
@@ -91,7 +92,7 @@ export const teamData = [
         name: "Akshita Rajbhar",
         img: akshita,
         git: "",
-        designation: "Literacy and Debate Club Head",
+        designation: "Literacy and Debate Secratary",
         linkdin: "https://www.linkedin.com/in/akshita-rajbhar-48a3a4216",
         insta: "",
         gmail: "akshitavinod00@gmail.com",
@@ -101,7 +102,7 @@ export const teamData = [
         name: "Prafful Mittal",
         img: prafful,
         git: "",
-        designation: "Media and Graphics Head",
+        designation: "Creative Media Secratary",
         linkdin: "https://www.linkedin.com/in/prafful-mittal",
         insta: "",
         gmail: "",
@@ -111,20 +112,20 @@ export const teamData = [
         name: "Tanmay Bist",
         img: tanmay,
         git: "",
-        designation: "Photography Head",
+        designation: "Photography Coordinator",
         linkdin: "https://www.linkedin.com/in/tanmay-bist-30n",
         insta: "",
         gmail: "Praffulmittal75@gmail.com",
       },
       {
         id: 109,
-        name: "Deepansha",
-        img: deepansha,
+        name: "Abhinav Tyagi",
+        img: abhinav,
         git: "",
-        designation: "Vice Cultural Head",
-        linkdin: "https://www.linkedin.com/in/deepansha-arya-5472b8256",
+        designation: "Discipline Secratary",
+        linkdin: "",
         insta: "",
-        gmail: "travani7031@gmail.com",
+        gmail: "abhinavtyagi1107@gmail.com",
       },
 
     ],
@@ -232,6 +233,16 @@ export const teamData = [
         insta: "https://www.instagram.com/_vicky_uk09?igsh=ZGUzMzM3NWJiOQ==",
         gmail: "",
         designation: "Event Management",
+      },
+      {
+        id: 210,
+        name: "Deepansha Arya",
+        img: deepansha,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/deepansha-arya-5472b8256",
+        insta: "",
+        gmail: "travani7031@gmail.com",
+        designation: "Event Coordinator",
       },
       {
         id: 211,

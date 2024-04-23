@@ -32,7 +32,6 @@ import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
 import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp";
-import { MdEmail } from "react-icons/md";
 
 const eventRulebook =
   "https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing";
