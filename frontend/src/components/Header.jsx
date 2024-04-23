@@ -129,7 +129,7 @@ const Header = () => {
                 <LoginButton text="LOGOUT"/>
               </Link>
               <Link to="/profile">
-                <div>
+                <div className="mx-2">
                   <img src={userData?.img || profile} className="w-8 h-8 md:w-12 md:h-12 rounded-xl"/>
                 </div>
               </Link>
@@ -188,7 +188,7 @@ const Header = () => {
                 </Link>
               </li>
               <Link to="/profile">
-                <div className="">
+                <div className="mx-2">
                   <img src={userData?.img || profile} className="w-8 h-8 md:w-12 md:h-12 rounded-xl" />
                 </div>
               </Link>
