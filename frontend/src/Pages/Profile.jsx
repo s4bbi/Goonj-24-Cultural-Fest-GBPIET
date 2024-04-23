@@ -1,19 +1,35 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import astro from "../assets/Images/CAPortal_Astro3.webp";
 import { VKYRequest } from "../utils/requests";
+import { deleteCookie, setCookie } from "../utils/Cookies";
+import LoggedContext from "../main";
+import { UserContext } from "../main";
+
 
 const Profile = () => {
   const [receivedUserData, setReceivedUserData] = useState({});
-
+  const {setIsLogin} = useContext(LoggedContext);
+  const {setUserData} = useContext(UserContext);
   useEffect(() => {
     const renderProfile = async () => {
       try {
         const response = await VKYRequest("get", "/users");
         setReceivedUserData(response.data.user);
-        console.log(response);
-        console.log(receivedUserData);
       } catch (error) {
         console.log(error);
+        deleteCookie('jwt');
+        setIsLogin(false);
+
+        setUserData({
+          name: undefined,
+          email: undefined,
+          googleSubjectId: undefined,
+          img: undefined,
+          pNum: undefined,
+          state: undefined,
+          city: undefined,
+          college: undefined
+        });
       }
     };
 
@@ -25,7 +41,7 @@ const Profile = () => {
       <h1 className="text-5xl text-center pt-36 font-cuda">PROFILE</h1>
       <div className="flex flex-col sm:flex-row text-center sm:text-left items-center justify-center p-12 gap-9 font-cM ">
         <img
-          src={astro}
+          src={receivedUserData?.img || astro}
           className="w-36 h-36 md:w-72 md:h-72 border-2 border-[#5f43b2] rounded-2xl"
           alt="User Image"
         />

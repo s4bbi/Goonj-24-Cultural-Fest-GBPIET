@@ -1,96 +1,83 @@
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import LoginAstro from "../assets/Images/LoginAstronaut.png";
 import { jwtDecode } from "jwt-decode";
-import { useEffect, useState , useContext} from "react";
+import { useEffect, useContext } from "react";
 import { VKYRequest } from "../utils/requests";
-import { useNavigate ,useLocation } from "react-router-dom";
-import { setCookie, getCookie} from "../utils/Cookies";
+import { useNavigate, useLocation } from "react-router-dom";
+import { setCookie, deleteCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
+import { UserContext } from "../main";
 
 const GoogleAuth = () => {
-  const [userData, setUserData] = useState({
-    name: undefined,
-    email: undefined
-  });
+  const { setIsLogin } = useContext(LoggedContext);
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
-  const {setIsLogin} = useContext(LoggedContext);
+  const { userData, setUserData } = useContext(UserContext);
 
   const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
-  
+
   const navigate = useNavigate();
   const location = useLocation();
-  const handleSuccess = async (credentialResponse) => {
+  const handleSuccess = (credentialResponse) => {
     try {
-
       let decoded = jwtDecode(credentialResponse.credential);
+      console.log(decoded);
       setUserData({
         name: decoded.name,
-        email: decoded.email
+        email: decoded.email,
+        img: decoded.picture,
+        googleSubjectId: decoded.sub,
       });
-      
-      console.log(userData)
+    } catch (err) {
+      console.log("Error", err);
     }
-
-    catch (err) {
-       console.log("Error",err)
-
-    }
-
   };
 
   useEffect(() => {
-    const fetchData =async ()=>{
-      try{
-        const response = await VKYRequest('post', '/auth/login', userData);
-        
-        setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN); // storing cookies from response in cookies
-        
-        if (getCookie('jwt')){
-          setIsLogin(true);
-        }else{
-          setIsLogin(false);
-        }
+    const fetchData = async () => {
+      console.log("sent login request");
+      try {
+        const response = await VKYRequest("post", "/auth/login", userData);
 
-        if (response.data.status === 'success') {
-          console.log(response.data)
-          setIsLoggedIn(true); // Set login status to true
-          
-          const referrer = location.state && location.state.referrer;
+        console.log(response);
+        setCookie(
+          "jwt",
+          response.data.token,
+          import.meta.env.VITE_JWT_EXPIRES_IN
+        ); // storing cookies from response in cookies
 
-          console.log(referrer)
+        setIsLogin(true);
 
-          if (referrer === '/caportal') {
-            navigate('/profile'); // Redirect to caregister if the referrer is '/caportal'
-          } else {
-            navigate('/profile'); // Redirect to profile page for other referrers
-          }
-        }
-  
-      }
-      catch(err){
+        navigate("/profile");
+      } catch (err) {
         if (err.response.status === 401) {
           const referrer = location.state && location.state.referrer;
-          if (referrer === '/caportal') {
-            navigate('/caregister', { state: userData }); // Redirect to caregister if the referrer is '/caportal'
+          if (referrer === "/caportal") {
+            navigate("/caregister"); // Redirect to caregister if the referrer is '/caportal'
           } else {
-            navigate('/login', { state: userData }); // Redirect to profile page for other referrers
+            navigate("/login"); // Redirect to profile page for other referrers
           }
-        } else {
-          console.log(err);
-          console.error("Error checking email existence");
+        } else if (err.response.status!==400) {
+          deleteCookie("jwt");
+          setIsLogin(false);
+          setUserData({
+            name: undefined,
+            email: undefined,
+            googleSubjectId: undefined,
+            img: undefined,
+            pNum: undefined,
+            state: undefined,
+            city: undefined,
+            college: undefined,
+          });
         }
       }
-    }
-    fetchData()
+    };
 
-
-  }, [isLoggedIn, userData])
-
-
+    fetchData();
+  }, [userData.email]);
 
   const handleError = () => {
-    console.log('Login Failed');
+    console.log("Login Failed");
   };
 
   return (
@@ -107,10 +94,7 @@ const GoogleAuth = () => {
         </h1>
         <div className="p-10 w-1/3 md:w-1/2 flex mx-auto justify-center items-center">
           <GoogleOAuthProvider clientId={clientID}>
-            <GoogleLogin
-              onSuccess={handleSuccess}
-              onError={handleError}
-            />
+            <GoogleLogin onSuccess={handleSuccess} onError={handleError} />
           </GoogleOAuthProvider>
         </div>
       </div>
