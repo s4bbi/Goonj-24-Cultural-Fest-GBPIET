@@ -112,10 +112,6 @@ const AppComponent = () => {
     college: undefined
   });
 
-  useEffect(()=>{
-    
-  }, [userData])
-
   useEffect(() => {
     function globalLogger() {
       if (getCookie('jwt')) {

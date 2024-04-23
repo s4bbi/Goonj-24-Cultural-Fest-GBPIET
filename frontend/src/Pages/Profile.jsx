@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import astro from "../assets/Images/CAPortal_Astro3.webp";
 import { VKYRequest } from "../utils/requests";
-import { deleteCookie } from "../utils/Cookies";
+import { deleteCookie, setCookie } from "../utils/Cookies";
 import LoggedContext from "../main";
 import { UserContext } from "../main";
 
@@ -15,7 +15,6 @@ const Profile = () => {
       try {
         const response = await VKYRequest("get", "/users");
         setReceivedUserData(response.data.user);
-
       } catch (error) {
         console.log(error);
         deleteCookie('jwt');

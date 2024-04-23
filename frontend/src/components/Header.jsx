@@ -15,6 +15,7 @@ import { useContext, useEffect } from "react";
 import LoggedContext from '../main'
 import { deleteCookie, getCookie } from "../utils/Cookies";
 import { UserContext } from "../main";
+import { VKYRequest } from "../utils/requests";
 
 
 const Header = () => {
@@ -26,9 +27,26 @@ const Header = () => {
 
   
   useEffect(()=>{
-    function globalLogger(){
+    async function globalLogger(){
       if (getCookie('jwt')){
         setIsLogin(true);
+        try {
+          const response = await VKYRequest('get', '/users');
+          setUserData(response.data.user);
+        }catch (error) {
+          deleteCookie("jwt");
+          setIsLogin(false);
+          setUserData({
+            name: undefined,
+            email: undefined,
+            googleSubjectId: undefined,
+            img: undefined,
+            pNum: undefined,
+            state: undefined,
+            city: undefined,
+            college: undefined,
+          });
+        }
       }else{
         setIsLogin(false);
       }

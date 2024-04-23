@@ -29,20 +29,8 @@ const GoogleAuth = () => {
       });
     } catch (err) {
       console.log("Error", err);
-    deleteCookie("jwt");
-    setIsLogin(false);
-    setUserData({
-      name: undefined,
-      email: undefined,
-      googleSubjectId: undefined,
-      img: undefined,
-      pNum: undefined,
-      state: undefined,
-      city: undefined,
-      college: undefined,
-    });
-  }};
-
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,7 +38,7 @@ const GoogleAuth = () => {
       try {
         const response = await VKYRequest("post", "/auth/login", userData);
 
-        console.log(response)
+        console.log(response);
         setCookie(
           "jwt",
           response.data.token,
@@ -60,7 +48,6 @@ const GoogleAuth = () => {
         setIsLogin(true);
 
         navigate("/profile");
-
       } catch (err) {
         if (err.response.status === 401) {
           const referrer = location.state && location.state.referrer;
@@ -69,7 +56,7 @@ const GoogleAuth = () => {
           } else {
             navigate("/login"); // Redirect to profile page for other referrers
           }
-        } else {
+        } else if (err.response.status!==400) {
           deleteCookie("jwt");
           setIsLogin(false);
           setUserData({
