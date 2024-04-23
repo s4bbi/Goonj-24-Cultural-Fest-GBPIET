@@ -11,7 +11,6 @@ import { UserContext } from "../main";
 import desktop_bg_image from "../assets/Images/RegSuccess_Astro.webp";
 
 const CARegisterPage = () => {
-  const {setIsLogin} = useContext(LoggedContext);
 
   // const location = useLocation();
   // const receivedUserData = location.state;
@@ -24,17 +23,6 @@ const CARegisterPage = () => {
   
   const location = useLocation();
   const receivedUserData = location.state;
-  
-  const [formData, setFormData] = useState({
-    name: receivedUserData?.name,
-    email: receivedUserData?.email,
-    pNum: "",
-    state: "",
-    city: "",
-    college: "",
-    role: "CA",
-  });
-
 
   const handleChange = (e, name) => {
     setUserData({ ...userData, [name]: e.target.value });
@@ -43,24 +31,30 @@ const CARegisterPage = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await VKYRequest("post", "/auth/signup", formData);
 
-      const response = await VKYRequest('post', '/auth/signup', userData);
+      const response = await VKYRequest('post', '/auth/signup', {...userData, role: 'CA'});
 
       setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
-
-
-      if (getCookie("jwt")) {
-        setIsLogin(true);
-      } else {
-        setIsLogin(false);
-      }
-
+      setIsLogin(true);
+      
       if (response.data.status === "success") {
-        navigate("/profile", { state: response.data.userCreated });
+        navigate("/profile");
       }
     } catch (error) {
       console.log(error);
+      deleteCookie('jwt');
+        setIsLogin(false);
+
+        setUserData({
+          name: undefined,
+          email: undefined,
+          googleSubjectId: undefined,
+          img: undefined,
+          pNum: undefined,
+          state: undefined,
+          city: undefined,
+          college: undefined
+        });
     }
   };
 
@@ -70,63 +64,7 @@ const CARegisterPage = () => {
   };
   return (
 
-    <div className="bg-EventBG h-fit flex justify-center pt-8">
-      <div className="sm:w-6/12 my-24 sm:mr-20 mx-2 rounded-3xl bg-cover bg-center bg-no-repeat text-white bg-LoginBG">
-        <h1 className="font-cuda text-2xl sm:text-4xl flex justify-center py-8">
-          Registration
-        </h1>
-        <div className="sm:px-16 px-10">
-          <form action="">
-            <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
-              <div className="flex flex-col w-full sm:w-5/12">
-                <label className="font-cR mb-2 font-light text-sm">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="YourName"
-                  defaultValue={userData?.name}
-                  disabled
-                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
-                />
-              </div>
-              <div className="flex flex-col w-full sm:w-5/12">
-                <label className="font-cR mb-2 font-light text-sm">
-                  Your Email
-                </label>
-                <input
-                  type="text"
-                  placeholder="E-Mail ID"
-                  defaultValue={userData?.email}
-                  disabled
-                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row justify-between gap-6 pb-6">
-              <div className="flex flex-col sm:w-5/12">
-                <label className="font-cR mb-2 text-sm">
-                  Your Phone Number
-                </label>
-                <input
-                  type="text"
-                  placeholder="+91"
-                  onChange={(e) => handleChange(e, "pNum")}
-                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
-                />
-              </div>
-              <div className="flex flex-col sm:w-5/12">
-                <label className="font-cR mb-2 font-light text-sm">
-                  College State
-                </label>
-                <input
-                  type="text"
-                  placeholder="State"
-                  onChange={(e) => handleChange(e, "state")}
-                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
-                />
-              </div>
-
+   
     <div className="bg-EventBG ">
       {!isregister && (
         <div className="h-fit flex justify-center pt-8">
