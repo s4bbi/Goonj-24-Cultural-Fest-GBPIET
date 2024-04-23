@@ -28,6 +28,7 @@ import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg"
 import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg"
 import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg"
 import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg"
+import vaish from "../assets/Images/TeamsImages/EventTeam/vaish.jpg"
 
 export const teamData = [
   {
@@ -344,13 +345,13 @@ export const teamData = [
       },
       {
         id: 222,
-        name: "",
-        img: "",
+        name: "Vaish Srivastava",
+        img: vaish,
         git: "",
         linkdin: "",
         insta: "",
-        gmail: "",
-        designation: "",
+        gmail: "srivastavavaish@gmail.com",
+        designation: "Marketing Team",
       },
       {
         id: 223,
