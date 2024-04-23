@@ -8,6 +8,8 @@ import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
+import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpg"
+import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
@@ -53,7 +55,17 @@ export const teamData = [
         gmail: "",
       },
       {
-        id: 103,
+        id: 102,
+        name: "Arpan Chauhan",
+        img: arpan,
+        git: "",
+        designation: "GBPIET's Discipline Head",
+        linkdin: "https://www.linkedin.com/in/arpanchauhan90",
+        insta: "",
+        gmail: "arpanchauhan1502@gmail.com",
+      },
+      {
+        id: 104,
         name: "Ravi Nailwal",
         img: ravi,
         git: "",
@@ -63,7 +75,7 @@ export const teamData = [
         gmail: "nailwalravi8@gmail.com",
       },
       {
-        id: 104,
+        id: 105,
         name: "Utkarsh Patel",
         img: utkarsh,
         git: "",
@@ -73,7 +85,7 @@ export const teamData = [
         gmail: "UtkarshPatel.in@gmail.com",
       },
       {
-        id: 105,
+        id: 106,
         name: "Akshita Rajbhar",
         img: akshita,
         git: "",
@@ -83,7 +95,7 @@ export const teamData = [
         gmail: "akshitavinod00@gmail.com",
       },
       {
-        id: 106,
+        id: 107,
         name: "Prafful Mittal",
         img: prafful,
         git: "",
@@ -91,6 +103,16 @@ export const teamData = [
         linkdin: "",
         insta: "",
         gmail: "",
+      },
+      {
+        id: 108,
+        name: "Tanmay Bist",
+        img: tanmay,
+        git: "",
+        designation: "Photography Head",
+        linkdin: "https://www.linkedin.com/in/tanmay-bist-30n",
+        insta: "",
+        gmail: "tarunbist30@gmail.com",
       },
     ],
   },
