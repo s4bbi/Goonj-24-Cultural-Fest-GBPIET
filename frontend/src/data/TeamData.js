@@ -10,6 +10,7 @@ import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpeg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
 import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
 import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
+import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
@@ -114,6 +115,17 @@ export const teamData = [
         insta: "",
         gmail: "Praffulmittal75@gmail.com",
       },
+      {
+        id: 109,
+        name: "Deepansha",
+        img: deepansha,
+        git: "",
+        designation: "Vice Cultural Head",
+        linkdin: "https://www.linkedin.com/in/deepansha-arya-5472b8256",
+        insta: "",
+        gmail: "travani7031@gmail.com",
+      },
+
     ],
   },
   {

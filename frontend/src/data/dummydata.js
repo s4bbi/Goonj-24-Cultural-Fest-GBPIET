@@ -297,6 +297,7 @@ export const data = [
           "Dress up must be in good taste and no vulgarity is allowed.",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
           "If there is a technical fault, extra time will be given accordingly.",
+          "Each participant is required to dress according to the respective state theme given to their branch and perform their best shot accordingly.",
         ],
         Rulebook: eventRulebook,
         interCollege: false,

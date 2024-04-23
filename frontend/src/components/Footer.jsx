@@ -44,10 +44,15 @@ const Footer = () => {
         </div>
         <div className="border-b border-white border-[3px] my-6"></div>
         <div className=" flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-white mb-4 md:mb-0">
-            @Goonj 2024. All rights reserved
-          </h1>
-          <div className="flex flex-col sm:flex gap-6 text-white ">
+          <div className="flex flex-col md:gap-2 md:flex items-center md:items-start">
+            <span className="text-white mb-4 md:mb-0">
+              @Goonj 2024. All rights reserved
+            </span>
+            <Link to="https://docs.google.com/document/d/18pMLKk-fZLpVLCXkrFziC8W-dTyusZPkl9AZ5abZVrY/edit?usp=sharing">
+              <span className="text-white mb-4 md:mb-0">Privacy Policy</span>
+            </Link>
+          </div>
+          <div className="flex flex-col sm:flex gap-6 text-white">
             <h1>Connect with us on:</h1>
             <div className="flex justify-between">
               <Link
