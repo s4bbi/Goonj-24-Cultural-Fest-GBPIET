@@ -61,7 +61,7 @@ export const teamData = [
         git: "",
         designation: "GBPIET's Discipline Head",
         linkdin: "https://www.linkedin.com/in/arpanchauhan90",
-        insta: "",
+        insta: "https://www.instagram.com/arpan_jaihind",
         gmail: "arpanchauhan1502@gmail.com",
       },
       {
