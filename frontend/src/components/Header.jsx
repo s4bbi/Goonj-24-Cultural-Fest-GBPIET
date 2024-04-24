@@ -16,6 +16,7 @@ import LoggedContext from '../main'
 import { deleteCookie, getCookie } from "../utils/Cookies";
 import { UserContext } from "../main";
 import { VKYRequest } from "../utils/requests";
+import { FcAbout } from "react-icons/fc";
 
 
 const Header = () => {
@@ -87,6 +88,7 @@ const Header = () => {
     { id: 4, name: "TEAMS", link: "/teams", type: "D" },
     { id: 5, name: "CA PORTAL", link: "/caportal", type: "E" },
     { id: 6, name: "AUDIENCE PORTAL", link: "/audience", type: "F" },
+    { id: 7, name: "ABOUT US", link: "/about", type: "G" },
   ];
 
   const deskdata = [
@@ -100,6 +102,7 @@ const Header = () => {
     { id: 14, name: "TEAMS", link: "/teams" },
     { id: 15, name: "CA PORTAL", link: "/caportal" },
     { id: 16, name: "AUDIENCE PORTAL ", link: "/audience" },
+    { id: 17, name: "ABOUT US", link: "/about", type: "G" },
   ];
 
   const componentMap = {
@@ -109,6 +112,7 @@ const Header = () => {
     D: FaUsers,
     E: FaUserTie,
     F: FaUserGroup,
+    G: FcAbout
   };
   
   return (

@@ -20,6 +20,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import GoogleAuth from "./Pages/GoogleAuth.jsx";
 import { getCookie } from "./utils/Cookies.js";
 import ProtectedComponent from "./components/ProtectedRoutes.jsx";
+import About from "./Pages/About.jsx";
 
 const LoggedContext = createContext();
 export default LoggedContext;
@@ -95,6 +96,10 @@ const loggedInRoutes = [
   {
     path: "/audience",
     element: <AudiencePortal />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   }
 ]
 
