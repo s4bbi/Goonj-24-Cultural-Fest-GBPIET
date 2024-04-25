@@ -72,7 +72,7 @@ export const teamData = [
         name: "Ravi Nailwal",
         img: ravi,
         git: "",
-        designation: "Event Coordinator",
+        designation: "Music Coordinator",
         linkdin: "https://in.linkedin.com/in/ravi-nailwal-215514286",
         insta: "https://www.instagram.com/ravinailwal3/",
         gmail: "nailwalravi8@gmail.com",
