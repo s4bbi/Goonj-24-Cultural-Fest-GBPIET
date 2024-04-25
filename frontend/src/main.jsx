@@ -21,6 +21,8 @@ import GoogleAuth from "./Pages/GoogleAuth.jsx";
 import { getCookie } from "./utils/Cookies.js";
 import ProtectedComponent from "./components/ProtectedRoutes.jsx";
 import About from "./Pages/About.jsx";
+import TnC from "./Pages/ToS.jsx";
+import ToS from "./Pages/ToS.jsx";
 
 const LoggedContext = createContext();
 export default LoggedContext;
@@ -100,7 +102,11 @@ const loggedInRoutes = [
   {
     path: "/about",
     element: <About />,
-  }
+  },
+  {
+    path: "/tos",
+    element: <ToS />,
+  },
 ]
 
 

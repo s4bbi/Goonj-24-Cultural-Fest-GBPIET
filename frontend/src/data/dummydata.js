@@ -541,7 +541,7 @@ export const data = [
   },
   {
     id: 10,
-    name: "VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students) - Prizes upto ₹10000.00",
+    name: "VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students)",
     img: img3,
     Event: [
       {
