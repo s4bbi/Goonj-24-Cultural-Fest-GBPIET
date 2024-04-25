@@ -48,8 +48,8 @@ const Footer = () => {
             <span className="text-white mb-4 md:mb-0">
               @Goonj 2024. All rights reserved
             </span>
-            <Link to="https://docs.google.com/document/d/18pMLKk-fZLpVLCXkrFziC8W-dTyusZPkl9AZ5abZVrY/edit?usp=sharing" target="blank">
-              <span className="text-white mb-4 md:mb-0">Privacy Policy</span>
+            <Link to="/tos" target="blank">
+              <span className="text-white mb-4 md:mb-0">Terms of Service</span>
             </Link>
           </div>
           <div className="flex flex-col sm:flex gap-6 text-white">
