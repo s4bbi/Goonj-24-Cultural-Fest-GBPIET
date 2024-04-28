@@ -52,7 +52,7 @@ export const data = [
           "Use of props are allowed",
           " Arrangement of props and outfits will be done by the team itself",
           " To enhance or highlight the drama use of music (instruments, singing) is allowed",
-          " The drama should not exceed more than 5 minutes and 1 minute for stage clearance will be given. If time exceeded points deduction will be there",
+          " The drama should not exceed more than 7 minutes and 1 minute for stage clearance will be given. If time exceeded points deduction will be there",
           " Minimum number of participants in one group :- 6",
           " Maximum number of participants in one group :- 8",
           "(if there is technical fault, extra time will be given accordingly.)",
@@ -167,7 +167,7 @@ export const data = [
         topics: [],
         guidelines: [
           "Minimum number of participants in one group :- 5",
-          "Maximum number of participants in one group :- 10",
+          "Maximum number of participants in one group :- 15",
           "Use of props is allowed. NO obscene or vulgarity should be done in the performance",
           "The performance limit is 6-8 minutes (group dance) and 4-5 minutes (duet), exceeding performance limit will lead to point deduction",
           "The outfits accordingly will be arranged by team itself. Dress up must be in good taste and no vulgarity is allowed",
@@ -455,8 +455,7 @@ export const data = [
         guidelines: [
           "Time duration should not exceed 6 minutes and 1 minute for stage clearance will be given. Exceeding will lead to points deduction.",
           "Instruments are allowed but karaoke is not allowed.",
-          "Minimum number of participants in one group :- 1  +musicians.",
-          "Maximum number of participants in one group :- 5 + musicians = 8. ",
+          "Solo",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
