@@ -429,7 +429,7 @@ export const data = [
           "Solo",
         ],
         Rulebook: eventRulebook,
-        interCollege: true,
+        interCollege: false,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
           coordinator: "Ravi Nailwal(9837989785)",
