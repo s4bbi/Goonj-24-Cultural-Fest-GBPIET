@@ -27,7 +27,6 @@ import standup from "../assets/Images/EventImages/standup-comedy.webp";
 import treasure_hunt from "../assets/Images/EventImages/treasure-hunt.webp";
 import oppo from "../assets/Images/EventImages/oppo.webp";
 import open_mic from "../assets/Images/EventImages/open-mic.webp";
-import salsa from "../assets/Images/EventImages/salsa.webp";
 import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
@@ -304,34 +303,6 @@ export const data = [
           "dressing sense + appearance + ramp + confidence + facial  expressions + fluency + overall performance",
         coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
         email: "Ashutosh Rana (9118798461)",
-        phone: "",
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "SALSAA - Prizes upto ₹5000.00",
-    img: img3,
-    Event: [
-      {
-        id: 501,
-        name: "SALSAA",
-        img: salsa,
-        description:
-          "Salsa is a Latin dance . It is a mix of swing and tap. Salsa dance steps can be done individually, but it is most popularly known as a partnered dance where the lead takes the follower through a series of spins and turn patterns to music.",
-        topics: [],
-        guidelines: [
-          "Each performance will get time limit of 5-6 minutes, exceeding the performance limit will lead to points deduction.",
-          "Dress up must be in good taste but no vulgarity is allowed.",
-          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
-          "if there is technical fault , extra time will be given accordingly.",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging:
-          "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Vidhi Nabiyal (vidhinabiyal@gmail.com)",
-        email: "Tanuja Adhikari (tanujaadhikari390@gmail.com)",
         phone: "",
       },
     ],
