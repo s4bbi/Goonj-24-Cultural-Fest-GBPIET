@@ -23,7 +23,7 @@ const HomePage = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-  const endTime = "2024-05-13T00:00:00";
+  const endTime = "2024-05-27T00:00:00";
 
   return (
     <div className="w-full">
@@ -41,7 +41,7 @@ const HomePage = () => {
 
           <div className="flex flex-col gap-1 items-center sm:flex-row justify-between">
             <h1 className="text-lg sm:text-2xl text-white font-cM text-left sm:-mt-10 sm:ml-48">
-              13th May - 15th May
+              27th May - 28th May
             </h1>
             <h2 className="text-sm sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">
               VIKSIT BHARAT @2047: VOICE OF YOUTH

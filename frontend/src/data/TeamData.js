@@ -7,7 +7,7 @@ import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpg";
-import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
+import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpeg"
 import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
 import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
 import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
