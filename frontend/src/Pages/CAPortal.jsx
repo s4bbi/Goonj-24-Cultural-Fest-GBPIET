@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 import CAPortalVid from "../assets/Videos/CAPortalVid.webm";
 import CAPortal_Astro1 from "../assets/Images/CAPortal_Astro1.webp";
@@ -12,6 +12,7 @@ const CAPortal = () => {
   // Get access to the history object
   const { isLogin, setIsLogin } = useContext(LoggedContext);
   const navigate = useNavigate();
+  const [caDetail, setCaDetails] = useState({});
   const handleRegisterClick = async () => {
     // Redirect the user to the googleauth page (if user is not logged in else update role in backend);
     if (!isLogin) {
@@ -22,6 +23,8 @@ const CAPortal = () => {
         if (response.data.status === "success") {
           console.log("role updated"); // here render this page as per your convenience
         }
+        setCaDetails(response.data.userCreated);
+        
       } catch (error) {
         console.log(error);
       }

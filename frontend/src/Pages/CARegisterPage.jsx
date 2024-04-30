@@ -1,8 +1,7 @@
 import aerocraft from "../assets/Images/Registration_Rocket.webp";
-import { useLocation } from "react-router-dom";
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { setCookie, getCookie } from "../utils/Cookies";
+import { setCookie} from "../utils/Cookies";
 import LoggedContext from "../main";
 import { VKYRequest } from "../utils/requests";
 
@@ -11,57 +10,31 @@ import { UserContext } from "../main";
 import desktop_bg_image from "../assets/Images/RegSuccess_Astro.webp";
 
 const CARegisterPage = () => {
-
-  // const location = useLocation();
-  // const receivedUserData = location.state;
-
-  const navigate = useNavigate();
   const {userData, setUserData} = useContext(UserContext);
-
   const { setIsLogin } = useContext(LoggedContext);
   const [isregister, setIsregister] = useState(false);
-  
-  const location = useLocation();
-  const receivedUserData = location.state;
-
   const handleChange = (e, name) => {
     setUserData({ ...userData, [name]: e.target.value });
   };
+  const [caDetail, setCaDetails] = useState({});
 
   const submitForm = async (e) => {
     e.preventDefault();
     try {
 
-      const response = await VKYRequest('post', '/auth/signup', {...userData, role: 'CA'});
+      const response = await VKYRequest('post', '/auth/signup',{...userData, role: 'CA'});
 
       setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
       setIsLogin(true);
-      
-      if (response.data.status === "success") {
-        navigate("/profile");
-      }
+      setIsregister(true);
+
+      setCaDetails(response.data.userCreated);
+
     } catch (error) {
       console.log(error);
-      deleteCookie('jwt');
-        setIsLogin(false);
-
-        setUserData({
-          name: undefined,
-          email: undefined,
-          googleSubjectId: undefined,
-          img: undefined,
-          pNum: undefined,
-          state: undefined,
-          city: undefined,
-          college: undefined
-        });
     }
   };
 
-  const cadetail = {
-    name: "Yashpreet Singh",
-    caID: "123654789",
-  };
   return (
 
    
@@ -83,7 +56,7 @@ const CARegisterPage = () => {
                     <input
                       type="text"
                       placeholder="YourName"
-                      defaultValue={receivedUserData?.name}
+                      defaultValue={userData?.name}
                       disabled
                       className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                     />
@@ -95,7 +68,7 @@ const CARegisterPage = () => {
                     <input
                       type="text"
                       placeholder="E-Mail ID"
-                      defaultValue={receivedUserData?.email}
+                      defaultValue={userData?.email}
                       disabled
                       className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                     />
@@ -173,12 +146,12 @@ const CARegisterPage = () => {
             <div className="sm:flex text-center justify-center">
               <p className=" text-2xl ">WELCOME ONBOARD</p>
               <p>
-                <span className=""> {cadetail.name} </span>
+                <span className=""> {caDetail?.name} </span>
               </p>
             </div>
             <div className="sm:flex text-center justify-center">
               <p className="">GOONJ CA ID</p>
-              <p className=""> {cadetail.caID} </p>
+              <p className=""> {caDetail?.generated_id} </p>
             </div>
           </div>
         </div>
