@@ -7,9 +7,10 @@ import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpg";
-import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpg"
+import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpeg"
 import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
 import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
+import abhishek from "../assets/Images/TeamsImages/CoreTeam/abhishek.jpeg"
 import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
 import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
@@ -29,7 +30,23 @@ import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg"
 import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg"
 import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg"
 import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg"
-import vaish from "../assets/Images/TeamsImages/EventTeam/vaish.jpg"
+import punam from "../assets/Images/TeamsImages/EventTeam/punam.jpg"
+import abhiK from "../assets/Images/TeamsImages/EventTeam/abhiK.jpeg"
+import abhiA from "../assets/Images/TeamsImages/EventTeam/abhiA.jpg"
+import prakarti from "../assets/Images/TeamsImages/EventTeam/prakarti.jpg"
+import rakshit from "../assets/Images/TeamsImages/EventTeam/rakshit.jpg"
+import ashutosh from "../assets/Images/TeamsImages/EventTeam/ashutosh.jpg"
+import vanshika from "../assets/Images/TeamsImages/EventTeam/vanshika.jpeg"
+import nitin from "../assets/Images/TeamsImages/EventTeam/nitin.jpeg"
+import sneha from "../assets/Images/TeamsImages/EventTeam/sneha.jpg"
+import sanskriti from "../assets/Images/TeamsImages/EventTeam/sanskriti.jpg"
+import muskan from "../assets/Images/TeamsImages/EventTeam/muskan.jpg"
+import ananya from "../assets/Images/TeamsImages/EventTeam/ananya.jpg"
+import ritik from "../assets/Images/TeamsImages/EventTeam/ritik.jpg"
+import parush from "../assets/Images/TeamsImages/EventTeam/parush.jpg"
+import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg"
+import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg"
+import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg"
 
 export const teamData = [
   {
@@ -68,14 +85,34 @@ export const teamData = [
         gmail: "arpanchauhan1502@gmail.com",
       },
       {
+        id: 103,
+        name: "Abhishek Lakhera",
+        img: abhishek,
+        git: "",
+        designation: "Management Head",
+        linkdin: "www.linkedin.com/in/abhishek-lakhera-2a8492216",
+        insta: "https://www.instagram.com/lakhera9657",
+        gmail: "lakheraabhishek70@gmail.com",
+      },
+      {
         id: 104,
         name: "Ravi Nailwal",
         img: ravi,
         git: "",
-        designation: "Event Coordinator",
+        designation: "Music Coordinator",
         linkdin: "https://in.linkedin.com/in/ravi-nailwal-215514286",
         insta: "https://www.instagram.com/ravinailwal3/",
         gmail: "nailwalravi8@gmail.com",
+      },
+      {
+        id: 106,
+        name: "Akshita Rajbhar",
+        img: akshita,
+        git: "",
+        designation: "Literacy • Debate Secratary",
+        linkdin: "https://www.linkedin.com/in/akshita-rajbhar-48a3a4216",
+        insta: "",
+        gmail: "akshitavinod00@gmail.com",
       },
       {
         id: 105,
@@ -86,16 +123,6 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/utkarshpatelin",
         insta: "",
         gmail: "UtkarshPatel.in@gmail.com",
-      },
-      {
-        id: 106,
-        name: "Akshita Rajbhar",
-        img: akshita,
-        git: "",
-        designation: "Literacy and Debate Secratary",
-        linkdin: "https://www.linkedin.com/in/akshita-rajbhar-48a3a4216",
-        insta: "",
-        gmail: "akshitavinod00@gmail.com",
       },
       {
         id: 107,
@@ -336,6 +363,16 @@ export const teamData = [
       },
       {
         id: 220,
+        name: "Ashutosh Rana",
+        img: ashutosh,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "srivastavavaish@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 221,
         name: "Arvind Singh Rawat",
         img: arvind,
         git: "",
@@ -345,7 +382,7 @@ export const teamData = [
         designation: "Marketing Team",
       },
       {
-        id: 221,
+        id: 222,
         name: "Ayush Gaur",
         img: ayush,
         git: "",
@@ -355,26 +392,185 @@ export const teamData = [
         designation: "Marketing Team",
       },
       {
-        id: 222,
-        name: "Vaish Srivastava",
-        img: vaish,
-        git: "",
-        linkdin: "",
-        insta: "",
-        gmail: "srivastavavaish@gmail.com",
-        designation: "Marketing Team",
-      },
-      {
         id: 223,
-        name: "",
+        name: "Jiyanshi Batra",
         img: "",
         git: "",
-        linkdin: "",
-        insta: "",
-        gmail: "",
-        designation: "",
+        linkdin: "https://www.linkedin.com/in/jiyanshi021",
+        insta: "https://www.instagram.com/jiyanshi021",
+        gmail: "jiyanshi021@gmail.com",
+        designation: "Management Team Member",
       },
-      
+      {
+        id: 224,
+        name: "Punam Rawat",
+        img: punam,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/punam-rawat-098a621a0",
+        insta: "https://www.instagram.com/theparushsinha?igsh=MXZzYmJ4Y2diZHJjcA==",
+        gmail: "punamrawat1323@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 225,
+        name: "Abhishek Kesharwani",
+        img: abhiK,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/abhishek-kesharwani-965542254",
+        insta: "https://www.instagram.com/lifewithabhi__",
+        gmail: "abhikesharwani222@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 226,
+        name: "Abhishek Kumar",
+        img: abhiA,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/abhishekabhi8637",
+        gmail: "abhikeshaabhi38013@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 227,
+        name: "Prakarti Negi",
+        img: prakarti,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/prakarti-negi-262441220",
+        insta: "https://www.instagram.com/prakarti_negi",
+        gmail: "negiprakarti@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 228,
+        name: "Rakshit Pant",
+        img: rakshit,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/rakshit-pant-012a59277",
+        insta: "https://www.instagram.com/rakshit.pant30",
+        gmail: "rakshitpant26@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 229,
+        name: "Vanshika Painuly",
+        img: vanshika,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/vanshika-painuly-4030b321a",
+        insta: "https://www.instagram.com/vanshika.painuly",
+        gmail: "vanshikapainuly74@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 230,
+        name: "Nitin Goswami",
+        img: nitin,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/nitin-goswami-162629250",
+        insta: "https://www.instagram.com/goswaminitin325",
+        gmail: "goswaminitin3254@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 231,
+        name: "Sneha Saraswat",
+        img: sneha,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/sneha-saraswat-7a7a1a261",
+        insta: "https://www.instagram.com/sneha_saraswat_",
+        gmail: "saraswatsneha608@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 232,
+        name: "Sanskriti Khugsal ",
+        img: sanskriti,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/_.s_a_n_s.k_r_i_t_i._",
+        gmail: "sanskritikhugsal.20475@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 233,
+        name: "Muskan Negi",
+        img: muskan,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/muskan-negi-3994632a2",
+        insta: "https://www.instagram.com/muskan._.n24",
+        gmail: "muskannegiuki@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 234,
+        name: "Ritik Negi",
+        img: ritik,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/ritik-negi-7904a42a0",
+        insta: "https://www.instagram.com/ritik_negi18",
+        gmail: "ritiknegi120@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 235,
+        name: "Anchal Singh",
+        img: "",
+        git: "",
+        linkdin: "https://www.linkedin.com/in/anchal-s-895a12243",
+        insta: "https://www.instagram.com/_miss_an_singh_",
+        gmail: "anchalsingh250202@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 236,
+        name: "Ananya Chauhan",
+        img: ananya,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/ananya-chauhan-b7651226",
+        insta: "https://www.instagram.com/aanya.1503?igsh=dndvZWlzbHUxYXMx",
+        gmail: "ananyach615@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 237,
+        name: "Ujjwal raj",
+        img: ujjwal,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/ujjwal-raj-43655a28a",
+        insta: "https://www.instagram.com/Ujjwal__26",
+        gmail: "ujjwal2611raj@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 238,
+        name: "Parush Sinha",
+        img: parush,
+        git: "",
+        linkdin: "http://www.linkedin.com/in/parush-sinha-071b1327a",
+        insta: "https://www.instagram.com/theparushsinha",
+        gmail: "sinhaparush7703@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 238,
+        name: "Kapil Bhatt",
+        img: kapil,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/Kapilbhatt707",
+        gmail: "bkapil731@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 238,
+        name: "Asmita Gaur",
+        img: asmita,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/asmita-gaur-741534223",
+        insta: "https://www.instagram.com/ashmi_2612",
+        gmail: "asmitagaur1419@gmail.com",
+        designation: "Management Team Member",
+      },
     ],
   },
   

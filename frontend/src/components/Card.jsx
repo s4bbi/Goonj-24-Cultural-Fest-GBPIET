@@ -44,7 +44,7 @@ const Card = (props) => {
         </div>
         <div className="box box4"></div>
       </div>
-      <p className="text-white text-base text-center mt-5">{props.data.designation}</p>
+      <p className="text-white text-base text-center mt-5 md:w-56">{props.data.designation}</p>
     </>
   );
 };

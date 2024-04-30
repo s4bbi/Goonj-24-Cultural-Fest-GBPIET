@@ -20,6 +20,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import GoogleAuth from "./Pages/GoogleAuth.jsx";
 import { getCookie } from "./utils/Cookies.js";
 import ProtectedComponent from "./components/ProtectedRoutes.jsx";
+import About from "./Pages/About.jsx";
+import TnC from "./Pages/ToS.jsx";
+import ToS from "./Pages/ToS.jsx";
 
 const LoggedContext = createContext();
 export default LoggedContext;
@@ -37,33 +40,43 @@ const loggedInRoutes = [
   },
   {
     path: "/events",
-    element:<ProtectedComponent>
-      <Events/>
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <Events />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/gallery",
-    element: <ProtectedComponent>
-
-      <Gallery />
-    </ProtectedComponent>
+    element: (
+      <ProtectedComponent>
+        <Gallery />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/sponsors",
-    element: <ProtectedComponent>
-      <Sponsors />
-    </ProtectedComponent> ,
+    element: (
+      
+        <Sponsors />
+      
+    ),
   },
   {
     path: "/caportal",
     element: <CAPortal />,
   },
   {
+    path: "/loader",
+    element: <Loader />,
+  },
+  {
     path: "/teams",
-    element: <ProtectedComponent>
-
-      <Teams />
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <Teams />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/login",
@@ -71,11 +84,11 @@ const loggedInRoutes = [
   },
   {
     path: "/events/:id",
-    element: 
-    <ProtectedComponent>
-
-      <EventDetail />
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <EventDetail />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/caregister",
@@ -83,10 +96,11 @@ const loggedInRoutes = [
   },
   {
     path: "/profile",
-    element: <ProtectedComponent>
-
-      <Profile />
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <Profile />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/googleauth",
@@ -95,11 +109,19 @@ const loggedInRoutes = [
   {
     path: "/audience",
     element: <AudiencePortal />,
-  }
-]
-
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/tos",
+    element: <ToS />,
+  },
+];
 
 const AppComponent = () => {
+  const [loading, setLoading] = useState(true);
   const [isLogin, setIsLogin] = useState(false);
   const [userData, setUserData] = useState({
     name: undefined,
@@ -109,13 +131,17 @@ const AppComponent = () => {
     pNum: undefined,
     state: undefined,
     city: undefined,
-    college: undefined
+    college: undefined,
   });
 
-
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
   useEffect(() => {
     function globalLogger() {
-      if (getCookie('jwt')) {
+      if (getCookie("jwt")) {
         setIsLogin(true);
       } else {
         setIsLogin(false);
@@ -126,14 +152,16 @@ const AppComponent = () => {
 
   // const routes = isLogin ? loggedInRoutes : loggedOutRoutes;
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="selection:bg-[#5F43B2] app">
       <LoggedContext.Provider value={{ isLogin, setIsLogin }}>
-      <UserContext.Provider value={{userData, setUserData}}>
-        <Header />
-        <Outlet/>
-        <Footer />
-      </UserContext.Provider>
+        <UserContext.Provider value={{ userData, setUserData }}>
+          <Header />
+          <Outlet />
+          <Footer />
+        </UserContext.Provider>
       </LoggedContext.Provider>
     </div>
   );

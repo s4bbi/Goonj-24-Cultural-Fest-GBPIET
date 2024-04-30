@@ -18,7 +18,7 @@ const Teams = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="w-10/12 mx-auto">
+      <div className="w-10/12 mx-auto pb-10">
         {teamData.map((item) => (
           <div key={item.id}>
             <p className="text-white font-cuda text-bold text-3xl md:text-[50px] py-20 text-center">

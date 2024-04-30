@@ -27,14 +27,13 @@ import standup from "../assets/Images/EventImages/standup-comedy.webp";
 import treasure_hunt from "../assets/Images/EventImages/treasure-hunt.webp";
 import oppo from "../assets/Images/EventImages/oppo.webp";
 import open_mic from "../assets/Images/EventImages/open-mic.webp";
-import salsa from "../assets/Images/EventImages/salsa.webp";
 import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
 import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp";
 
 const eventRulebook =
-  "https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing";
+  "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
 export const data = [
   {
     id: 1,
@@ -48,15 +47,14 @@ export const data = [
         description:
           "A type of drama conflict in which members of each team will showcase their play based on the theme.",
         guidelines: [
-          "The content should be socially relevant and suitable for performance. No vulgarity or obscene should be there else it can lead to disqualification",
-          "Use of props are allowed",
-          " Arrangement of props and outfits will be done by the team itself",
-          " To enhance or highlight the drama use of music (instruments, singing) is allowed",
-          " The drama should not exceed more than 5 minutes and 1 minute for stage clearance will be given. If time exceeded points deduction will be there",
-          " Minimum number of participants in one group :- 6",
-          " Maximum number of participants in one group :- 8",
-          "(if there is technical fault, extra time will be given accordingly.)",
-        ],
+          "The content should be socially relevant and suitable for performance; no vulgarity or obscenity should be included, as it can lead to disqualification.",
+          "The use of props is allowed.",
+          "The team will arrange props and outfits themselves.",
+          "To enhance or highlight the drama, the use of music (instruments, singing) is allowed.",
+          "The drama should not exceed more than 5-7 minutes, and 1 minute will be allocated for stage clearance.",
+          "If the time limit is exceeded, points will be deducted.",
+          "The minimum number of participants in one group is 6, and the maximum is 12.",
+          "(If there is a technical fault, extra time will be given accordingly.)"        ],
         Rulebook: eventRulebook,
         interCollege: true,
         judging:
@@ -166,13 +164,13 @@ export const data = [
         description: "Let’s dance to the best!",
         topics: [],
         guidelines: [
-          "Minimum number of participants in one group :- 5",
-          "Maximum number of participants in one group :- 10",
-          "Use of props is allowed. NO obscene or vulgarity should be done in the performance",
-          "The performance limit is 6-8 minutes (group dance) and 4-5 minutes (duet), exceeding performance limit will lead to point deduction",
-          "The outfits accordingly will be arranged by team itself. Dress up must be in good taste and no vulgarity is allowed",
-          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared)",
-          "if there is technical fault, extra time will be given accordingly",
+          "The minimum number of participants in one group is 5, and the maximum is 15.",
+          "The use of props is allowed, and no obscenity or vulgarity should be present in the performance.",
+          "The use of traditional and ethnic forms is prohibited.",
+          "The performance limit for group dances is 6-8 minutes, and for duets, it is 4-5 minutes; exceeding this limit will result in point deduction.",
+          "The team will arrange outfits themselves, ensuring they are tasteful and devoid of vulgarity.",
+          "Songs should be submitted to the core committee a day prior to the event; details and format will be shared.",
+          "(If there is a technical fault, extra time will be given accordingly.)"        
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -239,12 +237,13 @@ export const data = [
         description: "Let’s dance to the beats!",
         topics: [],
         guidelines: [
-          "The performance should not exceed 3-5 minutes and 1 minute for stage clearance is given.",
-          "Outfit will be arranged by team members itself.",
-          "No obcene and vulgarity is allowed.",
-          "Exceeding the performance time limit will lead to points deduction.",
-          "Songs will be submitted to the core commitee a day prior to the event.",
-          "if there is technical fault, extra time will ber given.",
+          "The performance should not exceed 3-5 minutes, with 1 minute allocated for stage clearance.",
+          "Team members will arrange outfits themselves.",
+          "The use of traditional and ethnic forms is prohibited.",
+          "No obscenity or vulgarity is allowed.",
+          "Exceeding the performance time limit will result in point deduction.",
+          "Songs will be submitted to the core committee a day prior to the event.",
+          "(If there is a technical fault, extra time will be given.)"
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -270,8 +269,11 @@ export const data = [
         guidelines: [
           "The participants must make handmade outfits. Dressing could vary according to individual choice, but must be handmade.",
           "Dress up must be in good taste and no vulgarity is allowed. ",
+          "2 entries either co-ed , boy-boy or girl-girl is allowed.",
+          "The event will be kick off with ramp followed by the talent show (dance, act or other talents)",
+          "The duration will be of 3-5 minutes per participant.",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
-          "(if there is technical fault, extra time will be given accordingly.)",
+          "(if there is technical fault, extra time will be given accordingly.)",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -304,34 +306,6 @@ export const data = [
           "dressing sense + appearance + ramp + confidence + facial  expressions + fluency + overall performance",
         coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
         email: "Ashutosh Rana (9118798461)",
-        phone: "",
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "SALSAA - Prizes upto ₹5000.00",
-    img: img3,
-    Event: [
-      {
-        id: 501,
-        name: "SALSAA",
-        img: salsa,
-        description:
-          "Salsa is a Latin dance . It is a mix of swing and tap. Salsa dance steps can be done individually, but it is most popularly known as a partnered dance where the lead takes the follower through a series of spins and turn patterns to music.",
-        topics: [],
-        guidelines: [
-          "Each performance will get time limit of 5-6 minutes, exceeding the performance limit will lead to points deduction.",
-          "Dress up must be in good taste but no vulgarity is allowed.",
-          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
-          "if there is technical fault , extra time will be given accordingly.",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging:
-          "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Vidhi Nabiyal (vidhinabiyal@gmail.com)",
-        email: "Tanuja Adhikari (tanujaadhikari390@gmail.com)",
         phone: "",
       },
     ],
@@ -379,11 +353,12 @@ export const data = [
           "Ready to show off your groovy moves? Here is the freestyle tadka where you compete with yourself and give the best version of yourself.",
         topics: [],
         guidelines: [
-          "Both boy or girl entry is allowed per branch.",
-          "The participants will show their own choreography. Time limit is of 2 minutes.",
-          "For first round every participant will come one by one and perform their choreography. After the first round only 3 participants will qualify for final showdown. ",
-          "For final showdown the song will be provided by core committee present on the spot for fair play.",
-          "The battle between aces will determine the ultimate winner.",
+          "Participants can be of any gender and are allowed to enter per branch.",
+          "They will receive their songs one hour prior to the event, and within that hour, they must prepare their choreography.",
+          "Each participant will perform their choreography individually for 2 minutes in the first round.",
+          "Only three participants will qualify for the final showdown after the first round.",
+          "The song for the final showdown will be provided by the core committee present at the event for fair play.",
+          "The ultimate winner will be determined through a battle between the top three participants."
         ],
         Rulebook: eventRulebook,
         interCollege: false,
@@ -455,11 +430,10 @@ export const data = [
         guidelines: [
           "Time duration should not exceed 6 minutes and 1 minute for stage clearance will be given. Exceeding will lead to points deduction.",
           "Instruments are allowed but karaoke is not allowed.",
-          "Minimum number of participants in one group :- 1  +musicians.",
-          "Maximum number of participants in one group :- 5 + musicians = 8. ",
+          "Solo",
         ],
         Rulebook: eventRulebook,
-        interCollege: true,
+        interCollege: false,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
           coordinator: "Ravi Nailwal(9837989785)",
@@ -541,7 +515,7 @@ export const data = [
   },
   {
     id: 10,
-    name: "VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students) - Prizes upto ₹10000.00",
+    name: "VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students)",
     img: img3,
     Event: [
       {
@@ -562,9 +536,9 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + technical skill + overall impact/ appearance.",
-        coordinator: "Neeraj Kandpal",
+        coordinator: "Uday Chauhan",
         email: "",
-        phone: "+91 9027855477",
+        phone: "+91 63974 79434",
       },
 
       {
@@ -584,9 +558,9 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Neeraj Kandpal",
+        coordinator: "Prachi",
         email: "",
-        phone: "+91 9027855477",
+        phone: "+91 80066 21568",
       },
       {
         id: 1005,
@@ -606,9 +580,9 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Neeraj Kandpal",
+        coordinator: "Suraj Bhatt",
         email: "",
-        phone: "+91 9027855477",
+        phone: "+91 95287 37596",
       },
     ],
   },
@@ -635,9 +609,9 @@ export const data = [
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Neeraj Kandpal",
+        coordinator: "Prachi Bhatt",
         email: "",
-        phone: "+91 9027855477",
+        phone: "+91 93503 48377",
       },
       {
         id: 1004,
@@ -658,9 +632,9 @@ export const data = [
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Neeraj Kandpal",
+        coordinator: "Tanishka Petwal",
         email: "",
-        phone: "+91 9027855477",
+        phone: "+91 96396 47397",
       },
       {
         id: 1101,
@@ -773,11 +747,12 @@ export const data = [
           "Do you have interest in dance? Then this special event called step up is for you. It’s an open stage for all if you just want to have fun and dance then join this event.",
         topics: [],
         guidelines: [
-          "There is no limit in participants. Anyone can participate.",
-          "For first round everyone must bring their own choreo for one minute. After that the event will be conducted in knockout fixtures (1 on 1) depending upon the number of participants until the last two standing are left.",
-          "The last battle conducted will determine the ultimate winner of the dance battle.",
-          "Songs will be played by the core committee present at the site randomly.",
-          "The opponents will be known on the spot only",
+          "There is no limit to the number of participants, and group, solo, duo, or trio entries are allowed",
+          "Each participant must prepare choreography for five songs, each lasting one minute.",
+          "Participants will submit their five songs to the core team, and one song will be randomly selected for each battle",
+          "The event will proceed in knockout fixtures, with one-on-one battles until only two participants remain.",
+          "The ultimate winner of the dance battle will be determined by the last battle conducted",
+          "Songs will be played randomly by the core committee present at the site, and opponents will be revealed on the spot."
         ],
         Rulebook: eventRulebook,
         judging: "",
