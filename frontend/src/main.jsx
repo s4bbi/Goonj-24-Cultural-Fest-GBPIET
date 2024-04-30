@@ -40,33 +40,43 @@ const loggedInRoutes = [
   },
   {
     path: "/events",
-    element:<ProtectedComponent>
-      <Events/>
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <Events />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/gallery",
-    element: <ProtectedComponent>
-
-      <Gallery />
-    </ProtectedComponent>
+    element: (
+      <ProtectedComponent>
+        <Gallery />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/sponsors",
-    element: <ProtectedComponent>
-      <Sponsors />
-    </ProtectedComponent> ,
+    element: (
+      <ProtectedComponent>
+        <Sponsors />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/caportal",
     element: <CAPortal />,
   },
   {
+    path: "/loader",
+    element: <Loader />,
+  },
+  {
     path: "/teams",
-    element: <ProtectedComponent>
-
-      <Teams />
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <Teams />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/login",
@@ -74,11 +84,11 @@ const loggedInRoutes = [
   },
   {
     path: "/events/:id",
-    element: 
-    <ProtectedComponent>
-
-      <EventDetail />
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <EventDetail />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/caregister",
@@ -86,10 +96,11 @@ const loggedInRoutes = [
   },
   {
     path: "/profile",
-    element: <ProtectedComponent>
-
-      <Profile />
-    </ProtectedComponent>,
+    element: (
+      <ProtectedComponent>
+        <Profile />
+      </ProtectedComponent>
+    ),
   },
   {
     path: "/googleauth",
@@ -107,10 +118,10 @@ const loggedInRoutes = [
     path: "/tos",
     element: <ToS />,
   },
-]
-
+];
 
 const AppComponent = () => {
+  const [loading, setLoading] = useState(true);
   const [isLogin, setIsLogin] = useState(false);
   const [userData, setUserData] = useState({
     name: undefined,
@@ -120,13 +131,17 @@ const AppComponent = () => {
     pNum: undefined,
     state: undefined,
     city: undefined,
-    college: undefined
+    college: undefined,
   });
 
-
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
   useEffect(() => {
     function globalLogger() {
-      if (getCookie('jwt')) {
+      if (getCookie("jwt")) {
         setIsLogin(true);
       } else {
         setIsLogin(false);
@@ -137,14 +152,16 @@ const AppComponent = () => {
 
   // const routes = isLogin ? loggedInRoutes : loggedOutRoutes;
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="selection:bg-[#5F43B2] app">
       <LoggedContext.Provider value={{ isLogin, setIsLogin }}>
-      <UserContext.Provider value={{userData, setUserData}}>
-        <Header />
-        <Outlet/>
-        <Footer />
-      </UserContext.Provider>
+        <UserContext.Provider value={{ userData, setUserData }}>
+          <Header />
+          <Outlet />
+          <Footer />
+        </UserContext.Provider>
       </LoggedContext.Provider>
     </div>
   );
