@@ -57,9 +57,9 @@ const loggedInRoutes = [
   {
     path: "/sponsors",
     element: (
-      <ProtectedComponent>
+      
         <Sponsors />
-      </ProtectedComponent>
+      
     ),
   },
   {
@@ -137,7 +137,7 @@ const AppComponent = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, []);
   useEffect(() => {
     function globalLogger() {
