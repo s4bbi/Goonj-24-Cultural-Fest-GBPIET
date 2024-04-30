@@ -7,6 +7,7 @@ import CAPortal_Astro3 from "../assets/Images/CAPortal_Astro3.webp";
 import LoggedContext from "../main";
 import { useContext } from "react";
 import { VKYRequest } from "../utils/requests";
+import { useState } from "framer-motion";
 
 const CAPortal = () => {
   // Get access to the history object
@@ -24,7 +25,7 @@ const CAPortal = () => {
           console.log("role updated"); // here render this page as per your convenience
         }
         setCaDetails(response.data.userCreated);
-        
+
       } catch (error) {
         console.log(error);
       }
