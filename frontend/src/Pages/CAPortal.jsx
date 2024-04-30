@@ -7,7 +7,7 @@ import CAPortal_Astro3 from "../assets/Images/CAPortal_Astro3.webp";
 import LoggedContext from "../main";
 import { useContext } from "react";
 import { VKYRequest } from "../utils/requests";
-import { useState } from "framer-motion";
+import { useState } from "react";
 
 const CAPortal = () => {
   // Get access to the history object
