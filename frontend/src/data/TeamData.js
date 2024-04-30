@@ -46,6 +46,7 @@ import ritik from "../assets/Images/TeamsImages/EventTeam/ritik.jpg"
 import parush from "../assets/Images/TeamsImages/EventTeam/parush.jpg"
 import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg"
 import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg"
+import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg"
 
 export const teamData = [
   {
@@ -533,7 +534,7 @@ export const teamData = [
       {
         id: 237,
         name: "Ujjwal raj",
-        img: "",
+        img: ujjwal,
         git: "",
         linkdin: "https://www.linkedin.com/in/ujjwal-raj-43655a28a",
         insta: "https://www.instagram.com/Ujjwal__26",

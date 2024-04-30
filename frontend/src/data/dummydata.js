@@ -33,7 +33,7 @@ import ggt from "../assets/Images/EventImages/ggt.webp";
 import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp";
 
 const eventRulebook =
-  "https://drive.google.com/file/d/1c64jlDK7FZUjEtoQWdPqLUkW69m9RDQ5/view?usp=sharing";
+  "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
 export const data = [
   {
     id: 1,
