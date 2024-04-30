@@ -35,6 +35,11 @@ import abhiK from "../assets/Images/TeamsImages/EventTeam/abhiK.jpeg"
 import abhiA from "../assets/Images/TeamsImages/EventTeam/abhiA.jpg"
 import prakarti from "../assets/Images/TeamsImages/EventTeam/prakarti.jpg"
 import rakshit from "../assets/Images/TeamsImages/EventTeam/rakshit.jpg"
+import ashutosh from "../assets/Images/TeamsImages/EventTeam/ashutosh.jpg"
+import vanshika from "../assets/Images/TeamsImages/EventTeam/vanshika.jpeg"
+import nitin from "../assets/Images/TeamsImages/EventTeam/nitin.jpeg"
+import sneha from "../assets/Images/TeamsImages/EventTeam/sneha.jpg"
+import sanskriti from "../assets/Images/TeamsImages/EventTeam/sanskriti.jpg"
 
 export const teamData = [
   {
@@ -352,7 +357,7 @@ export const teamData = [
       {
         id: 220,
         name: "Ashutosh Rana",
-        img: "",
+        img: ashutosh,
         git: "",
         linkdin: "",
         insta: "",
@@ -379,7 +384,6 @@ export const teamData = [
         gmail: "gaurayush0909@gmail.com",
         designation: "Marketing Team",
       },
-      
       {
         id: 223,
         name: "Jiyanshi Batra",
@@ -401,7 +405,7 @@ export const teamData = [
         designation: "Management Team Member",
       },
       {
-        id: 224,
+        id: 225,
         name: "Abhishek Kesharwani",
         img: abhiK,
         git: "",
@@ -411,7 +415,7 @@ export const teamData = [
         designation: "Management Team Member",
       },
       {
-        id: 224,
+        id: 226,
         name: "Abhishek Kumar",
         img: abhiA,
         git: "",
@@ -421,23 +425,73 @@ export const teamData = [
         designation: "Management Team Member",
       },
       {
-        id: 224,
+        id: 227,
         name: "Prakarti Negi",
         img: prakarti,
         git: "",
         linkdin: "https://www.linkedin.com/in/prakarti-negi-262441220",
         insta: "https://www.instagram.com/prakarti_negi",
-        gmail: "nehgiprakarti@gmail.com",
+        gmail: "negiprakarti@gmail.com",
         designation: "Management Team Member",
       },
       {
-        id: 224,
+        id: 228,
         name: "Rakshit Pant",
         img: rakshit,
         git: "",
         linkdin: "https://www.linkedin.com/in/rakshit-pant-012a59277",
         insta: "https://www.instagram.com/rakshit.pant30",
-        gmail: "nehgiprakarti@gmail.com",
+        gmail: "rakshitpant26@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 229,
+        name: "Vanshika Painuly",
+        img: vanshika,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/vanshika-painuly-4030b321a",
+        insta: "https://www.instagram.com/vanshika.painuly",
+        gmail: "vanshikapainuly74@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 230,
+        name: "Nitin Goswami",
+        img: nitin,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/nitin-goswami-162629250",
+        insta: "https://www.instagram.com/goswaminitin325",
+        gmail: "goswaminitin3254@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 231,
+        name: "Sneha Saraswat",
+        img: sneha,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/sneha-saraswat-7a7a1a261",
+        insta: "https://www.instagram.com/sneha_saraswat_",
+        gmail: "saraswatsneha608@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 232,
+        name: "Sanskriti Khugsal ",
+        img: sanskriti,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/_.s_a_n_s.k_r_i_t_i._",
+        gmail: "ssanskritikhugsal.20475@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 233,
+        name: "Muskan Negi",
+        img: muskan,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/_.s_a_n_s.k_r_i_t_i._",
+        gmail: "ssanskritikhugsal.20475@gmail.com",
         designation: "Management Team Member",
       },
     ],
