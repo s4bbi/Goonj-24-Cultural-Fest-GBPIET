@@ -365,6 +365,7 @@ const EventDetail = () => {
                     }}
                   />
                 </div>
+                <h1 className="text-sm py-2">By proceeding, you agree to our <Link to="/tos"><span className="text-[#5f43b2]">Privacy Policy</span></Link>  and  <Link to="/tos"><span className="text-[#5f43b2]">Terms of Service</span></Link></h1>
               </div>
               <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center">
                 {" "}

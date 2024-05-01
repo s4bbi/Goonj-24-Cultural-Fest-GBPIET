@@ -42,8 +42,8 @@ const ToS = () => {
                     
                     
 
-                    Ownership: All content and materials on the Website, including but not limited to text, graphics, logos, and images, are the property of [Your Company Name] or its licensors and are protected by copyright and other intellectual property laws.
-                    Use License: You may not modify, reproduce, distribute, or display any content from the Website without the prior written consent of [Your Company Name].
+                    Ownership: All content and materials on the Website, including but not limited to text, graphics, logos, and images, are the property of [Goonj GBPIET5] or its licensors and are protected by copyright and other intellectual property laws.
+                    Use License: You may not modify, reproduce, distribute, or display any content from the Website without the prior written consent of [Goonj GBPIET].
                 </p>
                 
                 <p> 
@@ -51,7 +51,7 @@ const ToS = () => {
                     <br />
                     
 
-                    Disclaimer: The Website and its content are provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied. [Your Company Name] disclaims all warranties, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+                    Disclaimer: The Website and its content are provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied. [Goonj GBPIET] disclaims all warranties, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
                     Limitation of Liability: In no event shall Goonj '24 GBPIET be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of the Website or any services provided therein.
                 </p>
                 
@@ -59,7 +59,7 @@ const ToS = () => {
                     <span className='font-bold text-lg'>5. Identification </span>
                     <br />
                     
-                    You agree to indemnify and hold harmless [Your Company Name], its officers, directors, employees, and agents, from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with your use of the Website or any violation of these Terms.
+                    You agree to indemnify and hold harmless [Goonj GBPIET], its officers, directors, employees, and agents, from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with your use of the Website or any violation of these Terms.
                 </p>
 
                 <p>
