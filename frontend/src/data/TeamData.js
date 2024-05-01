@@ -15,6 +15,7 @@ import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
 import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
+import gaurav from "../assets/Images/TeamsImages/EventTeam/gaurav.jpg"
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
 import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
@@ -151,6 +152,16 @@ export const teamData = [
         git: "",
         designation: "Discipline Secratary",
         linkdin: "",
+        insta: "",
+        gmail: "imgauravp6@gmail.com",
+      },
+      {
+        id: 109,
+        name: "Gaurav Pandey",
+        img: gaurav,
+        git: "",
+        designation: "SAC Management Team Member",
+        linkdin: "ttps://www.linkedin.com/in/imgauravp6",
         insta: "",
         gmail: "abhinavtyagi1107@gmail.com",
       },
