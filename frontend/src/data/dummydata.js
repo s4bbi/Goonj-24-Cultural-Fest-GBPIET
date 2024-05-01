@@ -328,6 +328,7 @@ export const data = [
           "Participants are encouraged to showcase creativity in their gender swapped attire.",
           "Dress up must be in good taste and no vulgarity is allowed.",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
+          "There is no specific theme in accordance to oppo performance."
         ],
         Rulebook: eventRulebook,
         interCollege: false,
