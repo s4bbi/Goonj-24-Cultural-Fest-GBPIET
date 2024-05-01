@@ -29,7 +29,7 @@ const ToS = () => {
                 <p>
                     <span className='font-bold text-lg'>2. Payment Services </span>
                     <br />
-                    Razorpay: Payment processing services on the Website are provided by Razorpay. By using Razorpay, you agree to be bound by Razorpay's Terms of Service and Privacy Policy.
+                    Stripe: Payment processing services on the Website are provided by Stripe. By using Stripe, you agree to be bound by Stripe's Terms of Service and Privacy Policy.
                     Fees: You are responsible for any fees associated with your use of payment services on the Website. Fee amounts and payment terms will be provided to you prior to completing a transaction. 
                 </p>
 
@@ -86,7 +86,7 @@ const ToS = () => {
                     <span className='font-bold text-lg'>1. Introduction:</span>
                     <br />
                     
-                    At Goonj.gbpiet.in, we are committed to protecting the privacy and security of our users' personal information. This privacy policy ("Policy") explains how we collect, use, and protect your personal information when you use our website to make payments using Razorpay.
+                    At Goonj.gbpiet.in, we are committed to protecting the privacy and security of our users' personal information. This privacy policy ("Policy") explains how we collect, use, and protect your personal information when you use our website to make payments using Stripe.
 
                 </p> 
 
@@ -95,7 +95,7 @@ const ToS = () => {
                     <br />
                     
 
-                    When you use our website to make payments using Razorpay, we may collect the following personal information:
+                    When you use our website to make payments using Stripe, we may collect the following personal information:
 
                     * Your name
                     * Your email address
@@ -111,7 +111,7 @@ const ToS = () => {
                     <br />
                     We use your personal information for the following purposes:
 
-                    * To process your payments using Razorpay
+                    * To process your payments using Stripe
                     * To communicate with you about your payments and your account
                     * To respond to your inquiries and provide customer support
                     * To improve our website and services
@@ -131,7 +131,7 @@ const ToS = () => {
                     
                     We may disclose your personal information to the following parties:
 
-                        * Razorpay, our payment gateway provider
+                        * Stripe, our payment gateway provider
                         * Service providers who assist us in operating our website and processing payments
                         * Law enforcement agencies or regulatory authorities as required by law
                 </p>
