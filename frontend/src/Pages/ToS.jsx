@@ -29,19 +29,13 @@ const ToS = () => {
                 <p>
                     <span className='font-bold text-lg'>2. Payment Services </span>
                     <br />
-                    
-
                     Razorpay: Payment processing services on the Website are provided by Razorpay. By using Razorpay, you agree to be bound by Razorpay's Terms of Service and Privacy Policy.
                     Fees: You are responsible for any fees associated with your use of payment services on the Website. Fee amounts and payment terms will be provided to you prior to completing a transaction. 
                 </p>
 
                 <p>
-
                     <span className='font-bold text-lg'>3. Intellectual Property</span>
                     <br />
-                    
-                    
-
                     Ownership: All content and materials on the Website, including but not limited to text, graphics, logos, and images, are the property of [Goonj GBPIET5] or its licensors and are protected by copyright and other intellectual property laws.
                     Use License: You may not modify, reproduce, distribute, or display any content from the Website without the prior written consent of [Goonj GBPIET].
                 </p>
@@ -49,8 +43,6 @@ const ToS = () => {
                 <p> 
                 <span className='font-bold text-lg'>4. Limitation of Liability</span>
                     <br />
-                    
-
                     Disclaimer: The Website and its content are provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied. [Goonj GBPIET] disclaims all warranties, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
                     Limitation of Liability: In no event shall Goonj '24 GBPIET be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of the Website or any services provided therein.
                 </p>
@@ -73,8 +65,6 @@ const ToS = () => {
                 <p>
                     <span className='font-bold text-lg'>7. Changes to terms </span>
                     <br />
-                    
-
                     Goonj '24, GBPIET reserves the right to update or modify these Terms at any time without prior notice. Any changes will be effective immediately upon posting the revised Terms on the Website.
                 </p>
 
@@ -82,7 +72,6 @@ const ToS = () => {
                     <span className='font-bold text-lg'>8. Contact Us</span>
                     <br />
                     
-
                     If you have any questions or concerns about these Terms, please contact us at goonjgbpiet@gmail.com.
                 </p>
             </div>
@@ -194,6 +183,48 @@ const ToS = () => {
 
                 </p>
             </div>
+
+            <div>
+                <p className='text-2xl md:text-3xl font-cSB text-[#5f43b2] mb-6'>Refund Policy</p>
+
+                <div className='flex flex-col gap-4 text-white my-6 font-cR text-sm'>
+                    <p>
+                        <span className='font-bold text-lg'>1. Refund Eligibility</span>
+                        <br />
+                        Event Fees: Refunds for event fees are subject to the terms and conditions outlined in this policy.
+                        Cancellation Policy: Refunds may be available based on the cancellation policy of the specific event organizer. Please refer to the event details or contact the organizer for information on the cancellation policy applicable to your event registration.
+                    </p>
+                    <p>
+                        <span className='font-bold text-lg'>2. Refund Process</span>
+                        <br />
+                        Requests: To request a refund for event fees, please contact the event organizer directly. Contact information for the organizer can usually be found in the event details or confirmation email.
+                        Deadline: Refund requests must be submitted within the timeframe specified by the event organizer's cancellation policy. Requests submitted after this period may not be processed.
+                        Reason for Refund: Please provide a brief explanation of the reason for your refund request, as the event organizer may have specific criteria for approving refunds.
+                    </p>
+                    <p>
+                        <span className='font-bold text-lg'>3. Refund Options</span>
+                        <br />
+                        Full Refund: If your refund request is approved by the event organizer, you may be eligible for a full refund of the event fees paid.
+                        Partial Refund: In some cases, a partial refund may be offered based on the cancellation policy and any applicable fees or expenses incurred by the organizer.
+                    </p>
+                    <p>
+                        <span className='font-bold text-lg'>4. Refund Processing</span>
+                        <br />
+                        Method of Refund: Refunds will be issued by the event organizer using the original payment method used for the registration. Please allow sufficient time for the refund to be processed and reflected in your account, as processing times may vary.
+                        Cancellation of Registration: Upon approval of the refund request, your registration for the event may be cancelled, and any associated benefits or access may be revoked.
+                    </p>
+                    <p>
+                        <span className='font-bold text-lg'>5. Content Organizer</span>
+                        <br />
+                        If you have any questions or concerns about the refund process for a specific event, please contact the event organizer directly using the contact information provided in the event details or confirmation email.
+                    </p>
+                    <p>
+                        <span className='font-bold text-lg'>6. Changes to Policy</span>
+                        <br />
+                        We reserve the right to update or modify this Refund Policy at any time without prior notice. Any changes will be effective immediately upon posting the revised policy on the Website.                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
     )
