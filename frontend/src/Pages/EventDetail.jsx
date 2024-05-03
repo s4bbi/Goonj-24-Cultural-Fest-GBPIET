@@ -123,7 +123,7 @@ const EventDetail = () => {
 
   const checkoutFunction = async () => {
     toast.info(
-      "Registration Begins from 25th April to 5th May!, Contact the event coordinator for more info.",
+      "Registration Begins from 5th May to 20th May!, Contact the event coordinator for more info.",
       {
         position: "top-center",
         style: {
