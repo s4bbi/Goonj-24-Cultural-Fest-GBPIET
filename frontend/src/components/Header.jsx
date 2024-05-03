@@ -122,7 +122,7 @@ const Header = () => {
           <img src={goonjLogo} className="flex mx-auto w-16" alt="Goonj Logo" />
         </Link>
       </div>
-      <div className="flex items-center  md:hidden">
+      <div className="flex items-center md:hidden">
         <div className="">
           {isLogin ? (
             <div className="flex items-center">
@@ -146,7 +146,7 @@ const Header = () => {
         </div>
         <button
           onClick={toggleSidebar}
-          className="text-white focus:outline-none"
+          className="text-white focus:outline-none ml-2"
         >
           <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
             {showSidebar ? (
