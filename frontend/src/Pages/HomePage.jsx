@@ -31,6 +31,7 @@ const HomePage = () => {
           <img
             src={viksit}
             className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"
+            alt="Viksit Bharat"
           />
           <div className="xyz">
             <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[325px] text-center drop-shadow-2xl select-none">
