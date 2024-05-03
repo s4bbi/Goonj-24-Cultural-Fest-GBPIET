@@ -9,7 +9,7 @@ const AudiencePortal = () => {
         <div className="bg-black text-white">
             <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
                 <h1 className="text-white z-30 md:text-[100px] font-cuda text-5xl drop-shadow-2xl text-center">Audience Portal</h1>
-                <div className="flex gap-4 flex-wrap">
+                <div className="flex gap-4 flex-wrap text-center justify-center">
                     <button className="btn" type="button">
                         <Link to="https://forms.gle/sRWBgxbfoRusQhue9">
                             <strong className="font-cM text-xs px-4">Register as GBPIETian</strong>
