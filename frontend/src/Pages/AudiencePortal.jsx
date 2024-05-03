@@ -9,7 +9,7 @@ const AudiencePortal = () => {
         <div className="bg-black text-white">
             <div className="flex flex-col gap-10 items-center justify-center w-full h-screen absolute z-10">
                 <h1 className="text-white z-30 md:text-[100px] font-cuda text-5xl drop-shadow-2xl text-center">Audience Portal</h1>
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                     <button className="btn" type="button">
                         <Link to="https://forms.gle/sRWBgxbfoRusQhue9">
                             <strong className="font-cM text-xs px-4">Register as GBPIETian</strong>
@@ -25,6 +25,18 @@ const AudiencePortal = () => {
                     <button className="btn text-center" type="button">
                         <Link to="https://forms.gle/N2sRPXRN78wgk8JcA" target="blank">
                             <strong className="font-cM text-xs px-4">Register as Non-GBPIETian</strong>
+                            <div id="container-stars">
+                                <div id="stars"></div>
+                            </div>
+                            <div id="glow">
+                                <div className="circle"></div>
+                                <div className="circle"></div>
+                            </div>
+                        </Link>
+                    </button>
+                    <button className="btn" type="button">
+                        <Link to="https://forms.gle/Zgv5PRV5iyc436ui7">
+                            <strong className="font-cM text-xs px-4">Register as Faculty and Staff</strong>
                             <div id="container-stars">
                                 <div id="stars"></div>
                             </div>
