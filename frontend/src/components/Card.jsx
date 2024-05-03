@@ -8,7 +8,7 @@ const Card = (props) => {
     <>
       <div className="card mt-5 sm:mt-0 w-full mx-auto text-white ">
         <div className="background">
-          {props.data.img && <img src={props.data.img} alt="" />}
+          {props.data.img && <img src={props.data.img} alt="image" />}
         </div>
         <div className="name">
           <div className="px-10 bg-slate-400 bg-opacity-30 text-center py-1">

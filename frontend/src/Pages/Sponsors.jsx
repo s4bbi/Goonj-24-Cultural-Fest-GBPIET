@@ -25,16 +25,16 @@ const Sponsors = () => {
             </div>
             <div className="w-full py-16 mx-auto justify-center items-center flex flex-col gap-10">
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <img src={telescope} className="hidden md:flex w-56" alt="" />
-                    <img src={SBI_Logo} className="w-24 md:w-48" alt="" />
+                    <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
+                    <img src={SBI_Logo} className="w-24 md:w-48" alt="SBI Logo" />
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <img src={LIC_Logo} className="w-24 md:w-48" alt="" />
-                    <img src={telescope2} className="hidden md:flex w-56" alt="" />
+                    <img src={LIC_Logo} className="w-24 md:w-48" alt="LIC Logo" />
+                    <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 2" />
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <img src={telescope} className="hidden md:flex w-56" alt="" />
-                    <Link to="https://www.instagram.com/kwalifoods?igsh=MTVpa3RxNGk5aGg1aw=="><img src={KwaliFoods_Logo} className="w-24 md:w-48" alt="" /></Link>
+                    <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
+                    <Link to="https://www.instagram.com/kwalifoods?igsh=MTVpa3RxNGk5aGg1aw=="><img src={KwaliFoods_Logo} className="w-24 md:w-48" alt="Kwali Foods Logo" /></Link>
                 </div>
             </div>
             <div>
