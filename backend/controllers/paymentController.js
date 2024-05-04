@@ -1,9 +1,9 @@
-const Razorpay = require("razorpay");
-const crypto = require("crypto");
+const { Cashfree } = require("cashfree-pg");
 const paymentData = require("../utils/paymentTypes");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
-const UserModel = require('../model/userModel');
+const UserModel = require("../model/userModel");
+const util = require("util");
 
 const isPaid = (req, res, next) => {
   if (!req.user.isPaid) {
@@ -13,64 +13,71 @@ const isPaid = (req, res, next) => {
 };
 
 const createOrderId = catchAsync(async (req, res, next) => {
-  const instance = new Razorpay({
-    key_id: `${process.env.RAZORPAY_API_KEY}`,
-    key_secret: `${process.env.RAZORPAY_API_SECRET}`,
+  Cashfree.XClientId = process.env.CASHFREE_API_KEY;
+  Cashfree.XClientSecret = process.env.CASHFREE_API_SECRET;
+  Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
+
+  if (process.env.NODE_ENV === "production") {
+    Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  }
+
+  var request = {
+    order_amount: 1999,
+    order_currency: "INR",
+    order_id: "order_34571221" + Date.now(),
+    customer_details: {
+      customer_id: "walterwNrcMi",
+      customer_phone: "9999999999",
+    },
+  };
+
+  const orderid = await Cashfree.PGCreateOrder("2022-09-01", request);
+  res.status(200).json({
+    status: "success",
+    message: orderid.data,
   });
-
-  let options;
-
-  if (!req.params.paymentId) {
-    return next(new AppError("No Payment type specified"));
-  } else if (req.params.paymentId === "1") {
-    options = paymentData[0];
-  } else if (req.params.paymentId === "2") {
-    options = paymentData[1];
-  } else {
-    return next(new AppError("Invalid Payment type specified"));
-  }
-
-  try {
-    const order = await instance.orders.create(options);
-    res.status(200).json({
-      status: "success",
-      order,
-    });
-  } catch (error) {
-    return next(new AppError("Error creating order", 500));
-  }
 });
 
+const paymentVerification = catchAsync(async (req, res, next) => {
+  Cashfree.XClientId = process.env.CASHFREE_API_KEY;
+  Cashfree.XClientSecret = process.env.CASHFREE_API_SECRET;
+  Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
 
-// this is for verification of payment, updating user's isPaid field, generating unique id for the users and incrementing ca id
-const paymentVerification = catchAsync(async (req, res) => {
-  let generatedSignature = crypto
-    .createHmac("sha256", process.env.RAZORPAY_API_SECRET)
-    .update(req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id)
-    .digest("hex");
+  if (process.env.NODE_ENV === "production") {
+    Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  }
 
-  if (generatedSignature === req.body.razorpay_signature) {
-    // this is to update isPaid field and generate unique id
+  console.log(req.body.orderid);
+
+  const response = await Cashfree.PGFetchOrder("2022-09-01", req.body.orderid);
+
+  if (response.data.order_status === "PAID") {
     const user = await UserModel.findByIdAndUpdate(req.user._id, {
-        isPaid: true
-    })
-
-    await user.generateUniqueId();
-
-    // TODO IMPORTANT complete this ASAP
-    // to increment ca id 
-    const info = await UserModel.findOne({
-      generated_id: req.params.caid
+      isPaid: true,
     });
 
-    
-    
-    res.json({
+    if (!user.generated_id){
+      await user.generateUniqueId();
+    }
+
+    return res.status(200).json({
       status: "success",
     });
-  } else {
-    res.status(400).send("Invalid Signature");
+  }
+
+  return next(new AppError("Something went wrong", 500));
+});
+
+const webhook = catchAsync(async (req, res, next) => {
+  try {
+    Cashfree.PGVerifyWebhookSignature(
+      req.headers["x-webhook-signature"],
+      req.rawBody,
+      req.headers["x-webhook-timestamp"]
+    );
+  } catch (err) {
+    console.log(err.message);
   }
 });
 
-module.exports = { isPaid, createOrderId, paymentVerification };
+module.exports = { isPaid, createOrderId, webhook, paymentVerification };

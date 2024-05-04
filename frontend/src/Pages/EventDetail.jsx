@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from "react-router-dom"; // Add this import statement at the beginning of your file
+import { Link, redirect, useLocation, useNavigate } from "react-router-dom"; // Add this import statement at the beginning of your file
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useContext, useEffect } from "react";
@@ -13,6 +13,8 @@ import LoggedContext from "../main";
 import { UserContext } from "../main";
 import { deleteCookie } from "../utils/Cookies";
 
+import { cashfree } from "../utils/cashFreeUtils";
+
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
   const location = useLocation(); 
@@ -20,8 +22,8 @@ const EventDetail = () => {
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
 
-  const {setIsLogin} = useContext(LoggedContext);
-  const {setUserData} = useContext(UserContext);
+  const { setIsLogin } = useContext(LoggedContext);
+  const { setUserData } = useContext(UserContext);
 
   // const handleRegister =async () => {
   //   try {
@@ -30,7 +32,7 @@ const EventDetail = () => {
   //     }, setIsLogin);
   //     if (response.response.status === 402) {
   //       setShowPaymentDialog(true);
-  //     } 
+  //     }
   //     if (response.response.status===401){
   //       deleteCookie('jwt');
   //         setIsLogin(false);
@@ -45,7 +47,7 @@ const EventDetail = () => {
   //           college: undefined
   //         });
   //       }
-      
+
   //   } catch (error) {
   //     console.log(error);
   //     if (error.response.status === 402) {
@@ -67,18 +69,16 @@ const EventDetail = () => {
   //     }
   //   }
 
-
-  const handleRegister = async ()=>{
+  const handleRegister = async () => {
     try {
-      const response = await VKYRequest('post', '/events', {
+      const response = await VKYRequest("post", "/events", {
         eventCode: 1803,
-      })
+      });
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
-      } 
-      else{
-        deleteCookie('jwt');
+      } else {
+        deleteCookie("jwt");
         setIsLogin(false);
         setUserData({
           name: undefined,
@@ -88,17 +88,17 @@ const EventDetail = () => {
           pNum: undefined,
           state: undefined,
           city: undefined,
-          college: undefined
+          college: undefined,
         });
       }
     }
-  }
-
-
+  };
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+
 
   // used to check ca id validity
   useEffect(() => {
@@ -122,81 +122,46 @@ const EventDetail = () => {
   }, [caId]);
 
   const checkoutFunction = async () => {
-    toast.info(
-      "Registration Begins from 5th May to 20th May!, Contact the event coordinator for more info.",
-      {
-        position: "top-center",
-        style: {
-          backgroundColor: "#000",
-          color: "#fff",
-          fontSize: "1rem",
-          padding: ".5rem 1rem",
-          borderRadius: ".25rem",
-          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-          width: "30rem",
-          maxWidth: "90vw",
-        },
+    try {
+      const response = await VKYRequest("get", "/checkout/orderid");
+      const sessionId = response.data.message.payment_session_id;
+      const orderId = response.data.message.order_id;
+  
+      const checkoutOptions = {
+        paymentSessionId: sessionId,
+        redirectTarget: "_modal"
+      };
+  
+      const result = await cashfree.checkout(checkoutOptions);
+  
+      if (result.error) {
+        console.log("User has closed the popup, Check for Payment Status");
+        console.log(result.error);
       }
-    );
-    // try {
-    //   const res = await VKYRequest("get", `/checkout/orderid/${paymentType}`);
-    //   console.log(res.data);
+      if (result.redirect) {
+        console.log("Payment will be redirected");
+      }
+      if (result.paymentDetails) {
+        console.log("Payment has been completed, Check for Payment Status");
+        console.log(result.paymentDetails.paymentMessage);
+  
+        // Send verification request after payment is completed
+        console.log(orderId)
+        const verifyPayment = await VKYRequest('post', `/checkout/paymentverify`, {
+          orderid: orderId
+        });
 
-    //   // Extract necessary data from the response
-    //   const { amount, id } = res.data.order;
-
-    //   // Prepare options for Razorpay payment
-    //   const options = {
-    //     key: import.meta.env.VITE_RAZORPAY_API_KEY,
-    //     amount: amount,
-    //     currency: "INR",
-    //     name: "Goonj '24",
-    //     description: "Test transaction",
-    //     order_id: id,
-
-    //     // Include the Authorization header with the JWT
-
-    //     handler: async function (response) {
-
-    //       try {
-
-    //         const responses = await VKYRequest(
-    //           "post",
-    //           "/checkout/paymentverify",
-    //           response
-    //         );
-    //         if (responses.data.status === "success") {
-    //           console.log("We have verified you");
-    //         } else {
-    //           alert(
-    //             "Your razorpay credential is invalid"
-    //           );
-    //         }
-    //       }catch (error) {
-    //         console.log(error);
-    //       }},
-
-    //     theme: {
-    //       color: "#0000FF",
-    //     },
-    // };
-
-    // Make sure the Razorpay script is loaded before creating a new instance
-    //     if (window.Razorpay) {
-    //       const razor = new window.Razorpay(options);
-    //       razor.open();
-    //     } else {
-    //       console.error("Razorpay script is not loaded");
-    //     }
-    //   } catch (error) {
-    //     console.error("Error occurred while fetching order details:", error);
-    //   }
+        if (verifyPayment.data.status==='success'){
+          setShowPaymentDialog(false);
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
-
-  useEffect(() => {}, [paymentType]);
+  
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
-
 
   return (
     <div className="w-full bg-cover">
@@ -365,7 +330,16 @@ const EventDetail = () => {
                     }}
                   />
                 </div>
-                <h1 className="text-sm py-2">By proceeding, you agree to our <Link to="/tos"><span className="text-[#5f43b2]">Privacy Policy</span></Link>  and  <Link to="/tos"><span className="text-[#5f43b2]">Terms of Service</span></Link></h1>
+                <h1 className="text-sm py-2">
+                  By proceeding, you agree to our{" "}
+                  <Link to="/tos">
+                    <span className="text-[#5f43b2]">Privacy Policy</span>
+                  </Link>{" "}
+                  and{" "}
+                  <Link to="/tos">
+                    <span className="text-[#5f43b2]">Terms of Service</span>
+                  </Link>
+                </h1>
               </div>
               <button className="w-full py-2 bg-[#5F43B2] rounded-xl font-cR flex justify-center">
                 {" "}
