@@ -5,8 +5,7 @@ const authController = require('../controllers/authController');
 
 const router = express.Router();
 
-router.get('/orderid/:paymentId', 
-    authController.validateToken,
+router.get('/orderid', 
     paymentController.createOrderId
 );
 
@@ -14,6 +13,10 @@ router.post('/paymentverify/:caid?',
     authController.validateToken,
     paymentController.paymentVerification
 );
+
+router.post('/webhook',
+    paymentController.webhook
+)
 
 
 module.exports = router;
