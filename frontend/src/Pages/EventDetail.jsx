@@ -23,38 +23,25 @@ const EventDetail = () => {
   const [caId, setCaId] = useState("");
 
   const { setIsLogin } = useContext(LoggedContext);
-  const { setUserData } = useContext(UserContext);
+  const {userData,  setUserData } = useContext(UserContext);
+
 
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
-        eventCode: 1803,
+        eventCode: 18203,
       });
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
-      } else {
-        deleteCookie("jwt");
-        setIsLogin(false);
-        setUserData({
-          name: undefined,
-          email: undefined,
-          googleSubjectId: undefined,
-          img: undefined,
-          pNum: undefined,
-          state: undefined,
-          city: undefined,
-          college: undefined,
-        });
-      }
+      } 
+      console.log(error);
     }
   };
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-
-
 
   // used to check ca id validity
   useEffect(() => {
@@ -66,7 +53,7 @@ const EventDetail = () => {
           });
 
           if (response.data.status === "success") {
-            console.log("CA ID is valid"); // here write the code to display that ca id is invalid
+            console.log("CA ID is valid"); // here write the code to display that ca id is valid
           }
         } catch (error) {
           console.log(error);
@@ -77,20 +64,25 @@ const EventDetail = () => {
     checkCaId();
   }, [caId]);
 
+  // to complete and validate payment
   const checkoutFunction = async () => {
     try {
+      const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`, {
+        customer_email: userData.email,
+        customer_phone: userData.pNum,
+        customer_name: userData.name
+      });
       const cashfree = await initializeCashfree();
-      const response = await VKYRequest("get", "/checkout/orderid");
       const sessionId = response.data.message.payment_session_id;
       const orderId = response.data.message.order_id;
-  
+
       const checkoutOptions = {
         paymentSessionId: sessionId,
-        redirectTarget: "_modal"
+        redirectTarget: "_modal",
       };
-  
+
       const result = await cashfree.checkout(checkoutOptions);
-  
+
       if (result.error) {
         console.log("User has closed the popup, Check for Payment Status");
         console.log(result.error);
@@ -101,12 +93,18 @@ const EventDetail = () => {
       if (result.paymentDetails) {
         console.log("Payment has been completed, Check for Payment Status");
         console.log(result.paymentDetails.paymentMessage);
-  
-        const verifyPayment = await VKYRequest('post', `/checkout/paymentverify`, {
-          orderid: orderId
-        });
-  
-        if (verifyPayment.data.status === 'success') {
+
+        // Send verification request after payment is completed
+       
+        const verifyPayment = await VKYRequest(
+          "post",
+          `/checkout/paymentverify/${caId}`,
+          {
+            orderid: orderId,
+          }
+        );
+
+        if (verifyPayment.data.status === "success") {
           setShowPaymentDialog(false);
           // Show toast for successful payment
           toast.success("Payment was Successful", {
