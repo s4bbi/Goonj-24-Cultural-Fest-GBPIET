@@ -3,32 +3,43 @@ const paymentData = require("../utils/paymentTypes");
 const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const UserModel = require("../model/userModel");
-const util = require("util");
 
 const isPaid = (req, res, next) => {
   if (!req.user.isPaid) {
     return next(new AppError("You have not paid yet", 402));
   }
+
   next();
 };
 
 const createOrderId = catchAsync(async (req, res, next) => {
   Cashfree.XClientId = process.env.CASHFREE_API_KEY;
   Cashfree.XClientSecret = process.env.CASHFREE_API_SECRET;
-  Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
+  Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
 
-  if (process.env.NODE_ENV === "production") {
-    Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  // if (process.env.NODE_ENV === "production") {
+  //   Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  // }
+
+  let amount;
+
+  if (req.params.paymentid === "1") {
+    amount = paymentData[0];
+  } else if (req.params.paymentid === "2") {
+    amount = paymentData[1];
   }
 
-  var request = {
-    order_amount: 1699,
+  const request = {
+    order_amount: amount,
     order_currency: "INR",
-    order_id: "order_34571221" + Date.now(),
+    order_id: "order_" + Date.now(),
     customer_details: {
-      customer_id: "walterwNrcMi",
-      customer_phone: "9932476767",
+      customer_id: "customer" + req.body.customer_phone,
+      customer_phone: req.body.customer_phone,
+      customer_email: req.body.customer_email,
     },
+
+    merchant_name: "Goonj 24",
   };
 
   const orderid = await Cashfree.PGCreateOrder("2022-09-01", request);
@@ -41,22 +52,33 @@ const createOrderId = catchAsync(async (req, res, next) => {
 const paymentVerification = catchAsync(async (req, res, next) => {
   Cashfree.XClientId = process.env.CASHFREE_API_KEY;
   Cashfree.XClientSecret = process.env.CASHFREE_API_SECRET;
-  Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
+  Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
 
-  if (process.env.NODE_ENV === "production") {
-    Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
-  }
-
-  console.log(req.body.orderid);
+  // if (process.env.NODE_ENV === "production") {
+  //   Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  // }
 
   const response = await Cashfree.PGFetchOrder("2022-09-01", req.body.orderid);
 
-  if (response.data.order_status === "PAID") {
+  if (response.data.order_status === "PAID"){
+    let accomodation = false;
+    if (response.data.order_amount===1699){
+      accomodation = true;
+    }
+
     const user = await UserModel.findByIdAndUpdate(req.user._id, {
       isPaid: true,
+      accomodation: accomodation
     });
 
-    if (!user.generated_id){
+    const caUser = await UserModel.findOneAndUpdate(
+      { generated_id: 'GNJ-CA-' + req.params.caid},
+      { $inc: { ca_counter: 1 } },
+      { new: true } 
+    );
+
+    
+    if (!user.generated_id) {
       await user.generateUniqueId();
     }
 
