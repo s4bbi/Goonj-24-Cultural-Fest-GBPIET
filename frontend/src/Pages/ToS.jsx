@@ -4,7 +4,7 @@ const ToS = () => {
   return (
     <div className='bg-EventBG pt-28 pb-10'>
         <div className='text-white w-10/12 mx-auto'>
-            <p className='text-2xl md:text-3xl font-cSB  mb-6'>Terms and Conditions</p>
+            <p className='text-2xl md:text-3xl font-cSB  mb-6 text-[#5f43b2]'>Terms and Conditions</p>
             <p className='text-base mt-2 font-cR'>Effective Date: June 2024</p>
             <p className='text-base mt-2 font-cR'>
 

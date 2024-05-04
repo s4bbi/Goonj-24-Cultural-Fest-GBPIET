@@ -22,12 +22,12 @@ const createOrderId = catchAsync(async (req, res, next) => {
   }
 
   var request = {
-    order_amount: 1999,
+    order_amount: 1699,
     order_currency: "INR",
     order_id: "order_34571221" + Date.now(),
     customer_details: {
       customer_id: "walterwNrcMi",
-      customer_phone: "9999999999",
+      customer_phone: "9932476767",
     },
   };
 

@@ -13,7 +13,7 @@ import LoggedContext from "../main";
 import { UserContext } from "../main";
 import { deleteCookie } from "../utils/Cookies";
 
-import { cashfree } from "../utils/cashFreeUtils";
+import { initializeCashfree } from "../utils/cashFreeUtils";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
@@ -24,50 +24,6 @@ const EventDetail = () => {
 
   const { setIsLogin } = useContext(LoggedContext);
   const { setUserData } = useContext(UserContext);
-
-  // const handleRegister =async () => {
-  //   try {
-  //     const response = await VKYRequest("post", "/events", {
-  //       eventCode: 1920,
-  //     }, setIsLogin);
-  //     if (response.response.status === 402) {
-  //       setShowPaymentDialog(true);
-  //     }
-  //     if (response.response.status===401){
-  //       deleteCookie('jwt');
-  //         setIsLogin(false);
-  //         setUserData({
-  //           name: undefined,
-  //           email: undefined,
-  //           googleSubjectId: undefined,
-  //           img: undefined,
-  //           pNum: undefined,
-  //           state: undefined,
-  //           city: undefined,
-  //           college: undefined
-  //         });
-  //       }
-
-  //   } catch (error) {
-  //     console.log(error);
-  //     if (error.response.status === 402) {
-  //       setShowPaymentDialog(true);
-  //     } if (error.response.status===401){
-  //       deleteCookie('jwt');
-  //         setIsLogin(false);
-  //         setUserData({
-  //           name: undefined,
-  //           email: undefined,
-  //           googleSubjectId: undefined,
-  //           img: undefined,
-  //           pNum: undefined,
-  //           state: undefined,
-  //           city: undefined,
-  //           college: undefined
-  //         });
-  //       }
-  //     }
-  //   }
 
   const handleRegister = async () => {
     try {
@@ -95,7 +51,7 @@ const EventDetail = () => {
   };
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
 
@@ -123,6 +79,7 @@ const EventDetail = () => {
 
   const checkoutFunction = async () => {
     try {
+      const cashfree = await initializeCashfree();
       const response = await VKYRequest("get", "/checkout/orderid");
       const sessionId = response.data.message.payment_session_id;
       const orderId = response.data.message.order_id;
@@ -145,20 +102,29 @@ const EventDetail = () => {
         console.log("Payment has been completed, Check for Payment Status");
         console.log(result.paymentDetails.paymentMessage);
   
-        // Send verification request after payment is completed
-        console.log(orderId)
         const verifyPayment = await VKYRequest('post', `/checkout/paymentverify`, {
           orderid: orderId
         });
-
-        if (verifyPayment.data.status==='success'){
+  
+        if (verifyPayment.data.status === 'success') {
           setShowPaymentDialog(false);
+          // Show toast for successful payment
+          toast.success("Payment was Successful", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         }
       }
     } catch (error) {
       console.log(error);
     }
   };
+  
   
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
