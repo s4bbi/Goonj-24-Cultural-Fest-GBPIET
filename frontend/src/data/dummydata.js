@@ -714,7 +714,7 @@ export const data = [
         id: 1103,
         name: "Standup Comedy",
         img: standup,
-        description: "Unleash your gaming Prowess",
+        description: "Prepare for an evening of laughter and entertainment as comedians take the stage to deliver hilarious anecdotes, witty observations, and uproarious jokes at our Standup Comedy event.",
         topics: [],
         guidelines: [
           "This is an open event so anyone can participate.",
