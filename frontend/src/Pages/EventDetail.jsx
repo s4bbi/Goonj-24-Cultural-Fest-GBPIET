@@ -13,11 +13,11 @@ import LoggedContext from "../main";
 import { UserContext } from "../main";
 import { deleteCookie } from "../utils/Cookies";
 
-import { cashfree } from "../utils/cashFreeUtils";
+import { initializeCashfree } from "../utils/cashFreeUtils.js";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
-  const location = useLocation(); // Corrected variable name to 'location'
+  const location = useLocation(); 
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
@@ -40,7 +40,7 @@ const EventDetail = () => {
   };
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
   // used to check ca id validity
@@ -53,7 +53,7 @@ const EventDetail = () => {
           });
 
           if (response.data.status === "success") {
-            console.log("CA ID is valid"); // here write the code to display that ca id is invalid
+            console.log("CA ID is valid"); // here write the code to display that ca id is valid
           }
         } catch (error) {
           console.log(error);
@@ -72,6 +72,7 @@ const EventDetail = () => {
         customer_phone: userData.pNum,
         customer_name: userData.name
       });
+      const cashfree = await initializeCashfree();
       const sessionId = response.data.message.payment_session_id;
       const orderId = response.data.message.order_id;
 
@@ -94,7 +95,7 @@ const EventDetail = () => {
         console.log(result.paymentDetails.paymentMessage);
 
         // Send verification request after payment is completed
-        console.log(orderId);
+       
         const verifyPayment = await VKYRequest(
           "post",
           `/checkout/paymentverify/${caId}`,
@@ -105,13 +106,25 @@ const EventDetail = () => {
 
         if (verifyPayment.data.status === "success") {
           setShowPaymentDialog(false);
+          // Show toast for successful payment
+          toast.success("Payment was Successful", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         }
       }
     } catch (error) {
       console.log(error);
     }
   };
-
+  
+  
+  
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
 
