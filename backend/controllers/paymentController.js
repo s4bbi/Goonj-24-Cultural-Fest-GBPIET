@@ -15,11 +15,11 @@ const isPaid = (req, res, next) => {
 const createOrderId = catchAsync(async (req, res, next) => {
   Cashfree.XClientId = process.env.CASHFREE_API_KEY;
   Cashfree.XClientSecret = process.env.CASHFREE_API_SECRET;
-  Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
+  Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
 
-  if (process.env.NODE_ENV === "production") {
-    Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
-  }
+  // if (process.env.NODE_ENV === "production") {
+  //   Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  // }
 
   let amount;
 
@@ -52,11 +52,11 @@ const createOrderId = catchAsync(async (req, res, next) => {
 const paymentVerification = catchAsync(async (req, res, next) => {
   Cashfree.XClientId = process.env.CASHFREE_API_KEY;
   Cashfree.XClientSecret = process.env.CASHFREE_API_SECRET;
-  Cashfree.XEnvironment = Cashfree.Environment.SANDBOX;
+  Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
 
-  if (process.env.NODE_ENV === "production") {
-    Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
-  }
+  // if (process.env.NODE_ENV === "production") {
+  //   Cashfree.XEnvironment = Cashfree.Environment.PRODUCTION;
+  // }
 
   const response = await Cashfree.PGFetchOrder("2022-09-01", req.body.orderid);
 
