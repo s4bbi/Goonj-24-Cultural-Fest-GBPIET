@@ -10,19 +10,19 @@ import hop_notch_solo from "../assets/Images/EventImages/hop-notch-solo.webp";
 import alfaaz from "../assets/Images/EventImages/alfaaz-e-kalam.webp";
 import battle_bands from "../assets/Images/EventImages/battle-of-bands.webp";
 import classical from "../assets/Images/EventImages/classical.webp";
-import clickfest from "../assets/Images/EventImages/clickfest.webp";
+import clickfest from "../assets/Images/EventImages/clickfest.png";
 import dance_battle from "../assets/Images/EventImages/dance-battle.webp";
 import debate from "../assets/Images/EventImages/debate.webp";
 import dress_to_impress from "../assets/Images/EventImages/dress-to-impress.webp";
 import extempore from "../assets/Images/EventImages/extempore.webp";
-import frame from "../assets/Images/EventImages/frame-by-frame.webp";
+import frame from "../assets/Images/EventImages/frame-by-frame.png";
 import goonj_movie from "../assets/Images/EventImages/goonj-movie.webp";
 import hop_notch_group from "../assets/Images/EventImages/hop-notch-group.webp";
-import light_painting from "../assets/Images/EventImages/light-painting.webp";
+import light_painting from "../assets/Images/EventImages/light-painting.png";
 import mr_miss_goonj from "../assets/Images/EventImages/mr-and-miss-goonj.webp";
 import singing from "../assets/Images/EventImages/singing.webp";
 import qawalli from "../assets/Images/EventImages/qawalli.webp";
-import reel_mania from "../assets/Images/EventImages/reel-mania.webp";
+import reel_mania from "../assets/Images/EventImages/reel-mania.png";
 import standup from "../assets/Images/EventImages/standup-comedy.webp";
 import treasure_hunt from "../assets/Images/EventImages/treasure-hunt.webp";
 import oppo from "../assets/Images/EventImages/oppo.webp";
@@ -673,7 +673,7 @@ export const data = [
         id: 1102,
         name: "ESPORTS",
         img: esport,
-        description: "Embrace the journey, embrace the treasure!",
+        description: "Experience the ultimate showdown of skill and strategy at our eSports event, featuring intense tournaments in BGMI, Freefire, and Valorant.",
         topics: [],
         guidelines: [
           "Introduction of eSports should be changed",
@@ -714,7 +714,7 @@ export const data = [
         id: 1103,
         name: "Standup Comedy",
         img: standup,
-        description: "Unleash your gaming Prowess",
+        description: "Prepare for an evening of laughter and entertainment as comedians take the stage to deliver hilarious anecdotes, witty observations, and uproarious jokes at our Standup Comedy event.",
         topics: [],
         guidelines: [
           "This is an open event so anyone can participate.",
