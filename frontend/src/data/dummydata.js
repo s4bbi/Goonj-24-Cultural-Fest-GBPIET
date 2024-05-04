@@ -673,7 +673,7 @@ export const data = [
         id: 1102,
         name: "ESPORTS",
         img: esport,
-        description: "Embrace the journey, embrace the treasure!",
+        description: "Experience the ultimate showdown of skill and strategy at our eSports event, featuring intense tournaments in BGMI, Freefire, and Valorant.",
         topics: [],
         guidelines: [
           "Introduction of eSports should be changed",
