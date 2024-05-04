@@ -13,7 +13,7 @@ import LoggedContext from "../main";
 import { UserContext } from "../main";
 import { deleteCookie } from "../utils/Cookies";
 
-import { cashfree } from "../utils/cashFreeUtils";
+import { initializeCashfree } from "../utils/cashfreeUtils";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
@@ -132,7 +132,7 @@ const EventDetail = () => {
         redirectTarget: "_modal"
       };
   
-      const result = await cashfree.checkout(checkoutOptions);
+      const result = await initializeCashfree.checkout(checkoutOptions);
   
       if (result.error) {
         console.log("User has closed the popup, Check for Payment Status");
