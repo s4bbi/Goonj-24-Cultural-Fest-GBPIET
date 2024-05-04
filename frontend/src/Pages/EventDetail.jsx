@@ -15,7 +15,7 @@ import { deleteCookie } from "../utils/Cookies";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
-  const location = useLocation(); // Corrected variable name to 'location'
+  const location = useLocation(); 
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
