@@ -13,7 +13,7 @@ import LoggedContext from "../main";
 import { UserContext } from "../main";
 import { deleteCookie } from "../utils/Cookies";
 
-import { initializeCashfree } from "../utils/cashFreeUtils";
+import { initializeCashfree } from "../utils/cashfreeUtils";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
@@ -124,6 +124,7 @@ const EventDetail = () => {
       console.log(error);
     }
   };
+  
   
   
   const withAccomodation = 1699;
