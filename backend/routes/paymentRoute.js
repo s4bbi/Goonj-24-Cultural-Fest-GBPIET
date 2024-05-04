@@ -5,7 +5,8 @@ const authController = require('../controllers/authController');
 
 const router = express.Router();
 
-router.get('/orderid', 
+router.post('/orderid/:paymentid', 
+    authController.validateToken,
     paymentController.createOrderId
 );
 

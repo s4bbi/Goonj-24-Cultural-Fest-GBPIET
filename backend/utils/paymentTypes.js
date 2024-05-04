@@ -1,17 +1,6 @@
 const paymentData = [
   // this is for both CA and participant
-  {
-    amount: 169900,
-    currency: "INR",
-    receipt: "Type 1",
-  },
-
-  {
-    // only ca discont
-    amount: 99900,
-    currency: "INR",
-    receipt: "Type 2",
-  },
+  1699, 999
 ];
 
 // light nhi hai aur battery 9 per cent my clue to wait for now

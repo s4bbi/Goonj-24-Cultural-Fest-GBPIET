@@ -23,6 +23,9 @@ const userSchema = new mongoose.Schema({
             message: props=>  `${props.value} is not a valid phone number`
         }
     },
+    accomodation: {
+        type: Boolean
+    },
     img: {
         type: String
     },
