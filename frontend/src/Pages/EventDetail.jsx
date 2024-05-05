@@ -29,7 +29,7 @@ const EventDetail = () => {
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
-        eventCode: 18203,
+        eventCode: location.state.event.data,
       });
     } catch (error) {
       if (error.response.status === 402) {
@@ -67,9 +67,10 @@ const EventDetail = () => {
   // to complete and validate payment
   const checkoutFunction = async () => {
     try {
+      const userinfo = userData.pNum;
       const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`, {
         customer_email: userData.email,
-        customer_phone: userData.pNum,
+        customer_phone: userinfo,
         customer_name: userData.name
       });
       const cashfree = await initializeCashfree();
