@@ -435,7 +435,7 @@ export const data = [
           "Solo",
         ],
         Rulebook: eventRulebook,
-        interCollege: false,
+        interCollege: true,
         judging:
           "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
         coordinator: "Ravi Nailwal(9837989785)",
@@ -458,6 +458,8 @@ export const data = [
           "Enter the hallowed halls of democracy at GOONJ for the Youth Parliament—an intellectual arena where youth voices resonate with revolutionary fervor. With arguments poised and chairs awaiting the leaders of tomorrow, are you ready to shape the future through debate and discourse? Join us at the epicenter of discussion—the Youth Parliament!",
         topics: [],
         guidelines: [
+          "Debate will be in both medium - Offline and Online",
+          "Student want to attend the event online via Google Meet or participate here in college",
           "Each team will be given 5+1 minutes to speak.",
           "Negative marking will be done for over-exceeding time.",
           "The questioning will be restricted to 1 minute, and the response should be completed in the next 2 minutes.",
@@ -512,6 +514,7 @@ export const data = [
         coordinator: "Akshita Rajbhar (8630009246)",
         email: "Harsh Gupta (8126568879)",
         phone: "",
+        registerLink: "https://forms.gle/AwbwCK4nmKwMQbTR6",
       },
     ],
   },
@@ -673,7 +676,8 @@ export const data = [
         id: 1102,
         name: "ESPORTS",
         img: esport,
-        description: "Experience the ultimate showdown of skill and strategy at our eSports event, featuring intense tournaments in BGMI, Freefire, and Valorant.",
+        description:
+          "Experience the ultimate showdown of skill and strategy at our eSports event, featuring intense tournaments in BGMI, Freefire, and Valorant.",
         topics: [],
         guidelines: [
           "Introduction of eSports should be changed",
@@ -714,7 +718,8 @@ export const data = [
         id: 1103,
         name: "Standup Comedy",
         img: standup,
-        description: "Prepare for an evening of laughter and entertainment as comedians take the stage to deliver hilarious anecdotes, witty observations, and uproarious jokes at our Standup Comedy event.",
+        description:
+          "Prepare for an evening of laughter and entertainment as comedians take the stage to deliver hilarious anecdotes, witty observations, and uproarious jokes at our Standup Comedy event.",
         topics: [],
         guidelines: [
           "This is an open event so anyone can participate.",
