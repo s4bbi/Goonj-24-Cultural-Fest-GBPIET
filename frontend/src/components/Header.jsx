@@ -34,6 +34,7 @@ const Header = () => {
         try {
           const response = await VKYRequest('get', '/users');
           setUserData(response.data.user);
+          
         }catch (error) {
           deleteCookie("jwt");
           setIsLogin(false);

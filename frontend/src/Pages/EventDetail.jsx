@@ -22,8 +22,7 @@ const EventDetail = () => {
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
 
-  const { setIsLogin } = useContext(LoggedContext);
-  const {userData,  setUserData } = useContext(UserContext);
+  const {userData} = useContext(UserContext);
 
   const [userPNum, setUserPNum] = useState("");
 
@@ -35,7 +34,7 @@ const EventDetail = () => {
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
-        eventCode: eventDetail.id,
+        eventCode: eventDetail.id.id,
       });
     } catch (error) {
       if (error.response.status === 402) {
@@ -75,9 +74,8 @@ const EventDetail = () => {
     try {
       console.log(userPNum)
       const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`, {
-        customer_email: userData.email,
-        customer_phone: userPNum,
-        customer_name: userData.name
+        customer_phone: userData.pNum,
+        customer_email: userData.email
       });
       const cashfree = await initializeCashfree();
       const sessionId = response.data.message.payment_session_id;
