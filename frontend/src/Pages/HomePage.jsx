@@ -195,7 +195,7 @@ const HomePage = () => {
                 />
                 <p className="text-white">Dr. Priti Dimri</p>
                 <p>
-                  <span className="text-[#5f43b2]">OIC, SAC</span>
+                  <span className="text-[#5f43b2]">OiC, SAC</span>
                 </p>
               </div>
               <div className="flex flex-col gap-3 font-cM items-center sm:w-9/12 sm:items-start mx-5 sm:order-1">
