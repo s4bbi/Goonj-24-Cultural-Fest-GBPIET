@@ -25,11 +25,17 @@ const EventDetail = () => {
   const { setIsLogin } = useContext(LoggedContext);
   const {userData,  setUserData } = useContext(UserContext);
 
+  const [userPNum, setUserPNum] = useState("");
+
+  useEffect(()=>{
+    setUserPNum(userData.pNum)
+  }, [userData.pNum]);
+
 
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
-        eventCode: location.state.event.data,
+        eventCode: eventDetail.id,
       });
     } catch (error) {
       if (error.response.status === 402) {
@@ -67,10 +73,10 @@ const EventDetail = () => {
   // to complete and validate payment
   const checkoutFunction = async () => {
     try {
-      const userinfo = userData.pNum;
+      console.log(userPNum)
       const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`, {
         customer_email: userData.email,
-        customer_phone: userinfo,
+        customer_phone: userPNum,
         customer_name: userData.name
       });
       const cashfree = await initializeCashfree();
