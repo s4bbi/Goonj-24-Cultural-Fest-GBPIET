@@ -233,16 +233,6 @@ export const teamData = [
         designation: "Web Team Developer",
       },
       {
-        id: 207,
-        name: "Niharika Chauhan",
-        img: niharika,
-        git: "",
-        linkdin: "https://www.linkedin.com/in/niharika-chauhan-351162227",
-        insta: "",
-        gmail: "niharikachauhan425@gmail.com",
-        designation: "Graphics Team",
-      },
-      {
         id: 208,
         name: "Aditya Rawat",
         img: aditya,
@@ -250,7 +240,7 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/aditya-rawat-3a2942276",
         insta: "",
         gmail: "",
-        designation: "Graphics Team",
+        designation: "Graphics Coordinator",
       },
       {
         id: 209,
