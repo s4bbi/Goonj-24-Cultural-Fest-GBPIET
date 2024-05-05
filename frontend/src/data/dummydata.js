@@ -455,11 +455,9 @@ export const data = [
         name: "DEBATE",
         img: debate,
         description:
-          "Enter the hallowed halls of democracy at GOONJ for the Youth Parliament—an intellectual arena where youth voices resonate with revolutionary fervor. With arguments poised and chairs awaiting the leaders of tomorrow, are you ready to shape the future through debate and discourse? Join us at the epicenter of discussion—the Youth Parliament!",
+          "Enter the hallowed halls of democracy at GOONJ for the Youth Parliament—an intellectual arena where youth voices resonate with revolutionary fervor. With arguments poised and chairs awaiting the leaders of tomorrow, are you ready to shape the future through debate and discourse? Join us at the epicenter of discussion—the Youth Parliament!.                                                                                                             This Event will be conducted offline as well as online. Student want to attend the event online via Google Meet or participate here in college",
         topics: [],
         guidelines: [
-          "Debate will be in both medium - Offline and Online",
-          "Student want to attend the event online via Google Meet or participate here in college",
           "Each team will be given 5+1 minutes to speak.",
           "Negative marking will be done for over-exceeding time.",
           "The questioning will be restricted to 1 minute, and the response should be completed in the next 2 minutes.",
@@ -478,7 +476,7 @@ export const data = [
         name: "EXTEMPORE",
         img: extempore,
         description:
-          "An impromptu amalgamation of thoughts culminating into a self-composed speech, the topic for which one receives then and there. Extempore speech is typically used to gain a deeper knowledge of a participant’s many points, but it also comes with a lot of problems. No prior preparation for which is permissible.",
+          "An impromptu amalgamation of thoughts culminating into a self-composed speech, the topic for which one receives then and there. Extempore speech is typically used to gain a deeper knowledge of a participant’s many points, but it also comes with a lot of problems. No prior preparation for which is permissible.                                         This Event will be conducted offline as well as online. Student want to attend the event online via Google Meet or participate here in college",
         topics: [],
         guidelines: [
           "Each participant will draw a random slip to get a topic.",
