@@ -27,6 +27,8 @@ const createOrderId = catchAsync(async (req, res, next) => {
     amount = paymentData[0];
   } else if (req.params.paymentid === "2") {
     amount = paymentData[1];
+  }else{
+    return next(new AppError("Payment Id is not defined", 404));
   }
 
   const request = {
