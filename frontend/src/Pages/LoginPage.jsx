@@ -165,6 +165,7 @@ const indianStates = [
     state: "Uttarakhand",
     district:["Almora","Bageshwar","Chamoli","Champawat","Dehradun","Haridwar","Nainital","Pauri","Pithoragarh","Rudraprayag","Tehri","Udham Singh Nagar","Uttarkashi"],
     college:[
+        "Govind Ballabh Pant Institute of Engineering and Technology, Gurdhauri (Id: C-24676)",
       "Forest Survey of India (Id: C-44369)",
       "G.B. Pant Institute of Himalayan Environment & Development (Id: C-44358)",
       "Indian Institute of Remote Sensing (Id: C-44363)",
@@ -254,7 +255,6 @@ const indianStates = [
       "Govt. Degree College, Thalisain (Id: C-24551)",
       "Govt. Degree College, Thatyud (Id: C-24657)",
       "Govt. Degree College, Tyuni (Id: C-24689)",
-      "Govt. Govind Ballabh Engineering College, Gurdhauri (Id: C-24676)",
       "Govt. Law College, Gopeshwar (Id: C-24678)",
       "Govt. P.G Degree College, Gopeshwar (Id: C-24522)",
       "Govt. P.G Degree College, New Tehri (Id: C-24648)",
