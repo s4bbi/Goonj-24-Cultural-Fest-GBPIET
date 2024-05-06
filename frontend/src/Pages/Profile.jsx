@@ -68,7 +68,7 @@ const Profile = () => {
           REGISTERED EVENTS
         </span>
         <ul>
-          {receivedUserData.events?.map((event) => (
+          {Array.isArray(receivedUserData.events) && receivedUserData.events.map((event) => (
             <li key={event.id} className="p-2">
               {event.name}
             </li>
