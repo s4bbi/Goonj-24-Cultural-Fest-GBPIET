@@ -34,7 +34,7 @@ const EventDetail = () => {
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
-        eventCode: eventDetail.id.id,
+        eventCode: eventDetail.id
       });
     } catch (error) {
       if (error.response.status === 402) {
