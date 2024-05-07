@@ -36,9 +36,9 @@ const createOrderId = catchAsync(async (req, res, next) => {
     order_currency: "INR",
     order_id: "order_" + Date.now(),
     customer_details: {
-      customer_id: "customer" + req.body.req.user.pNum,
+      customer_id: "customer" + req.user.pNum,
       customer_phone: req.user.pNum,
-      customer_email: req.body.email,
+      customer_email: req.user.email,
     },
 
     merchant_name: "Goonj 24",
