@@ -78,7 +78,7 @@ const EventDetail = () => {
 
       const checkoutOptions = {
         paymentSessionId: sessionId,
-        redirectTarget: "_modal",
+        redirectTarget: "_blank",
       };
 
       const result = await cashfree.checkout(checkoutOptions);
