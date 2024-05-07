@@ -6,6 +6,7 @@ import LoggedContext from "../main";
 import { VKYRequest } from "../utils/requests";
 import React, { useState } from "react";
 import { UserContext } from "../main";
+import {indianStates} from "../data/collegeData";
 
 const indianStates = [
   {
