@@ -1,4 +1,4 @@
-import { Link, redirect, useLocation, useNavigate } from "react-router-dom"; // Add this import statement at the beginning of your file
+import { Link, useLocation } from "react-router-dom"; // Add this import statement at the beginning of your file
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useContext, useEffect } from "react";
@@ -9,9 +9,7 @@ import { FaRocket } from "react-icons/fa6";
 import { VKYRequest } from "../utils/requests";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import LoggedContext from "../main";
 import { UserContext } from "../main";
-import { deleteCookie } from "../utils/Cookies";
 
 import { initializeCashfree } from "../utils/cashFreeUtils.js";
 
@@ -73,10 +71,7 @@ const EventDetail = () => {
   const checkoutFunction = async () => {
     try {
       console.log(userPNum)
-      const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`, {
-        customer_phone: userData.pNum,
-        customer_email: userData.email
-      });
+      const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`);
       const cashfree = await initializeCashfree();
       const sessionId = response.data.message.payment_session_id;
       const orderId = response.data.message.order_id;
