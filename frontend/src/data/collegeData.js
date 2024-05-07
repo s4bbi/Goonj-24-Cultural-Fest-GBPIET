@@ -1,4 +1,4 @@
-const indianStates = [
+export const indianStates = [
     {
       state: "Andra Pradesh",
       district:["Anantapur","Chittoor","East Godavari","Guntur","Kadapa","Krishna","Kurnool","Prakasam","Nellore","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari"],
