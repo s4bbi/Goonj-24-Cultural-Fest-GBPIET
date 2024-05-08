@@ -4,7 +4,7 @@ import Nitesh from "../assets/Images/TeamsImages/DevTeam/Nitesh.png";
 import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg";
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg";
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
-import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
+import neeraj from "../assets/Images/TeamsImages/CoreTeam/neeraj.jpg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpeg"
@@ -96,6 +96,16 @@ export const teamData = [
         gmail: "lakheraabhishek70@gmail.com",
       },
       {
+        id: 103,
+        name: "Neeraj Kandpal",
+        img: neeraj,
+        git: "",
+        designation: "Photography Coordinator",
+        linkdin: "",
+        insta: "https://www.instagram.com/neerajkandpal3089",
+        gmail: "neeraj982000@gmail.com",
+      },
+      {
         id: 104,
         name: "Ravi Nailwal",
         img: ravi,
@@ -140,7 +150,7 @@ export const teamData = [
         name: "Tanmay Bist",
         img: tanmay,
         git: "",
-        designation: "Photography Coordinator",
+        designation: "Media Coordinator",
         linkdin: "https://www.linkedin.com/in/tanmay-bist-30n",
         insta: "",
         gmail: "Praffulmittal75@gmail.com",

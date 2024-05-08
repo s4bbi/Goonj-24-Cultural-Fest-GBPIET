@@ -1210,6 +1210,7 @@ export const indianStates = [
          "Indira Gandhi Institute of Physical Education & Sports Sciences", 
          "Indraprastha College for Women", 
          "Institute of Home Economics", 
+         "IIT Delhi",
          "Janki Devi Memorial College", 
          "Jesus & Mary College", 
          "Kalindi College for Women", 

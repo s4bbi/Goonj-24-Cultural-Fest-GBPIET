@@ -21,6 +21,7 @@ import Img19 from "../assets/Images/Gallery_Images/19.webp";
 import Img20 from "../assets/Images/Gallery_Images/20.webp";
 import Img21 from "../assets/Images/Gallery_Images/21.webp";
 import Img22 from "../assets/Images/Gallery_Images/22.webp";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
     return (
@@ -124,7 +125,7 @@ const Gallery = () => {
                 </div>
                 <div className="py-16">
                     <h1 className="font-cM text-center">ALL THE PHOTOS ABOVE ARE TAKEN BY</h1> 
-                    <h1 className="text-violet-700 font-cSB text-center">GBPIET’s DRISHTIKON PHOTOGRAPHY CLUB</h1>
+                    <h1 className="text-violet-700 font-cSB text-center">GBPIET’s <Link to="https://www.instagram.com/drishtikon_gbpiet">DRISHTIKON PHOTOGRAPHY CLUB</Link></h1>
                 </div>
             </div> 
         </div>
