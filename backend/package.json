@@ -26,7 +26,7 @@
     "universal-cookie": "^7.1.4",
     "validator": "^13.11.0",
     "validatorjs": "^3.22.1",
-    "vite": "^5.2.6",
+    "vite": "^5.2.9",
     "xss-clean": "^0.1.4"
   }
 }
