@@ -70,7 +70,7 @@ const Profile = () => {
        <div className="max-h-20 overflow-y-auto scrollbar-hide" style={{ scrollbarWidth: '10px' }}>
         <ul>
           {Array.isArray(receivedUserData.events) && receivedUserData.events.map((event) => (
-            <li key={event} className="p-2" style={{ display: 'inline-block', margin: '0 5px'}}>
+            <li key={event} className="p-2" style={{ display: 'inline-block', margin: '10px'}}>
       {event}
     </li>
           ))}
