@@ -13,7 +13,10 @@ const updateRole = catchAsync(async (req, res, next)=>{
         new: true
     })
 
-    await updatingUser.generateUniqueId();
+    if (!updatingUser.generated_id || updatingUser.generated_id[4]==='P'){
+        await updatingUser.generateUniqueId();
+    }
+
 
     res.status(200).json({
         status: 'success',

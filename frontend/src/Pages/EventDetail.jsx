@@ -15,29 +15,47 @@ import { initializeCashfree } from "../utils/cashFreeUtils.js";
 
 const EventDetail = () => {
   const [showPaymentDialog, setShowPaymentDialog] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
   const [paymentType, setPaymentType] = useState(1);
   const eventDetail = location.state.event.data;
   const [caId, setCaId] = useState("");
 
-  const {userData} = useContext(UserContext);
+  const { userData } = useContext(UserContext);
 
   const [userPNum, setUserPNum] = useState("");
 
-  useEffect(()=>{
-    setUserPNum(userData.pNum)
+  useEffect(() => {
+    setUserPNum(userData.pNum);
   }, [userData.pNum]);
-
 
   const handleRegister = async () => {
     try {
       const response = await VKYRequest("post", "/events", {
-        eventCode: eventDetail.id
+        eventCode: eventDetail.name,
+      });
+      toast.success("Event added to the list", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
       });
     } catch (error) {
       if (error.response.status === 402) {
         setShowPaymentDialog(true);
-      } 
+      } else if (error.response.status === 409) {
+        toast.success("You have already registered for this event", {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
       console.log(error);
     }
   };
@@ -70,8 +88,11 @@ const EventDetail = () => {
   // to complete and validate payment
   const checkoutFunction = async () => {
     try {
-      console.log(userPNum)
-      const response = await VKYRequest("post", `/checkout/orderid/${paymentType}`);
+      console.log(userPNum);
+      const response = await VKYRequest(
+        "post",
+        `/checkout/orderid/${paymentType}`
+      );
       const cashfree = await initializeCashfree();
       const sessionId = response.data.message.payment_session_id;
       const orderId = response.data.message.order_id;
@@ -95,7 +116,7 @@ const EventDetail = () => {
         console.log(result.paymentDetails.paymentMessage);
 
         // Send verification request after payment is completed
-       
+
         const verifyPayment = await VKYRequest(
           "post",
           `/checkout/paymentverify/${caId}`,
@@ -122,9 +143,7 @@ const EventDetail = () => {
       console.log(error);
     }
   };
-  
-  
-  
+
   const withAccomodation = 1699;
   const withOutAccomodation = 999;
 
