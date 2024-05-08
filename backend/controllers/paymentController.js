@@ -27,6 +27,8 @@ const createOrderId = catchAsync(async (req, res, next) => {
     amount = paymentData[0];
   } else if (req.params.paymentid === "2") {
     amount = paymentData[1];
+  }else{
+    return next(new AppError("Payment Id is not defined", 404));
   }
 
   const request = {
@@ -34,9 +36,9 @@ const createOrderId = catchAsync(async (req, res, next) => {
     order_currency: "INR",
     order_id: "order_" + Date.now(),
     customer_details: {
-      customer_id: "customer" + req.body.customer_phone,
-      customer_phone: req.body.customer_phone,
-      customer_email: req.body.customer_email,
+      customer_id: "customer" + req.user.pNum,
+      customer_phone: req.user.pNum,
+      customer_email: req.user.email,
     },
 
     merchant_name: "Goonj 24",
