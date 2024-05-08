@@ -4,6 +4,7 @@ import telescope2 from "../assets/Images/telescope2.png";
 import SBI_Logo from "../assets/Images/SBI_Logo.svg"
 import LIC_Logo from "../assets/Images/LIC_Logo.png"
 import KwaliFoods_Logo from "../assets/Images/KwaliFoods_Logo.png"
+import blood_logo from "../assets/Images/blood_logo.png"
 import { Link } from "react-router-dom";
 
 const Sponsors = () => {
@@ -35,6 +36,13 @@ const Sponsors = () => {
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
                     <Link to="https://www.instagram.com/kwalifoods?igsh=MTVpa3RxNGk5aGg1aw=="><img src={KwaliFoods_Logo} className="w-24 md:w-48" alt="Kwali Foods Logo" /></Link>
+                </div>
+                <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
+                    <div className="flex flex-col gap-2">
+                        <img src={blood_logo} className="w-24 md:w-48" alt="Kwali Foods Logo" />
+                        <p className="text-white font-cR">Devbhoomi Blood Center</p>
+                    </div>
+                        <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 1" />
                 </div>
             </div>
             <div>
