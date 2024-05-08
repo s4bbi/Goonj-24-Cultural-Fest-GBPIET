@@ -67,7 +67,7 @@ const Profile = () => {
         <span className="font-medium text-lg border-b-2 border-[#5f43b2]">
           REGISTERED EVENTS
         </span>
-       <div className="max-h-20 overflow-y-auto scrollbar-hide" style={{ scrollbarWidth: '10px' }}>
+       <div className="max-h-10 overflow-y-auto scrollbar-hide" style={{ scrollbarWidth: '10px' }}>
         <ul>
           {Array.isArray(receivedUserData.events) && receivedUserData.events.map((event) => (
             <li key={event} className="p-2" style={{ display: 'inline-block', margin: '10px'}}>
