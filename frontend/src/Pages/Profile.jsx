@@ -69,7 +69,7 @@ const Profile = () => {
         </span>
         <ul>
           {Array.isArray(receivedUserData.events) && receivedUserData.events.map((event) => (
-            <li key={event} className="p-2" style={{ display: 'inline-block', margin: '0 5px' }}>
+            <li key={event} className="p-2" style={{ display: 'inline-block', margin: '0 5px' , fontSize: '0.8em' }}>
       {event}
     </li>
           ))}
