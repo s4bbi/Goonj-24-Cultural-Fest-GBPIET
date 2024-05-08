@@ -67,13 +67,15 @@ const Profile = () => {
         <span className="font-medium text-lg border-b-2 border-[#5f43b2]">
           REGISTERED EVENTS
         </span>
+        <div className="max-h-80 overflow-y-auto" style={{ scrollbarWidth: 'none' }}>
         <ul>
           {Array.isArray(receivedUserData.events) && receivedUserData.events.map((event) => (
             <li key={event} className="p-2" style={{ display: 'inline-block', margin: '0 5px' , fontSize: '0.8em' }}>
       {event}
     </li>
           ))}
-        </ul> 
+        </ul>
+          </div>
       </div>
     </div>
   );
