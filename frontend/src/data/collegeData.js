@@ -5902,6 +5902,7 @@ export const indianStates = [
         "Hooghly Mohsin College (Id: C-44699)",
         "Hooghly Women's College (Id: C-44701)",
         "Indas Mahavidyalaya (Id: C-44653)",
+        "Indian Institute of Engineering Science and Technology(IIEST) Shibpur (Id : C-44593),
         "Indrani Devi Institute of Education, Bhandarhati (Id: C-48374)",
         "Institute of Computer & Information Sciences (Id: C-44676)",
         "Jamalpur Mahavidyalaya (Id: C-44763)",
