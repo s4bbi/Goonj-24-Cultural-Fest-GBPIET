@@ -7,7 +7,7 @@ import xIcon from "../assets/Images/twitterIcon.png";
 
 const Footer = () => {
   return (
-    <div className="px-4 bg-EventBG font-cM text-lg md:px-6">
+    <div className="px-4 bg-EventBG font-cM text-lg md:px-6 md:mt-10">
       <div className="w-full p-4 md:p-6 bg-moonImg bg-cover object-contain">
         <div className="text-white flex flex-col md:flex-row justify-between">
           <div className="mb-4 md:mb-0">
