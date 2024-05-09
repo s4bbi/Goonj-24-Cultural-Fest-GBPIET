@@ -57,7 +57,7 @@ const handleChange = (e, type) => {
      e.preventDefault();
      console.log("Its working")
     try {
-      console.log(userPNum);
+      // console.log(userPNum);
       const response = await VKYRequest(
         "post",
         `/checkout/orderid/${paymentType}`
