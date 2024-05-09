@@ -24,6 +24,7 @@ const CARegisterPage = () => {
     e.preventDefault();
     try {
 
+
       const response = await VKYRequest('post', '/auth/signup',{...userData, role: 'CA'});
 
       setCookie('jwt', response.data.token, import.meta.env.VITE_JWT_EXPIRES_IN);
@@ -36,6 +37,67 @@ const CARegisterPage = () => {
       console.log(error);
     }
   };
+   // to complete and validate payment
+   const checkoutFunction = async () => {
+    try {
+      console.log(userPNum);
+      const response = await VKYRequest(
+        "post",
+        `/checkout/orderid/${paymentType}`
+      );
+      const cashfree = await initializeCashfree();
+      const sessionId = response.data.message.payment_session_id;
+      const orderId = response.data.message.order_id;
+
+      const checkoutOptions = {
+        paymentSessionId: sessionId,
+        redirectTarget: "_modal",
+      };
+
+      const result = await cashfree.checkout(checkoutOptions);
+
+      if (result.error) {
+        console.log("User has closed the popup, Check for Payment Status");
+        console.log(result.error);
+      }
+      if (result.redirect) {
+        console.log("Payment will be redirected");
+      }
+      if (result.paymentDetails) {
+        console.log("Payment has been completed, Check for Payment Status");
+        console.log(result.paymentDetails.paymentMessage);
+
+        // Send verification request after payment is completed
+
+        const verifyPayment = await VKYRequest(
+          "post",
+          `/checkout/paymentverify/${caId}`,
+          {
+            orderid: orderId,
+          }
+        );
+
+        if (verifyPayment.data.status === "success") {
+          setShowPaymentDialog(false);
+          // Show toast for successful payment
+          toast.success("Payment was Successful", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+          submitForm();
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  
 
   return (
 
@@ -146,7 +208,7 @@ const CARegisterPage = () => {
                   </div>
                 </div>
                 <div className="flex justify-center my-4 pb-2">
-                  <button className="btn" type="submit" onClick={submitForm}>
+                  <button className="btn" type="submit" onClick={ checkoutFunction}>
                     <span className="px-16">Submit</span>
                   </button>
                 </div>
