@@ -228,7 +228,7 @@ const handleChange = (e, type) => {
                   </div>
                 </div>
                 <div className="flex justify-center my-4 pb-2">
-                  <button className="btn" type="submit" onClick={ checkoutFunction}>
+                  <button className="btn" type="button" onClick={ checkoutFunction}>
                     <span className="px-16">Submit</span>
                   </button>
                 </div>
