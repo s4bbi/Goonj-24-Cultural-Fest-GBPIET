@@ -6,7 +6,7 @@ import LoggedContext from "../main";
 import { VKYRequest } from "../utils/requests";
 import {indianStates} from "../data/collegeData.js";
 import { UserContext } from "../main";
-import { initializeCashfree } from "../utils/cashFreeUtils.js";
+
 import desktop_bg_image from "../assets/Images/RegSuccess_Astro.webp";
 
 
@@ -52,68 +52,7 @@ const handleChange = (e, type) => {
       console.log(error);
     }
   };
-   // to complete and validate payment
-   const checkoutFunction = async (e) => {
-     e.preventDefault();
-     console.log("Its working")
-    try {
-      // console.log(userPNum);
-      const response = await VKYRequest(
-        "post",
-        `/checkout/orderid/${paymentType}`
-      );
-      const cashfree = await initializeCashfree();
-      const sessionId = response.data.message.payment_session_id;
-      const orderId = response.data.message.order_id;
-
-      const checkoutOptions = {
-        paymentSessionId: sessionId,
-        redirectTarget: "_modal",
-      };
-
-      const result = await cashfree.checkout(checkoutOptions);
-
-      if (result.error) {
-        console.log("User has closed the popup, Check for Payment Status");
-        console.log(result.error);
-      }
-      if (result.redirect) {
-        console.log("Payment will be redirected");
-      }
-      if (result.paymentDetails) {
-        console.log("Payment has been completed, Check for Payment Status");
-        console.log(result.paymentDetails.paymentMessage);
-
-        // Send verification request after payment is completed
-
-        const verifyPayment = await VKYRequest(
-          "post",
-          `/checkout/paymentverify/${caId}`,
-          {
-            orderid: orderId,
-          }
-        );
-
-        if (verifyPayment.data.status === "success") {
-          setShowPaymentDialog(false);
-          // Show toast for successful payment
-          toast.success("Payment was Successful", {
-            position: "top-center",
-            autoClose: 3000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          submitForm();
-        }
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
+   
   
 
   return (
@@ -228,7 +167,7 @@ const handleChange = (e, type) => {
                   </div>
                 </div>
                 <div className="flex justify-center my-4 pb-2">
-                  <button className="btn" type="button" onClick={ checkoutFunction}>
+                  <button className="btn" type="submit" onClick={ submitForm}>
                     <span className="px-16">Submit</span>
                   </button>
                 </div>
