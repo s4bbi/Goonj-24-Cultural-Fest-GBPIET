@@ -54,6 +54,7 @@ const handleChange = (e, type) => {
   };
    // to complete and validate payment
    const checkoutFunction = async () => {
+     console.log("Its working")
     try {
       console.log(userPNum);
       const response = await VKYRequest(
