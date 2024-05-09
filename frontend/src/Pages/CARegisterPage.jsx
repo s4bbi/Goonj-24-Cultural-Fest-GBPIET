@@ -53,7 +53,7 @@ const handleChange = (e, type) => {
     }
   };
    // to complete and validate payment
-   const checkoutFunction = async () => {
+   const checkoutFunction = async (e) => {
      e.preventDefault();
      console.log("Its working")
     try {
