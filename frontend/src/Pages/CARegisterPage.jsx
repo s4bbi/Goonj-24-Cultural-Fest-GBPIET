@@ -177,9 +177,9 @@ const CARegisterPage = () => {
                   onChange={(e) => handleChange(e, "city")}
                 >
                   <option value="">Select City</option>
-                  {formData.state &&
+                  {indianStates.state &&
                     indianStates
-                      .find((state) => state.state === formData.state)
+                      .find((state) => state.state === indianStates.state)
                       ?.district.map((district, index) => (
                         <option key={index} value={district}>
                           {district}
@@ -196,9 +196,9 @@ const CARegisterPage = () => {
                   onChange={(e) => handleChange(e, "college")}
                 >
                   <option value="">Select College</option>
-                  {formData.state &&
+                  {indianStates.state &&
                     indianStates
-                      .find((state) => state.state === formData.state)
+                      .find((state) => state.state === indianStates.state)
                       ?.college.map((college, index) => (
                         <option key={index} value={college}>
                           {college}
