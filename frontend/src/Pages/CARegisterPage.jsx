@@ -15,9 +15,24 @@ const CARegisterPage = () => {
   const {userData, setUserData} = useContext(UserContext);
   const { setIsLogin } = useContext(LoggedContext);
   const [isregister, setIsregister] = useState(false);
-  const handleChange = (e, name) => {
-    setUserData({ ...userData, [name]: e.target.value });
-  };
+  const [selectedState, setSelectedState] = useState(" ");
+const [selectedCity, setSelectedCity] = useState(" ");
+const [selectedCollege, setSelectedCollege] = useState('');
+const handleChange = (e, type) => {
+  if (type === 'state') {
+    setSelectedState(e.target.value);
+    // Reset city and college when state changes
+    setSelectedCity('');
+    setSelectedCollege('');
+  } else if (type === 'city') {
+    setSelectedCity(e.target.value);
+    // Reset college when city changes
+    setSelectedCollege('');
+  } else if (type === 'college') {
+    setSelectedCollege(e.target.value);
+  }
+  setUserData({ ...userData, [type]: e.target.value });
+};
   const [caDetail, setCaDetails] = useState({});
 
   const submitForm = async (e) => {
@@ -157,6 +172,7 @@ const CARegisterPage = () => {
                     <select 
                  className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                  onChange={(e) => handleChange(e, "state")}
+                 value={selectedState}
                  >
                        <option value="">Select State</option>
                   {indianStates.map((state, index) => (
@@ -175,16 +191,17 @@ const CARegisterPage = () => {
                     <select
                   className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                   onChange={(e) => handleChange(e, "city")}
+                  value={selectedCity}
                 >
-                  <option value="">Select City</option>
-                  {indianStates.state &&
-                    indianStates
-                      .find((state) => state.state === indianStates.state)
-                      ?.district.map((district, index) => (
-                        <option key={index} value={district}>
-                          {district}
-                        </option>
-                      ))}
+                 <option value="">Select City</option>
+          {selectedState &&
+            indianStates
+              .find((state) => state.state === selectedState)
+              ?.district.map((district, index) => (
+                <option key={index} value={district}>
+                  {district}
+                </option>
+              ))}
                 </select>
                   </div>
                   <div className="flex flex-col sm:w-5/12">
@@ -194,17 +211,18 @@ const CARegisterPage = () => {
                     <select
                   className="bg-[#5f43b2] px-3 py-2 rounded-lg text-sm w-full"
                   onChange={(e) => handleChange(e, "college")}
+                  value={selectedCollege}
                 >
                   <option value="">Select College</option>
-                  {indianStates.state &&
-                    indianStates
-                      .find((state) => state.state === indianStates.state)
-                      ?.college.map((college, index) => (
-                        <option key={index} value={college}>
-                          {college}
-                        </option>
-                      ))}
-                </select>
+  {selectedState &&
+    indianStates
+      .find((state) => state.state === selectedState)
+      ?.college.map((college, index) => (
+        <option key={index} value={college}>
+          {college}
+        </option>
+      ))}
+</select>
                   </div>
                 </div>
                 <div className="flex justify-center my-4 pb-2">
