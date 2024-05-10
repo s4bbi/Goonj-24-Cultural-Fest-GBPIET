@@ -27,7 +27,7 @@ const createOrderId = catchAsync(async (req, res, next) => {
     amount = paymentData[0];
   } else if (req.params.paymentid === "2") {
     amount = paymentData[1];
-  }else{
+  } else {
     return next(new AppError("Payment Id is not defined", 404));
   }
 
@@ -62,26 +62,48 @@ const paymentVerification = catchAsync(async (req, res, next) => {
 
   const response = await Cashfree.PGFetchOrder("2022-09-01", req.body.orderid);
 
-  if (response.data.order_status === "PAID"){
-    let accomodation = false;
-    if (response.data.order_amount===1699){
-      accomodation = true;
-    }
-
-    const user = await UserModel.findByIdAndUpdate(req.user._id, {
+  if (response.data.order_status === "PAID") {
+    const user = await UserModel.findByIdAndUpdate(req.user._id, { // the user which has paid his data is stored in 'user' variable
       isPaid: true,
-      accomodation: accomodation
+      paidAmt: response.data.order_amount,
     });
 
-    const caUser = await UserModel.findOneAndUpdate(
-      { generated_id: 'GNJ-CA-' + req.params.caid},
+    if (user.role === "CA") {
+      const updatingUser = await UserData.findByIdAndUpdate(
+        user._id,
+        { role: "CPT" },
+        {
+          new: true,
+        }
+      );
+    }
+
+    let caUser = await UserModel.findOneAndUpdate( // this is the ca id which the user has passed
+      { generated_id: "GNJ-CA-" + req.params.caid },
       { $inc: { ca_counter: 1 } },
-      { new: true } 
+      { new: true }
     );
 
-    
-    if (!user.generated_id) {
+    if (!caUser){
+      caUser = await UserModel.findOneAndUpdate(
+        { generated_id: "GNJ-CPT-" + req.params.caid },
+        { $inc: { ca_counter: 1 } },
+        { new: true }
+      );
+    }
+
+    if (!user.generated_id) { // did this if the user is ca then its role should remain default that is PT 
       await user.generateUniqueId();
+
+    }else{// this means paid user was already a CA
+      const updateUserRole = await UserModel.findByIdAndUpdate(user._id, {
+        role: 'CPT'
+      });
+
+      updateUserRole.generated_id = updateUserRole.generated_id.replace('CA', 'CPT');
+      await updateUserRole.save();
+
+
     }
 
     return res.status(200).json({
@@ -92,7 +114,8 @@ const paymentVerification = catchAsync(async (req, res, next) => {
   return next(new AppError("Something went wrong", 500));
 });
 
-const webhook = catchAsync(async (req, res, next) => {
+
+const webhook = catchAsync(async (req, res, next) => { // this isnt complete but I don't think we will have enough registration to implement it we can manually check fields
   try {
     Cashfree.PGVerifyWebhookSignature(
       req.headers["x-webhook-signature"],
