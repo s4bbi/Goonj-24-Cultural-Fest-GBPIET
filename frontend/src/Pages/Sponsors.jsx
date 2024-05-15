@@ -5,6 +5,7 @@ import SBI_Logo from "../assets/Images/SBI_Logo.svg"
 import LIC_Logo from "../assets/Images/LIC_Logo.png"
 import KwaliFoods_Logo from "../assets/Images/KwaliFoods_Logo.png"
 import blood_logo from "../assets/Images/blood_logo.png"
+import peta_logo from "../assets/Images/peta_india_logo.svg"
 import { Link } from "react-router-dom";
 
 const Sponsors = () => {
@@ -26,16 +27,29 @@ const Sponsors = () => {
             </div>
             <div className="w-full py-16 mx-auto justify-center items-center flex flex-col gap-10">
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
-                    <img src={SBI_Logo} className="w-24 md:w-48" alt="SBI Logo" />
+                    <div className="flex flex-col gap-6 items-center">
+                        <p className="text-white font-cuda text-lg md:text-2xl text-center">Title Sponsor</p>
+                        <img src={peta_logo} className="w-24 md:w-48" alt="PETA India Logo" />
+                    </div>
+                    <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 1" />
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <img src={LIC_Logo} className="w-24 md:w-48" alt="LIC Logo" />
+                    <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
+                    <div className="flex flex-col gap-6 items-center">
+                        <img src={SBI_Logo} className="w-24 md:w-48" alt="SBI Logo" />
+                    </div>
+                </div>
+                <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
+                    <div className="flex flex-col gap-6 items-center">
+                        <img src={LIC_Logo} className="w-24 md:w-48" alt="LIC Logo" />
+                    </div>
                     <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 2" />
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
-                    <Link to="https://www.instagram.com/kwalifoods?igsh=MTVpa3RxNGk5aGg1aw=="><img src={KwaliFoods_Logo} className="w-24 md:w-48" alt="Kwali Foods Logo" /></Link>
+                    <div className="flex flex-col gap-6 items-center">
+                        <Link to="https://www.instagram.com/kwalifoods?igsh=MTVpa3RxNGk5aGg1aw=="><img src={KwaliFoods_Logo} className="w-24 md:w-48" alt="Kwali Foods Logo" /></Link>
+                    </div>
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <div className="flex flex-col gap-2">
