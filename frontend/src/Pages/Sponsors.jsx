@@ -28,19 +28,21 @@ const Sponsors = () => {
             <div className="w-full py-16 mx-auto justify-center items-center flex flex-col gap-10">
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <div className="flex flex-col gap-6 items-center">
-                        <p className="text-white font-cuda text-lg md:text-2xl text-center">Title Sponsor</p>
-                        <img src={peta_logo} className="w-24 md:w-48" alt="PETA India Logo" />
+                        <p className="text-white font-cuda text-lg md:text-2xl text-center">Event Sponsor</p>
+                        <Link to="https://www.petaindia.com"><img src={peta_logo} className="w-24 md:w-48" alt="PETA India Logo" /></Link>
                     </div>
                     <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 1" />
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
                     <div className="flex flex-col gap-6 items-center">
+                        <p className="text-white font-cuda text-lg md:text-2xl text-center">Banking Partner</p>
                         <img src={SBI_Logo} className="w-24 md:w-48" alt="SBI Logo" />
                     </div>
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <div className="flex flex-col gap-6 items-center">
+                        <p className="text-white font-cuda text-lg md:text-2xl text-center">Insurance Partner</p>
                         <img src={LIC_Logo} className="w-24 md:w-48" alt="LIC Logo" />
                     </div>
                     <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 2" />
@@ -52,7 +54,8 @@ const Sponsors = () => {
                     </div>
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 items-center">
+                        <p className="text-white font-cuda text-lg md:text-2xl text-center">Wellness Partner</p>
                         <img src={blood_logo} className="w-24 md:w-48" alt="Kwali Foods Logo" />
                         <p className="text-white font-cR">Devbhoomi Blood Center</p>
                     </div>
