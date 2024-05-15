@@ -1,6 +1,6 @@
 const paymentData = [
   // this is for both CA and participant
-  1, 1
+  1750, 1030
 ];
 
 // light nhi hai aur battery 9 per cent my clue to wait for now

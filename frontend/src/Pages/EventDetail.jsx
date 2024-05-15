@@ -144,8 +144,8 @@ const EventDetail = () => {
     }
   };
 
-  const withAccomodation = 1699;
-  const withOutAccomodation = 999;
+  const withAccomodation = 1750;
+  const withOutAccomodation = 969;
 
   return (
     <div className="w-full bg-cover">

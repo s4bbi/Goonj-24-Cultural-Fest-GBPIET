@@ -23,8 +23,8 @@ const userSchema = new mongoose.Schema({
             message: props=>  `${props.value} is not a valid phone number`
         }
     },
-    accomodation: {
-        type: Boolean
+    paidAmt: {
+        type: Number
     },
     img: {
         type: String
@@ -63,7 +63,7 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['CA', 'AUD', 'PT'],
+        enum: ['CA', 'CPT', 'PT'],
         default: 'PT'
     },
     generated_id: {
