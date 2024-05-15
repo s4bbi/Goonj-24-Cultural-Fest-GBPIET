@@ -470,6 +470,7 @@ export const data = [
         coordinator: "Akshita Rajbhar (8630009246)",
         email: "Harsh Gupta (8126568879)",
         phone: "",
+        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
       },
       {
         id: 902,
@@ -489,6 +490,7 @@ export const data = [
         coordinator: "Akshita Rajbhar (8630009246)",
         email: "Harsh Gupta (8126568879)",
         phone: "",
+        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
       },
       {
         id: 903,
@@ -512,7 +514,7 @@ export const data = [
         coordinator: "Akshita Rajbhar (8630009246)",
         email: "Harsh Gupta (8126568879)",
         phone: "",
-        registerLink: "https://forms.gle/AwbwCK4nmKwMQbTR6",
+        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
       },
     ],
   },
