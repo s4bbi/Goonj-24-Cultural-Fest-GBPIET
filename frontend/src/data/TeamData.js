@@ -48,6 +48,8 @@ import parush from "../assets/Images/TeamsImages/EventTeam/parush.jpg"
 import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg"
 import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg"
 import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg"
+import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg"
+
 
 export const teamData = [
   {
@@ -580,6 +582,16 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/asmita-gaur-741534223",
         insta: "https://www.instagram.com/ashmi_2612",
         gmail: "asmitagaur1419@gmail.com",
+        designation: "Management Team Member",
+      },
+      {
+        id: 238,
+        name: "Jugbir Singh",
+        img: jugbir,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/jugbir-singh-460b2b306",
+        insta: "https://www.instagram.com/_bl_ack_007",
+        gmail: "Jugbirsingh51@gmail.com",
         designation: "Management Team Member",
       },
     ],

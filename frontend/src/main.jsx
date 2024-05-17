@@ -73,9 +73,9 @@ const loggedInRoutes = [
   {
     path: "/teams",
     element: (
-      <ProtectedComponent>
+      
         <Teams />
-      </ProtectedComponent>
+      
     ),
   },
   {
