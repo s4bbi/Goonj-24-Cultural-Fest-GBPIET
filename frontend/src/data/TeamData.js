@@ -34,6 +34,7 @@ import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg"
 import punam from "../assets/Images/TeamsImages/EventTeam/punam.jpg"
 import abhiK from "../assets/Images/TeamsImages/EventTeam/abhiK.jpeg"
 import abhiA from "../assets/Images/TeamsImages/EventTeam/abhiA.jpg"
+import jiyanshi from "../assets/Images/TeamsImages/EventTeam/jiyanshi.png"
 import prakarti from "../assets/Images/TeamsImages/EventTeam/prakarti.jpg"
 import rakshit from "../assets/Images/TeamsImages/EventTeam/rakshit.jpg"
 import ashutosh from "../assets/Images/TeamsImages/EventTeam/ashutosh.jpg"
@@ -407,7 +408,7 @@ export const teamData = [
       {
         id: 223,
         name: "Jiyanshi Batra",
-        img: "",
+        img: jiyanshi,
         git: "",
         linkdin: "https://www.linkedin.com/in/jiyanshi021",
         insta: "https://www.instagram.com/jiyanshi021",
