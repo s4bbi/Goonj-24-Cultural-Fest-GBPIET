@@ -21,7 +21,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.3",
     "morgan": "^1.10.0",
-    "razorpay": "^2.9.2",
+    "razorpay": "^2.9.4",
     "request": "^2.88.2",
     "universal-cookie": "^7.1.4",
     "validator": "^13.11.0",
