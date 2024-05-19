@@ -471,6 +471,7 @@ export const data = [
         email: "Harsh Gupta (8126568879)",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+        subRuleBook:"https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing"
       },
       {
         id: 902,
@@ -491,6 +492,7 @@ export const data = [
         email: "Harsh Gupta (8126568879)",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+        subRuleBook:"https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing"
       },
       {
         id: 903,
@@ -515,6 +517,7 @@ export const data = [
         email: "Harsh Gupta (8126568879)",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+        subRuleBook:"https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing"
       },
     ],
   },

@@ -6,6 +6,7 @@ import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg";
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
 import neeraj from "../assets/Images/TeamsImages/CoreTeam/neeraj.jpg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
+import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpg";
 import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpeg"
 import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
@@ -253,6 +254,16 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/aditya-rawat-3a2942276",
         insta: "",
         gmail: "",
+        designation: "Graphics Coordinator",
+      },
+      {
+        id: 208,
+        name: "Niharika Chauhan",
+        img: niharika,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/niharika-chauhan-351162227",
+        insta: "",
+        gmail: "niharikachauhan425@gmail.com",
         designation: "Graphics Coordinator",
       },
       {
