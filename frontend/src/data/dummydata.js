@@ -10,7 +10,7 @@ import hop_notch_solo from "../assets/Images/EventImages/hop-notch-solo.webp";
 import alfaaz from "../assets/Images/EventImages/alfaaz-e-kalam.webp";
 import battle_bands from "../assets/Images/EventImages/battle-of-bands.webp";
 import classical from "../assets/Images/EventImages/classical.webp";
-import clickfest from "../assets/Images/EventImages/clickfest.png";
+import clickfest from "../assets/Images/EventImages/Clickfest.png";
 import dance_battle from "../assets/Images/EventImages/dance-battle.webp";
 import debate from "../assets/Images/EventImages/debate.webp";
 import dress_to_impress from "../assets/Images/EventImages/dress-to-impress.webp";
@@ -538,7 +538,7 @@ export const data = [
           "Ensure your movie seamlessly integrates the G Movie theme",
           "Your creation should be an original piece of work",
           "Plagiarism content will lead to disqualification",
-          "Entries must be submitted before 27 May by 11:00 PM",
+          "Entries must be submitted before 29 May by 11:59 PM",
         ],
         Rulebook: eventRulebook,
         interCollege: false,
@@ -547,63 +547,6 @@ export const data = [
         email: "",
         phone: "+91 95287 37596",
       },
-      {
-        id: 1002,
-        name: "CAMPUS CLICKFEST",
-        img: clickfest,
-        description:
-          "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
-        topics: [],
-        guidelines: [
-          "Every individual can participate in the contest",
-          "Photos must be clicked through phone’s camera",
-          "Submit your edited and raw images",
-          "Your creation should be an original piece of work",
-          "Plagiarism content will lead to disqualification",
-          "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-          "Entries must be submitted before 27 May by 11:00 AM",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging: "Creativity + Adherence to theme + overall visual impact.",
-        entryfees: "Entry Fees: ₹99",
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Prachi Bhatt",
-        email: "",
-        phone: "+91 93503 48377",
-      },
-      {
-        id: 1004,
-        name: "REEL-MANIA",
-        img: reel_mania,
-        description:
-          "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
-        topics: [],
-        guidelines: [
-          "Every individual can participate in the contest",
-          "Reels must be shoot through phone’s camera",
-          "Ensure your reel seamlessly integrates the Reel Mania theme",
-          "Your creation should be an original piece of work",
-          "Plagiarism content will lead to disqualification",
-          "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-          "Entries must be submitted before 27 May by 11:00 PM",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging: "Creativity + Adherence to theme + overall visual impact.",
-        entryfees: "Entry Fees: ₹99",
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Tanishka Petwal",
-        email: "",
-        phone: "+91 96396 47397",
-      },
-    ],
-  },
-  {
-    id: 11,
-    name: "OPEN EVENTS - Prizes upto ₹45000.00",
-    img: img3,
-    Event: [
       {
         id: 1001,
         name: "FRAME BY FRAME - Only For GBPIET",
@@ -618,7 +561,7 @@ export const data = [
           "Your creation should be an original piece of work and copyright free",
           "Plagiarism content will lead to disqualification",
           "Teams are not bounded by any animation Technique",
-          "Entries must be submitted before 27 May by 11:00 AM",
+          "Entries must be submitted before 29 May by 11:59 PM",
           "Teams can use audio effects and music in their animation",
           "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
         ],
@@ -643,7 +586,7 @@ export const data = [
           "Your creation should be an original piece of work",
           "Plagiarism content will lead to disqualification",
           "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-          "Entries must be submitted before 27 May by 11:00 AM",
+          "Entries must be submitted before 29 May by 11:59 PM",
         ],
         Rulebook: eventRulebook,
         interCollege: false,
@@ -651,6 +594,64 @@ export const data = [
         coordinator: "Prachi",
         email: "",
         phone: "+91 80066 21568",
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "OPEN EVENTS - Prizes upto ₹45000.00",
+    img: img3,
+    Event: [
+      
+      {
+        id: 1002,
+        name: "CAMPUS CLICKFEST",
+        img: clickfest,
+        description:
+          "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
+        topics: [],
+        guidelines: [
+          "Every individual can participate in the contest",
+          "Photos must be clicked through phone’s camera",
+          "Submit your edited and raw images",
+          "Your creation should be an original piece of work",
+          "Plagiarism content will lead to disqualification",
+          "Each individual submitting the entries must follow DRISHTIKON Instagram page and submit their entries through collaboration",
+          "Entries must be submitted before 29 May by 11:59 PM",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        judging: "Creativity + Adherence to theme + overall visual impact.",
+        entryfees: "Entry Fees: ₹99",
+        registerLink: "https://forms.gle/eakVHGnbHgK3FLEs5",
+        coordinator: "Prachi Bhatt",
+        email: "",
+        phone: "+91 93503 48377",
+      },
+      {
+        id: 1004,
+        name: "REEL-MANIA",
+        img: reel_mania,
+        description:
+          "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
+        topics: [],
+        guidelines: [
+          "Every individual can participate in the contest",
+          "Ensure your reel seamlessly integrates the Reel Mania theme",
+          "Your creation should be an original piece of work",
+          "Plagiarism content will lead to disqualification",
+          "Entries can either be individual or team",
+          "Each individual or team member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
+          "Entries must be submitted before 29 May by 11:59 PM",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        judging: "Creativity + Adherence to theme + overall visual impact.",
+        entryfees: "Entry Fees: ₹99",
+        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        coordinator: "Tanishka Petwal",
+        email: "",
+        phone: "+91 96396 47397",
       },
 
       {
