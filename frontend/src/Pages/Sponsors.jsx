@@ -48,15 +48,9 @@ const Sponsors = () => {
                     <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 2" />
                 </div>
                 <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
-                    <img src={telescope} className="hidden md:flex w-56" alt="Telescope 1" />
-                    <div className="flex flex-col gap-6 items-center">
-                        <Link to="https://www.instagram.com/kwalifoods?igsh=MTVpa3RxNGk5aGg1aw=="><img src={KwaliFoods_Logo} className="w-24 md:w-48" alt="Kwali Foods Logo" /></Link>
-                    </div>
-                </div>
-                <div className="md:w-8/12 flex flex-col md:flex-row px-10 gap-20 justify-between items-center mx-auto">
                     <div className="flex flex-col gap-2 items-center">
                         <p className="text-white font-cuda text-lg md:text-2xl text-center">Wellness Partner</p>
-                        <img src={blood_logo} className="w-24 md:w-48" alt="Kwali Foods Logo" />
+                        <img src={blood_logo} className="w-24 md:w-48" alt="Devbhoomi Logo" />
                         <p className="text-white font-cR">Devbhoomi Blood Center</p>
                     </div>
                         <img src={telescope2} className="hidden md:flex w-56" alt="Telescope 1" />
