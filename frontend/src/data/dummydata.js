@@ -556,7 +556,6 @@ export const data = [
         topics: [],
         guidelines: [
           "Team may consist 2-4 members",
-          "Each frame must be clicked through phone’s camera",
           "Duration of animation upto 1 Minutes",
           "Your creation should be an original piece of work and copyright free",
           "Plagiarism content will lead to disqualification",
@@ -581,7 +580,6 @@ export const data = [
         topics: [],
         guidelines: [
           "Every individual can participate in the contest",
-          "Photos must be clicked through phone’s camera",
           "Shutter Speed should be less than 150 sec",
           "Your creation should be an original piece of work",
           "Plagiarism content will lead to disqualification",
@@ -611,9 +609,8 @@ export const data = [
           "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
         topics: [],
         guidelines: [
+          "Photos submitted must be clicked on the day of the Goonj '24 Fest inside the campus",
           "Every individual can participate in the contest",
-          "Photos must be clicked through phone’s camera",
-          "Submit your edited and raw images",
           "Your creation should be an original piece of work",
           "Plagiarism content will lead to disqualification",
           "Each individual submitting the entries must follow DRISHTIKON Instagram page and submit their entries through collaboration",
