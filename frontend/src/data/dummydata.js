@@ -10,7 +10,7 @@ import hop_notch_solo from "../assets/Images/EventImages/hop-notch-solo.webp";
 import alfaaz from "../assets/Images/EventImages/alfaaz-e-kalam.webp";
 import battle_bands from "../assets/Images/EventImages/battle-of-bands.webp";
 import classical from "../assets/Images/EventImages/classical.webp";
-import clickfest from "../assets/Images/EventImages/Clickfest.png";
+import clickfest from "../assets/Images/EventImages/clickfest.png";
 import dance_battle from "../assets/Images/EventImages/dance-battle.webp";
 import debate from "../assets/Images/EventImages/debate.webp";
 import dress_to_impress from "../assets/Images/EventImages/dress-to-impress.webp";
@@ -463,7 +463,8 @@ export const data = [
           "The questioning will be restricted to 1 minute, and the response should be completed in the next 2 minutes.",
           "A slip of paper bearing only the key points is permitted.",
         ],
-        Rulebook: eventRulebook,
+        Rulebook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
         interCollege: true,
         judging:
           "Knowledge + content + critical thinking + rebuttal skills + time management.",
@@ -471,7 +472,8 @@ export const data = [
         email: "Harsh Gupta (8126568879)",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
-        subRuleBook:"https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing"
+        subRuleBook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
       },
       {
         id: 902,
@@ -485,14 +487,16 @@ export const data = [
           "2 minutes timing for evaluation of the topic will be provided to the participant.",
           "The participant must speak on the topic for at least 3 minutes.",
         ],
-        Rulebook: eventRulebook,
+        Rulebook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
         interCollege: true,
         judging: "Knowledge + content + critical thinking + management.",
         coordinator: "Akshita Rajbhar (8630009246)",
         email: "Harsh Gupta (8126568879)",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
-        subRuleBook:"https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing"
+        subRuleBook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
       },
       {
         id: 903,
@@ -510,14 +514,16 @@ export const data = [
           "Poetry entries should not exceed 30 lines.",
           "Late submissions will not be considered.",
         ],
-        Rulebook: eventRulebook,
+        Rulebook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
         interCollege: true,
         judging: "Creativity + Originality + Language proficiency",
         coordinator: "Akshita Rajbhar (8630009246)",
         email: "Harsh Gupta (8126568879)",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
-        subRuleBook:"https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing"
+        subRuleBook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
       },
     ],
   },
@@ -600,7 +606,6 @@ export const data = [
     name: "OPEN EVENTS - Prizes upto ₹45000.00",
     img: img3,
     Event: [
-      
       {
         id: 1002,
         name: "CAMPUS CLICKFEST",
@@ -620,7 +625,7 @@ export const data = [
         interCollege: true,
         judging: "Creativity + Adherence to theme + overall visual impact.",
         entryfees: "Entry Fees: ₹99",
-        registerLink: "https://forms.gle/eakVHGnbHgK3FLEs5",
+        registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
         coordinator: "Prachi Bhatt",
         email: "",
         phone: "+91 93503 48377",
