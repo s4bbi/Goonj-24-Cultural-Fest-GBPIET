@@ -20,6 +20,7 @@ import gaurav from "../assets/Images/TeamsImages/EventTeam/gaurav.jpg"
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
 import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
+import dubey from "../assets/Images/TeamsImages/EventTeam/dubey.jpg"
 import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg"
 import akansha from "../assets/Images/TeamsImages/EventTeam/akansha.jpg"
 import prabhleen from "../assets/Images/TeamsImages/EventTeam/prabhleen.jpg"
@@ -265,6 +266,16 @@ export const teamData = [
         insta: "",
         gmail: "niharikachauhan425@gmail.com",
         designation: "Graphics Coordinator",
+      },
+      {
+        id: 209,
+        name: "Utkarsh Dubey",
+        img: dubey,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "utekalfa0001@gmail.com-",
+        designation: "Event Management Secretary",
       },
       {
         id: 209,
