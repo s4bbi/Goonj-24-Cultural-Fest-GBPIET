@@ -16,6 +16,7 @@ import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
 import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg"
 import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
 import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
+import major from "../assets/Images/TeamsImages/EventTeam/major.jpg"
 import gaurav from "../assets/Images/TeamsImages/EventTeam/gaurav.jpg"
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
@@ -165,10 +166,20 @@ export const teamData = [
         name: "Abhinav Tyagi",
         img: abhinav,
         git: "",
-        designation: "Discipline Secretary",
+        designation: "Discipline Team Member",
         linkdin: "",
         insta: "",
         gmail: "imgauravp6@gmail.com",
+      },
+      {
+        id: 109,
+        name: "Shashank Kumar",
+        img: major,
+        git: "",
+        designation: "Discipline Team Member",
+        linkdin: "https://www.linkedin.com/in/shashank-kumar-civilengineer",
+        insta: "https://www.instagram.com/_shashank_kumar._/",
+        gmail: "shankyprajapati71@gmail.com",
       },
       {
         id: 109,
