@@ -53,8 +53,6 @@ import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg";
 import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg";
 import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg";
 import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg";
-import ashi from "../assets/Images/TeamsImages/EventTeam/Asleshranjan.jpg";
-import droni from "../assets/Images/TeamsImages/EventTeam/dronachamoli.PNG";
 export const teamData = [
   {
     id: 1,
@@ -335,27 +333,6 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/kriti-uniyal-703692297",
         insta: "https://www.instagram.com/kritiuniyal_",
         gmail: "kritiuniyal28@gmail.com",
-        designation: "Event Coordinator",
-      },
-      {
-        id: 912,
-        name: "Drona Chamoli",
-        img: droni,
-        git: "",
-        linkdin: "",
-        insta:
-          "https://www.instagram.com/drona_07?igsh=MWU1c3Vka3p1c2F4aQ%3D%3D&utm_source=qr",
-        gmail: "",
-        designation: "Event Coordinator",
-      },
-      {
-        id: 913,
-        name: "Ashlesh Ranjan",
-        img: ashi,
-        git: "",
-        linkdin: "",
-        insta: "https://www.instagram.com/ashlesh_ranjan?igsh=cmMwbnc4N3E1Z3My",
-        gmail: "",
         designation: "Event Coordinator",
       },
       {
