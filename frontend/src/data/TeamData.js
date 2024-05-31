@@ -53,8 +53,8 @@ import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg";
 import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg";
 import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg";
 import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg";
-import drona from "../assets/Images/TeamsImages/EventTeam/dronachamoli.PNG";
-import aslesh from "../assets/Images/TeamsImages/EventTeam/asleshranjan.jpg";
+import ashi from "../assets/Images/TeamsImages/EventTeam/Asleshranjan.jpg";
+import droni from "../assets/Images/TeamsImages/EventTeam/dronachamoli.PNG";
 export const teamData = [
   {
     id: 1,
@@ -338,9 +338,9 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 2012,
+        id: 912,
         name: "Drona Chamoli",
-        img: drona,
+        img: droni,
         git: "",
         linkdin: "",
         insta:
@@ -349,9 +349,9 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 2102,
+        id: 913,
         name: "Ashlesh Ranjan",
-        img: aslesh,
+        img: ashi,
         git: "",
         linkdin: "",
         insta: "https://www.instagram.com/ashlesh_ranjan?igsh=cmMwbnc4N3E1Z3My",
