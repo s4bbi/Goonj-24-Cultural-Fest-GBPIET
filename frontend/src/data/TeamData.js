@@ -337,26 +337,7 @@ export const teamData = [
         gmail: "kritiuniyal28@gmail.com",
         designation: "Event Coordinator",
       },
-      {
-        id: 2012,
-        name: "Drona Chamoli",
-        img: drona,
-        git: "",
-        linkdin: "",
-        insta: "https://www.instagram.com/drona_07?igsh=MWU1c3Vka3p1c2F4aQ%3D%3D&utm_source=qr",
-        gmail: "",
-        designation: "Event Coordinator",
-      },
-      {
-        id: 2102,
-        name: "Ashlesh Ranjan",
-        img: ashi,
-        git: "",
-        linkdin: "",
-        insta: "https://www.instagram.com/ashlesh_ranjan?igsh=cmMwbnc4N3E1Z3My",
-        gmail: "",
-        designation: "Event Coordinator",
-      },
+    
       {
         id: 213,
         name: "Rashmi Rawat",
