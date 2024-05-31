@@ -10,7 +10,7 @@ import hop_notch_solo from "../assets/Images/EventImages/hop-notch-solo.webp";
 import alfaaz from "../assets/Images/EventImages/alfaaz-e-kalam.webp";
 import battle_bands from "../assets/Images/EventImages/battle-of-bands.webp";
 import classical from "../assets/Images/EventImages/classical.webp";
-import clickfest from "../assets/Images/EventImages/clickfest.png";
+import clickfest from "../assets/Images/EventImages/clickfest.webp";
 import dance_battle from "../assets/Images/EventImages/dance-battle.webp";
 import debate from "../assets/Images/EventImages/debate.webp";
 import dress_to_impress from "../assets/Images/EventImages/dress-to-impress.webp";
