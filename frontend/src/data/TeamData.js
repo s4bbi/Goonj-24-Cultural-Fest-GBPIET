@@ -53,8 +53,8 @@ import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg";
 import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg";
 import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg";
 import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg";
-import drona from "../assets/Images/TeamsImages/EventTeam/drona.PNG";
-import aslesh from "../assets/Images/TeamsImages/EventTeam/aslesh.jpg";
+import drona from "../assets/Images/TeamsImages/EventTeam/dronachamoli.PNG";
+import aslesh from "../assets/Images/TeamsImages/EventTeam/asleshranjan.jpg";
 export const teamData = [
   {
     id: 1,
