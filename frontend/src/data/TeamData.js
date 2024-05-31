@@ -338,7 +338,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 212,
+        id: 2012,
         name: "Drona Chamoli",
         img: drona,
         git: "",
@@ -349,7 +349,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 212,
+        id: 2102,
         name: "Ashlesh Ranjan",
         img: aslesh,
         git: "",
