@@ -16,12 +16,6 @@ const Events = () => {
           <h1 className="text-5xl md:text-[150px] text-white font-cuda text-center">
             Events
           </h1>
-          <h1
-            className="text-xl sm:text-2xl text-yellow-500 shadow-lg font-cuda text-center"
-            data-aos="fade-up"
-          >
-            Prizes upto 2 Lakhs
-          </h1>
           <Link
             to={
               "https://docs.google.com/document/d/1mu5PZMSbht2vgUaaJtxnjni0gc4le3DANzaoopBlJF4/edit?usp=sharing"

@@ -41,9 +41,7 @@ const loggedInRoutes = [
   {
     path: "/events",
     element: (
-      <ProtectedComponent>
         <Events />
-      </ProtectedComponent>
     ),
   },
   {

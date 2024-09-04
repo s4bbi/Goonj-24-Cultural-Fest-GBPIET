@@ -37,7 +37,7 @@ const eventRulebook =
 export const data = [
   {
     id: 1,
-    name: "DRAMAFLICT - Prizes upto ₹10000.00",
+    name: "DRAMAFLICT",
     img: img1,
     Event: [
       {
@@ -129,7 +129,7 @@ export const data = [
   },
   {
     id: 2,
-    name: "FUSION FEVER - Prizes upto ₹30000.00",
+    name: "FUSION FEVER",
     img: img2,
     Event: [
       {
@@ -207,7 +207,7 @@ export const data = [
   },
   {
     id: 3,
-    name: "FOOTLOOSE - Prizes upto ₹10000.00",
+    name: "FOOTLOOSE",
     img: img1,
     Event: [
       {
@@ -258,7 +258,7 @@ export const data = [
   },
   {
     id: 4,
-    name: "FLASHMOB - Prizes upto ₹20000.00",
+    name: "FLASHMOB",
     img: img3,
     Event: [
       {
@@ -344,7 +344,7 @@ export const data = [
 
   {
     id: 7,
-    name: "BATTLES - Prizes upto ₹10000.00",
+    name: "BATTLES",
     img: img1,
     Event: [
       {
@@ -400,7 +400,7 @@ export const data = [
 
   {
     id: 8,
-    name: "MELODY MANIA - Prizes upto ₹6000.00",
+    name: "MELODY MANIA",
     img: img1,
     Event: [
       {
@@ -447,7 +447,7 @@ export const data = [
 
   {
     id: 9,
-    name: "LITERATURE EVENTS - Prizes upto ₹20000.00",
+    name: "LITERATURE EVENTS",
     img: img2,
     Event: [
       {
@@ -603,7 +603,7 @@ export const data = [
   },
   {
     id: 11,
-    name: "OPEN EVENTS - Prizes upto ₹45000.00",
+    name: "OPEN EVENTS",
     img: img3,
     Event: [
       {
