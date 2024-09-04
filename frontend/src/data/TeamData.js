@@ -8,53 +8,53 @@ import neeraj from "../assets/Images/TeamsImages/CoreTeam/neeraj.jpg";
 import aditya from "../assets/Images/TeamsImages/GraphicsTeam/aditya.jpg";
 import niharika from "../assets/Images/TeamsImages/GraphicsTeam/niharika.jpeg";
 import chandu from "../assets/Images/TeamsImages/CoreTeam/chandu.jpg";
-import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpeg"
-import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg"
-import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg"
-import abhishek from "../assets/Images/TeamsImages/CoreTeam/abhishek.jpeg"
-import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg"
-import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg"
-import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg"
-import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg"
-import major from "../assets/Images/TeamsImages/EventTeam/major.jpg"
-import gaurav from "../assets/Images/TeamsImages/EventTeam/gaurav.jpg"
-import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png"
-import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg"
-import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg"
-import dubey from "../assets/Images/TeamsImages/EventTeam/dubey.jpg"
-import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg"
-import akansha from "../assets/Images/TeamsImages/EventTeam/akansha.jpg"
-import prabhleen from "../assets/Images/TeamsImages/EventTeam/prabhleen.jpg"
-import rashmi from "../assets/Images/TeamsImages/EventTeam/rashmi.jpg"
-import ramneet from "../assets/Images/TeamsImages/EventTeam/ramneet.jpg"
-import priyanshu from "../assets/Images/TeamsImages/EventTeam/priyanshu.jpg"
-import ragini from "../assets/Images/TeamsImages/EventTeam/ragini.jpg"
-import vidhi from "../assets/Images/TeamsImages/EventTeam/vidhi.jpg"
-import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg"
-import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg"
-import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg"
-import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg"
-import punam from "../assets/Images/TeamsImages/EventTeam/punam.jpg"
-import abhiK from "../assets/Images/TeamsImages/EventTeam/abhiK.jpeg"
-import abhiA from "../assets/Images/TeamsImages/EventTeam/abhiA.jpg"
-import jiyanshi from "../assets/Images/TeamsImages/EventTeam/jiyanshi.png"
-import prakarti from "../assets/Images/TeamsImages/EventTeam/prakarti.jpg"
-import rakshit from "../assets/Images/TeamsImages/EventTeam/rakshit.jpg"
-import ashutosh from "../assets/Images/TeamsImages/EventTeam/ashutosh.jpg"
-import vanshika from "../assets/Images/TeamsImages/EventTeam/vanshika.jpeg"
-import nitin from "../assets/Images/TeamsImages/EventTeam/nitin.jpeg"
-import sneha from "../assets/Images/TeamsImages/EventTeam/sneha.jpg"
-import sanskriti from "../assets/Images/TeamsImages/EventTeam/sanskriti.jpg"
-import muskan from "../assets/Images/TeamsImages/EventTeam/muskan.jpg"
-import ananya from "../assets/Images/TeamsImages/EventTeam/ananya.jpg"
-import ritik from "../assets/Images/TeamsImages/EventTeam/ritik.jpg"
-import parush from "../assets/Images/TeamsImages/EventTeam/parush.jpg"
-import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg"
-import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg"
-import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg"
-import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg"
-
-
+import prajjwal from "../assets/Images/TeamsImages/CoreTeam/prajjwal.jpeg";
+import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg";
+import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg";
+import abhishek from "../assets/Images/TeamsImages/CoreTeam/abhishek.jpeg";
+import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg";
+import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg";
+import akshita from "../assets/Images/TeamsImages/CoreTeam/akshita.jpg";
+import utkarsh from "../assets/Images/TeamsImages/EventTeam/utkarsh.jpg";
+import major from "../assets/Images/TeamsImages/EventTeam/major.jpg";
+import gaurav from "../assets/Images/TeamsImages/EventTeam/gaurav.jpg";
+import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png";
+import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg";
+import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg";
+import dubey from "../assets/Images/TeamsImages/EventTeam/dubey.jpg";
+import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg";
+import akansha from "../assets/Images/TeamsImages/EventTeam/akansha.jpg";
+import prabhleen from "../assets/Images/TeamsImages/EventTeam/prabhleen.jpg";
+import rashmi from "../assets/Images/TeamsImages/EventTeam/rashmi.jpg";
+import ramneet from "../assets/Images/TeamsImages/EventTeam/ramneet.jpg";
+import priyanshu from "../assets/Images/TeamsImages/EventTeam/priyanshu.jpg";
+import ragini from "../assets/Images/TeamsImages/EventTeam/ragini.jpg";
+import vidhi from "../assets/Images/TeamsImages/EventTeam/vidhi.jpg";
+import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg";
+import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg";
+import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg";
+import jaypal from "../assets/Images/TeamsImages/EventTeam/jaypal.jpg";
+import punam from "../assets/Images/TeamsImages/EventTeam/punam.jpg";
+import abhiK from "../assets/Images/TeamsImages/EventTeam/abhiK.jpeg";
+import abhiA from "../assets/Images/TeamsImages/EventTeam/abhiA.jpg";
+import jiyanshi from "../assets/Images/TeamsImages/EventTeam/jiyanshi.png";
+import prakarti from "../assets/Images/TeamsImages/EventTeam/prakarti.jpg";
+import rakshit from "../assets/Images/TeamsImages/EventTeam/rakshit.jpg";
+import ashutosh from "../assets/Images/TeamsImages/EventTeam/ashutosh.jpg";
+import vanshika from "../assets/Images/TeamsImages/EventTeam/vanshika.jpeg";
+import nitin from "../assets/Images/TeamsImages/EventTeam/nitin.jpeg";
+import sneha from "../assets/Images/TeamsImages/EventTeam/sneha.jpg";
+import sanskriti from "../assets/Images/TeamsImages/EventTeam/sanskriti.jpg";
+import muskan from "../assets/Images/TeamsImages/EventTeam/muskan.jpg";
+import ananya from "../assets/Images/TeamsImages/EventTeam/ananya.jpg";
+import ritik from "../assets/Images/TeamsImages/EventTeam/ritik.jpg";
+import parush from "../assets/Images/TeamsImages/EventTeam/parush.jpg";
+import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg";
+import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg";
+import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg";
+import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg";
+import drona from "../assets/Images/TeamsImages/EventTeam/drona.jpg";
+import ashi from "../assets/Images/TeamsImages/EventTeam/ashlesh.jpg";
 export const teamData = [
   {
     id: 1,
@@ -191,7 +191,6 @@ export const teamData = [
         insta: "",
         gmail: "abhinavtyagi1107@gmail.com",
       },
-
     ],
   },
   {
@@ -339,6 +338,27 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
+        id: 2012,
+        name: "Drona Chamoli",
+        img: drona,
+        git: "",
+        linkdin: "",
+        insta:
+          "https://www.instagram.com/drona_07?igsh=MWU1c3Vka3p1c2F4aQ%3D%3D&utm_source=qr",
+        gmail: "",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 2102,
+        name: "Ashlesh Ranjan",
+        img: ashi,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/ashlesh_ranjan?igsh=cmMwbnc4N3E1Z3My",
+        gmail: "",
+        designation: "Event Coordinator",
+      },
+      {
         id: 213,
         name: "Rashmi Rawat",
         img: rashmi,
@@ -445,7 +465,8 @@ export const teamData = [
         img: punam,
         git: "",
         linkdin: "https://www.linkedin.com/in/punam-rawat-098a621a0",
-        insta: "https://www.instagram.com/theparushsinha?igsh=MXZzYmJ4Y2diZHJjcA==",
+        insta:
+          "https://www.instagram.com/theparushsinha?igsh=MXZzYmJ4Y2diZHJjcA==",
         gmail: "punamrawat1323@gmail.com",
         designation: "Management Team Member",
       },
@@ -533,6 +554,4 @@ export const teamData = [
       },
     ],
   },
-  
-  
 ];
