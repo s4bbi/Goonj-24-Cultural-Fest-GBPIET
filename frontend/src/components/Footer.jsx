@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="text-white flex flex-col md:flex-row justify-between">
           <div className="mb-4 md:mb-0">
             <p>
-              GOONJ 20<span className="text-violet-700">24</span>
+              GOONJ 20<span className="text-[#5f43b2]">25</span>
             </p>
           </div>
           <div className="flex gap-4 sm:gap-10 font-cM justify-between">
@@ -46,7 +46,7 @@ const Footer = () => {
         <div className=" flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:gap-2 md:flex items-center md:items-start">
             <span className="text-white mb-4 md:mb-0">
-              @Goonj 2024. All rights reserved
+              @Goonj 2025. All rights reserved
             </span>
             <Link to="/tos" target="blank">
               <span className="text-white mb-4 md:mb-0">Terms of Service</span>

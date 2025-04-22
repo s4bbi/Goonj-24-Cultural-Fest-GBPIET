@@ -29,7 +29,7 @@ const HomePage = () => {
       <div>
         <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
           
-          <div className="xyz">
+          <div className="title">
             <h1 className="font-tN text-white text-[60px] md:text-[120px] lg:text-[225px] text-center drop-shadow-2xl select-none">
               GOONJ <span className="text-[#5f43b2]">'25</span>
             </h1>
@@ -156,11 +156,11 @@ const HomePage = () => {
             >
               <div className="flex flex-col justify-center items-center font-cM">
                 <img
-                  src={director}
+                  src={""}
                   className="w-32 sm:w-48 mb-4 rounded-xl border-b-4 border-[#5f43b2]"
                   alt="GBPIET Director"
                 />
-                <p className="text-white">Dr. V. N. Kala</p>
+                <p className="text-white">Prof. Dhananjay Singh</p>
                 <p>
                   <span className="text-[#5f43b2]">Director, </span>
                   <span className="text-white">GBPIET</span>
