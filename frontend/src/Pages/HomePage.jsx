@@ -30,7 +30,7 @@ const HomePage = () => {
         <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
           
           <div className="title">
-            <h1 className="font-tN text-white text-[60px] md:text-[120px] lg:text-[225px] text-center drop-shadow-2xl select-none">
+            <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[348px] text-center drop-shadow-2xl select-none">
               GOONJ <span className="text-[#5f43b2]">'25</span>
             </h1>
           </div>
