@@ -28,23 +28,19 @@ const HomePage = () => {
     <div className="w-full">
       <div>
         <div className="flex flex-col justify-center absolute sm:w-full h-screen z-10 w-full mx-auto">
-          <img
-            src={viksit}
-            className="w-32 sm:w-44 mx-auto sm:ml-48 sm:flex sm:justify-start sm:-mb-24"
-            alt="Viksit Bharat"
-          />
+          
           <div className="xyz">
-            <h1 className="font-samarkan text-white text-[90px] md:text-[180px] lg:text-[325px] text-center drop-shadow-2xl select-none">
-              GOONJ 24
+            <h1 className="font-tN text-white text-[60px] md:text-[120px] lg:text-[225px] text-center drop-shadow-2xl select-none">
+              GOONJ <span className="text-[#5f43b2]">'25</span>
             </h1>
           </div>
 
           <div className="flex flex-col gap-1 items-center sm:flex-row justify-between">
             <h1 className="text-lg sm:text-2xl text-white font-cM text-left sm:-mt-10 sm:ml-48">
-              27th May - 28th May
+              17th May - 18th May
             </h1>
             <h2 className="text-sm sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">
-              VIKSIT BHARAT @2047: VOICE OF YOUTH
+              "RYTHMS OF RESISTANCE"
             </h2>
           </div>
         </div>

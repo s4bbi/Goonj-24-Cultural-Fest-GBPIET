@@ -27,6 +27,11 @@
   src: url("./assets/fonts/Samarkan.TTF") format(truetype);
 }
 
+@font-face {
+  font-family: Tan-Nimbus;
+  src: url("./assets/fonts/Tan-Nimbus.otf") format(opentype);
+}
+
 .app{
   z-index: 1;
   top: 0;

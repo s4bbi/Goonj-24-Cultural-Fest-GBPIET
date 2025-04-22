@@ -9,6 +9,7 @@ export default {
         cSB: "Chillax-SemiBold",
         cuda: "CUDA",
         samarkan: "Samarkan",
+        tN: "Tan-Nimbus"
       },
       backgroundImage: {
         EventBG: "url('/src/assets/Images/Events_BG.webp')",

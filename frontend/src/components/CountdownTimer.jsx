@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-const CountdownTimer = ({ endTime }) => {
-  const calculateTimeLeft = (endTime) => {
+const CountdownTimer = () => {
+  const endTime = "2025-05-17T00:00:00";
+
+  const calculateTimeLeft = () => {
     const difference = +new Date(endTime) - +new Date();
     let timeLeft = {};
 
@@ -24,49 +26,27 @@ const CountdownTimer = ({ endTime }) => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(endTime));
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft(endTime));
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => {
-      clearTimeout(timer);
-    };
+    return () => clearTimeout(timer);
   });
 
-  const formatTime = (time) => {
-    return time < 10 ? `0${time}` : time;
-  };
+  const formatTime = (time) => (time < 10 ? `0${time}` : time);
 
   return (
     <div className="text-white font-cR py-10 bg-gradient-to-r from-[#000] via-[#5f43b2] to-[#000]">
       <div className="flex mx-auto w-8/12 gap-4 justify-center sm:justify-between">
-        <div className="">
-          <div className="text-center">
-            <div className="text-xl sm:text-3xl font-cuda">{formatTime(timeLeft.days)}</div>
-            <div className="text-sm sm:text-lg opacity-35">DAYS</div>
+        {["days", "hours", "minutes", "seconds"].map((unit, index) => (
+          <div key={index} className="timer-item text-center">
+            <div className="text-xl sm:text-3xl font-cuda">{formatTime(timeLeft[unit])}</div>
+            <div className="text-sm sm:text-lg opacity-35">{unit.toUpperCase()}</div>
           </div>
-        </div>
-        <div className="timer-item">
-          <div className="text-center">
-            <div className="text-xl sm:text-3xl font-cuda">{formatTime(timeLeft.hours)}</div>
-            <div className="text-sm sm:text-lg opacity-35">HOURS</div>
-          </div>
-        </div>
-        <div className="timer-item">
-          <div className="text-center">
-            <div className="text-xl sm:text-3xl font-cuda">{formatTime(timeLeft.minutes)}</div>
-            <div className="text-sm sm:text-lg opacity-35">MINUTES</div>
-          </div>
-        </div>
-        <div className="timer-item">
-          <div className="text-center">
-            <div className="text-xl sm:text-3xl font-cuda ">{formatTime(timeLeft.seconds)}</div>
-            <div className="text-sm sm:text-lg opacity-35">SECONDS</div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
