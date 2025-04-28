@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 import "../index.css";
-import goonjLogo from "../assets/Goonj-25-logov1.png";
+import goonjLogo from "../assets/goonjLogo.svg";
 import LoginButton from "./LoginButton";
 import { RiHome2Line } from "react-icons/ri";
 import { FaRegImages } from "react-icons/fa";
@@ -87,7 +87,7 @@ const Header = () => {
     { id: 2, name: "GALLERY", link: "/gallery", type: "B" },
     { id: 3, name: "SPONSORS", link: "/sponsors", type: "C" },
     { id: 4, name: "TEAMS", link: "/teams", type: "D" },
-    { id: 5, name: "CA PORTAL", link: "/caportal", type: "E" },
+    // { id: 5, name: "CA PORTAL", link: "/caportal", type: "E" },
     { id: 6, name: "AUDIENCE PORTAL", link: "/audience", type: "F" },
     { id: 7, name: "ABOUT US", link: "/about", type: "G" },
   ];
@@ -101,7 +101,7 @@ const Header = () => {
     { id: 12, name: "GALLERY", link: "/gallery" },
     { id: 13, name: "SPONSORS", link: "/sponsors" },
     { id: 14, name: "TEAMS", link: "/teams" },
-    { id: 15, name: "CA PORTAL", link: "/caportal" },
+    // { id: 15, name: "CA PORTAL", link: "/caportal" },
     { id: 16, name: "AUDIENCE PORTAL ", link: "/audience" },
     { id: 17, name: "ABOUT US", link: "/about", type: "G" },
   ];
@@ -117,7 +117,7 @@ const Header = () => {
   };
   
   return (
-    <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-10 md:py-10">
+    <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-6 md:py-6">
       <div className="flex items-center font-cM text-xl">
         <Link to="/">
           <img src={goonjLogo} className="flex mx-auto w-24" alt="Goonj Logo" />

@@ -37,12 +37,12 @@ const eventRulebook =
 export const data = [
   {
     id: 1,
-    name: "DRAMAFLICT",
+    name: "HEADGEAR SAGA",
     img: img1,
     Event: [
       {
         id: 101,
-        name: "DRAMA/SKIT",
+        name: "DRAMA OR SKIT",
         img: skitImage,
         description:
           "A type of drama conflict in which members of each team will showcase their play based on the theme.",
@@ -123,7 +123,7 @@ export const data = [
   },
   {
     id: 2,
-    name: "FUSION FEVER",
+    name: "FOOTLOOSE",
     img: img2,
     Event: [
       {
@@ -156,13 +156,13 @@ export const data = [
         description: "Let’s dance to the best!",
         topics: [],
         guidelines: [
-          "The minimum number of participants in one group is 5, and the maximum is 15.",
-          "The use of props is allowed, and no obscenity or vulgarity should be present in the performance.",
-          "The use of traditional and ethnic forms is prohibited.",
-          "The performance limit for group dances is 6-8 minutes, and for duets, it is 4-5 minutes; exceeding this limit will result in point deduction.",
-          "The team will arrange outfits themselves, ensuring they are tasteful and devoid of vulgarity.",
-          "Songs should be submitted to the core committee a day prior to the event; details and format will be shared.",
-          "(If there is a technical fault, extra time will be given accordingly.)",
+          "At least 5 to 10 members should be present in the team for group dance,",
+          "Use of props is allowed. NO obscene acts should be done in the performance,",
+          "The performance should not exceed 6-8 minutes and 2 minutes for stage clearance will be given, else points deduction will be done,",
+          "The outfits accordingly will be arranged by the team itself,",
+          "Dress up must be in good taste and no vulgarity is allowed,",
+          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared),",
+          "(If there is technical fault, extra time will be given accordingly.)"
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -175,16 +175,16 @@ export const data = [
 
       {
         id: 203,
-        name: "CLASSICAL",
+        name: "CLASSICAL (SOLO)",
         img: classical,
         description: "Dance with your heart!",
         topics: [],
         guidelines: [
-          "The performance should not exceed more than 3-4 minutes and 1 minute for stage clearance will be given, else points deduction will be done.",
-          "The outfits accordingly will be arranged by the team itself.",
-          "Dress up must be in good taste and no vulgarity is allowed.",
-          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
-          "If there is a technical fault, extra time will be given accordingly.",
+          "The performance should not exceed more than 4 minutes and 1 minute for stage clearance will be given, else points deduction will be done,",
+          "The outfits accordingly will be arranged by the team itself,",
+          "Dress up must be in good taste and no vulgarity is allowed,",
+          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared),",
+          "(If there is technical fault, extra time will be given accordingly.)"
         ],
         Rulebook: eventRulebook,
         interCollege: true,

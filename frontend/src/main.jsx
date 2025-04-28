@@ -47,9 +47,9 @@ const loggedInRoutes = [
   {
     path: "/gallery",
     element: (
-      <ProtectedComponent>
+      // <ProtectedComponent>
         <Gallery />
-      </ProtectedComponent>
+      // </ProtectedComponent>
     ),
   },
   {
@@ -60,10 +60,10 @@ const loggedInRoutes = [
       
     ),
   },
-  {
-    path: "/caportal",
-    element: <CAPortal />,
-  },
+  // {
+  //   path: "/caportal",
+  //   element: <CAPortal />,
+  // },
   {
     path: "/loader",
     element: <Loader />,

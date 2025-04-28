@@ -106,7 +106,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="flex justify-between w-10/12 mx-auto  lg:mt-16 xl:mt-32 md:mt-12">
-              <div className="flex  text-white ">
+              {/* <div className="flex  text-white ">
                 <Link to="/caportal">
                   <div className="flex flex-col items-center text-sm sm:text-2xl mt-5 sm:mt-0  ">
                     <p>CA PORTAL</p>
@@ -117,7 +117,7 @@ const HomePage = () => {
                     />
                   </div>
                 </Link>
-              </div>
+              </div> */}
               <div className="flex justify-end text-white mt-6 sm:mt-8">
                 <Link to="/teams">
                   <div className="flex flex-col items-center text-sm sm:text-2xl">
@@ -156,7 +156,7 @@ const HomePage = () => {
             >
               <div className="flex flex-col justify-center items-center font-cM">
                 <img
-                  src={""}
+                  src={director}
                   className="w-32 sm:w-48 mb-4 rounded-xl border-b-4 border-[#5f43b2]"
                   alt="GBPIET Director"
                 />
@@ -169,12 +169,10 @@ const HomePage = () => {
               <div className="flex flex-col gap-3 font-cM items-center sm:w-9/12 sm:items-start mx-5">
                 <span className="text-[#5f43b2]">Director's Message:</span>
                 <p className="text-white text-center sm:text-left">
-                  With boundless excitement, I welcome you to Goonj , our
-                  vibrant annual cultural fest! Organized by our dedicated
-                  students and management, Goonj is a celebration of creativity
-                  and unity. Join us for thrilling competitions, captivating
-                  performances, and unforgettable memories. Let's make this fest
-                  a success together!
+                With great excitement, I welcome you all to Goonj, our vibrant annual cultural fest. Organized by our passionate students and dedicated management, 
+                Goonj celebrates creativity, unity, and talent. Through thrilling competitions, captivating performances, and lively showcases, we come together to 
+                create unforgettable memories. I encourage everyone to participate wholeheartedly, celebrate each moment, and contribute to the spirit of joy and 
+                togetherness. Let’s make this edition of Goonj a grand success!
                 </p>
               </div>
             </div>
