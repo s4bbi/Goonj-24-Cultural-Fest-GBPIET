@@ -86,14 +86,14 @@ const About = () => {
                             <div className="flex flex-col gap-14 font-cM text-center md:text-left">
                                 <h2 className="text-4xl text-white text-center">Whom to<span className="text-[#5F43B2] mx-3 font-cSB">Contact ?</span></h2>
                                 <div className="flex flex-col gap-2 text-center ">
-                                    <p className="font-cR text-[#5F43B2] text-xl"> Chandra Prakash Pandey <span className="text-white">(Student Activity Cell President)</span></p>
-                                    <p className="text-white">+91 6395451069</p>
-                                    <p className="text-white text-sm text-center">chandraprakashpandey2003@gmail.com</p>
+                                    <p className="font-cR text-[#5F43B2] text-xl"> Deependra Singh Arya <span className="text-white">(Student Activity Cell President)</span></p>
+                                    <p className="text-white">+91 80576 90308</p>
+                                    <p className="text-white text-sm text-center">anuj7uk@gmail.com</p>
                                 </div>
                                 <div className="flex flex-col gap-2 text-center">
-                                    <p className="font-cR text-[#5F43B2] text-xl"> Prajjwal Chauhan <span className="text-white">(General Cultural Secratary)</span></p>
-                                    <p className="text-white">+91 8755293708</p>
-                                    <p className="text-white">prajjwal11203@gmail.com</p>
+                                    <p className="font-cR text-[#5F43B2] text-xl"> Jaypal Rangeela <span className="text-white">(General Cultural Secratary)</span></p>
+                                    <p className="text-white">+91 9690073413</p>
+                                    <p className="text-white">jaypalrangeela@gmail.com</p>
                                 </div>
                             </div>
                         </div>

@@ -15,14 +15,14 @@ import dance_battle from "../assets/Images/EventImages/dance-battle.webp";
 import debate from "../assets/Images/EventImages/debate.webp";
 import dress_to_impress from "../assets/Images/EventImages/dress-to-impress.webp";
 import extempore from "../assets/Images/EventImages/extempore.webp";
-import frame from "../assets/Images/EventImages/frame-by-frame.png";
+import frame from "../assets/Images/EventImages/frame-by-frame.webp";
 import goonj_movie from "../assets/Images/EventImages/goonj-movie.webp";
 import hop_notch_group from "../assets/Images/EventImages/hop-notch-group.webp";
-import light_painting from "../assets/Images/EventImages/light-painting.png";
+import light_painting from "../assets/Images/EventImages/light-painting.webp";
 import mr_miss_goonj from "../assets/Images/EventImages/mr-and-miss-goonj.webp";
 import singing from "../assets/Images/EventImages/singing.webp";
 import qawalli from "../assets/Images/EventImages/qawalli.webp";
-import reel_mania from "../assets/Images/EventImages/reel-mania.png";
+import reel_mania from "../assets/Images/EventImages/reel-mania.webp";
 import standup from "../assets/Images/EventImages/standup-comedy.webp";
 import treasure_hunt from "../assets/Images/EventImages/treasure-hunt.webp";
 import oppo from "../assets/Images/EventImages/oppo.webp";
@@ -30,7 +30,6 @@ import open_mic from "../assets/Images/EventImages/open-mic.webp";
 import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
-import tug_of_war from "../assets/Images/EventImages/tug-of-war.webp";
 
 const eventRulebook =
   "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
@@ -776,22 +775,6 @@ export const data = [
         coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
         email: " Ashlesh Ranjan (+91 941115530)",
         phone: "",
-      },
-      {
-        id: 1106,
-        name: "Tug of War - Only For GBPIET",
-        img: tug_of_war,
-        description:
-          "Unleash your gaming Prowess, Prizes will be revealed on spot.",
-        topics: [],
-        guidelines: ["Download the RuleBook for more Information"],
-        Rulebook: eventRulebook,
-        judging: "",
-        interCollege: false,
-        entryfees: "Entry Fees: ₹99",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
       },
       {
         id: 1107,

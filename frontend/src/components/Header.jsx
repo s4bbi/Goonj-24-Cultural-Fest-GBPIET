@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 import "../index.css";
-import goonjLogo from "../assets/goonjLogo.svg";
+import goonjLogo from "../assets/goonjLogo.png";
 import LoginButton from "./LoginButton";
 import { RiHome2Line } from "react-icons/ri";
 import { FaRegImages } from "react-icons/fa";
@@ -120,7 +120,7 @@ const Header = () => {
     <div className="flex justify-between items-center py-4 px-4 font-cR w-full bg-transparent absolute z-40 md:px-6 md:py-6">
       <div className="flex items-center font-cM text-xl">
         <Link to="/">
-          <img src={goonjLogo} className="flex mx-auto w-24" alt="Goonj Logo" />
+          <img src={goonjLogo} className="flex mx-auto w-36" alt="Goonj Logo" />
         </Link>
       </div>
       <div className="flex items-center md:hidden">
