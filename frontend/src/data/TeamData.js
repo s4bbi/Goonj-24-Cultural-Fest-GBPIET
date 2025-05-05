@@ -39,7 +39,7 @@ import ramneet from "../assets/Images/TeamsImages/EventTeam/ramneet.jpg";
 import priyanshu from "../assets/Images/TeamsImages/EventTeam/priyanshu.jpg";
 import ragini from "../assets/Images/TeamsImages/EventTeam/ragini.jpg";
 import vidhi from "../assets/Images/TeamsImages/EventTeam/vidhi.jpg";
-import vidhi from "../assets/Images/TeamsImages/EventTeam/sujal.jpg";
+import sujal from "../assets/Images/TeamsImages/EventTeam/sujal.jpg";
 import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg";
 import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg";
 import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg";
@@ -161,6 +161,16 @@ export const teamData = [
         designation: "Management Head",
       },
       {
+        id: 209,
+        name: "Utkarsh Dubey",
+        img: dubey,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "utekalfa0001@gmail.com-",
+        designation: "Event Management Secretary",
+      },
+      {
         id: 107,
         name: "Vinay Kathait",
         img: vinay,
@@ -201,7 +211,7 @@ export const teamData = [
         gmail: "akarshandhyani31@gmail.com",
       },
       {
-        id: 110,
+        id: 111,
         name: "Dev Bhatt",
         img: dev,
         git: "",
@@ -211,7 +221,7 @@ export const teamData = [
         gmail: "devbhatt8030@gmail.com",
       },
       {
-        id: 110,
+        id: 112,
         name: "Tanishka Petwal",
         img: tanishka,
         git: "",
@@ -221,7 +231,7 @@ export const teamData = [
         gmail: "tanishkapetwal@gmail.com ",
       },
       {
-        id: 110,
+        id: 113,
         name: "Meha Tiwari",
         img: meha,
         git: "",
@@ -231,7 +241,7 @@ export const teamData = [
         gmail: "mehat2003@gmail.com",
       },
       {
-        id: 110,
+        id: 114,
         name: "Harsh Singh",
         img: harsh,
         git: "",
@@ -241,7 +251,7 @@ export const teamData = [
         gmail: "harshsingh8476@gmail.com",
       },
       {
-        id: 110,
+        id: 115,
         name: "Shubham Bahuguna",
         img: shubham,
         git: "",
@@ -251,7 +261,7 @@ export const teamData = [
         gmail: "bahugunas70@gmail.com",
       },
       {
-        id: 110,
+        id: 116,
         name: "Ismat Aara Khatoon",
         img: ismat,
         git: "",
@@ -261,7 +271,7 @@ export const teamData = [
         gmail: "ismataara145@gmail.com",
       },
       {
-        id: 227,
+        id: 117,
         name: "Prakarti Negi",
         img: prakarti,
         git: "",
@@ -406,16 +416,7 @@ export const teamData = [
       //   gmail: "niharikachauhan425@gmail.com",
       //   designation: "Graphics Coordinator",
       // },
-      {
-        id: 209,
-        name: "Utkarsh Dubey",
-        img: dubey,
-        git: "",
-        linkdin: "",
-        insta: "",
-        gmail: "utekalfa0001@gmail.com-",
-        designation: "Event Management Secretary",
-      },
+      
       {
         id: 212,
         name: "Kriti Uniyal",
