@@ -30,6 +30,10 @@ import open_mic from "../assets/Images/EventImages/open-mic.webp";
 import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
+import technicalquiz from "../assets/Images/EventImages/technical-quiz.webp";
+import projectexhibition from "../assets/Images/EventImages/project-exhibition.webp";
+import bridgeit from "../assets/Images/EventImages/bridge-it.webp";
+import ideathon from "../assets/Images/EventImages/ideathon.webp";
 
 const eventRulebook =
   "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
@@ -594,39 +598,15 @@ export const data = [
   },
   {
     id: 11,
-    name: "OPEN EVENTS",
+    name: "MISCELLANEOUS ",
     img: img3,
     Event: [
-      {
-        id: 1002,
-        name: "CAMPUS CLICKFEST",
-        img: clickfest,
-        description:
-          "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
-        topics: [],
-        guidelines: [
-          "Photos submitted must be clicked on the day of the Goonj '24 Fest inside the campus",
-          "Every individual can participate in the contest",
-          "Your creation should be an original piece of work",
-          "Plagiarism content will lead to disqualification",
-          "Each individual submitting the entries must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-          "Entries must be submitted before 29 May by 11:59 PM",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging: "Creativity + Adherence to theme + overall visual impact.",
-        entryfees: "Entry Fees: ₹99",
-        registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
-        coordinator: "Prachi Bhatt",
-        email: "",
-        phone: "+91 93503 48377",
-      },
       {
         id: 400,
         name: "Poster Making",
         img: clickfest,
         description:
-          "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
+        "Welcome to 'Poster Pulse' this is your chance to make art that speaks volumes. With just paper, pens, and passion, turn your thoughts into bold visuals that leave a lasting impact",
         topics: [],
         guidelines: [
           "Participants must bring their own materials. ",
@@ -643,120 +623,8 @@ export const data = [
         phone: "+91 93503 48377",
       },
       {
-        id: 1004,
-        name: "REEL-MANIA",
-        img: reel_mania,
-        description:
-          "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
-        topics: [],
-        guidelines: [
-          "Every individual can participate in the contest",
-          "Ensure your reel seamlessly integrates the Reel Mania theme",
-          "Your creation should be an original piece of work",
-          "Plagiarism content will lead to disqualification",
-          "Entries can either be individual or team",
-          "Each individual or team member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-          "Entries must be submitted before 29 May by 11:59 PM",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging: "Creativity + Adherence to theme + overall visual impact.",
-        entryfees: "Entry Fees: ₹99",
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        coordinator: "Tanishka Petwal",
-        email: "",
-        phone: "+91 96396 47397",
-      },
-
-      {
-        id: 1101,
-        name: "Open Mic",
-        img: open_mic,
-        description: "",
-        topics: [],
-        guidelines: [
-          "Performer will be assigned 1 minute of time without any setup time.",
-          "Exceeding the time limit will have one mark deducted from the performer’s score for every extra 5 seconds. ",
-          "Participants will be competing in 1v1 format.",
-          "Group performance is not allowed. ",
-          "Performance will be judged based on technique, arrangement, creativity, crowd response and overall musicality.",
-        ],
-        Rulebook: eventRulebook,
-        judging: "",
-        interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99",
-        coordinator: "Gaurav bhatt (9625442127)",
-        email: "Rudrax (7457887515)",
-        phone: "",
-      },
-      {
-        id: 1102,
-        name: "ESPORTS",
-        img: esport,
-        description:
-          "Experience the ultimate showdown of skill and strategy at our eSports event, featuring intense tournaments in BGMI, Freefire, and Valorant.",
-        topics: [],
-        guidelines: [
-          "Introduction of eSports should be changed",
-          "This event is open for everyone so there is no limit in participants. Anyone can participate!",
-          "Do not violate the community guidelines by foul playing.",
-          "If anyone caught cheating, leads to immediate disqualification.",
-        ],
-        type: [
-          {
-            name: "Valorant",
-            formlink: "https://forms.gle/NH8SED5gHxGhKZxW6",
-            coordinator: "Pankaj Raturi - 7668503726",
-            subRuleBook:
-              "https://docs.google.com/document/d/1bA-YHj-_62NEv6Sn3pUE686bUrc231bhGUqWoZ13Ouo/edit?usp=sharing",
-          },
-          {
-            name: "BGMI",
-            formlink: "https://forms.gle/JAVPULZTTjht6c827 ",
-            coordinator: "Ravi Nailwal - 9837989785 ",
-            subRuleBook:
-              "https://docs.google.com/document/d/1DlbCslMfYPzguH2uE32swycuLkD9SQ1NC_tyJBC3L7c/edit?usp=sharing",
-          },
-          {
-            name: "Free Fire",
-            formlink: "https://forms.gle/JAVPULZTTjht6c827",
-            coordinator: "Akshay Tomar - 84495 51027)",
-            subRuleBook:
-              "https://docs.google.com/document/d/13Imgk1j0ZbygmnR1vvbEIYNldZF70rAr_FFXwDgDHJ8/edit?usp=sharing",
-          },
-        ],
-        Rulebook: "",
-        judging: "",
-        interCollege: true,
-        registerLink: "",
-        entryfees: "",
-      },
-      {
-        id: 1103,
-        name: "Standup Comedy",
-        img: standup,
-        description:
-          "Prepare for an evening of laughter and entertainment as comedians take the stage to deliver hilarious anecdotes, witty observations, and uproarious jokes at our Standup Comedy event.",
-        topics: [],
-        guidelines: [
-          "This is an open event so anyone can participate.",
-          "There is a time limit of 3 minutes.",
-          "Exceeding the time limit will have marks deduction.",
-        ],
-        Rulebook: eventRulebook,
-        judging: "",
-        interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99",
-        coordinator: "Neeraj Kandpal",
-        email: "",
-        phone: "+91 9027855477",
-      },
-
-      {
         id: 1104,
-        name: "Treasure Hunt",
+        name: "Reverse Scavenger Hunt",
         img: treasure_hunt,
         description: "Embrace the journey, embrace the treasure!",
         topics: [],
@@ -764,63 +632,17 @@ export const data = [
           "The first hint will be given to the teams on the starting line and the other clues will be hidden in the campus. The clues will be connected to each other.",
           "A team must consist of only 5 members.",
           "There is a time limit of one hour. The first one reaches the finish line with all the clue wins!",
+          "Teams must hide their chosen object in a designated location on campus.",
+          "After hiding the object, each team must create a set of 4 clues. These clues should be logical, relevant to the object, and lead to the next clue or location without being overly cryptic.  Clue Format: Clues can include riddles, puzzles, photographs, or descriptive hints. CLUES WILL BE HIDDEN EARLY IN THE MORNING (AN HOUR PRIOR TO THE EVENT BY EACH TEAM). ",
+          " No outside help or technology (e.g., mobile phones, GPS devices) is allowed during the search.",
         ],
         Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
-        entryfees: "Entry Fees: ₹400",
         coordinator: "Prajjwal Chauhan",
         email: "prajjwal1120@gmail.com",
         phone: "+91 8755293708",
-      },
-      {
-        id: 1105,
-        name: "Step Up",
-        img: step_up,
-        description:
-          "Do you have interest in dance? Then this special event called step up is for you. It’s an open stage for all if you just want to have fun and dance then join this event.",
-        topics: [],
-        guidelines: [
-          "There is no limit to the number of participants, and group, solo, duo, or trio entries are allowed",
-          "Each participant must prepare choreography for five songs, each lasting one minute.",
-          "Participants will submit their five songs to the core team, and one song will be randomly selected for each battle",
-          "The event will proceed in knockout fixtures, with one-on-one battles until only two participants remain.",
-          "The ultimate winner of the dance battle will be determined by the last battle conducted",
-          "Songs will be played randomly by the core committee present at the site, and opponents will be revealed on the spot.",
-        ],
-        Rulebook: eventRulebook,
-        judging: "",
-        interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99",
-        coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
-        email: " Ashlesh Ranjan (+91 941115530)",
-        phone: "",
-      },
-      {
-        id: 1107,
-        name: "Goonj Got Talent",
-        img: ggt,
-        description: "Talent hits a target no one else can hit!",
-        topics: [],
-        Rulebook: eventRulebook,
-        guidelines: [
-          "This is an open event, there is no limit in the number of participants. Group, duet, solo, is allowed",
-          "Performer will be assigned min. 2, max. 5 minutes to showcase his/her talent. Exceeding the time limit will lead to point deduction",
-          "Performer(s) is/are free to showcase their talent, whether it is a magic trick, singing, standup or dancing etc",
-          "Use of props is allowed",
-          "No obscene act or vulgarity is allowed",
-          "If there will be a song to be played in the background, it should be submitted to the core committee a day prior to the event.",
-          "(If there is any technical fault, extra time will be given accordingly)",
-        ],
-        judging: "",
-        interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99",
-        coordinator: "Priyanshu Rana (9548973945)",
-        email: "Drona Chamoli (9045118831)",
-        phone: "Ramneet Kaur (ramneetkaur0028@gmail.com)",
       },
     ],
   },
@@ -832,9 +654,9 @@ export const data = [
       {
         id: 2000,
         name: "Ideathon",
-        img: clickfest,
+        img: ideathon,
         description:
-          "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
+        " It's time to turn it into a wildfire of innovation! Welcome to 'Ideathon Ignite', where imagination meets impact",
         topics: [],
         guidelines: [
           "Ideas must be original. Plagiarized or previously implemented projects will be disqualified.",
@@ -858,9 +680,9 @@ export const data = [
       {
         id: 2001,
         name: "Project Exhibition ",
-        img: reel_mania,
+        img: projectexhibition,
         description:
-          "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
+        "Welcome to 'Project Panorama', a showcase where creativity meets craftsmanship! Step into a world where prototypes, models, and passion-powered projects come alive",
         topics: [],
         guidelines: [
           "The Project exhibition is open to teams with a maximum of 3 members and minimum with 2 members. ",
@@ -885,7 +707,7 @@ export const data = [
       {
         id: 2002,
         name: "Technical Quiz ",
-        img: reel_mania,
+        img: technicalquiz,
         description:
           "Challenge yourself with our Technical Quiz — a curated set of questions designed to assess and sharpen your knowledge in  technical domains relevant to engineering and technology and more",
         topics: [],
@@ -911,9 +733,9 @@ export const data = [
       {
         id: 2001,
         name: "Bridge-It",
-        img: reel_mania,
+        img: bridgeit,
         description:
-          "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
+        "Welcome to 'Bridge-It', the ultimate showdown of brains, balance, and balsa wood! Get ready to design, construct, and test your very own bridge",
         topics: [],
         guidelines: [
           "Minimum 2 and maximum 5 members per team ",
