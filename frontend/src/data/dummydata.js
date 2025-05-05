@@ -30,10 +30,6 @@ import open_mic from "../assets/Images/EventImages/open-mic.webp";
 import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
-import bridgeit from "../assets/Images/EventImages/bridge-it.webp";
-import projectexhibition from "../assets/Images/EventImages/project-exhibition.webp";
-import technicalquiz from "../assets/Images/EventImages/technical-quiz.webp";
-import ideathon from "../assets/Images/EventImages/ideathon.webp";
 
 const eventRulebook =
   "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
@@ -420,19 +416,19 @@ export const data = [
       },
       {
         id: 802,
-        name: "Singing",
+        name: "Solo Singing",
         img: singing,
         decription: "Breaking barriers on stage!",
         topics: [],
         guidelines: [
-          "Time duration should not exceed 6 minutes and 1 minute for stage clearance will be given. Exceeding will lead to points deduction.",
-          "Instruments are allowed but karaoke is not allowed.",
-          "Solo",
+          "Time duration should not exceed 3 minutes and 1 minute for stage clearance will be given. Exceeding will lead to points deduction. ",
+          " The teams can choose their songs accordingly.",
+          "  Use of KAROKE is allowed."
         ],
         Rulebook: eventRulebook,
         interCollege: true,
         judging:
-          "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
+          "Uniformity  + vocal strength.",
         coordinator: "Ravi Nailwal(9837989785)",
         email: "Shaurya ghildiyal (9084995860)",
         phone: "Rudrax (74578 87515)",
@@ -626,6 +622,27 @@ export const data = [
         phone: "+91 93503 48377",
       },
       {
+        id: 400,
+        name: "Poster Making",
+        img: clickfest,
+        description:
+          "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
+        topics: [],
+        guidelines: [
+          "Participants must bring their own materials. ",
+          "Participants will have 1 hour to complete their poster",
+          "Posters will become the property of the organizers and may be used for exhibition or promotional purposes",
+          "The decision of the judges will be final and binding. ",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        judging: "Creativity + Relevance  to theme + Originality + Neatness +  Message clarity and overall impact.",
+        registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
+        coordinator: "Prachi Bhatt",
+        email: "",
+        phone: "+91 93503 48377",
+      },
+      {
         id: 1004,
         name: "REEL-MANIA",
         img: reel_mania,
@@ -805,30 +822,6 @@ export const data = [
         email: "Drona Chamoli (9045118831)",
         phone: "Ramneet Kaur (ramneetkaur0028@gmail.com)",
       },
-      {
-        id: 1107,
-        name: "Goonj Got Talent",
-        img: ggt,
-        description: "Talent hits a target no one else can hit!",
-        topics: [],
-        Rulebook: eventRulebook,
-        guidelines: [
-          "This is an open event, there is no limit in the number of participants. Group, duet, solo, is allowed",
-          "Performer will be assigned min. 2, max. 5 minutes to showcase his/her talent. Exceeding the time limit will lead to point deduction",
-          "Performer(s) is/are free to showcase their talent, whether it is a magic trick, singing, standup or dancing etc",
-          "Use of props is allowed",
-          "No obscene act or vulgarity is allowed",
-          "If there will be a song to be played in the background, it should be submitted to the core committee a day prior to the event.",
-          "(If there is any technical fault, extra time will be given accordingly)",
-        ],
-        judging: "",
-        interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
-        entryfees: "Entry Fees: ₹99",
-        coordinator: "Priyanshu Rana (9548973945)",
-        email: "Drona Chamoli (9045118831)",
-        phone: "Ramneet Kaur (ramneetkaur0028@gmail.com)",
-      },
     ],
   },
   {
@@ -839,7 +832,7 @@ export const data = [
       {
         id: 2000,
         name: "Ideathon",
-        img: ideathon,
+        img: clickfest,
         description:
           "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
         topics: [],
@@ -865,7 +858,7 @@ export const data = [
       {
         id: 2001,
         name: "Project Exhibition ",
-        img: projectexhibition,
+        img: reel_mania,
         description:
           "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
         topics: [],
@@ -892,7 +885,7 @@ export const data = [
       {
         id: 2002,
         name: "Technical Quiz ",
-        img: technicalquiz,
+        img: reel_mania,
         description:
           "Challenge yourself with our Technical Quiz — a curated set of questions designed to assess and sharpen your knowledge in  technical domains relevant to engineering and technology and more",
         topics: [],
@@ -918,7 +911,7 @@ export const data = [
       {
         id: 2001,
         name: "Bridge-It",
-        img: bridgeit,
+        img: reel_mania,
         description:
           "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
         topics: [],
