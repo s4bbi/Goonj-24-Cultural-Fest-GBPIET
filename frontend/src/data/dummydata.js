@@ -91,6 +91,25 @@ export const data = [
         phone: "",
       },
       {
+        id: 408,
+        name: "MONO ACT",
+        img: mimeAct,
+        description:
+          "Unique clothes, lot’s of white make-up but not making sound? If so? The act is MIME! Somebody said “actions speak louder than words” it’s time to make it real!",
+        guidelines: [
+          "Only one entry is allowed per branch.  The performance should not exceed 3-4 minutes, else points deduction will be done.",
+          "Use of props are allowed and arrangement of props and outfits must be done by the team itself.",
+          "Dress up must be in good taste and no vulgarity is allowed.",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        judging:
+          "Audience impact + representation + facial expressions + theme and dialogue execution .",
+        coordinator: "Vidhi Nabiyal",
+        email: "vidhinabiyal@gmail.com",
+        phone: "",
+      },
+      {
         id: 103,
         name: "NUKKAD NATAK",
         img: nukkad,
