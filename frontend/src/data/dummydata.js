@@ -30,6 +30,10 @@ import open_mic from "../assets/Images/EventImages/open-mic.webp";
 import esport from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
+import bridgeit from "../assets/Images/EventImages/bridge-it.webp";
+import projectexhibition from "../assets/Images/EventImages/project-exhibition.webp";
+import technicalquiz from "../assets/Images/EventImages/technical-quiz.webp";
+import ideathon from "../assets/Images/EventImages/ideathon.webp";
 
 const eventRulebook =
   "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
@@ -54,7 +58,7 @@ export const data = [
           "To enhance or highlight the drama use of music (instruments, singing) is allowed",
           "The drama should not exceed more than 4 minutes and 1 minute for stage clearance will be given",
           "If time exceeded points deduction will be there",
-          "(If there is technical fault, extra time will be given accordingly.)"
+          "(If there is technical fault, extra time will be given accordingly.)",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -76,7 +80,7 @@ export const data = [
           "Time limit for the act is minimum 3 minutes and maximum 4 minutes. 1 minute for stage clearance will be given to each team,",
           "Lip sync and dialogues are prohibited,",
           "Exceeding will lead to points deduction,",
-          "(If there is technical fault, extra time will be given accordingly.)"
+          "(If there is technical fault, extra time will be given accordingly.)",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -100,7 +104,7 @@ export const data = [
           "हरित प्रौद्योगिकी - पर्यावरण के लिए एक नया मार्ग (Green Technology – A New Path for Environment)",
           "डेटा सुरक्षा - हमारी पहचान, हमारी जिम्मेदारी (Data Security – Our Identity, Our Responsibility)",
           "देशी प्रौद्योगिकी - आत्मनिर्भर भारत के लिए (Indigenous Technology – The Rhythm of Self-Reliant India)",
-          "The topics of nukkad will be given to each branch through chit system for fair play."
+          "The topics of nukkad will be given to each branch through chit system for fair play.",
         ],
         Rulebook: eventRulebook,
         guidelines: [
@@ -109,7 +113,7 @@ export const data = [
           "Stage clearance time should not exceed more than 1 minute,",
           "Limited props are allowed. Teams must bring their own props, and they should be easily manageable on an outdoor stage,",
           "Costumes should be arranged by the teams,",
-          "Performances should be acoustically driven, and the use of microphones is not allowed."
+          "Performances should be acoustically driven, and the use of microphones is not allowed.",
         ],
         interCollege: true,
         judging:
@@ -139,7 +143,7 @@ export const data = [
           "The outfits according to the given theme will be arranged by the team itself,",
           "Dress up must be in good taste,",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
-          " (if there is technical fault , extra time will be given accordingly.) "
+          " (if there is technical fault , extra time will be given accordingly.) ",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -162,7 +166,7 @@ export const data = [
           "The outfits accordingly will be arranged by the team itself,",
           "Dress up must be in good taste and no vulgarity is allowed,",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared),",
-          "(If there is technical fault, extra time will be given accordingly.)"
+          "(If there is technical fault, extra time will be given accordingly.)",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -184,7 +188,7 @@ export const data = [
           "The outfits accordingly will be arranged by the team itself,",
           "Dress up must be in good taste and no vulgarity is allowed,",
           "Songs should be submitted to the core committee a day prior to the event (details and format will be shared),",
-          "(If there is technical fault, extra time will be given accordingly.)"
+          "(If there is technical fault, extra time will be given accordingly.)",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
@@ -835,7 +839,7 @@ export const data = [
       {
         id: 2000,
         name: "Ideathon",
-        img: clickfest,
+        img: ideathon,
         description:
           "Get ready to unleash your inner photographer and capture the vibrant spirit of our campus in the most epic way  possible! Welcome to 'Campus Clickfest', a photography extravaganza that transforms every corner of our campus  into a canvas of creativity.",
         topics: [],
@@ -847,11 +851,12 @@ export const data = [
           "Each team must submit a slide deck (max 5 slides) summarizing their idea, including:Problem Statement, Proposed Solution, Social Impact, Technical Feasibility, Implementation Plan",
           "Total Time per Team: 7 Minutes",
           "5 minutes for pitching the idea,2 minutes for Q&A with the judges ",
-          "A timer will be displayed during the pitch. Exceeding time limits may result in point deductions."
+          "A timer will be displayed during the pitch. Exceeding time limits may result in point deductions.",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
-        judging: " Relevance to Theme(10 marks) + Innovation & Creativity(10 marks) + Technical Feasibility(10 marks) + Social Impact(10 marks) + Clarity & Presentation(10 marks) + Sustainability & Long-Term Viability(10 marks) + Team Collaboration(10 marks).",
+        judging:
+          " Relevance to Theme(10 marks) + Innovation & Creativity(10 marks) + Technical Feasibility(10 marks) + Social Impact(10 marks) + Clarity & Presentation(10 marks) + Sustainability & Long-Term Viability(10 marks) + Team Collaboration(10 marks).",
         registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
         coordinator: "Prachi Bhatt",
         email: "",
@@ -860,7 +865,7 @@ export const data = [
       {
         id: 2001,
         name: "Project Exhibition ",
-        img: reel_mania,
+        img: projectexhibition,
         description:
           "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
         topics: [],
@@ -870,21 +875,77 @@ export const data = [
           "Participation is free of charge.",
           "Each team is required to bring their own extension boards for smooth supply of power to",
           "Participants are responsible for bringing their own hardware components, development boards and laptops. ",
-          "Project Rules: ",
-          "  Project built must not be an exact replica of an existing product/project/tool. ",
-          "  Project can be software only , hardware only or a collaboration of both . ",
-          "  Teams can take help from Open Source Platforms to build the solution but must not copy the solution/code/idea. ",
-          "  If a team is found using any unfair means strict action will be taken against them"
+          "Project built must not be an exact replica of an existing product/project/tool. ",
+          "Project can be software only , hardware only or a collaboration of both . ",
+          "Teams can take help from Open Source Platforms to build the solution but must not copy the solution/code/idea. ",
+          "If a team is found using any unfair means strict action will be taken against them",
         ],
         Rulebook: eventRulebook,
         interCollege: true,
-        judging: "Originality of the Idea(10 marks)  + Technical Complexity(10 marks)  + Practical Implementation(10 marks) + Visual Presentation & Design(10 marks) +  Clarity of Explanation(10 marks) .",
-        entryfees: "Entry Fees: ₹99",
+        judging:
+          "Originality of the Idea(10 marks)  + Technical Complexity(10 marks)  + Practical Implementation(10 marks) + Visual Presentation & Design(10 marks) +  Clarity of Explanation(10 marks) .",
         registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
         coordinator: "Tanishka Petwal",
         email: "",
         phone: "+91 96396 47397",
-      }
+      },
+      {
+        id: 2002,
+        name: "Technical Quiz ",
+        img: technicalquiz,
+        description:
+          "Challenge yourself with our Technical Quiz — a curated set of questions designed to assess and sharpen your knowledge in  technical domains relevant to engineering and technology and more",
+        topics: [],
+        guidelines: [
+          "Each team must consist of a minimum of 2 and a maximum of 3 members.",
+          "Limit: A maximum of 3 teams per academic branch are allowed to participate. ",
+          "Participants must be current students of GBPIET Pauri and must present a valid college ID at the time of the event.",
+          "The quiz will comprise 60 multiple-choice questions (MCQs) covering various technical domains relevant to engineering and technology.",
+          "Participants will have 60 minutes to complete the quiz. ",
+          "Answers must be marked on the provided answer sheets. ",
+          "Each correct answer will award 1 point. There will be no negative marking for incorrect answers. ",
+          "Teams must report to the quiz venue at least 15 minutes before the scheduled start time. Late arrivals may lead to disqualification. ",
+          "The use of mobile phones, calculators, smartwatches, or any other electronic devices is strictly prohibited during the quiz. ",
+          "No external assistance is allowed. Teams found cheating or attempting to cheat will be disqualified immediately.",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        coordinator: "Tanishka Petwal",
+        email: "",
+        phone: "+91 96396 47397",
+      },
+      {
+        id: 2001,
+        name: "Bridge-It",
+        img: bridgeit,
+        description:
+          "Welcome to 'Reel-Mania,' the ultimate reel-making extravaganza where your creative vision transforms into  movie magic. Get ready to shoot the spirit and joy of  “GOONJ” with the seasoning of editing skills.",
+        topics: [],
+        guidelines: [
+          "Minimum 2 and maximum 5 members per team ",
+          "Open to students of GBPIET and invited institutions ",
+          "A maximum of 2 teams per branch are allowed to participate ",
+          "Each participant may compete in only one team ",
+          "Each team is permitted to use only: Ice-cream sticks, Fevicol or equivalent adhesive (super glue or industrial adhesives are strictly prohibited) ,Transparent tape (colored or opaque tape is not allowed) Painting, coloring, or decorating the structure is not allowed and will lead to disqualification. ",
+          "Overlapping of sticks is not allowed(Except for joints).",
+          "The bridge must be able to span a gap of 45 cm. ",
+          "A hook or loop must be present at the center base of the bridge to suspend weights during testing.",
+          "Maximum usage: 250 ice-cream sticks, each no longer than 11 cm. ",
+          "This is a single-round offline event.",
+          "All participating teams will construct their bridges on-site during the event at GBPIET Pauri during Goonj 2K25. ",
+          "Required materials will be provided durimg the event .",
+          "Structures will be tested live by the event jury for strength and efficiency.",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        judging:
+          "Efficiency + balance + trusses +  Economical and intelligent use of limited resources + How much weight the bridge can sustain before failure ",
+        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        coordinator: "Tanishka Petwal",
+        email: "",
+        phone: "+91 96396 47397",
+      },
     ],
-  }
+  },
 ];
