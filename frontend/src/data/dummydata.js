@@ -95,9 +95,9 @@ export const data = [
         name: "MONO ACT",
         img: mimeAct,
         description:
-          "Unique clothes, lot’s of white make-up but not making sound? If so? The act is MIME! Somebody said “actions speak louder than words” it’s time to make it real!",
+        "Welcome to 'Solo Spotlight', the ultimate Mono Act challenge where your voice, expressions, and presence take center stage. It’s just you and the spotlight",
         guidelines: [
-          "Only one entry is allowed per branch.  The performance should not exceed 3-4 minutes, else points deduction will be done.",
+          "Only one entry is allowed per branch. The performance should not exceed 3-4 minutes, else points deduction will be done.",
           "Use of props are allowed and arrangement of props and outfits must be done by the team itself.",
           "Dress up must be in good taste and no vulgarity is allowed.",
         ],
@@ -105,8 +105,8 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + representation + facial expressions + theme and dialogue execution .",
-        coordinator: "Vidhi Nabiyal",
-        email: "vidhinabiyal@gmail.com",
+        coordinator: "",
+        email: "",
         phone: "",
       },
       {
