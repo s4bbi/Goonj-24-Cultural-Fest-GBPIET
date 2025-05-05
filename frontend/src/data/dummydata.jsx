@@ -36,10 +36,11 @@ import projectexhibition from "../assets/Images/EventImages/project-exhibition.w
 import bridgeit from "../assets/Images/EventImages/bridge-it.webp";
 import ideathon from "../assets/Images/EventImages/ideathon.webp";
 import bollywood_tadka from "../assets/Images/EventImages/bollywood-tadka.webp";
+import ad_mania from "../assets/Images/EventImages/ad-mania.webp";
 
 
 const eventRulebook =
-  "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
+  "https://drive.google.com/file/d/1nP3vxgs-XqQ7jh5npq2l-r6Cc8VTQlqC/view?usp=sharing";
 export const data = [
   {
     id: 1,
@@ -67,8 +68,8 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + representation + expressions + theme & dialogue execution + costume.",
-        coordinator: "Pallavi Pathak",
-        email: "p26alla02vi@gmail.com",
+        coordinator: "Priyanshi Bisht, Ragini Bisht",
+        email: "",
         phone: "",
       },
       {
@@ -89,8 +90,8 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + representation + facial expressions + theme execution + overall performance.",
-        coordinator: "Vidhi Nabiyal",
-        email: "vidhinabiyal@gmail.com",
+        coordinator: "Priyanshi Bisht, Ragini Bisht",
+        email: "",
         phone: "",
       },
       {
@@ -121,8 +122,8 @@ export const data = [
         interCollege: true,
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
-        coordinator: "Rashmi Rawat",
-        email: "rawatrashmi162@gmail.com",
+        coordinator: "Priyanshi Bisht, Ragini Bisht",
+        email: "",
         phone: "",
       },
     ],
@@ -152,9 +153,9 @@ export const data = [
         interCollege: true,
         judging:
           "representation + audience impact + expressions + stage coverage + theme execution + coordination + team work + overall performance.",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
+        coordinator: "Monika Negi, Namrata Pundir",
+        email: "",
+        phone: "",
       },
       {
         id: 202,
@@ -175,9 +176,9 @@ export const data = [
         interCollege: true,
         judging:
           "representation + Audience impact + expressions + theme execution + coordination + stage coverage + overall performance.",
-        coordinator: "Akshit Anand",
-        email: "akshitanand121@gmail.com",
-        phone: "8979095390",
+        coordinator: "Monika Negi, Namrata Pundir",
+        email: "",
+        phone: "",
       },
 
       {
@@ -197,8 +198,8 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + facial expressions + execution + stage coverage + outfit + overall performance.",
-        coordinator: "Akansha Rawat",
-        email: "akanshaar3256@gmail.com",
+        coordinator: "Monika Negi, Namrata Pundir",
+        email: "",
         phone: "",
       },
     ],
@@ -227,8 +228,8 @@ export const data = [
         interCollege: false,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Drona Chamoli (9045118831)",
+        coordinator: "Monika Negi",
+        email: "",
         phone: "",
       },
     ],
@@ -257,8 +258,8 @@ export const data = [
         interCollege: false,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Drona Chamoli (9045118831)",
+        coordinator: "Ashutosh Rana, Jiveeka Negi, Avishka Negi, Shivani Bhardwaj",
+        email: "",
         phone: "",
       },
     ],
@@ -284,8 +285,8 @@ export const data = [
         interCollege: false,
         judging:
           "Audience impact + representation + facial expressions + theme and dialogue execution .",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Drona Chamoli (9045118831)",
+        coordinator: "Nidhi Singh, Mayank Latwal, Avishka Negi",
+        email: "",
         phone: "",
       },
     ],
@@ -314,8 +315,8 @@ export const data = [
         interCollege: true,
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Ragini Bisht",
-        email: "raginibisht987@gmail.com",
+        coordinator: "Ragini Bisht, Aditi Joshi, Sakshi Bhatt",
+        email: "",
         phone: "",
       },
 
@@ -339,8 +340,8 @@ export const data = [
         interCollege: false,
         judging:
           "dressing sense + appearance + ramp + confidence + facial  expressions + fluency + overall performance",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Ashutosh Rana (9118798461)",
+        coordinator: "",
+        email: "Ashutosh Rana",
         phone: "",
       },
     ],
@@ -369,13 +370,12 @@ export const data = [
         interCollege: false,
         judging:
           "choreography + confidence + coordination (group, duo, trio) + cheering impact + overall performance.,",
-        coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
-        email: "Ashlesh Ranjan (+91 941115530)",
+        coordinator: "Ragini Bisht. Sakshi Bhatt, Aastha",
+        email: "",
         phone: "",
       },
     ],
   },
-  
   {
     id: 8,
     name: "MELODY MANIA",
@@ -471,8 +471,8 @@ export const data = [
         interCollege: true,
         judging:
           "Knowledge + content + critical thinking + rebuttal skills + time management.",
-        coordinator: "Akshita Rajbhar (8630009246)",
-        email: "Harsh Gupta (8126568879)",
+        coordinator: "Ishita Sati, Gunjan Purohit, Priyanshi Bisht",
+        email: "",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
         subRuleBook:
@@ -494,8 +494,8 @@ export const data = [
           "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
         interCollege: true,
         judging: "Knowledge + content + critical thinking + management.",
-        coordinator: "Akshita Rajbhar (8630009246)",
-        email: "Harsh Gupta (8126568879)",
+        coordinator: "Ishita Sati, Gunjan Purohit, Priyanshi Bisht",
+        email: "",
         phone: "",
         registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
         subRuleBook:
@@ -606,7 +606,7 @@ export const data = [
         interCollege: true,
         judging: "Creativity + Relevance  to theme + Originality + Neatness +  Message clarity and overall impact.",
         registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
-        coordinator: "Prachi Bhatt",
+        coordinator: "Jiveeka Negi, Nidhi Singh, Shivani Bhardwaj, Aastha",
         email: "",
         phone: "+91 93503 48377",
       },
@@ -628,9 +628,9 @@ export const data = [
         judging: "",
         interCollege: true,
         registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
-        coordinator: "Prajjwal Chauhan",
-        email: "prajjwal1120@gmail.com",
-        phone: "+91 8755293708",
+        coordinator: "Aastha, Mayank Latwal",
+        email: "",
+        phone: "",
       },
       {
         id: 1104,
@@ -653,7 +653,7 @@ export const data = [
       },
       {
         id: 1005,
-        name: "GOONJ MOVIE - Short Film Competition (Only For GBPIET) ",
+        name: "GOONJ MOVIE - Short Film Competition",
         img: goonj_movie,
         description:
           "Get ready for the ultimate adventure as we present 'G Movie,' an electrifying filmography event that transforms our campus into a cinematic playground. Whether you're a budding director, actor, or film enthusiast, this is your chance to make movie magic on our very own campus stage.",
@@ -668,9 +668,31 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Suraj Bhatt",
+        coordinator: "Ishita Sati, Gunjan Purohit",
         email: "",
-        phone: "+91 95287 37596",
+        phone: "",
+      },
+      {
+        id: 1005,
+        name: "AD-MANIA",
+        img: ad_mania,
+        description:
+          "Ad-Mania is an exhilarating event designed to test your wit, imagination and teamwork in the fast-paced world of advertising. In this creative showdown, teams will channel their inner marketing gurus to craft captivating advertisements for products handed to them.",
+        topics: [],
+        guidelines: [
+          "There is no limit in members in a team.",
+          "Teams would be given a specific event in which they are free to make reels or ads for advertising purpose.",
+          "The teams have to submit their reels a week prior to the event that will be uploaded on official handles (@sacgbpiet + @gbpiet_goonj).",
+          "The judgement will be made according to the views and likes on the video.",
+          "Profanity/Vulgarity of any kinds is strictly prohibited.",
+          "The advertisement should not exceed the 1-minute mark.",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: false,
+        judging: "Creativity + Adherence to theme + overall visual impact.",
+        coordinator: "Ashutosh Rana, Nidhi Singh, Aditi Joshi, Namrata Pundir",
+        email: "",
+        phone: "",
       },
     ],
   },

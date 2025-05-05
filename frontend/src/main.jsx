@@ -83,9 +83,9 @@ const loggedInRoutes = [
   {
     path: "/events/:id",
     element: (
-      <ProtectedComponent>
+      // <ProtectedComponent>
         <EventDetail />
-      </ProtectedComponent>
+      // </ProtectedComponent>
     ),
   },
   {
