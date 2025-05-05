@@ -1,6 +1,7 @@
-import yashi from "../assets/Images/TeamsImages/DevTeam/Yashpreet.png";
+import yashi from "../assets/Images/TeamsImages/DevTeam/yashpreet.jpg";
 import priya from "../assets/Images/TeamsImages/DevTeam/priya.jpg";
 import Nitesh from "../assets/Images/TeamsImages/DevTeam/Nitesh.png";
+import mahi from "../assets/Images/TeamsImages/DevTeam/mahi.jpg";
 import vaibhav from "../assets/Images/TeamsImages/DevTeam/vaibhav.jpg";
 import rohit from "../assets/Images/TeamsImages/DevTeam/rohit.jpeg";
 import ankur from "../assets/Images/TeamsImages/DevTeam/ankur.jpg";
@@ -65,6 +66,11 @@ import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg";
 import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg";
 import drona from "../assets/Images/TeamsImages/EventTeam/drona.jpg";
 import ashi from "../assets/Images/TeamsImages/EventTeam/ashlesh.jpg";
+import krishal from "../assets/Images/TeamsImages/EventTeam/krishal.jpg";
+import aryan from "../assets/Images/TeamsImages/EventTeam/aryan.jpg";
+
+
+
 export const teamData = [
   {
     id: 1,
@@ -366,6 +372,16 @@ export const teamData = [
         gmail: "niteshsinghbisht6398@gmail.com",
         designation: "Web Team Developer",
       },
+      {
+        id: 203,
+        name: "Mahi Devli",
+        img: mahi,
+        git: "https://github.com/13mahidevli",
+        linkdin: "https://www.linkedin.com/in/mahi-devli-93b223348",
+        insta: "",
+        gmail: "13mahidevli@gmail.com",
+        designation: "Web Team Developer",
+      },
       // {
       //   id: 204,
       //   name: "Ankur Bahuguna",
@@ -547,6 +563,26 @@ export const teamData = [
         insta: "https://www.instagram.com/theparushsinha",
         gmail: "sinhaparush7703@gmail.com",
         designation: "Management Team Member",
+      },
+      {
+        id: 238,
+        name: "Krishal Batra",
+        img: krishal,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/krishal-batra-b21ab9311",
+        insta: "https://www.instagram.com/kri_shal_18",
+        gmail: "krishalbatra18@gmail.com",
+        designation: "Graphics Team Member",
+      },
+      {
+        id: 238,
+        name: "Aryan Raj",
+        img: aryan,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/aryan-raj-7545b02b5",
+        insta: "https://www.instagram.com/__aryanraj_",
+        gmail: "aryanraj.cams@gmail.com",
+        designation: "Graphics Team Member",
       },
       
     ],
