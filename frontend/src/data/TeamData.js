@@ -39,6 +39,7 @@ import ramneet from "../assets/Images/TeamsImages/EventTeam/ramneet.jpg";
 import priyanshu from "../assets/Images/TeamsImages/EventTeam/priyanshu.jpg";
 import ragini from "../assets/Images/TeamsImages/EventTeam/ragini.jpg";
 import vidhi from "../assets/Images/TeamsImages/EventTeam/vidhi.jpg";
+import vidhi from "../assets/Images/TeamsImages/EventTeam/sujal.jpg";
 import arvind from "../assets/Images/TeamsImages/EventTeam/arvind.jpg";
 import ayush from "../assets/Images/TeamsImages/EventTeam/ayush.jpg";
 import akshit from "../assets/Images/TeamsImages/EventTeam/akshitt.jpg";
@@ -423,6 +424,16 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/kriti-uniyal-703692297",
         insta: "https://www.instagram.com/kritiuniyal_",
         gmail: "kritiuniyal28@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 212,
+        name: "Sujal Singh Bisht",
+        img: sujal,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/sujal-singh-bisht-aabb902b9",
+        insta: "https://www.instagram.com/sujalbisht1743817?igsh=NDE3bzZ2MGRmZW12",
+        gmail: "sb1743816@gmail.com",
         designation: "Event Coordinator",
       },
       {
