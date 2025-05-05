@@ -1,7 +1,7 @@
 import EventVid from "../assets/Videos/EventsVid.webm";
 import { useEffect } from "react";
 import EventShowCase from "../components/EventsShowCase.jsx";
-import { data } from "../data/dummydata.js";
+import { data } from "../data/dummydata.jsx";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +16,7 @@ const Events = () => {
           <h1 className="text-5xl md:text-[150px] text-white font-cuda text-center">
             Events
           </h1>
-          <Link
+          {/* <Link
             to={
               "https://docs.google.com/document/d/1mu5PZMSbht2vgUaaJtxnjni0gc4le3DANzaoopBlJF4/edit?usp=sharing"
             }
@@ -27,7 +27,7 @@ const Events = () => {
             >
               terms and conditions apply*
             </h1>
-          </Link>
+          </Link> */}
         </div>
         <video
           autoPlay

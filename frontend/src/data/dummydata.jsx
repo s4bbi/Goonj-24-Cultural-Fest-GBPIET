@@ -3,6 +3,7 @@ import img2 from "../assets/Images/Fusion_Planet.webp";
 import img3 from "../assets/Images/Flashmob_Planet.webp";
 import skitImage from "../assets/Images/EventImages/drama.webp";
 import mimeAct from "../assets/Images/EventImages/mime-act.webp";
+import mono_act from "../assets/Images/EventImages/mono-act.webp";
 import nukkad from "../assets/Images/EventImages/nukkad-naatak.webp";
 import sanskriti from "../assets/Images/EventImages/sanskriti.webp";
 import solo_folk from "../assets/Images/EventImages/solo-folk.webp";
@@ -27,13 +28,15 @@ import standup from "../assets/Images/EventImages/standup-comedy.webp";
 import treasure_hunt from "../assets/Images/EventImages/treasure-hunt.webp";
 import oppo from "../assets/Images/EventImages/oppo.webp";
 import open_mic from "../assets/Images/EventImages/open-mic.webp";
-import esport from "../assets/Images/EventImages/e-sports.webp";
+import e_sports from "../assets/Images/EventImages/e-sports.webp";
 import step_up from "../assets/Images/EventImages/step-up.webp";
 import ggt from "../assets/Images/EventImages/ggt.webp";
 import technicalquiz from "../assets/Images/EventImages/technical-quiz.webp";
 import projectexhibition from "../assets/Images/EventImages/project-exhibition.webp";
 import bridgeit from "../assets/Images/EventImages/bridge-it.webp";
 import ideathon from "../assets/Images/EventImages/ideathon.webp";
+import bollywood_tadka from "../assets/Images/EventImages/bollywood-tadka.webp";
+
 
 const eventRulebook =
   "https://drive.google.com/file/d/1WypdhllDNpWP9isluPgxV5N6uoftvcZv/view?usp=sharing";
@@ -88,25 +91,6 @@ export const data = [
           "Audience impact + representation + facial expressions + theme execution + overall performance.",
         coordinator: "Vidhi Nabiyal",
         email: "vidhinabiyal@gmail.com",
-        phone: "",
-      },
-      {
-        id: 408,
-        name: "MONO ACT",
-        img: mimeAct,
-        description:
-        "Welcome to 'Solo Spotlight', the ultimate Mono Act challenge where your voice, expressions, and presence take center stage. It’s just you and the spotlight",
-        guidelines: [
-          "Only one entry is allowed per branch. The performance should not exceed 3-4 minutes, else points deduction will be done.",
-          "Use of props are allowed and arrangement of props and outfits must be done by the team itself.",
-          "Dress up must be in good taste and no vulgarity is allowed.",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging:
-          "Audience impact + representation + facial expressions + theme and dialogue execution .",
-        coordinator: "",
-        email: "",
         phone: "",
       },
       {
@@ -220,53 +204,89 @@ export const data = [
     ],
   },
   {
-    id: 3,
-    name: "FOOTLOOSE",
-    img: img1,
+    id: 89,
+    name: "BOLLYWOOD TADKA",
+    img: img3,
     Event: [
       {
-        id: 301,
-        name: "Solo (Folk Theme) - Only For GBPIET",
-        img: solo_folk,
+        id: 8901,
+        name: "Bollywood Tadka",
+        img: bollywood_tadka,
         description: "Breaking barriers on stage!",
         topics: [],
         guidelines: [
-          "Only one entry is allowed per branch.",
-          "Participants must dress up in the cultural attire based on the state folk they are choosing. Use of props is allowed",
-          "Outfits will be arranged by the team itself",
-          "The performance should not exceed 3-5 minutes and 1 minute for stage clearance is given",
-          "Exceeding the performance time limit will lead to point deduction",
+          "Each branch should have a minimum of 7 and a maximum of 15 members,",
+          "The duration of the act should range between 10 to 12 minutes only. Exceeding or failing to comply with the given time limits will lead to deduction of marks,",
+          "Branches are expected to select a Bollywood movie from the list given to them beforehand,",
+          "Use of props and appropriate dialogue from the movie, wherever required, are allowed,",
+          "The audio track used for the performance should be submitted to the tech team at least one day prior to the event,",
+          "The decision of the judges will be considered final,",
+          "(If there is technical fault, extra time will be given accordingly.)"
         ],
         Rulebook: eventRulebook,
         interCollege: false,
         judging:
-          "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
-        coordinator: "Ramneet Kaur",
-        email: "ramneetkaur0028@gmail.com",
+          "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
+        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
+        email: "Drona Chamoli (9045118831)",
         phone: "",
       },
+    ],
+  },
+  {
+    id: 6,
+    name: "OPPO ",
+    img: img3,
+    Event: [
       {
-        id: 302,
-        name: "Hop Notch Western (Solo)",
-        img: hop_notch_solo,
-        description: "Let’s dance to the beats!",
+        id: 601,
+        name: "OPPO ",
+        img: oppo,
+        description: "Breaking barriers on stage!",
         topics: [],
         guidelines: [
-          "The performance should not exceed 3-5 minutes, with 1 minute allocated for stage clearance.",
-          "Team members will arrange outfits themselves.",
-          "The use of traditional and ethnic forms is prohibited.",
-          "No obscenity or vulgarity is allowed.",
-          "Exceeding the performance time limit will result in point deduction.",
-          "Songs will be submitted to the core committee a day prior to the event.",
-          "(If there is a technical fault, extra time will be given.)",
+          "Only one pair entry is allowed per branch. ",
+          "Participants must dress up in the opposite gender’s aƫtire and perform a dance accordingly to the given theme.Use of props is allowed.",
+          "The performance should not exceed 3-5 minutes and 1 minute for stage clearance will be given. Exceeding the performance limit will lead to points deduction.",
+          "Participants are encouraged to showcase creativity in their gender swapped attire.",
+          "Dress up must be in good taste and no vulgarity is allowed.",
+          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
+          "There is no specific theme in accordance to oppo performance.",
         ],
         Rulebook: eventRulebook,
-        interCollege: true,
+        interCollege: false,
         judging:
-          "Audience impact + themed outfit + facial expressions + theme + execution + stage coverage + overall performance.",
-        coordinator: "Akshit Anand",
-        email: "akshitanand121@gmail.com",
-        phone: "8979095390",
+          "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
+        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
+        email: "Drona Chamoli (9045118831)",
+        phone: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "MONO ACT",
+    img: img3,
+    Event: [
+      {
+        id: 601,
+        name: "Mono Act",
+        img: mono_act,
+        description: "Mono acting where a monologue is delivered by a single actor.",
+        topics: [],
+        guidelines: [
+          "Only one entry is allowed per branch,",
+          "The performance should not exceed 3–4 minutes, else points deduction will be done,",
+          "Use of props are allowed and arrangement of props and outfits must be done by the team itself,",
+          "Dress up must be in good taste and no vulgarity is allowed."
+        ],
+        Rulebook: eventRulebook,
+        interCollege: false,
+        judging:
+          "Audience impact + representation + facial expressions + theme and dialogue execution .",
+        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
+        email: "Drona Chamoli (9045118831)",
+        phone: "",
       },
     ],
   },
@@ -301,7 +321,7 @@ export const data = [
 
       {
         id: 402,
-        name: "MR & MISS GOONJ - Only For GBPIET",
+        name: "MR & MISS GOONJ ",
         img: mr_miss_goonj,
         description:
           "For the first time ever someone will take the title of Mr. & miss goonj! Starting off with the ramp walk followed by talent round and quiz round to determine the ultimate king and queen of GOONJ 2K24",
@@ -326,44 +346,13 @@ export const data = [
     ],
   },
   {
-    id: 6,
-    name: "OPPO ",
-    img: img3,
-    Event: [
-      {
-        id: 601,
-        name: "OPPO - Only For GBPIET",
-        img: oppo,
-        description: "Breaking barriers on stage!",
-        topics: [],
-        guidelines: [
-          "Only one pair entry is allowed per branch. ",
-          "Participants must dress up in the opposite gender’s aƫtire and perform a dance accordingly to the given theme.Use of props is allowed.",
-          "The performance should not exceed 3-5 minutes and 1 minute for stage clearance will be given. Exceeding the performance limit will lead to points deduction.",
-          "Participants are encouraged to showcase creativity in their gender swapped attire.",
-          "Dress up must be in good taste and no vulgarity is allowed.",
-          "Songs should be submitted to the core committee a day prior to the event (details and format will be shared).",
-          "There is no specific theme in accordance to oppo performance.",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: false,
-        judging:
-          "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
-        coordinator: "Prabhleen Kaur (prabhleenk350@gmail.com)",
-        email: "Drona Chamoli (9045118831)",
-        phone: "",
-      },
-    ],
-  },
-
-  {
     id: 7,
-    name: "BATTLES",
+    name: "CHOROGRAPHY SHOWDOWN",
     img: img1,
     Event: [
       {
         id: 701,
-        name: "CHOREOGRAPHY SHOWDOWN - Only For GBPIET",
+        name: "CHOREOGRAPHY SHOWDOWN",
         img: dance_battle,
         description:
           "Ready to show off your groovy moves? Here is the freestyle tadka where you compete with yourself and give the best version of yourself.",
@@ -383,6 +372,33 @@ export const data = [
         coordinator: "Kriti Uniyal (kritiuniyal28@gmail.com)",
         email: "Ashlesh Ranjan (+91 941115530)",
         phone: "",
+      },
+    ],
+  },
+  
+  {
+    id: 8,
+    name: "MELODY MANIA",
+    img: img1,
+    Event: [
+      {
+        id: 802,
+        name: "Solo Singing",
+        img: singing,
+        decription: "Breaking barriers on stage!",
+        topics: [],
+        guidelines: [
+          "Time duration should not exceed 3 minutes and 1 minute for stage clearance will be given. Exceeding will lead to points deduction. ",
+          " The teams can choose their songs accordingly.",
+          "  Use of KAROKE is allowed."
+        ],
+        Rulebook: eventRulebook,
+        interCollege: true,
+        judging:
+          "Uniformity  + vocal strength.",
+        coordinator: "Ravi Nailwal(9837989785)",
+        email: "Shaurya ghildiyal (9084995860)",
+        phone: "Rudrax (74578 87515)",
       },
       {
         id: 702,
@@ -409,17 +425,9 @@ export const data = [
         email: "Shaurya ghildiyal (9084995860)",
         phone: "Rudrax (74578 87515)",
       },
-    ],
-  },
-
-  {
-    id: 8,
-    name: "MELODY MANIA",
-    img: img1,
-    Event: [
       {
         id: 801,
-        name: "QAWALLI - Only For GBPIET",
+        name: "QAWALLI ",
         img: qawalli,
         decription: "",
         topics: [],
@@ -436,25 +444,6 @@ export const data = [
         coordinator: "Ravi Nailwal (9837989785)",
         email: "Aditya Nautiyal (8630742193)",
         phone: "",
-      },
-      {
-        id: 802,
-        name: "Solo Singing",
-        img: singing,
-        decription: "Breaking barriers on stage!",
-        topics: [],
-        guidelines: [
-          "Time duration should not exceed 3 minutes and 1 minute for stage clearance will be given. Exceeding will lead to points deduction. ",
-          " The teams can choose their songs accordingly.",
-          "  Use of KAROKE is allowed."
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging:
-          "Uniformity  + vocal strength.",
-        coordinator: "Ravi Nailwal(9837989785)",
-        email: "Shaurya ghildiyal (9084995860)",
-        phone: "Rudrax (74578 87515)",
       },
     ],
   },
@@ -512,109 +501,89 @@ export const data = [
         subRuleBook:
           "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
       },
-      {
-        id: 903,
-        name: "KAVIKRAM",
-        img: alfaaz,
-        description:
-          "Grab a pen and paper, drop into an ocean of words, and  compose a symphony of thoughts and emotions. Whether  you're an experienced poet or just discovering the power of words, Alfaaz-e-Kalam is your chance to shine. Unleash  your inner poet, share your poetry, and participate in an  exciting event. Come join us for a lyrical celebration in  which each phrase represents a step towards poetic  excellence.",
-        topics: [],
-        guidelines: [
-          "Mode of language: Hindi.",
-          "All entries should be original, and plagiarism will result in immediate disqualification.",
-          "Submissions should be typed and submitted in PDF format.",
-          "There is no specific theme for the competition.",
-          "A poem or Shayari should not violate any religion, community, caste, or other aspect of social or cultural sensitivity. The use of any abusive or obscene language is prohibited.",
-          "Poetry entries should not exceed 30 lines.",
-          "Late submissions will not be considered.",
-        ],
-        Rulebook:
-          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
-        interCollege: true,
-        judging: "Creativity + Originality + Language proficiency",
-        coordinator: "Akshita Rajbhar (8630009246)",
-        email: "Harsh Gupta (8126568879)",
-        phone: "",
-        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
-        subRuleBook:
-          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
-      },
+      // {
+      //   id: 903,
+      //   name: "KAVIKRAM",
+      //   img: alfaaz,
+      //   description:
+      //     "Grab a pen and paper, drop into an ocean of words, and  compose a symphony of thoughts and emotions. Whether  you're an experienced poet or just discovering the power of words, Alfaaz-e-Kalam is your chance to shine. Unleash  your inner poet, share your poetry, and participate in an  exciting event. Come join us for a lyrical celebration in  which each phrase represents a step towards poetic  excellence.",
+      //   topics: [],
+      //   guidelines: [
+      //     "Mode of language: Hindi.",
+      //     "All entries should be original, and plagiarism will result in immediate disqualification.",
+      //     "Submissions should be typed and submitted in PDF format.",
+      //     "There is no specific theme for the competition.",
+      //     "A poem or Shayari should not violate any religion, community, caste, or other aspect of social or cultural sensitivity. The use of any abusive or obscene language is prohibited.",
+      //     "Poetry entries should not exceed 30 lines.",
+      //     "Late submissions will not be considered.",
+      //   ],
+      //   Rulebook:
+      //     "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+      //   interCollege: true,
+      //   judging: "Creativity + Originality + Language proficiency",
+      //   coordinator: "Akshita Rajbhar (8630009246)",
+      //   email: "Harsh Gupta (8126568879)",
+      //   phone: "",
+      //   registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+      //   subRuleBook:
+      //     "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+      // },
     ],
   },
-  {
-    id: 10,
-    name: "VIDEO & PHOTOGRAPHY EVENTS (only for GBPIET Students)",
-    img: img3,
-    Event: [
-      {
-        id: 1005,
-        name: "GOONJ MOVIE - Short Film Competition (Only For GBPIET) ",
-        img: goonj_movie,
-        description:
-          "Get ready for the ultimate adventure as we present 'G Movie,' an electrifying filmography event that transforms our campus into a cinematic playground. Whether you're a budding director, actor, or film enthusiast, this is your chance to make movie magic on our very own campus stage.",
-        topics: [],
-        guidelines: [
-          "Contest will be department wise based on the Goonj 2024 theme: VIKSIT BHARAT 2047",
-          "Ensure your movie seamlessly integrates the G Movie theme",
-          "Your creation should be an original piece of work",
-          "Plagiarism content will lead to disqualification",
-          "Entries must be submitted before 29 May by 11:59 PM",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: false,
-        judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Suraj Bhatt",
-        email: "",
-        phone: "+91 95287 37596",
-      },
-      {
-        id: 1001,
-        name: "FRAME BY FRAME - Only For GBPIET",
-        img: frame,
-        description:
-          "Are you ready to embark on a creative adventure like no other? Welcome to 'Frame by Frame' where your imagination takes center stage and every frame is a canvas  for your storytelling magic! We invite you to be a part of this thrilling stop-motion animation challenge that promises to  turn your wildest ideas into animated reality.",
-        topics: [],
-        guidelines: [
-          "Team may consist 2-4 members",
-          "Duration of animation upto 1 Minutes",
-          "Your creation should be an original piece of work and copyright free",
-          "Plagiarism content will lead to disqualification",
-          "Teams are not bounded by any animation Technique",
-          "Entries must be submitted before 29 May by 11:59 PM",
-          "Teams can use audio effects and music in their animation",
-          "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: false,
-        judging: "Creativity + technical skill + overall impact/ appearance.",
-        coordinator: "Uday Chauhan",
-        email: "",
-        phone: "+91 63974 79434",
-      },
-      {
-        id: 1003,
-        name: "LIGHT PAINTING - Only For GBPIET",
-        img: light_painting,
-        description:
-          "Illuminate the Night with Your Light! Get ready to embark on  a luminous journey as we present 'Light Painting,'. Unleash  your creativity, capture the magic of light, and let your  imagination paint the night!",
-        topics: [],
-        guidelines: [
-          "Every individual can participate in the contest",
-          "Shutter Speed should be less than 150 sec",
-          "Your creation should be an original piece of work",
-          "Plagiarism content will lead to disqualification",
-          "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
-          "Entries must be submitted before 29 May by 11:59 PM",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: false,
-        judging: "Creativity + Adherence to theme + overall visual impact.",
-        coordinator: "Prachi",
-        email: "",
-        phone: "+91 80066 21568",
-      },
-    ],
-  },
+  // {
+  //   id: 10,
+  //   name: "VIDEO & PHOTOGRAPHY EVENTS",
+  //   img: img3,
+  //   Event: [
+     
+  //     {
+  //       id: 1001,
+  //       name: "FRAME BY FRAME ",
+  //       img: frame,
+  //       description:
+  //         "Are you ready to embark on a creative adventure like no other? Welcome to 'Frame by Frame' where your imagination takes center stage and every frame is a canvas  for your storytelling magic! We invite you to be a part of this thrilling stop-motion animation challenge that promises to  turn your wildest ideas into animated reality.",
+  //       topics: [],
+  //       guidelines: [
+  //         "Team may consist 2-4 members",
+  //         "Duration of animation upto 1 Minutes",
+  //         "Your creation should be an original piece of work and copyright free",
+  //         "Plagiarism content will lead to disqualification",
+  //         "Teams are not bounded by any animation Technique",
+  //         "Entries must be submitted before 29 May by 11:59 PM",
+  //         "Teams can use audio effects and music in their animation",
+  //         "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
+  //       ],
+  //       Rulebook: eventRulebook,
+  //       interCollege: false,
+  //       judging: "Creativity + technical skill + overall impact/ appearance.",
+  //       coordinator: "Uday Chauhan",
+  //       email: "",
+  //       phone: "+91 63974 79434",
+  //     },
+  //     {
+  //       id: 1003,
+  //       name: "LIGHT PAINTING ",
+  //       img: light_painting,
+  //       description:
+  //         "Illuminate the Night with Your Light! Get ready to embark on  a luminous journey as we present 'Light Painting,'. Unleash  your creativity, capture the magic of light, and let your  imagination paint the night!",
+  //       topics: [],
+  //       guidelines: [
+  //         "Every individual can participate in the contest",
+  //         "Shutter Speed should be less than 150 sec",
+  //         "Your creation should be an original piece of work",
+  //         "Plagiarism content will lead to disqualification",
+  //         "Each member of the Teams must follow DRISHTIKON Instagram page and submit their entries through collaboration",
+  //         "Entries must be submitted before 29 May by 11:59 PM",
+  //       ],
+  //       Rulebook: eventRulebook,
+  //       interCollege: false,
+  //       judging: "Creativity + Adherence to theme + overall visual impact.",
+  //       coordinator: "Prachi",
+  //       email: "",
+  //       phone: "+91 80066 21568",
+  //     },
+  //   ],
+  // },
   {
     id: 11,
     name: "MISCELLANEOUS ",
@@ -663,6 +632,46 @@ export const data = [
         email: "prajjwal1120@gmail.com",
         phone: "+91 8755293708",
       },
+      {
+        id: 1104,
+        name: "E-SPORTS",
+        img: e_sports,
+        description: "The gamer is never over, savour your victories!",
+        topics: [],
+        guidelines: [
+          "This event is open for everyone so there is no limit in participants. Anyone can participate!",
+          "Do not violate the community guidelines by foul playing,",
+          "If anyone is caught cheating, it will lead to immediate disqualification."
+        ],
+        Rulebook: eventRulebook,
+        judging: "",
+        interCollege: true,
+        registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
+        coordinator: "Akshay Tomar",
+        email: "akshaytomar280@gmail.com",
+        phone: "+91 8449551027",
+      },
+      {
+        id: 1005,
+        name: "GOONJ MOVIE - Short Film Competition (Only For GBPIET) ",
+        img: goonj_movie,
+        description:
+          "Get ready for the ultimate adventure as we present 'G Movie,' an electrifying filmography event that transforms our campus into a cinematic playground. Whether you're a budding director, actor, or film enthusiast, this is your chance to make movie magic on our very own campus stage.",
+        topics: [],
+        guidelines: [
+          "Contest will be department wise based on the Goonj 2024 theme: VIKSIT BHARAT 2047",
+          "Ensure your movie seamlessly integrates the G Movie theme",
+          "Your creation should be an original piece of work",
+          "Plagiarism content will lead to disqualification",
+          "Entries must be submitted before 29 May by 11:59 PM",
+        ],
+        Rulebook: eventRulebook,
+        interCollege: false,
+        judging: "Creativity + Adherence to theme + overall visual impact.",
+        coordinator: "Suraj Bhatt",
+        email: "",
+        phone: "+91 95287 37596",
+      },
     ],
   },
   {
@@ -670,32 +679,6 @@ export const data = [
     name: "TECHNICAL EVENTS",
     img: img2,
     Event: [
-      {
-        id: 2000,
-        name: "Ideathon",
-        img: ideathon,
-        description:
-        " It's time to turn it into a wildfire of innovation! Welcome to 'Ideathon Ignite', where imagination meets impact",
-        topics: [],
-        guidelines: [
-          "Ideas must be original. Plagiarized or previously implemented projects will be disqualified.",
-          "Each team must consist of 2 to 4 members.",
-          "Ideas must align with one or more of the ideathon themes: Skill Training, Waste to Wealth, Agricultural Waste Management, Rural Energy Solutions, Environmental Sustainability",
-          "Pitches can be delivered in English or Hindi, but presentation slides must include English.",
-          "Each team must submit a slide deck (max 5 slides) summarizing their idea, including:Problem Statement, Proposed Solution, Social Impact, Technical Feasibility, Implementation Plan",
-          "Total Time per Team: 7 Minutes",
-          "5 minutes for pitching the idea,2 minutes for Q&A with the judges ",
-          "A timer will be displayed during the pitch. Exceeding time limits may result in point deductions.",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging:
-          " Relevance to Theme(10 marks) + Innovation & Creativity(10 marks) + Technical Feasibility(10 marks) + Social Impact(10 marks) + Clarity & Presentation(10 marks) + Sustainability & Long-Term Viability(10 marks) + Team Collaboration(10 marks).",
-        registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
-        coordinator: "Prachi Bhatt",
-        email: "",
-        phone: "+91 93503 48377",
-      },
       {
         id: 2001,
         name: "Project Exhibition ",
@@ -723,6 +706,32 @@ export const data = [
         email: "",
         phone: "+91 96396 47397",
       },
+        {
+          id: 2000,
+          name: "Ideathon",
+          img: ideathon,
+          description:
+          " It's time to turn it into a wildfire of innovation! Welcome to 'Ideathon Ignite', where imagination meets impact",
+          topics: [],
+          guidelines: [
+            "Ideas must be original. Plagiarized or previously implemented projects will be disqualified.",
+            "Each team must consist of 2 to 4 members.",
+            "Ideas must align with one or more of the ideathon themes: Skill Training, Waste to Wealth, Agricultural Waste Management, Rural Energy Solutions, Environmental Sustainability",
+            "Pitches can be delivered in English or Hindi, but presentation slides must include English.",
+            "Each team must submit a slide deck (max 5 slides) summarizing their idea, including:Problem Statement, Proposed Solution, Social Impact, Technical Feasibility, Implementation Plan",
+            "Total Time per Team: 7 Minutes",
+            "5 minutes for pitching the idea,2 minutes for Q&A with the judges ",
+            "A timer will be displayed during the pitch. Exceeding time limits may result in point deductions.",
+          ],
+          Rulebook: eventRulebook,
+          interCollege: true,
+          judging:
+            " Relevance to Theme(10 marks) + Innovation & Creativity(10 marks) + Technical Feasibility(10 marks) + Social Impact(10 marks) + Clarity & Presentation(10 marks) + Sustainability & Long-Term Viability(10 marks) + Team Collaboration(10 marks).",
+          registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
+          coordinator: "Prachi Bhatt",
+          email: "",
+          phone: "+91 93503 48377",
+        },
       {
         id: 2002,
         name: "Technical Quiz ",
