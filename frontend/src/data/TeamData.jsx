@@ -61,14 +61,25 @@ import ananya from "../assets/Images/TeamsImages/EventTeam/ananya.jpg";
 import ritik from "../assets/Images/TeamsImages/EventTeam/ritik.jpg";
 import parush from "../assets/Images/TeamsImages/EventTeam/parush.jpg";
 import kapil from "../assets/Images/TeamsImages/EventTeam/kapil.jpg";
-import asmita from "../assets/Images/TeamsImages/EventTeam/asmita.jpg";
 import ujjwal from "../assets/Images/TeamsImages/EventTeam/ujjwal.jpeg";
 import jugbir from "../assets/Images/TeamsImages/EventTeam/jugbir.jpg";
 import drona from "../assets/Images/TeamsImages/EventTeam/drona.jpg";
 import ashi from "../assets/Images/TeamsImages/EventTeam/ashlesh.jpg";
 import krishal from "../assets/Images/TeamsImages/EventTeam/krishal.jpg";
 import aryan from "../assets/Images/TeamsImages/EventTeam/aryan.jpg";
-
+import namrata from "../assets/Images/TeamsImages/EventTeam/namrata.jpg";
+import sakshi from "../assets/Images/TeamsImages/EventTeam/sakshi.jpg";
+import shivani from "../assets/Images/TeamsImages/EventTeam/shivani.jpg";
+import mayank from "../assets/Images/TeamsImages/EventTeam/mayank.jpg";
+import aastha from "../assets/Images/TeamsImages/EventTeam/aastha.jpg";
+import ishita from "../assets/Images/TeamsImages/EventTeam/ishita.jpg";
+import priyanshi from "../assets/Images/TeamsImages/EventTeam/priyanshi.jpg";
+import aditi from "../assets/Images/TeamsImages/EventTeam/aditi.jpg";
+import monika from "../assets/Images/TeamsImages/EventTeam/monika.jpg";
+import gunjam from "../assets/Images/TeamsImages/EventTeam/gunjan.jpg";
+import nidhi from "../assets/Images/TeamsImages/EventTeam/nidhi.jpg";
+import avishka from "../assets/Images/TeamsImages/EventTeam/avishka.jpg";
+import jiveeka from "../assets/Images/TeamsImages/EventTeam/jiveeka.jpg";
 
 
 export const teamData = [
@@ -166,16 +177,16 @@ export const teamData = [
         gmail: "bkapil731@gmail.com",
         designation: "Management Head",
       },
-      {
-        id: 209,
-        name: "Utkarsh Dubey",
-        img: dubey,
-        git: "",
-        linkdin: "",
-        insta: "",
-        gmail: "utekalfa0001@gmail.com-",
-        designation: "Event Management Secretary",
-      },
+      // {
+      //   id: 209,
+      //   name: "Utkarsh Dubey",
+      //   img: dubey,
+      //   git: "",
+      //   linkdin: "",
+      //   insta: "",
+      //   gmail: "utekalfa0001@gmail.com-",
+      //   designation: "Event Management Secretary",
+      // },
       {
         id: 107,
         name: "Vinay Kathait",
@@ -474,16 +485,16 @@ export const teamData = [
         gmail: "",
         designation: "Event Coordinator",
       },
-      {
-        id: 213,
-        name: "Rashmi Rawat",
-        img: rashmi,
-        git: "",
-        linkdin: "https://www.linkedin.com/in/rashmi-rawat-a593752ab",
-        insta: "",
-        gmail: "rawatrashmi162@gmail.com",
-        designation: "Event Coordinator",
-      },
+      // {
+      //   id: 213,
+      //   name: "Rashmi Rawat",
+      //   img: rashmi,
+      //   git: "",
+      //   linkdin: "https://www.linkedin.com/in/rashmi-rawat-a593752ab",
+      //   insta: "",
+      //   gmail: "rawatrashmi162@gmail.com",
+      //   designation: "Event Coordinator",
+      // },
       {
         id: 214,
         name: "Akanksha Rawat",
@@ -492,6 +503,16 @@ export const teamData = [
         linkdin: "",
         insta: "",
         gmail: "akankshaar3256@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 214,
+        name: "Shivani Bhardwaj",
+        img: shivani,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/shivani__bhardwaj17",
+        gmail: "shivanibhardwaj0805@gmail.com",
         designation: "Event Coordinator",
       },
       {
@@ -565,7 +586,7 @@ export const teamData = [
         designation: "Management Team Member",
       },
       {
-        id: 238,
+        id: 239,
         name: "Krishal Batra",
         img: krishal,
         git: "",
@@ -575,7 +596,7 @@ export const teamData = [
         designation: "Graphics Team Member",
       },
       {
-        id: 238,
+        id: 240,
         name: "Aryan Raj",
         img: aryan,
         git: "",
@@ -583,6 +604,126 @@ export const teamData = [
         insta: "https://www.instagram.com/__aryanraj_",
         gmail: "aryanraj.cams@gmail.com",
         designation: "Graphics Team Member",
+      },
+      {
+        id: 241,
+        name: "Namrata Pundir",
+        img: namrata,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/_namrataaa_02",
+        gmail: "namratapundir9@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 242,
+        name: "Sakshi Bhatt",
+        img: sakshi,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/sakshibhatt_397",
+        gmail: "bhattsakshi896@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Mayank Latwal",
+        img: mayank,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/mk._.latwal",
+        gmail: "mlatwal78@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Aastha ",
+        img: aastha,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/Mini_3064",
+        gmail: "aasthaa599@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Ishita Sati ",
+        img: ishita,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/ishita-sati-a138aa307",
+        insta: "https://www.instagram.com/apple_ate0000",
+        gmail: "ishupriya20005@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Jiveeka Negi",
+        img: jiveeka,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/jiveeka-negi-357333242",
+        insta: "https://www.instagram.com/jiveeka_negi",
+        gmail: "jiveeka06@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Priyanshi Bisht",
+        img: priyanshi,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/priyanshi-bisht-308a50333",
+        insta: "https://www.instagram.com/Priyanshix__",
+        gmail: "priyanshibisht2008@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Aditi Joshi",
+        img: aditi,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/adiii.ttiiii",
+        gmail: "aditijoshi01005@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Monika Negi",
+        img: monika,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/moni_kanegi10",
+        gmail: "negimamta9368@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Gunjan Purohit",
+        img: gunjam,
+        git: "",
+        linkdin: "https://www.linkedin.com/in/gunjan-purohit-656b96327",
+        insta: "https://www.instagram.com/gunzaaann ",
+        gmail: "gunjanpurohit6996@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Nidhi Singh",
+        img: nidhi,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/tanuy600",
+        gmail: "nidhi.singh015y@gmail.com ",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 243,
+        name: "Avishka Negi",
+        img: avishka,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/avishkanegi_1 ",
+        gmail: "avishkanegi2@gmail.com",
+        designation: "Event Coordinator",
       },
       
     ],
