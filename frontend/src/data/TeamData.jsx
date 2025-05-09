@@ -14,7 +14,7 @@ import arpan from "../assets/Images/TeamsImages/CoreTeam/arpan.jpeg";
 import tanmay from "../assets/Images/TeamsImages/CoreTeam/tanmay.jpg";
 import abhishek from "../assets/Images/TeamsImages/CoreTeam/abhishek.jpeg";
 import deepansha from "../assets/Images/TeamsImages/CoreTeam/deepansha.jpeg";
-import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg";
+// import abhinav from "../assets/Images/TeamsImages/CoreTeam/abhinav.jpg";
 import vinay from "../assets/Images/TeamsImages/CoreTeam/vinay.jpg";
 import harshit from "../assets/Images/TeamsImages/CoreTeam/harshit.jpg";
 import trilochan from "../assets/Images/TeamsImages/CoreTeam/trilochan.png";
@@ -81,6 +81,7 @@ import nidhi from "../assets/Images/TeamsImages/EventTeam/nidhi.jpg";
 import avishka from "../assets/Images/TeamsImages/EventTeam/avishka.jpg";
 import jiveeka from "../assets/Images/TeamsImages/EventTeam/jiveeka.jpg";
 import yuvraj from "../assets/Images/TeamsImages/EventTeam/yuvraj.jpg";
+import abhinav from "../assets/Images/TeamsImages/EventTeam/abhinav.jpg";
 
 
 export const teamData = [
@@ -466,7 +467,7 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
-        id: 258,
+        id: 2,
         name: "Yuvraj Singh Makhloga",
         img: yuvraj,
         git: "",
@@ -476,13 +477,22 @@ export const teamData = [
         designation: "Event Coordinator",
       },
       {
+        id: 708,
+        name: "Abhinav Patwal",
+        img: abhinav,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/abhinavpatwal7",
+        gmail: "abhinavpatwal7@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
         id: 2012,
         name: "Drona Chamoli",
         img: drona,
         git: "",
         linkdin: "",
-        insta:
-          "https://www.instagram.com/drona_07?igsh=MWU1c3Vka3p1c2F4aQ%3D%3D&utm_source=qr",
+        insta: "https://www.instagram.com/drona_07",
         gmail: "",
         designation: "Event Coordinator",
       },

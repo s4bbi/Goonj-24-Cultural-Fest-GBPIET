@@ -12,7 +12,7 @@ const AudiencePortal = () => {
                 <div className="flex gap-4 flex-wrap text-center justify-center">
                     <button className="btn" type="button">
                         <Link to="https://forms.gle/sRWBgxbfoRusQhue9">
-                            <strong className="font-cM text-xs px-4">Register as GBPIETian</strong>
+                            <strong className="font-cM text-xs px-4">Register</strong>
                             <div id="container-stars">
                                 <div id="stars"></div>
                             </div>
@@ -22,7 +22,7 @@ const AudiencePortal = () => {
                             </div>
                         </Link>
                     </button>
-                    <button className="btn text-center" type="button">
+                    {/* <button className="btn text-center" type="button">
                         <Link to="https://forms.gle/N2sRPXRN78wgk8JcA" target="blank">
                             <strong className="font-cM text-xs px-4">Register as Non-GBPIETian</strong>
                             <div id="container-stars">
@@ -45,16 +45,14 @@ const AudiencePortal = () => {
                                 <div className="circle"></div>
                             </div>
                         </Link>
-                    </button>
+                    </button> */}
                 </div>
             </div>
-
             <div className="w-full h-screen">
                 <video className="w-full h-full object-cover brightness-90" autoPlay loop muted>
                     <source src={AudPortalVid} type="video/webm"/>
                 </video>
             </div>
-
             <div className="bg-cover bg-center bg-no-repeat h-full bg-EventBG px-20">
                 <section className="mx-auto py-20">
                     <div className="flex flex-col gap-16 md:flex-row justify-between items-center">
@@ -69,7 +67,6 @@ const AudiencePortal = () => {
                         </div>
                     </div>
                 </section>
-
                 <section className="mx-auto">
                     <div className="flex flex-col gap-16 md:flex-row justify-between items-center">
                         <div className="w-full md:w-8/12">
