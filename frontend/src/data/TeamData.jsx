@@ -80,6 +80,7 @@ import gunjam from "../assets/Images/TeamsImages/EventTeam/gunjan.jpg";
 import nidhi from "../assets/Images/TeamsImages/EventTeam/nidhi.jpg";
 import avishka from "../assets/Images/TeamsImages/EventTeam/avishka.jpg";
 import jiveeka from "../assets/Images/TeamsImages/EventTeam/jiveeka.jpg";
+import yuvraj from "../assets/Images/TeamsImages/EventTeam/yuvraj.jpg";
 
 
 export const teamData = [
@@ -462,6 +463,16 @@ export const teamData = [
         linkdin: "https://www.linkedin.com/in/sujal-singh-bisht-aabb902b9",
         insta: "https://www.instagram.com/sujalbisht1743817?igsh=NDE3bzZ2MGRmZW12",
         gmail: "sb1743816@gmail.com",
+        designation: "Event Coordinator",
+      },
+      {
+        id: 258,
+        name: "Yuvraj Singh Makhloga",
+        img: yuvraj,
+        git: "",
+        linkdin: "",
+        insta: "https://www.instagram.com/singhyuv_i",
+        gmail: "yuvrajmak4280@gmail.com",
         designation: "Event Coordinator",
       },
       {
