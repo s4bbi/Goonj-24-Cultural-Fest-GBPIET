@@ -31,7 +31,7 @@ import gaurav from "../assets/Images/TeamsImages/EventTeam/gaurav.jpg";
 import prafful from "../assets/Images/TeamsImages/CoreTeam/prafful.png";
 import kriti from "../assets/Images/TeamsImages/EventTeam/kriti.jpg";
 import ravi from "../assets/Images/TeamsImages/EventTeam/ravi.jpg";
-import dubey from "../assets/Images/TeamsImages/EventTeam/dubey.jpg";
+import dubey from "../assets/Images/TeamsImages/EventTeam/dubey.jpeg";
 import dipendra from "../assets/Images/TeamsImages/EventTeam/dipendra.jpg";
 import akansha from "../assets/Images/TeamsImages/EventTeam/akansha.jpg";
 import prabhleen from "../assets/Images/TeamsImages/EventTeam/prabhleen.jpg";
@@ -96,6 +96,16 @@ export const teamData = [
         insta: "https://www.instagram.com/_d.ipendra_",
         gmail: "",
         designation: "SAC President",
+      },
+      {
+        id: 209,
+        name: "Utkarsh Dubey",
+        img: dubey,
+        git: "",
+        linkdin: "",
+        insta: "",
+        gmail: "utekalfa0001@gmail.com-",
+        designation: "General Secretary",
       },
       {
         id: 102,
@@ -177,16 +187,6 @@ export const teamData = [
         gmail: "bkapil731@gmail.com",
         designation: "Management Head",
       },
-      // {
-      //   id: 209,
-      //   name: "Utkarsh Dubey",
-      //   img: dubey,
-      //   git: "",
-      //   linkdin: "",
-      //   insta: "",
-      //   gmail: "utekalfa0001@gmail.com-",
-      //   designation: "Event Management Secretary",
-      // },
       {
         id: 107,
         name: "Vinay Kathait",
