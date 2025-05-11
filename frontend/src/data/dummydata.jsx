@@ -40,7 +40,7 @@ import ad_mania from "../assets/Images/EventImages/ad-mania.webp";
 
 
 const eventRulebook =
-  "https://drive.google.com/file/d/1nP3vxgs-XqQ7jh5npq2l-r6Cc8VTQlqC/view?usp=sharing";
+  "https://drive.google.com/file/d/1OVnnbly3aGYcfOtOQgxvRaHWgp1Uo4kR/view?usp=sharing";
 export const data = [
   {
     id: 1,
