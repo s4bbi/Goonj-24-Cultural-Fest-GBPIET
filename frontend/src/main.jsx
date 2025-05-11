@@ -52,14 +52,14 @@ const loggedInRoutes = [
       // </ProtectedComponent>
     ),
   },
-  {
-    path: "/sponsors",
-    element: (
+  // {
+  //   path: "/sponsors",
+  //   element: (
       
-        <Sponsors />
+  //       <Sponsors />
       
-    ),
-  },
+  //   ),
+  // },
   // {
   //   path: "/caportal",
   //   element: <CAPortal />,

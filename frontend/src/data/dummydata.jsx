@@ -37,6 +37,12 @@ import bridgeit from "../assets/Images/EventImages/bridge-it.webp";
 import ideathon from "../assets/Images/EventImages/ideathon.webp";
 import bollywood_tadka from "../assets/Images/EventImages/bollywood-tadka.webp";
 import ad_mania from "../assets/Images/EventImages/ad-mania.webp";
+import poster_making from "../assets/Images/EventImages/poster-making.png";
+import poetry from "../assets/Images/EventImages/poetry.png";
+import question from "../assets/Images/EventImages/question-battle.png";
+import ending  from "../assets/Images/EventImages/ending.png";
+
+
 
 
 const eventRulebook =
@@ -69,31 +75,32 @@ export const data = [
         judging:
           "Audience impact + representation + expressions + theme & dialogue execution + costume.",
         coordinator: "Priyanshi Bisht, Ragini Bisht",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
-      {
-        id: 102,
-        name: "MIME ACT",
-        img: mimeAct,
-        description:
-          "Unique clothes, lot’s of white make-up but not making sound? If so? The act is MIME! Somebody said “actions speak louder than words” it’s time to make it real!",
-        guidelines: [
-          "5 to 10 members are allowed in each team, less or exceeding the given limit will lead to points deduction,",
-          "No act shall contain any offensive, obscene, disrespectful actions or gestures else will lead to point deduction or even disqualification,",
-          "Time limit for the act is minimum 3 minutes and maximum 4 minutes. 1 minute for stage clearance will be given to each team,",
-          "Lip sync and dialogues are prohibited,",
-          "Exceeding will lead to points deduction,",
-          "(If there is technical fault, extra time will be given accordingly.)",
-        ],
-        Rulebook: eventRulebook,
-        interCollege: true,
-        judging:
-          "Audience impact + representation + facial expressions + theme execution + overall performance.",
-        coordinator: "Priyanshi Bisht, Ragini Bisht",
-        email: "",
-        phone: "",
-      },
+      // {
+      //   id: 102,
+      //   name: "MIME ACT",
+      //   img: mimeAct,
+      //   description:
+      //     "Unique clothes, lot’s of white make-up but not making sound? If so? The act is MIME! Somebody said “actions speak louder than words” it’s time to make it real!",
+      //   guidelines: [
+      //     "5 to 10 members are allowed in each team, less or exceeding the given limit will lead to points deduction,",
+      //     "No act shall contain any offensive, obscene, disrespectful actions or gestures else will lead to point deduction or even disqualification,",
+      //     "Time limit for the act is minimum 3 minutes and maximum 4 minutes. 1 minute for stage clearance will be given to each team,",
+      //     "Lip sync and dialogues are prohibited,",
+      //     "Exceeding will lead to points deduction,",
+      //     "(If there is technical fault, extra time will be given accordingly.)",
+      //   ],
+      //   Rulebook: eventRulebook,
+      //   interCollege: true,
+      //   judging:
+      //     "Audience impact + representation + facial expressions + theme execution + overall performance.",
+      //   coordinator: "Priyanshi Bisht, Ragini Bisht",
+      //   email: "",
+      //   phone: "",
+      // },
       {
         id: 103,
         name: "NUKKAD NATAK",
@@ -123,6 +130,7 @@ export const data = [
         judging:
           "representation + expressions + theme execution + coordination + overall performance.",
         coordinator: "Priyanshi Bisht, Ragini Bisht",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -154,6 +162,7 @@ export const data = [
         judging:
           "representation + audience impact + expressions + stage coverage + theme execution + coordination + team work + overall performance.",
         coordinator: "Monika Negi, Namrata Pundir",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -177,6 +186,7 @@ export const data = [
         judging:
           "representation + Audience impact + expressions + theme execution + coordination + stage coverage + overall performance.",
         coordinator: "Monika Negi, Namrata Pundir",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -199,6 +209,7 @@ export const data = [
         judging:
           "Audience impact + facial expressions + execution + stage coverage + outfit + overall performance.",
         coordinator: "Monika Negi, Namrata Pundir",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -229,6 +240,7 @@ export const data = [
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
         coordinator: "Monika Negi",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -259,6 +271,7 @@ export const data = [
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
         coordinator: "Ashutosh Rana, Jiveeka Negi, Avishka Negi, Shivani Bhardwaj",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -286,6 +299,7 @@ export const data = [
         judging:
           "Audience impact + representation + facial expressions + theme and dialogue execution .",
         coordinator: "Nidhi Singh, Mayank Latwal, Avishka Negi",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -316,6 +330,7 @@ export const data = [
         judging:
           "Audience impact + ramp + themed outfit + facial expressions + theme execution + fluency + overall performance.",
         coordinator: "Ragini Bisht, Aditi Joshi, Sakshi Bhatt",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -340,8 +355,9 @@ export const data = [
         interCollege: false,
         judging:
           "dressing sense + appearance + ramp + confidence + facial  expressions + fluency + overall performance",
-        coordinator: "",
-        email: "Ashutosh Rana",
+        coordinator: "Ashutosh Rana",
+        email: "",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         phone: "",
       },
     ],
@@ -371,6 +387,7 @@ export const data = [
         judging:
           "choreography + confidence + coordination (group, duo, trio) + cheering impact + overall performance.,",
         coordinator: "Ragini Bisht. Sakshi Bhatt, Aastha",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         email: "",
         phone: "",
       },
@@ -399,6 +416,7 @@ export const data = [
         coordinator: "Ravi Nailwal(9837989785)",
         email: "Shaurya ghildiyal (9084995860)",
         phone: "Rudrax (74578 87515)",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
       },
       {
         id: 702,
@@ -423,6 +441,7 @@ export const data = [
         judging: "technique + arrangement + crowd response + uniqueness,",
         coordinator: "Ravi Nailwal(9837989785)",
         email: "Shaurya ghildiyal (9084995860)",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         phone: "Rudrax (74578 87515)",
       },
       {
@@ -444,6 +463,7 @@ export const data = [
         coordinator: "Ravi Nailwal (9837989785)",
         email: "Aditya Nautiyal (8630742193)",
         phone: "",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
       },
     ],
   },
@@ -492,6 +512,119 @@ export const data = [
         ],
         Rulebook:
           "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+        interCollege: true,
+        judging: "Knowledge + content + critical thinking + management.",
+        coordinator: "Ishita Sati, Gunjan Purohit, Priyanshi Bisht",
+        email: "",
+        phone: "",
+        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+        subRuleBook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+      },
+      {
+        id: 902,
+        name: "QUESTION BATTLE",
+        img: question,
+        description:
+          "An impromptu amalgamation of thoughts culminating into a self-composed speech, the topic for which one receives then and there. Extempore speech is typically used to gain a deeper knowledge of a participant’s many points, but it also comes with a lot of problems. No prior preparation for which is permissible.                                         This Event will be conducted offline as well as online. Student want to attend the event online via Google Meet or participate here in college",
+        topics: [],
+        guidelines: [
+          "Format: Team Verbal Game - speak only in questions,",
+          "Team size: 1 Person from per branch,",
+          "Language: The game can be played in English or Hindi,",
+          "Match Duration: Each round lasts till someone failed to speak question,",
+          "Question topics will declare before starting of each round,",
+          "Prohibited Aids: No use of phones, written material, or prompts during gameplay."
+        ],
+        Rulebook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+        interCollege: true,
+        judging: ["Knowledge + content + critical thinking + management."],
+        coordinator: "Ishita Sati, Gunjan Purohit, Priyanshi Bisht",
+        email: "",
+        phone: "",
+        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+        subRuleBook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+      },
+      {
+        id: 902,
+        name: "POETRY",
+        img: poetry,
+        description:
+          "An impromptu amalgamation of thoughts culminating into a self-composed speech, the topic for which one receives then and there. Extempore speech is typically used to gain a deeper knowledge of a participant’s many points, but it also comes with a lot of problems. No prior preparation for which is permissible.                                         This Event will be conducted offline as well as online. Student want to attend the event online via Google Meet or participate here in college",
+        topics: [],
+        guidelines: [
+          "Theme - Open",
+          "Participation - Each branch must nominate participants for Hindi languages only,",
+          "Time limit - 1 to 1:30 mins,",
+          "Penalty - Exceeding the allotted time will lead to a deduction in marks,",
+          "Originality - All poems must be original works created by the participants. Plagiarism or use of pre-published poetry will lead to disqualification."
+        ],
+        interCollege: true,
+        judging: ["Expression and Body (25%)",
+                  "Delivery and Presentation Style (15%)",
+                  "Time Management (15%)",
+                  "Sound and Rhythm (25%)",
+                  "Originality and Creativity (25%)",
+                ],
+        coordinator: "Ishita Sati, Gunjan Purohit, Priyanshi Bisht",
+        email: "",
+        phone: "",
+        registerLink: "https://forms.gle/MQuhSM8KqUC8YpsY7",
+        subRuleBook:
+          "https://drive.google.com/file/d/1pfUn5WNsFIlfw31kL_IHgQmPyxdAckxT/view?usp=sharing",
+      },
+      {
+        id: 902,
+        name: "REWRITE THE ENDING",
+        img: ending,
+        description:
+          "Participants must rewrite the ending of a well known story and perform a short play based on their rendition.",
+        topics: [],
+        guidelines: [
+          "A. ELIGIBILITY: Open to teams of 1-5 members only. Solo performances are allowed,",
+          "B. SOURCE MATERIAL: Teams must choose from a pre-approved list of stories or seek approval for a known, published work (novel, film, or play),",
+          "The original work must be in the public domain or widely recognized. No self-published or obscure titles,",
+          "C. REWRITE GUIDELINES: The rewritten ending must follow logical plot continuity from the original up to the climax,",
+          "No alternate universe plots, abrupt genre shifts, or addition of new major characters,",
+          "The tone must be consistent with the original work.",
+          "D. PERFORMANCE FORMAT: Each team must perform a live skit/play enacting their rewritten ending,",
+          "Time Limit: Minimum 2 minutes, Maximum 2.5 minutes,",
+          "Performances that exceed 2.5 minutes will be penalized or disqualified,",
+          "E. PROPS AND SETUP: Minimal props are allowed. Only handheld or easily portable items permitted,",
+          "No stage setup delays, teams must be ready when called,",
+          "No use of fire, sharp objects, or dangerous props,",
+          "For solo performances visual/audio cues can be used to indicate a different character,",
+          "F. ORIGINALITY AND CONDUCT: Script must be original and written by the participants,",
+          "Plagiarism (including copied endings or skits) will lead to disqualification,",
+          "Language must remain respectful and appropriate. No hate speech, vulgarity, or religious/political references.",
+          "G. SUBMISSION REQUIREMENTS: A typed script of the rewritten ending and performance dialogue must be submitted 24 hours before the events,",
+          "Script can be Bilingual (Hindi + English), formatted in 14pt, Times New Roman, 1.0 line spacing, PDF format only,",
+          "H. JUDGING CRITERIA: Creativity of the rewritten ending (30%),",
+          "Faithfulness to original tone and characters (25%),",
+          "Performance quality and expression (25%),",
+          "Time management and clarity (20%),",
+          "I. DISQUALIFICATION GROUNDS: Exceeding the time limit,",
+          "Script or act inconsistency with the source story,",
+          "Late or missing script submission,",
+          "Offensive content or unsafe behaviour during the play,",
+          "J. FINAL DECISION: The jury’s decision is final and binding. No disputes or appeals will be entertained.",
+          "1. Kahaani",
+          "2. Talaash",
+          "3. The Pursuit of Happyness",
+          "4. Life of Pi",
+          "5. Prestige",
+          "6. La La Land",
+          "7. Dead Poets Society",
+          "8. The Truman Show",
+          "9. Dhadak",
+          "10. Rockstar",
+          "11. Shawshank Redemption",
+          "12. Andhadhun",
+          "13. Shutter Island",
+          "14. Drishyam 2"
+        ],
         interCollege: true,
         judging: "Knowledge + content + critical thinking + management.",
         coordinator: "Ishita Sati, Gunjan Purohit, Priyanshi Bisht",
@@ -592,7 +725,7 @@ export const data = [
       {
         id: 400,
         name: "Poster Making",
-        img: clickfest,
+        img: poster_making,
         description:
         "Welcome to 'Poster Pulse' this is your chance to make art that speaks volumes. With just paper, pens, and passion, turn your thoughts into bold visuals that leave a lasting impact",
         topics: [],
@@ -605,7 +738,7 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: true,
         judging: "Creativity + Relevance  to theme + Originality + Neatness +  Message clarity and overall impact.",
-        registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         coordinator: "Jiveeka Negi, Nidhi Singh, Shivani Bhardwaj, Aastha",
         email: "",
         phone: "+91 93503 48377",
@@ -627,7 +760,7 @@ export const data = [
         Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
-        registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
+        registerLink:"https://forms.gle/dAtfzJai4K1CEroa9",
         coordinator: "Aastha, Mayank Latwal",
         email: "",
         phone: "",
@@ -646,7 +779,7 @@ export const data = [
         Rulebook: eventRulebook,
         judging: "",
         interCollege: true,
-        registerLink: "https://forms.gle/XdSAktFQ1KezDPk6A",
+        registerLink: "https://forms.gle/UKg6L4ouuB89FKLA6",
         coordinator: "Akshay Tomar",
         email: "akshaytomar280@gmail.com",
         phone: "+91 8449551027",
@@ -668,6 +801,7 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
+        registerLink:"https://forms.gle/F3daXwBejTpEvvMC6",
         coordinator: "Ishita Sati, Gunjan Purohit",
         email: "",
         phone: "",
@@ -691,6 +825,7 @@ export const data = [
         interCollege: false,
         judging: "Creativity + Adherence to theme + overall visual impact.",
         coordinator: "Ashutosh Rana, Nidhi Singh, Aditi Joshi, Namrata Pundir",
+        registerLink:"https://forms.gle/F3daXwBejTpEvvMC6",
         email: "",
         phone: "",
       },
@@ -723,7 +858,7 @@ export const data = [
         interCollege: true,
         judging:
           "Originality of the Idea(10 marks)  + Technical Complexity(10 marks)  + Practical Implementation(10 marks) + Visual Presentation & Design(10 marks) +  Clarity of Explanation(10 marks) .",
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
         coordinator: "Tanishka Petwal",
         email: "",
         phone: "+91 96396 47397",
@@ -749,7 +884,7 @@ export const data = [
           interCollege: true,
           judging:
             " Relevance to Theme(10 marks) + Innovation & Creativity(10 marks) + Technical Feasibility(10 marks) + Social Impact(10 marks) + Clarity & Presentation(10 marks) + Sustainability & Long-Term Viability(10 marks) + Team Collaboration(10 marks).",
-          registerLink: "https://forms.gle/bUyYqrqgpBNg8Wd8A",
+          registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
           coordinator: "Prachi Bhatt",
           email: "",
           phone: "+91 93503 48377",
@@ -775,7 +910,7 @@ export const data = [
         ],
         Rulebook: eventRulebook,
         interCollege: true,
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
         coordinator: "Tanishka Petwal",
         email: "",
         phone: "+91 96396 47397",
@@ -806,7 +941,7 @@ export const data = [
         interCollege: true,
         judging:
           "Efficiency + balance + trusses +  Economical and intelligent use of limited resources + How much weight the bridge can sustain before failure ",
-        registerLink: "https://forms.gle/LqeRz1qhfLh6Wfpp6",
+        registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
         coordinator: "Tanishka Petwal",
         email: "",
         phone: "+91 96396 47397",
