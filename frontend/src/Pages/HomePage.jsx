@@ -40,7 +40,7 @@ const HomePage = () => {
               17th May - 18th May
             </h1>
             <h2 className="text-sm sm:text-2xl text-white font-cM text-right sm:mr-48 sm:-mt-10">
-              "RYTHMS OF RESISTANCE"
+              "RHYTHMS OF RESISTANCE"
             </h2>
           </div>
         </div>
