@@ -877,9 +877,9 @@ export const data = [
         judging:
           "Originality of the Idea(10 marks)  + Technical Complexity(10 marks)  + Practical Implementation(10 marks) + Visual Presentation & Design(10 marks) +  Clarity of Explanation(10 marks) .",
         registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
-        coordinator: "Tanishka Petwal",
-        email: "",
-        phone: "+91 96396 47397",
+        coordinator: "Niharika Chauhan (6396248112)",
+        email: "Sujal Singh Bonal (7579067717)",
+        phone: "Janmejay Pant (8868060610)",
       },
         {
           id: 2000,
@@ -903,9 +903,9 @@ export const data = [
           judging:
             " Relevance to Theme(10 marks) + Innovation & Creativity(10 marks) + Technical Feasibility(10 marks) + Social Impact(10 marks) + Clarity & Presentation(10 marks) + Sustainability & Long-Term Viability(10 marks) + Team Collaboration(10 marks).",
           registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
-          coordinator: "Prachi Bhatt",
-          email: "",
-          phone: "+91 93503 48377",
+          coordinator: "Niharika Chauhan (6396248112)",
+          email: "Sujal Singh Bonal (7579067717)",
+          phone: "Aayushmaan Panwar (8979529908)",
         },
       {
         id: 2002,
@@ -929,9 +929,9 @@ export const data = [
         Rulebook: eventRulebook,
         interCollege: true,
         registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
-        coordinator: "Tanishka Petwal",
+        coordinator: "Abhinav Patwal (9997276565)",
         email: "",
-        phone: "+91 96396 47397",
+        phone: "Janmejay Pant (8868060610)",
       },
       {
         id: 2001,
@@ -960,9 +960,9 @@ export const data = [
         judging:
           "Efficiency + balance + trusses +  Economical and intelligent use of limited resources + How much weight the bridge can sustain before failure ",
         registerLink: "https://forms.gle/iPbuBcUcM6C1fpAfA",
-        coordinator: "Tanishka Petwal",
+        coordinator: "Mphit Rawat (9068984078)",
         email: "",
-        phone: "+91 96396 47397",
+        phone: "Rajesh Rawat (7060963771)",
       },
     ],
   },
